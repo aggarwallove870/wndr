@@ -75,16 +75,13 @@ WSGI_APPLICATION = 'wndrland.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if os.getenv('GAE_APPLICATION', None):
+# if os.getenv('GAE_APPLICATION', None):
     # Running on production App Engine, so connect to Google Cloud SQL using
     # the unix socket at /cloudsql/<your-cloudsql-connection string>
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            "HOST": '/cloudsql/empirical-state-349416:us-central1:instance-borris',
-            "USER": 'instance-borris',
-            "PASSWORD": 'instance-borris',
-            "NAME": "wndrland",
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         }
     }
 else:
