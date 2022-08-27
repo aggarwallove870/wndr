@@ -87,6 +87,13 @@ if os.getenv('GAE_APPLICATION', None):
             "NAME": "wndrland",
         }
     }
+else:
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
     # Running locally so connect to either a local MySQL instance or connect to
     # Cloud SQL via the proxy. To start the proxy via command line:   
