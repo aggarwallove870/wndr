@@ -4347,7 +4347,7 @@ img.blog-section-img-tabs {
 
     .WNDR-btn-item1 {
         font-size: 16px;
-        margin-top: 12px;
+        margin-top: 0px;
     }
 
     /*banner end*/
@@ -6957,7 +6957,7 @@ img.blog-section-img-tabs {
     }
 
     .WNDR-btn-item1 {
-        margin-top: 16px;
+        margin-top: 0px;
     }
 
     .header_WNDR .navbar-expand-lg .navbar-brand img {
@@ -8943,7 +8943,7 @@ img.blog-section-img-tabs {
 
 @media screen and (max-width: 900px) {
     .WNDR-btn-item1 {
-        margin-top: 8px;
+        margin-top: 0px;
     }
 
     .arrow-wrap {
@@ -9067,7 +9067,7 @@ img.blog-section-img-tabs {
     }
 
     .WNDR-btn-item1 {
-        margin-top: 6px;
+        margin-top: 0px;
     }
 
     div#bdNavbar {
@@ -9202,10 +9202,6 @@ img.blog-section-img-tabs {
     .banner-logo-div {
         top: 210px;
         z-index: 0;
-    }
-
-    .WNDR-btn-item1 {
-        margin-top: 8px;
     }
 
     .phase-stcn-gaming {
@@ -9427,8 +9423,7 @@ img.blog-section-img-tabs {
 
     .WNDR-btn-item1 {
         padding: 0px 0px;
-        font-size: 14px;
-        margin-top: 4px;
+        font-size: 14px; 
     }
 
     .header_WNDR button.navbar-toggler.tab-navigtion {

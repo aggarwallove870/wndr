@@ -16,15 +16,17 @@ def teams(request):
 def home(request):
     if request.method == 'POST':
         email = request.POST.get('email')
+        print(email,"----->")
         new_subscriber = Subscriber_newsletter(email=email)
         new_subscriber.save()
         subject ="Thankyou for subscribing"
         message = " You are successfully subscribed to our new updates"
-        from_email = settings.EMAIL_HOST_USER
+        from_email = "no-reply@wndr.website" #settings.EMAIL_HOST_USER
         send_mail(subject, message, from_email, [email])
         subject1 ="New Subscriber"
-        message1 = str(email) +"New user subscribed"
-        send_mail(subject1, message1, email, [from_email])
+        recipients = ["info@wndr.com"]
+        message1 = str(email) +" New user subscribed"
+        send_mail(subject1, message1, from_email, recipients)
     return render(request, 'home.html')
 
 def about(request):
