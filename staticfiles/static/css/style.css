@@ -1,3 +1,4 @@
+
 /* .roadmap_company_section{
     background:url(../image/center.png);
     background-size:cover;
@@ -6,6 +7,33 @@
     background-repeat: no-repeat; 
     position:relative; 
   } */
+  .wndr_engine {
+    width: 100%;
+    padding-bottom: 20px;
+    }
+  .wndr_engine h2{ 
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 42px;
+  }
+  .wndr_engine p{
+    font-family: 'neuropolregular';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  .device_gnostic{
+    font-family: 'neuropolregular';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 0px !important;
+    margin-top: 20px;
+  }
+  .banner_mobile_video{
+      display:none;
+  }
+  .splash_mobile_view{
+    display:none; 
+ }
   video::-webkit-media-controls {
     pointer-events: block !important;
   } 
@@ -7765,6 +7793,23 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 992px) {
+    /*---Start Mobile Splash--*/
+    .wndr_engine h2{
+        font-size: 30px;    
+    }
+    .splash_mobile_view{
+       display:block; 
+    }
+    .splash_desktop_bnr{
+        display:none;
+    }
+     /*---End Mobile Splash--*/
+    .banner_mobile_video{
+        display:block;
+    }
+    .banner_desktop_video{
+        display: none;
+    }
     #myBtntop {
         right: 20px;
         padding: 5px 14px; 
@@ -12892,7 +12937,7 @@ img.blog-section-img-tabs {
     }
     /*------the company section------*/
     .WNDR_btn_home {
-        width: 44%;
+        width:84% !Important;
     }
     .WNDR_btn_home input { 
         padding: 0px;
@@ -14626,7 +14671,7 @@ img.blog-section-img-tabs {
 
 @media screen and (max-width: 380px) {
     .WNDR_btn_home {
-        width: 44%;
+        width: 84%;
     }
     .WNDR_btn_home input { 
         padding: 0px;

@@ -9,9 +9,9 @@ from wsgiref.util import FileWrapper
 
 def teams(request):
     return render(request,'teams.html')
-def start_page(request):
+# def start_page(request):
 
-    return render(request,'splash.html')
+#     return render(request,'splash.html')
 
 def home(request):
     if request.method == 'POST':
