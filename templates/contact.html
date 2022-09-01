@@ -122,11 +122,15 @@
 		  </div>
 		</header>
     <!-- header close here -->
+
 	<div class="contact-wndr">
 		<h1 class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Contact us</h1>
+		
 	</div>
+
 </div>
 
+  
 
 <!-- form design start -->
 <div class="form-wndr">
@@ -137,8 +141,10 @@
 					<img src="{% static 'img/contact-space.png' %}" class="space-contact" alt="space-1">
 					<img src="{% static 'img/contact-space-left.png' %}" class="space-contact1" alt="space-2">
 					<h1 class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">GET IN TOUCH</h1>
+					
 					<form method="post">
 						{% csrf_token %}
+						
 						<div class="form-outer">
 							<div class="left-sec-form-item"> 
 						    <input type="text" id="fname" name="fname" placeholder="Name" required>
@@ -161,11 +167,14 @@
 					  <div class="form-outer2">
 					  	<textarea id="review" name="review" required rows="4" cols="50" placeholder="Write a Review Here..."></textarea>
 					  </div>
-					  <div class="alert alert-danger sueccs-msg" id="sucess_div" role="alert" hidden>
-						<span id="sucess" ></span>
-					  </div>
+
+					<div class="alert alert-danger sueccs-msg" id="sucess_div57" role="alert" hidden>
+						<span id="sucess57" ></span>
+					</div>
+
+
 					  <div class="form-outer3">
-						<button onclick=myFunction()>Submit</button>
+						<button type="button" id="btn-dd6" onclick=myFunction()>Submit</button>
 					  </div>
 					</form>
 				</div>
@@ -319,7 +328,7 @@
 
 		success: function (data) {
 			document.getElementById("sucess_div").hidden=false;
-			document.getElementById("sucess").innerHTML = "Thankyou for Subscribing"
+			document.getElementById("sucess").innerHTML = "Thank you for subscribing"
 			$('#myInput').val('');
 			$("#sucess_div").delay(3000).fadeOut();
 			$("#btn-d").attr("disabled", false);
@@ -334,6 +343,7 @@
 		phone = $('#phone').val();
 		address = $('#address').val();
 		review = $('#review').val();
+		$("#btn-dd6").attr("disabled", true);
 		if (email != '' && fname != '' && phone != '' && address != '' && review != ''){
         $.ajax({
             type: "POST",
@@ -347,35 +357,22 @@
             },
 
 		success: function (data) {
-			alert("Data saved")
+			
+			document.getElementById("sucess_div57").hidden=false;
+			document.getElementById("sucess57").innerHTML = "Thank you for contact us"
 			$('#Input').val('');
 			$('#fname').val('');
 			$('#phone').val('');
 			$('#address').val('');
 			$('#review').val('');
+			$("#sucess_div57").delay(3000).fadeOut()
+			$("#btn-dd6").attr("disabled", false);
 
 		},
         });}
     }
 	</script>
 
-	$("#ajaxStart").click(function() {
-		$("#ajaxStart").attr("disabled", true);
-		$.ajax({
-			data: { 
-				action: 'viewRekonInfo'
-			},
-			type: 'post',
-			success: function(response){
-				//success process here
-				$("#alertContainer").delay(1000).fadeOut(800);
-	
-				$("#ajaxStart").attr("disabled", false);
-			},
-			error: errorhandler,
-			dataType: 'json'
-		});
-	});
 
 
 </body>

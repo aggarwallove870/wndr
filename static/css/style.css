@@ -9,7 +9,20 @@
   } */
   div#success_btn {
     margin-top: 22px;
+  }
+  div#submit_5 {
+    margin-top: 20px;
 }
+  div#sucess_div57 {
+    margin: 0;
+    margin-top: 20px;
+  }
+  span#sucess57 {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+  }
   #sucess_div3 {
     border: 0;
     width: 36%;
@@ -10082,6 +10095,13 @@ img.blog-section-img-tabs {
     video#video2 {
         height: 602px;
     }
+    div#sucess_div57 {
+        margin: 0;
+        margin-top: 4px;
+        position: relative;
+    }
+    
+    
     .play-btn-outer {
         margin-top: 30px !Important;
         }

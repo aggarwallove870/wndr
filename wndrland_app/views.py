@@ -45,7 +45,7 @@ def contact(request):
         new_contact = contact_us(name=fname,email=email, address=address, phone=phone, review=review)
         new_contact.save()
         subject ="Contact Us"
-        message = "Thankyou for contacting us"
+        message = "Thank you for contacting us"
         from_email = settings.EMAIL_HOST_USER
         send_mail(subject, message, from_email, [email])
         subject1 ="Contact Us Query"
