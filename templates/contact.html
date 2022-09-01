@@ -59,8 +59,8 @@
 				  <div class="alert alert-danger sueccs-msg" role="alert">
 					This is a danger alert—check it out!
 				  </div> -->
-			  <div class="sbscribe-section">
-				<button class="sbt-btn" onclick="subscribe()">Submit</button>
+			  <div class="sbscribe-section" id="success_btn">
+				<button class="sbt-btn" id="btn-d" onclick="subscribe()">Submit</button>
 			  </div>
 			  </form>
 		  </div>
@@ -307,6 +307,7 @@
 	console.log("Arrival-2")
         email = $('#myInput').val();
 		console.log(email)
+		$("#btn-d").attr("disabled", true);
 	if(email!=''){
         $.ajax({
 			url:"{% url 'home' %}",
@@ -320,6 +321,8 @@
 			document.getElementById("sucess_div").hidden=false;
 			document.getElementById("sucess").innerHTML = "Thankyou for Subscribing"
 			$('#myInput').val('');
+			$("#sucess_div").delay(3000).fadeOut();
+			$("#btn-d").attr("disabled", false);
 
 		},
         });}
@@ -355,5 +358,25 @@
         });}
     }
 	</script>
+
+	$("#ajaxStart").click(function() {
+		$("#ajaxStart").attr("disabled", true);
+		$.ajax({
+			data: { 
+				action: 'viewRekonInfo'
+			},
+			type: 'post',
+			success: function(response){
+				//success process here
+				$("#alertContainer").delay(1000).fadeOut(800);
+	
+				$("#ajaxStart").attr("disabled", false);
+			},
+			error: errorhandler,
+			dataType: 'json'
+		});
+	});
+
+
 </body>
 </html>

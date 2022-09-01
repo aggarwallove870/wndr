@@ -360,6 +360,7 @@
 				email = $('#myInput1').val();
 				console.log("Arrivals-----0")
 				console.log(email)
+				$("#btn-d1").attr("disabled", true);
 				if (email != '') {
 					console.log("abc")
 					$.ajax({
@@ -370,9 +371,11 @@
 						},
 
 						success: function (data) {
-							// document.getElementById("sucess_div1").hidden = false;
-							// document.getElementById("sucess1").innerHTML = "Thank you for subscribing"
+							document.getElementById("sucess_div1").hidden = false;
+							document.getElementById("sucess1").innerHTML = "Thank you for subscribing"
 							$('#myInput1').val('');
+							$("#sucess_div1").delay(3000).fadeOut();
+							$("#btn-d1").attr("disabled", false);
 
 						},
 					});
@@ -383,6 +386,7 @@
 				email = $('#myInput2').val();
 				console.log("Arrivals-----1")
 				console.log(email)
+				$("#btn-d2").attr("disabled", true);
 				if (email != '') {
 					console.log("abc")
 					$.ajax({
@@ -396,6 +400,9 @@
 							document.getElementById("sucess_div2").hidden = false;
 							document.getElementById("sucess2").innerHTML = "Thank you for subscribing"
 							$('#myInput2').val('');
+							$("#sucess_div2").delay(3000).fadeOut();
+							$("#btn-d2").attr("disabled", false);
+
 
 						},
 					});
@@ -409,6 +416,7 @@
 				email = $('#myInput3').val();
 				console.log("Arrivals-----2")
 				console.log(email)
+				$("#btn-d3").attr("disabled", true);
 				if (email != '') {
 					console.log("abc")
 					$.ajax({
@@ -422,6 +430,8 @@
 							document.getElementById("sucess_div3").hidden = false;
 							document.getElementById("sucess3").innerHTML = "Thank you for subscribing"
 							$('#myInput3').val('');
+							$("#sucess_div3").delay(3000).fadeOut();
+							$("#btn-d").attr("disabled", false);
 
 						},
 					});

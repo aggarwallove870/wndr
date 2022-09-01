@@ -5,29 +5,6 @@
 
 	<!-- Button trigger modal --> 
 
-	<style>
-		.sueccs-msg {
-			background: rgb(1 221 95 / 52%);
-			color: white;
-			width: 500px !important;
-			height: 36px;
-			margin-top: 55px;
-			position: relative;
-			margin-left: -43px;
-			max-width: 344px !important;
-			position: absolute;
-			margin-top: 45px;
-			font-size: 14px;
-		}
-		
-		
-		span#sucess2 {
-			position: absolute;
-			top: 50%;
-			left: 20px;
-			transform: translate(-0, -50%);
-		}
-	</style>
 <!-- Modal -->
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -54,7 +31,7 @@
 					<input type="email" name="myInput1" required  id="myInput1" value="" placeholder="Email">
 				</span>
 				</div>
-			  <div class="alert alert-danger sueccs-msg" id="sucess_div1" role="alert" hidden>
+			  <div class="alert alert-danger success-msg" id="sucess_div1" role="alert" hidden>
 				<span id="sucess1" ></span>
 			  </div>
 				  <!-- <div class="alert alert-danger danger-msg" role="alert">
@@ -64,7 +41,7 @@
 					This is a danger alert—check it out!
 				  </div> -->
 			  <div class="sbscribe-section">
-				<button class="sbt-btn" onclick="myFunction1()">Submit</button>
+				<button class="sbt-btn" id="btn-d1" onclick="myFunction1()">Submit</button>
 			  </div>
 		 
 		  </div>
@@ -92,7 +69,7 @@
 						<div class="sucess_mesg">
 							<p class=""></p> <!--Remove Sucessfull inside the paragraph tag and class named "bnr_sucess_mesg" in p class--> 
 						</div>
-						<button class="WNDR-btn-item1 mbl_sbscribe_btn uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true" onclick="myFunction2()">
+						<button class="WNDR-btn-item1 mbl_sbscribe_btn uk-scrollspy-inview" id="btn-d2" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true" onclick="myFunction2()">
 							subscribe
 						</button>
 					</div>
@@ -345,15 +322,17 @@
 								<span>
 									<input type="email" name="myInput3" id="myInput3" value="" placeholder="Enter email">
 								</span>
+
+								<div class="alert alert-danger sueccs-msg" id="sucess_div3" role="alert" hidden>
+									<span id="sucess3"></span>
+								  </div>
 								</div>
 								<!-- <div class="alert alert-danger danger-msg" role="alert">
 								  This is a danger alert—check it out!
 								</div>-->
-								<div class="alert alert-danger sueccs-msg" id="sucess_div3" role="alert" hidden>
-								  <span id="sucess3"></span>
-								</div>
+								
 							<div class="sbscribe-section">
-								<button class="sbt-btn" onclick="myFunction3()">Submit</button>
+								<button class="sbt-btn" id="btn-d3" onclick="myFunction3()">Submit</button>
 							</div>
 						
 					</div>

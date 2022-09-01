@@ -24,7 +24,7 @@ def home(request):
         from_email = "no-reply@wndr.website" #settings.EMAIL_HOST_USER
         send_mail(subject, message, from_email, [email])
         subject1 ="New Subscriber"
-        recipients = ["info@wndr.com"]
+        recipients = ["rishi@snakescript.com"]
         message1 = str(email) +" New user subscribed"
         send_mail(subject1, message1, from_email, recipients)
     return render(request, 'home.html')

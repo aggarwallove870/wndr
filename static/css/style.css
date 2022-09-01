@@ -7,6 +7,29 @@
     background-repeat: no-repeat; 
     position:relative; 
   } */
+  div#success_btn {
+    margin-top: 22px;
+}
+  #sucess_div3 {
+    border: 0;
+    width: 36%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Avenir LT Pro';
+    color: white;
+    padding: 7px 0;
+    position: absolute;
+    top: 117px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+span#sucess2 {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+}
   .wndr_engine {
     width: 100%;
     padding-bottom: 20px;
@@ -754,15 +777,18 @@ div#exampleModal {
     opacity: unset;
 }
 
+
 #exampleModal .sbscribe-bg .alert.alert-danger {
     border: 0;
-    width: 50%;
-    margin: 0 auto;
+    width: 43%;
+    margin: 0 235px;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Avenir LT Pro';
     color: white;
     padding: 7px 0;
+    text-align: center;
+    background: rgb(1 221 95 / 52%);
 }
 
 #exampleModal .sbscribe-bg h2 {
@@ -2699,6 +2725,15 @@ img.sucribe-center-tabs {
 .sueccs-msg {
     background: rgb(1 221 95 / 52%);
     color: white;
+    width: 500px !important;
+    height: 36px;
+    margin-top: 55px;
+    position: relative;
+    margin-left: -43px;
+    max-width: 344px !important;
+    position: absolute;
+    margin-top: 49px;
+    font-size: 14px;
 }
 
 .newsletter-bg:before {
@@ -2842,7 +2877,7 @@ section.wndr-coins:before {
     padding: 0 0px;
     width: 150px;
     margin: 0 auto;
-    margin-top: -16px;
+    margin-top: 0px;
     font-size: 24px;
 }
 
@@ -4347,7 +4382,7 @@ img.blog-section-img-tabs {
 
     .WNDR-btn-item1 {
         font-size: 16px;
-        margin-top: 0px;
+        margin-top: 24px;
     }
 
     /*banner end*/
@@ -11393,6 +11428,26 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 767px) {
+    .sbscribe-section button.sbt-btn {
+        background: url(../image/sucribe-btn-center-img-tabs.png);
+        height: 95px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    #sucess_div3 {
+        top: 109px;
+    }
+    #exampleModal .sbscribe-bg .alert.alert-danger {
+        margin: 11px 0 0 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .sbscribe-bg form {
+        width: 100%;
+        position: relative;
+    }
     .form-wndr-outer.company_section_about p{
         font-size: 18px;
         line-height: 31px;
@@ -13585,7 +13640,7 @@ img.blog-section-img-tabs {
     .sbscribe-section button.sbt-btn {
         background: url(../image/sucribe-btn-center-img-tabs.png);
         height: 95px;
-        margin-top: -18px;
+        margin-top: 0px;
         font-size: 12px;
     }
 
@@ -14215,6 +14270,16 @@ img.blog-section-img-tabs {
 .mobile_section_vision .WNDR-btn-item{
     font-size: 20px;
 }
+
+.sueccs-msg {
+    background: rgb(1 221 95 / 52%);
+    height: 36px;
+    margin-top: 41px;
+    width: 240px !important;
+    margin-left: -40px;
+}
+
+
 /*-----the comapny section-----*/
 .abt_top_btm_section:before{
     width: 100%;

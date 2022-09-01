@@ -59,8 +59,8 @@
 				  <div class="alert alert-danger sueccs-msg" role="alert">
 					This is a danger alert—check it out!
 				  </div> -->
-			  <div class="sbscribe-section">
-				<button class="sbt-btn" onclick="myFunction()">Submit</button>
+			  <div class="sbscribe-section" id="success_btn">
+				<button class="sbt-btn" id="btn-d"  onclick="myFunction()">Submit</button>
 			  </div>
 
 		  </div>
@@ -532,6 +532,7 @@ function myFunction() {
 	console.log("Arrival-4")
         email = $('#myInput').val();
 		console.log(email)
+		$("#btn-d").attr("disabled", true);
 	if(email != ''){
         $.ajax({
 			url:"{% url 'home' %}",
@@ -545,6 +546,8 @@ function myFunction() {
 			document.getElementById("sucess_div").hidden=false;
 			document.getElementById("sucess").innerHTML = "Thankyou for Subscribing"
 			$('#myInput').val('');
+			$("#sucess_div").delay(3000).fadeOut();
+			$("#btn-d").attr("disabled", false);
 
 		},
         });}
