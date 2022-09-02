@@ -1,4 +1,109 @@
+.vision-lineas.vision_top_lineas {
+    position: absolute;
+    bottom: 40px;
+    width:100%;
+}
+.vision-lineas.vision_top_lineas img {
+    width: 100%;
+}
+.mbl-arrow i {
+    color: #fff;
+}
+.wndr-blckchain-cntion .blck-cntction{
+    padding-top: 15px;
+    padding-bottom:10px !IMPORTANT;
+}
+/*----arrow slide--*/
 
+.arrow {
+    float: left;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border-style: none;
+    border-width: 0px;
+    -webkit-transform: rotate(360deg);
+}
+
+.arrow:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 26px;
+    /* border-style: solid; */
+    /* border-width: 3em 3em 0 3em; */
+    /* border-color: #111 transparent transparent transparent; */
+    -webkit-transform: rotate(360deg);
+    background: url(../image/bnr-arrow.png);
+    background-size: cover;
+}
+
+.hint {
+    position: absolute;
+    top: 0.6em;
+    width: 100%;
+    left: 0;
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+}
+
+.arrow-wrap:hover .hint {
+    opacity: 1;
+}
+
+@-webkit-keyframes arrows {
+    0% {
+        top: 0;
+    }
+
+    10% {
+        top: 12%;
+    }
+
+    20% {
+        top: 0;
+    }
+
+    30% {
+        top: 12%;
+    }
+
+    40% {
+        top: -12%;
+    }
+
+    50% {
+        top: 12%;
+    }
+
+    60% {
+        top: 0;
+    }
+
+    70% {
+        top: 12%;
+    }
+
+    80% {
+        top: -12%;
+    }
+
+    90% {
+        top: 12%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+}
 /* .roadmap_company_section{
     background:url(../image/center.png);
     background-size:cover;
@@ -7,6 +112,36 @@
     background-repeat: no-repeat; 
     position:relative; 
   } */
+  .mbl-arrow{
+    display: block;
+  }
+  .mbl-arrow {
+    top: auto;
+    position: unset;
+    bottom: 0;
+    left: 38%;
+    transform: unset;
+    }
+    .arrow-wrap {
+        position: absolute;
+        left: 38%;
+        bottom: -32px;
+        transform: translate(-50%, 0%);
+    }
+    .arrow {
+        float: left;
+        position: relative;
+        width: 0px;
+        height: 0px;
+        border-style: none;
+        border-width: 0px;
+        -webkit-transform: rotate(360deg);
+    }
+    .arrow-wrap .arrow {
+        -webkit-animation: arrows 2.8s 0.4s;
+        -webkit-animation-delay: 3s;
+    }
+  /*--------*/
   div#success_btn {
     margin-top: 22px;
   }
@@ -62,7 +197,8 @@ span#sucess2 {
     text-transform: uppercase;
     letter-spacing: 5px;
     padding-bottom: 0px !important;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px !IMPORTANT;
   }
   .banner_mobile_video{
       display:none;
@@ -136,7 +272,7 @@ span#sucess2 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    /* background: rgba(0, 0, 0, 0.3); */
 }
 .wndr_colosium_overlay{
     width: 100%;
@@ -144,7 +280,7 @@ span#sucess2 {
     position: absolute;
     top: 0px;
     left: 0px;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
 }
   .roadmap_company_section{
     position: relative;
@@ -348,7 +484,7 @@ span#sucess2 {
     position: relative;
     transform: translate(-50% , 0%);
     margin-top: 0px !important;
-    top: 100%;
+    top: 60%;
     margin-left:0px !important;
     padding-top: 100px;
 }
@@ -442,14 +578,14 @@ span#sucess2 {
 .home_page_banner {
     display: none;
 }
-.banner_overlay {
+/* .banner_overlay {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
     left: 0px;
     top: 0px;
-}
+} */
 .banner-WNDR{
     position: relative;
 }
@@ -559,7 +695,7 @@ span#sucess2 {
 .vision_video_section{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 .paper-vision video#myVideo{
     height: 100vh;
@@ -5592,9 +5728,11 @@ img.blog-section-img-tabs {
     }
 
     .banner-logo-div img {
-        width: 400px;
+        width: 280px;
     }
-
+    .banner-WNDR-outer {
+        top: 354px;
+    }
     /*banner end*/
 
 
@@ -6915,7 +7053,7 @@ img.blog-section-img-tabs {
 
 @media screen and (max-width: 1025px) {
     .banner-WNDR-outer {
-        top: 394px !Important;
+        top: 344px !Important;
     }
     .banner-logo-div{
         top: 214px;    
@@ -7000,7 +7138,7 @@ img.blog-section-img-tabs {
     .arrow-wrap {
         position: absolute;
         left: 44%;
-        bottom: -43px;
+        bottom: -15px;
         transform: translate(-50%, 0%);
     }
 
@@ -7841,6 +7979,20 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 992px) {
+    /*----latest-Start-banner-section------*/
+    /* .banner-logo-div {
+        top: 1164px !Important;
+    }
+    .banner-WNDR-outer {
+        top: 1414px !Important;
+    } */
+    .banner-WNDR-outer {
+        top: 334px !Important;
+    }
+    .banner-logo-div img {
+        width: 240px !Important;
+    }
+    /*-----latest-end-banner-section-------*/
     /*---Start Mobile Splash--*/
     .wndr_engine h2{
         font-size: 30px;    
@@ -7852,12 +8004,7 @@ img.blog-section-img-tabs {
         display:none;
     }
      /*---End Mobile Splash--*/
-    .banner_mobile_video{
-        display:block;
-    }
-    .banner_desktop_video{
-        display: none;
-    }
+   
     #myBtntop {
         right: 20px;
         padding: 5px 14px; 
@@ -7956,7 +8103,7 @@ img.blog-section-img-tabs {
         margin: 0 auto;
     }
     video#video2 {
-        height: 670px;
+        height: 100%;
         width: 100%;
         object-fit: cover;
     }
@@ -8030,7 +8177,7 @@ img.blog-section-img-tabs {
     .arrow-wrap {
         position: absolute;
         left: 48%;
-        bottom: -43px;
+        bottom: -3px;
         transform: translate(-50%, 0%);
     }
 
@@ -9308,7 +9455,7 @@ img.blog-section-img-tabs {
 
 @media screen and (max-width: 800px) {
     video#video2 {
-        height: 617px;
+        height: 100%;
     }
     .play-btn-outer {
         margin-top: 50px !important;
@@ -9428,7 +9575,7 @@ img.blog-section-img-tabs {
     .banner-WNDR {
         display: flex;
         width: 100%;
-        height: 617px;
+        height: 100%;
         flex-direction: column;
     }
 
@@ -10093,7 +10240,7 @@ img.blog-section-img-tabs {
 
 @media screen and (max-width: 770px) {
     video#video2 {
-        height: 602px;
+        height: 100%;
     }
     div#sucess_div57 {
         margin: 0;
@@ -10238,7 +10385,7 @@ img.blog-section-img-tabs {
     .banner-WNDR {
         display: flex;
         width: 100%;
-        height: 602px;
+        height: 100%;
         flex-direction: column;
     }
 
@@ -11229,7 +11376,19 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 768px) {
+    /*---------Start Video Banner Section----------*/
+    /* .banner-logo-div {
+        top: 1034px !Important;
+    }
+    .banner-WNDR-outer {
+        top: 1304px !Important;
+    } */
+    /*---------End Video Banner Section----------*/
     /*---------Start Video Section----------*/
+    .wndr-blckchain-cntion .blck-cntction {
+        padding-top: 15px;
+        padding-bottom: 0px !IMPORTANT;
+    }
     .video_mbl_home{
     display:block;
     }
@@ -11443,11 +11602,25 @@ img.blog-section-img-tabs {
     }
    /*--footer section---*/
    .mobile_section_vision{
-    padding-top: 20px;
+        padding-top: 20px;
+   }
+   .banner-logo-div{
+        display:none;
+   }
+   .banner-WNDR-outer {
+        top: 282px !Important;
    }
 }
 
 @media only screen and (max-width: 767px) {
+    /*----------*/
+    /* .banner-WNDR-outer {
+      top: 1114px !Important;
+    } */
+    .banner-WNDR-outer {
+        top: 264px !Important;
+    }
+    /*----------*/
     .sbscribe-section button.sbt-btn {
         background: url(../image/sucribe-btn-center-img-tabs.png);
         height: 95px;
@@ -12959,6 +13132,9 @@ img.blog-section-img-tabs {
     }  
 }
 @media only screen and (max-width: 575px) {
+    .banner-WNDR-outer {
+        top: 804px !Important;
+    }
     .WNDR-btn-item1.mbl_sbscribe_btn{
         width: 60%;
     }
@@ -12980,7 +13156,7 @@ img.blog-section-img-tabs {
     /*------the company section------*/
     .video_overlays {
         position: absolute;
-        background: rgba(0, 0, 0, 0.3);
+        /* background: rgba(0, 0, 0, 0.3); */
     }
     .abt_top_btm_section {
         padding: 0px 20px;
@@ -13039,6 +13215,15 @@ img.blog-section-img-tabs {
     /*---vision logo---*/
     .banner-logo-vision{
         display: none;
+    }
+    .banner_mobile_video{
+        display:block;
+    }
+    .banner_desktop_video{
+        display: none;
+    }
+    .wndr_engine h2 {
+        font-size: 26px;
     }
 }
 @media only screen and (max-width: 574px) {
@@ -13111,7 +13296,7 @@ img.blog-section-img-tabs {
 @media only screen and (max-width: 542px) {
     .abt_top_btm_section:after {
         bottom: -55px;
-        z-index: 999;
+        z-index: 1 !important;
     }
     .form-wndr-outer.company_section_about p{
         font-size: 14px;
@@ -13164,8 +13349,14 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 480px) {
+    .vision-lineas.vision_top_lineas img{
+        display:block !important;
+    }
     .gamePlayer-outer {
         height: 100%;
+    }
+    .wndr_engine h2 {
+        font-size: 24px;
     }
     /*------the company section-------*/
     .vision_top_line .top-line{
@@ -13188,7 +13379,7 @@ img.blog-section-img-tabs {
         right: -31px !important;
     }
     .banner-WNDR-outer {
-        top: 334px !Important;
+        top: 464px !Important;
     }
     .cmpny-bg::after{      
        top: 87%;
@@ -14287,10 +14478,20 @@ img.blog-section-img-tabs {
 }
 }
 @media only screen and (max-width: 425px) {
+.wndr_engine h2{
+    font-size: 21px;
+}
+.wndr_engine p{
+    font-size: 14px !IMPORTANT;
+}
+.device_gnostic{
+    font-size: 14px !IMPORTANT;
+    margin-top: 15px;
+    margin-bottom: 8px !IMPORTANT;
+}
 .mobile_section_vision .WNDR-btn-item{
     font-size: 20px;
 }
-
 .sueccs-msg {
     background: rgb(1 221 95 / 52%);
     height: 36px;
@@ -14797,7 +14998,11 @@ img.blog-section-img-tabs {
     }
     /*-----the company section-----*/
 }
+
 @media screen and (max-width: 363px) {
+    .banner-WNDR-outer {
+        top: 350px !Important;
+    }
     .nesltr-btn input {
         width: 180px;
     }
@@ -14830,6 +15035,18 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 322px) {
+    .wndr_engine h2 {
+        font-size: 18px;
+    }
+    .wndr_engine p{
+        font-size: 13px !IMPORTANT;
+    }
+    .device_gnostic{
+        font-size: 13px !IMPORTANT;
+    }
+    .wndr_engine {
+        padding-bottom: 10px;
+    }
     .form-wndr-outer.company_section_about p {
         font-size: 13px;
         line-height: 22px;
