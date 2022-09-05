@@ -28,6 +28,9 @@ def home(request):
         message1 = str(email) +" New user subscribed"
         send_mail(subject1, message1, from_email, recipients)
     return render(request, 'home.html')
+    
+
+    
 
 def about(request):
     return render(request, 'roadmap.html')

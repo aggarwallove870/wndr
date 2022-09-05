@@ -50,7 +50,7 @@
 				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
 				<source src="{% static 'video/Mobile_version_3mbps.mp4' %}" type="video/mp4">
 			</video>
-			
+
 		</div>
 		<!-- header start here -->
 		<header class="header-tag-WNDR">
@@ -294,7 +294,15 @@
 
 				var vid = document.getElementById("video2");
 				vid.autoplay = true;
+				// if ($("#video2").prop('muted')) {
+				// 	$("#video2").prop('muted', false);
+				// }
+				
 				vid.load();
+
+				
+
+
 			});
 
 
@@ -464,6 +472,24 @@
 			}
 
 		</script>
+
+		<!-- <script>
+
+			$(document).ready(function(){
+				$(body).load(function(){
+					alert("bfngg")
+				var vi=document.getElementById("video2")
+				vi.muted=false;
+
+				})
+			//	$("#video2").removeAttr('muted')
+				
+				
+			})
+	
+
+				
+		</script> -->
 </body>
 
 </html>
