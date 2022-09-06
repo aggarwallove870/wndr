@@ -19,6 +19,7 @@
 	   <!-- font awsome -->
     <script src="https://use.fontawesome.com/b197abb434.js"></script>
 </head>
+
 <body class="vision-sections">
 	
 <!-- Modal -->
@@ -243,7 +244,7 @@
 					<p>Tech Demo 2018</p>
 				</div>
 				<div class="vision_video_section" id="video_section_with_image">
-					<video id="myVideo12" class="video1" width="100%" height="100%" controls poster="{% static 'image/slide-15-STREAM.jpg' %}" autoplay muted disablepictureinpicture controlslist="nodownload noplaybackrate">
+					<video id="myVideo12" class="video1" width="100%" height="100%" poster="{% static 'image/slide-15-STREAM.jpg' %}" autoplay muted controlslist="nodownload noplaybackrate">
 						<source src="{% static 'video/wndr_Tech demo (1080p).mp4' %}" type="video/mp4">
 					</video>
 						<img class="vision_poster_bnr" id="vision_poster_bnr_img" src="{% static 'image/slide-15-STREAM.jpg' %}" alt="vision_poster">
@@ -596,4 +597,13 @@ function myFunction() {
 }
 
 </script>
+
+<script>
+	$(document).ready(function(){
+		var a = $("#myVideo12").attr('id')
+		a.removeAttr('controls')
+	})
+</script>
+
+
 </html>
