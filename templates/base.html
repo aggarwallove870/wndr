@@ -40,16 +40,37 @@
 			<img src="{% static 'image/banner_img-tabs.jpg' %}" class="banner-img-bg-tabs" alt="banner-img1">
 			<img src="{% static 'image/banner_img-mobile.jpg' %}" class="banner-img-bg-mobile" alt="banner-img2">
 		</div>
+
 		<div class="banner_video_section">
-			<div class="banner_overlay"></div>
-			<video class="banner_desktop_video" id="video2" width="100%" height="100%"
+			<!-- <div class="banner_overlay"></div>
+			<div class="valume_banner_home">
+				<div class="sound_on" >
+					<button id="g"><i class="fa fa-volume-off"  aria-hidden="true"></i></button>
+					
+				</div>
+				<div class="sound_off">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</div>	
+
+
+			</div> -->
+
+			<video class="banner_desktop_video" id="video2" width="100%" height="100%" preload='auto'
 				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
 				<source src="{% static 'video/PC_version_3mbps.mp4' %}" type="video/mp4">
 			</video>
-			<video class="banner_mobile_video" id="video2" width="100%" height="100%"
+			<video class="banner_mobile_video" id="video21" width="100%" height="100%" preload='auto'
 				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
 				<source src="{% static 'video/Mobile_version_3mbps.mp4' %}" type="video/mp4">
 			</video>
+			<div class="video-content">
+
+				<i class="fa fa-volume-off" id="audio-control" aria-hidden="true"></i>
+				<div class="circle" style="animation-delay: 0s"></div>
+				<div class="circle" style="animation-delay: 1s"></div>
+				<div class="circle" style="animation-delay: 2s"></div>
+				<div class="circle" style="animation-delay: 3s"></div>
+			</div>
 
 		</div>
 		<!-- header start here -->
@@ -297,10 +318,10 @@
 				// if ($("#video2").prop('muted')) {
 				// 	$("#video2").prop('muted', false);
 				// }
-				
+
 				vid.load();
 
-				
+
 
 
 			});
@@ -490,6 +511,95 @@
 
 				
 		</script> -->
+
+		<script>
+			$(document).ready(function () {
+				$('#audio-control').click(function () {
+					if ($("#video2").prop('muted')) {
+						$("#video2").prop('muted', false);
+						// $(this).text('off');
+						$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up") ;
+						
+						// or toggle class, style it with a volume icon sprite, change background-position
+					} else {
+						$("#video2").prop('muted', true);
+						$(this).children("i").attr("class", "fa fa-volume-up ") ;
+						$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
+					}
+				});
+
+
+
+				// -------------------
+				$('#audio-control').click(function () {
+					if ($("#video21").prop('muted')) {
+						$("#video21").prop('muted', false);
+						// $(this).text('off');
+						$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up") ;
+						
+						// or toggle class, style it with a volume icon sprite, change background-position
+					} else {
+						$("#video21").prop('muted', true);
+						$(this).children("i").attr("class", "fa fa-volume-up ") ;
+						$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
+					}
+				});
+
+
+			})
+
+			
+
+
+		</script>
+
+<script>
+	// home video mute volume and allow volume code 
+
+	// it is for destop video
+
+	$(document).ready(function () {
+		$('#audio-home-control').click(function () {
+			if ($("#myVideo").prop('muted')) {
+				$("#myVideo").prop('muted', false);
+				// $(this).text('off');
+			
+				$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up") ;
+				
+				
+				// or toggle class, style it with a volume icon sprite, change background-position
+			} else {
+				$("#myVideo").prop('muted', true);
+				$(this).children("i").attr("class", "fa fa-volume-up ") ;
+				$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
+			}
+		});
+
+
+		// it is for mobile 
+
+		$('#audio-home-control').click(function () {
+			if ($("#myVideo2").prop('muted')) {
+				$("#myVideo2").prop('muted', false);
+				// $(this).text('off');
+			
+				$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up") ;
+				
+				
+				// or toggle class, style it with a volume icon sprite, change background-position
+			} else {
+				$("#myVideo2").prop('muted', true);
+				$(this).children("i").attr("class", "fa fa-volume-up ") ;
+				$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
+			}
+		});
+
+
+
+	})
+	</script>
+
+
 </body>
 
 </html>
