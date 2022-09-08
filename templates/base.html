@@ -55,13 +55,13 @@
 
 			</div> -->
 
-			<video class="banner_desktop_video" id="video2" width="100%" height="100%" preload='auto'
+			<video class="banner_desktop_video" id="video2" width="100%" height="100%" preload='none'
 				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
 				<source src="{% static 'video/PC_version_3mbps.mp4' %}" type="video/mp4">
 			</video>
-			<video class="banner_mobile_video" id="video21" width="100%" height="100%" preload='auto'
+			<video class="banner_mobile_video" id="video21" width="100%" height="100%" preload='none'
 				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
-				<source src="{% static 'video/Mobile_version_3mbps.mp4' %}" type="video/mp4">
+				<source src="{% static 'video/Mobile_10mbps_VP8_003.webm' %}" type="video/mp4">
 			</video>
 			<div class="video-content">
 
@@ -659,24 +659,54 @@
 //   });
 
 
-$(window).scroll(function() {
-	var x = $(document).height()
+// $(window).scroll(function() {
+// 	var x = $(document).height()
 	
-	var s = $(window).height()
+// 	var s = $(window).height()
 
-	var d = $(".gamePlayer-outer").innerHeight()
+// 	var d = $(".gamePlayer-outer").innerHeight()
 	
-	var f = $(window).scrollTop()
+// 	var f = $(window).scrollTop()
 	
 
-  if ($(window).scrollTop() >= (($(document).height() - $(window).height()) - $('.gamePlayer-outer').innerHeight())) {
-    // alert('div reached');
-  }
+//   if ($(window).scrollTop() >= (($(document).height() - $(window).height()) - $('.gamePlayer-outer').innerHeight())) {
+//     alert('div reached');
+//   }
+// });
+// 	})
+
+
+// var d =$(".banner_video_section").height()
+// alert(d)
+// var s=$(".about-WNDR").height()
+// alert(s)
+
+// var w=$(".slect-outer").height()
+// alert(w)
+// var q= $(".slct-pvc-crypto").height()
+// alert(q)
+
+// var t= $(".WNDRLAND-WNDR").height()
+// alert(t)
+                                
+                                
+								$(window).scroll(function() {
+   if($(window).scrollTop() < 2370) {
+    //    alert($(window).scrollTop() + $(window).height());
+	$("#myVideo").get(0).pause();
+	console.log('paused');
+   }else{
+	$("#myVideo").get(0).play();
+   }
+//    if($(window).scrollTop() > 2700) {
+//     //    alert($(window).scrollTop() + $(window).height());
+// 	$("#myVideo").get(0).pause();
+// 	console.log('paused');
+//    }
 });
-	})
-
-
-
+                                
+                             
+							})
 
 
 </script>
