@@ -1,3 +1,11 @@
+/*---8-sep-2022---*/
+.banner-WNDR-outer{
+    width: 80%;
+}
+/*---End 8-sep-2022---*/
+.vision_lineas_mbl.vision_top_lineas{
+    display:none;
+}
 @keyframes scaleIn {
     from {
       transform: scale(.5, .5);
@@ -52,7 +60,7 @@ padding: 7px 13px;
 cursor: pointer;
 width: 44px;
 height: 44px;
-z-index: 9999;
+z-index: 9;
 }
 .banner_video_section .video-content i{
 color: #ffffff;
@@ -272,7 +280,7 @@ width: 44px;
     .arrow-wrap {
         position: absolute;
         left: 90%;
-        bottom: 98px;
+        bottom: 40px;
         transform: translate(-50%, 0%);
     }
     .arrow {
@@ -8035,7 +8043,7 @@ img.blog-section-img-tabs {
         top: 180px;
     }
     .invision-bg{
-        background: url(../image/tab_vision2.png);
+        background: url(../image/tab_vision.png);
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -8505,8 +8513,8 @@ img.blog-section-img-tabs {
     }
 
     .mdl-hdng {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 5px;
     }
 
     .model-market ul li {
@@ -13337,6 +13345,31 @@ img.blog-section-img-tabs {
     }  
 }
 @media only screen and (max-width: 575px) {
+    /*---8-sep-2022---*/
+    .banner-WNDR-outer{
+        width: 70%;
+    }
+    .arrow-wrap{
+        left: 100% !important;
+        bottom: 48px;
+    }
+    /*---End8-sep-2022---*/
+    /*----Start----*/
+    .vision_lineas_mbl.vision_top_lineas{
+        display:block;
+    }
+    .vision_lineas_mbl{
+        position: relative;
+        top: 35px;
+        width: 100%;
+    }
+    .vision_lineas_mbl img{
+        width: 100%;
+    }
+    .vision-lineas.vision_top_lineas{
+        display:none;
+    }
+    /*----End----*/
     .banner-WNDR-outer {
         top: 804px !Important;
     }
@@ -14718,29 +14751,31 @@ img.blog-section-img-tabs {
 .roadmap_company_section:after{ 
     height: 100%;
 }
+
 /*-----the comapny section-----*/
 }
+
 @media only screen and (max-width: 394px) {
     .mobile_section_vision .WNDR-btn-item{
-        font-size: 18px;
+    font-size: 18px;
     }
     .road-mp-tablet .mobile-line-center {
-        height: 4336px !important;
+    height: 4336px !important;
     }
     .teams_bois_section{
-        width: 100%;
+    width: 100%;
     }
     .nesltr-btn:before {
-        left: -205px;
+    left: -205px;
     }
 
     #exampleModal .nesltr-btn:after {
-        right: -37px;
+    right: -37px;
     }
 
     #exampleModal .sbscribe-bg .alert.alert-danger {
-        width: 76%;
-        font-size: 14px;
+    width: 76%;
+    font-size: 14px;
     }
 }
 
@@ -15274,6 +15309,9 @@ img.blog-section-img-tabs {
 
     html {
         overflow-x: hidden;
+    }
+    .vision_lineas_mbl {
+        top: 45px;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 577px)  {

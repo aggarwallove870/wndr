@@ -75,7 +75,7 @@
 	    right: 25px;
 	}
 	#exampleModal .sbscribe-section button.sbt-btn {
-	    margin-top: 10px;
+	    margin-top: -20px;
 	}
 	.banner-WNDR-outer {
 	    top: 340px;
@@ -240,6 +240,11 @@
 img.mobile-line-center {
     height: 4026px !important;
 }
+}
+@media only screen and (max-width:412px) {
+	img.mobile-line-center {
+	height: 4206px !important;
+	}
 }
 
 @media only screen and (max-width:322px) {

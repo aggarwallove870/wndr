@@ -593,13 +593,93 @@
 				$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
 			}
 		});
-
-
-
 	})
+
+	//newly changes
+	$(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                    if(scroll > 700){ 
+						
+			
+                    $('#video2').get(0).pause()
+					$("#video2").prop("muted",false)   ; 
+                    }
+                else{
+                    $('#video2').get(0).play();
+
+                }
+			})  
+            })
+
+			
 	</script>
 
+<script>
+	$(document).ready(function() {
+		// $(window).on('scroll', function() {
+        //     if ($(window).scrollTop() >= $(
+        //       '.gamePlayer-outer').offset().top+ $('.gamePlayer-outer').
+        //         outerHeight() - window.innerHeight) {
+        
+        //         alert('You reached the end of the DIV');
+		// 		}
+        //     })
 
+		// $(window).scroll(function(){
+	
+        //         var scroll = $(window).scrollTop();
+        //             if(scroll - 2700){ 
+		// 				alert("kfljfkff")
+						
+			
+        //             $('#myVideo').get(0).pause()
+		// 			$("#myVideo").prop("muted",false)   ; 
+        //             }
+        //         else{
+        //             $('#video2').get(0).play();
+
+        //         }
+		// 	})  
+        //     })
+
+  
+//     $('.banner_video_section').bind('scroll', function()
+//                               {
+// 								alert("----======---")
+//                                 if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight)
+//                                 {
+//                                   alert('bottom reached');
+//                                 }
+//                                 if($(this).scrollTop()  == 0 ){
+//                                 alert('Top');
+//                                 }
+                                
+//                               })
+//   });
+
+
+$(window).scroll(function() {
+	var x = $(document).height()
+	
+	var s = $(window).height()
+
+	var d = $(".gamePlayer-outer").innerHeight()
+	
+	var f = $(window).scrollTop()
+	
+
+  if ($(window).scrollTop() >= (($(document).height() - $(window).height()) - $('.gamePlayer-outer').innerHeight())) {
+    // alert('div reached');
+  }
+});
+	})
+
+
+
+
+
+</script>
 </body>
 
 </html>

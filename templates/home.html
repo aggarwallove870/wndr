@@ -72,17 +72,18 @@
 						<button class="WNDR-btn-item1 mbl_sbscribe_btn uk-scrollspy-inview" id="btn-d2" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true" onclick="myFunction2()">
 							subscribe
 						</button>
+						<div class="mbl-arrow">
+							<a class="arrow-wrap" href="#content" style="opacity: 1;">
+							<span class="arrow"></span>
+							
+							<!--<span class="hint">scroll</span>-->
+							</a>
+						</div>
 					</div>
 					
 				</div>
 			</div>
-			<div class="mbl-arrow">
-				<a class="arrow-wrap" href="#content" style="opacity: 1;">
-				<span class="arrow"></span>
-				
-				<!--<span class="hint">scroll</span>-->
-				</a>
-			</div>
+			
 		</div>
 	</div>
 	</div>
@@ -240,7 +241,7 @@
 				<video id="myVideo" class="video video_desktop_home" width="100%" height="100%" preload='auto' poster="{% static 'image/game-player.jpg' %}" autoplay muted controlslist="nodownload noplaybackrate">
 					<source src="https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4" type="video/mp4">
 				</video>
-				<video id="myVideo2" class="video video_mbl_home" width="100%" height="100%" preload='auto' poster="{% static 'image/game-player_mbl.png' %}" autoplay muted controlslist="nodownload noplaybackrate">
+				<video id="myVideo2" class="video video_mbl_home" width="100%" height: "400px" preload='auto' poster="{% static 'image/game-player_mbl.png' %}" autoplay muted controlslist="nodownload noplaybackrate" style="object-fit:cover;background-position: bottom center;">
 					<source src="https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4" type="video/mp4">
 				</video>	
 	<div class="container">
@@ -277,7 +278,7 @@
 								</div>
 								<div class="bnnr_img mbl_cover_bnr">
 									<div class="wndr_colosium_overlay"></div>
-									<img src="{% static 'image/game-player_mbl.png' %}" alt="gamePlayer-icon-1" id="play_button">
+									<img src="{% static 'image/game-player_mbl.png' %}" alt="gamePlayer-icon-1" id="play_button" style="object-fit:cover;">
 								</div>
 								<!--<div class="ply_img">
 								<img src="{% static 'image/button.png' %}" alt="gamePlayer-icon-1" id="pause_button" style="display:none">
