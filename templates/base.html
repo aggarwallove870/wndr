@@ -65,7 +65,7 @@
 			</video>
 			<div class="video-content">
 
-				<i class="fa fa-volume-off" id="audio-control" aria-hidden="true"></i>
+				<i class="fa fa-volume-up" id="audio-control" aria-hidden="true"></i>
 				<div class="circle" style="animation-delay: 0s"></div>
 				<div class="circle" style="animation-delay: 1s"></div>
 				<div class="circle" style="animation-delay: 2s"></div>
@@ -308,23 +308,23 @@
 		<!--<script src="{% static 'js/uikit.min.js' %}"></script>--->
 		<script>
 
-			$(document).ready(function () {
-				var vid = document.getElementById("myVideo");
-				vid.autoplay = true;
-				vid.load();
+			// $(document).ready(function () {
+			// 	var vid = document.getElementById("myVideo");
+			// 	vid.autoplay = true;
+			// 	vid.load();
 
-				var vid = document.getElementById("video2");
-				vid.autoplay = true;
-				// if ($("#video2").prop('muted')) {
-				// 	$("#video2").prop('muted', false);
-				// }
+			// 	var vid = document.getElementById("video2");
+			// 	vid.autoplay = true;
+			// 	// if ($("#video2").prop('muted')) {
+			// 	// 	$("#video2").prop('muted', false);
+			// 	// }
 
-				vid.load();
-
-
+			// 	vid.load();
 
 
-			});
+
+
+			// });
 
 
 
@@ -710,6 +710,15 @@
 
 
 </script>
+<script>
+ 
+	$(document).ready(function(){
+		$("#myVideo").autoplay==false;
+		$("#myVideo2").autoplay==false;
+	})
+
+	
+ </script>
 </body>
 
 </html>
