@@ -4,6 +4,9 @@
     color: #f3012d !important;
     font-size: 26px !IMPORTANT;
 }
+.game-contact p {
+    text-decoration: none !important;
+}
 /*---8-sep-2022---*/
 .banner-WNDR-outer{
     width: 80%;

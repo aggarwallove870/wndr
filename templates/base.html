@@ -57,11 +57,13 @@
 
 			<video class="banner_desktop_video" id="video2" width="100%" height="100%" preload='none'
 				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
-				<source src="{% static 'video/PC_version_10mbps_VP8.webm' %}" type="video/mp4">
+				<source src="https://wndr.nyc3.digitaloceanspaces.com/PC_version_10mbps.mp4" type="video/mp4">
+				<!-- "{% static 'video/PC_version_10mbps_VP8.webm' %}" -->
 			</video>
 			<video class="banner_mobile_video" id="video21" width="100%" height="100%" preload='none'
 				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
-				<source src="{% static 'video/Mobile_10mbps_VP8_003.webm' %}" type="video/mp4">
+				<source src="https://wndr.nyc3.digitaloceanspaces.com/Mobile_10mbps.mp4" type="video/mp4">
+				<!-- "{% static 'video/Mobile_10mbps_VP8_003.webm' %}" -->
 			</video>
 			<div class="video-content">
 
@@ -343,10 +345,11 @@
 				else {
 					console.log('absolute');
 					$(this).children(".video").get(0).pause();
+					$("#myVideo2").get(0).pause();
 					$(".gamePlayer-outer").css('height', '100%');
 					$(this).find("#play_button").css("display", "block");
 					$(this).find(".playpause").css("display", "block");
-					$(this).find(".playpause p").css("display", "none");
+					$(this).find(".playpause p").css("display", "block");
 
 				}
 			});
@@ -519,13 +522,14 @@
 					if ($("#video2").prop('muted')) {
 						$("#video2").prop('muted', false);
 						// $(this).text('off');
-						$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up") ;
+						// $(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up") ;
 						
 						// or toggle class, style it with a volume icon sprite, change background-position
 					} else {
 						$("#video2").prop('muted', true);
-						$(this).children("i").attr("class", "fa fa-volume-up ") ;
-						$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
+						// $(this).children("i").attr("class", "fa fa-volume-up ") ;
+						// alert('mute');
+						// $(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
 					}
 				});
 
@@ -541,7 +545,7 @@
 						// or toggle class, style it with a volume icon sprite, change background-position
 					} else {
 						$("#video21").prop('muted', true);
-						$(this).children("i").attr("class", "fa fa-volume-up ") ;
+						// $(this).children("i").attr("class", "fa fa-volume-up ") ;
 						$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
 					}
 				});
@@ -602,15 +606,18 @@
                 var scroll = $(window).scrollTop();
                     if(scroll > 700){ 
 						
-			
+						$(".video-content").children("i").attr("class", "fa fa-volume-up ") ; 
                     $('#video2').get(0).pause()
-					$("#video2").prop("muted",false)   ; 
+					$("#video2").prop("muted",false);
+					
+					
                     }
                 else{
 					$("#video2").prop("muted",true)
-					
+					// alert('h');
                     $('#video2').get(0).play();
-					$("#video2").removeClass("fa fa-volume-up").addClass("fa fa-volume-off")
+					$(".video-content").children("i").attr("class", "fa fa-volume-off ") ; 
+					// $("#video2").removeClass("fa fa-volume-up").addClass("fa fa-volume-up")
 
                 }
 			})  
@@ -695,13 +702,28 @@ var div_height = $(".WNDRLAND-WNDR").height()+ $(".slct-pvc-crypto").height()+$(
    if($(window).scrollTop() < div_height) {
     //    alert($(window).scrollTop() + $(window).height());
 	$("#myVideo").get(0).pause();
-	console.log('paused');
-   }else{
-	$("#myVideo").get(0).play();
+	$("#myVideo2").get(0).pause();
+	
+	$("#play_button").css("display", "block");
+					$(".playpause").css("display", "block");
+					$(".playpause p").css("display", "block");
+					$(".gamePlayer-outer").css('height', '100%');
    }
-//    if($(window).scrollTop() > 2700) {
+//    else{
+// 	if($("#myVideo").get(0).pause()){
+// 		$("#myVideo").get(0).pause();
+// 	}else{
+// 	$("#myVideo").get(0).play();
+// 	$("#myVideo2").get(0).pause();
+// 	}
+//    }
+
+   var vid_dwn_pause = div_height + $(".gamePlayer").height(); 
+//    alert(vid_dwn_pause);
+//    if($(window).scrollTop() >= vid_dwn_pause) {
 //     //    alert($(window).scrollTop() + $(window).height());
 // 	$("#myVideo").get(0).pause();
+// 	$("#myVideo2").get(0).pause();
 // 	console.log('paused');
 //    }
 });
@@ -719,11 +741,24 @@ var div_height = $(".WNDRLAND-WNDR").height()+ $(".slct-pvc-crypto").height()+$(
 	
 	})
 
-	$("#play_button").click( function(){
-		$("#video21").get(0).play();
-	})
+	// $("#play_button").click( function(){
+	// 	$("#video21").get(0).play();
+	// })
 
 	
+ </script>
+ <script>
+	$(document).ready(function(){
+		window.onload=function(){
+     $(body).css("background", "yellow"); 
+
+	}
+})
+		
+();
+	
+
+
  </script>
 </body>
 
