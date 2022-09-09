@@ -370,6 +370,9 @@ span#sucess2 {
   video::-webkit-media-controls {
     pointer-events: block !important;
   } 
+  #myVideo2::-webkit-media-controls {
+    pointer-events: block !important;
+  } 
   .mbl_key_objctv_btm{ 
    color:#b95c07 !IMPORTANT;   
   }
@@ -4765,7 +4768,7 @@ img.blog-section-img-tabs {
     /*video start*/
     .gamePlayer-outer {
         position: absolute;
-        top: 30px;
+        top: 0px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -5364,7 +5367,7 @@ img.blog-section-img-tabs {
     /*video start*/
     .gamePlayer-outer {
         position: absolute;
-        top: 30px;
+        top: 0px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -6016,7 +6019,7 @@ img.blog-section-img-tabs {
     }
 
     .gamePlayer-outer {
-        top: 60px;
+        top: 0px;
     }
 
     .gamePlayer-logo-item img {
@@ -8910,7 +8913,7 @@ img.blog-section-img-tabs {
     }
 
     .gamePlayer-outer {
-        top: 30px;
+        top: 0px;
     }
 
     .play-btn-outer {
@@ -9336,7 +9339,7 @@ img.blog-section-img-tabs {
     }
 
     .gamePlayer-outer {
-        top: 30px;
+        top: 0px;
     }
 
     /*contact-page css start*/
@@ -13472,7 +13475,7 @@ img.blog-section-img-tabs {
         display:block;
     }
     .banner_desktop_video{
-        display: none;
+        display: none !Important;
     }
     .wndr_engine h2 {
         font-size: 26px;

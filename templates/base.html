@@ -40,7 +40,7 @@
 			<img src="{% static 'image/banner_img-tabs.jpg' %}" class="banner-img-bg-tabs" alt="banner-img1">
 			<img src="{% static 'image/banner_img-mobile.jpg' %}" class="banner-img-bg-mobile" alt="banner-img2">
 		</div>
-
+		
 		<div class="banner_video_section">
 			<!-- <div class="banner_overlay"></div>
 			<div class="valume_banner_home">
@@ -329,14 +329,15 @@
 
 
 
-			$('.video').parent().find("#play_button").css("display", "none");
-			$('.video').parent().find(".playpause").css("display", "none");
+			$('.video').parent().find("#play_button").css("display", "block");
+			$('.video').parent().find(".playpause").css("display", "block");
 
 			$('.video').parent().click(function () {
 				if ($(this).children(".video").get(0).paused) {
 					$(this).children(".video").get(0).play();
 					$(".gamePlayer-outer").css('height', '87%');
 					$(this).find("#play_button").css("display", "none");
+					$("#myVideo2").get(0).play();
 					$(this).find(".playpause").css("display", "none");
 				}
 				else {
@@ -679,22 +680,19 @@
 // 	})
 
 
-// var d =$(".banner_video_section").height()
-// alert(d)
-// var s=$(".about-WNDR").height()
-// alert(s)
 
-// var w=$(".slect-outer").height()
-// alert(w)
-// var q= $(".slct-pvc-crypto").height()
-// alert(q)
 
-// var t= $(".WNDRLAND-WNDR").height()
-// alert(t)
+
+
+
+
+
+var div_height = $(".WNDRLAND-WNDR").height()+ $(".slct-pvc-crypto").height()+$(".slect-outer").height()+$(".about-WNDR").height()+$(".banner_video_section").height();
+
                                 
                                 
 								$(window).scroll(function() {
-   if($(window).scrollTop() < 2370) {
+   if($(window).scrollTop() < div_height) {
     //    alert($(window).scrollTop() + $(window).height());
 	$("#myVideo").get(0).pause();
 	console.log('paused');
@@ -719,6 +717,10 @@
 		$("#myVideo")[0].autoplay=false;
 		
 	
+	})
+
+	$("#play_button").click( function(){
+		$("#video21").get(0).play();
 	})
 
 	
