@@ -65,7 +65,7 @@
 			</video>
 			<div class="video-content">
 
-				<i class="fa fa-volume-up" id="audio-control" aria-hidden="true"></i>
+				<i class="fa fa-volume-off" id="audio-control" aria-hidden="true"></i>
 				<div class="circle" style="animation-delay: 0s"></div>
 				<div class="circle" style="animation-delay: 1s"></div>
 				<div class="circle" style="animation-delay: 2s"></div>
@@ -590,7 +590,7 @@
 			} else {
 				$("#myVideo2").prop('muted', true);
 				$(this).children("i").attr("class", "fa fa-volume-up ") ;
-				$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
+				
 			}
 		});
 	})
@@ -606,7 +606,10 @@
 					$("#video2").prop("muted",false)   ; 
                     }
                 else{
+					$("#video2").prop("muted",true)
+					
                     $('#video2').get(0).play();
+					$("#video2").removeClass("fa fa-volume-up").addClass("fa fa-volume-off")
 
                 }
 			})  
@@ -713,8 +716,9 @@
 <script>
  
 	$(document).ready(function(){
-		$("#myVideo").autoplay==false;
-		$("#myVideo2").autoplay==false;
+		$("#myVideo")[0].autoplay=false;
+		
+	
 	})
 
 	
