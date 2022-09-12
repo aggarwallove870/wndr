@@ -1,11 +1,81 @@
+/*-----Start no download section----*/
+
+
 .borris_bazelais {
     text-align: right;
     font-weight: 600;
     color: #f3012d !important;
     font-size: 26px !IMPORTANT;
 }
-.game-contact p {
-    text-decoration: none !important;
+.no-dwonload_section {
+    background: #131418;
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    text-align: center;
+    /* background-image: url(../image/About-wndr-bg.jpg); */
+} 
+div#load-image-of-modal-subscibe {
+    position: relative;
+    top: 75px;
+    right: 84px;
+}
+div#load-image-of-arrival2 { 
+    position: absolute;
+    top: 43px;
+    right: -18px;
+    width: 26px;
+    height: 26px; 
+}
+div#load-image-of-modal-subscibe1 {
+    position: absolute;
+    right: -20px;
+    width: 26px;
+    height: 26px;
+    top: 45px;
+}
+
+div#load-image {
+    position: relative;
+    top: -2px;
+    /* right: auto; */
+    /* left: auto; */
+    right: -20px !important;
+    width: 26px;
+    height: 26px;
+}
+.new_dwnlod {
+    text-align: center;
+}
+
+.no-dwonload_section img {
+    padding-top: 15px;
+}
+.wndr_land_colosiusm {
+    position: relative;
+    width: 100%;
+}
+.no-dwonload_section h2 {
+    font-family: 'neuropolregular';
+    color: #f3012d;
+    font-size: 46px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.no-dwonload_section p{
+    font-family: 'neuropolregular';
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    text-align:center;
+}
+/*-----End no download section----*/
+.borris_bazelais {
+    text-align: right;
+    font-weight: 600;
+    color: #f3012d !important;
+    font-size: 26px !IMPORTANT;
 }
 /*---8-sep-2022---*/
 .banner-WNDR-outer{
@@ -57,7 +127,6 @@
 .banner_video_section .video-content {
 position: absolute;
 top: 154px;
-right: 20px;
 color: #ffffff;
 position: absolute;
 float: right;
@@ -82,7 +151,7 @@ font-size: 21px;
 }
 .video-home-content {
 color: #ffffff;
-position: relative;
+position: absolute;
 float: right;
 top: 80px;
 right: 30px;
@@ -329,8 +398,10 @@ width: 44px;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Avenir LT Pro';
-    color: white;
+    background: rgb(237 56 51 / 34%);
+    border: 1px solid #f4a8a2;
     padding: 7px 0;
+    color: #ccb4b8;
     position: absolute;
     top: 117px;
     left: 50%;
@@ -371,9 +442,6 @@ span#sucess2 {
     display:none; 
  }
   video::-webkit-media-controls {
-    pointer-events: block !important;
-  } 
-  #myVideo2::-webkit-media-controls {
     pointer-events: block !important;
   } 
   .mbl_key_objctv_btm{ 
@@ -1101,10 +1169,12 @@ div#exampleModal {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Avenir LT Pro';
-    color: white;
     padding: 7px 0;
     text-align: center;
-    background: rgb(1 221 95 / 52%);
+    background: rgb(237 56 51 / 34%);
+    border: 1px solid #f4a8a2;
+    color: #ccb4b8;
+    max-width: 337px;
 }
 
 #exampleModal .sbscribe-bg h2 {
@@ -3048,17 +3118,21 @@ img.sucribe-center-tabs {
 }
 
 .sueccs-msg {
-    background: rgb(1 221 95 / 52%);
-    color: white;
+    background: rgb(237 56 51 / 34%);
+    color: #ccb4b8;
     width: 500px !important;
     height: 36px;
     margin-top: 55px;
     position: relative;
     margin-left: -43px;
-    max-width: 344px !important;
+    max-width: 294px !important;
     position: absolute;
     margin-top: 49px;
+    text-align: center;
     font-size: 14px;
+    border: 1px solid #f4a8a2;
+    text-transform: capitalize;
+    border-radius: 6px;
 }
 
 .newsletter-bg:before {
@@ -4771,7 +4845,7 @@ img.blog-section-img-tabs {
     /*video start*/
     .gamePlayer-outer {
         position: absolute;
-        top: 0px;
+        top: 30px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -5370,7 +5444,7 @@ img.blog-section-img-tabs {
     /*video start*/
     .gamePlayer-outer {
         position: absolute;
-        top: 0px;
+        top: 30px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -6022,7 +6096,7 @@ img.blog-section-img-tabs {
     }
 
     .gamePlayer-outer {
-        top: 0px;
+        top: 60px;
     }
 
     .gamePlayer-logo-item img {
@@ -8045,6 +8119,17 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 1024px) {
+    /*---no download---*/
+    .no-dwonload_section{
+        padding: 40px 0px 40px 0px;
+    }
+    .no-dwonload_section h2 {
+        font-size: 32px;
+        margin-bottom: 11px;
+    }
+    .no-dwonload_section p{
+       font-size: 15px !important;
+    }
     .roadmap_company_section {
         width: 90% !Important;
     }
@@ -8155,6 +8240,10 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 992px) {
+    .banner_video_section .video-content{
+        top: 184px;
+        right: 147px; 
+    }
     .arrow-wrap{
         left: 86%;
     }
@@ -8916,7 +9005,7 @@ img.blog-section-img-tabs {
     }
 
     .gamePlayer-outer {
-        top: 0px;
+        top: 30px;
     }
 
     .play-btn-outer {
@@ -9342,7 +9431,7 @@ img.blog-section-img-tabs {
     }
 
     .gamePlayer-outer {
-        top: 0px;
+        top: 30px;
     }
 
     /*contact-page css start*/
@@ -9529,6 +9618,10 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 822px) {
+    .banner_video_section .video-content {
+        top: 184px;
+        right: 110px;
+    }
     .slect-pvc-live h2 {
         font-size: 26px;
         margin-bottom: 4px;
@@ -11555,6 +11648,13 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 768px) {
+    .new_dwnlod{
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .banner_video_section .video-content{
+        right:25px;
+    }
     .borris_bazelais{
         font-size: 20px !IMPORTANT;
     }
@@ -13362,6 +13462,15 @@ img.blog-section-img-tabs {
     }  
 }
 @media only screen and (max-width: 575px) {
+    .no-dwonload_section img {
+        padding-top: 5px;
+    }    
+    .no-dwonload_section p {
+        font-size: 12px !important;
+    }
+    .no-dwonload_section h2 {
+        font-size: 22px;
+    }
     .borris_bazelais {
         font-size: 18px !IMPORTANT;
     }
@@ -13478,7 +13587,7 @@ img.blog-section-img-tabs {
         display:block;
     }
     .banner_desktop_video{
-        display: none !Important;
+        display: none;
     }
     .wndr_engine h2 {
         font-size: 26px;

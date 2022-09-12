@@ -32,6 +32,7 @@
 					<input type="email" name="myInput1" required  id="myInput1" value="" placeholder="Enter email">
 				</span>
 				</div>
+			 
 			  <div class="alert alert-danger success-msg" id="sucess_div1" role="alert" hidden>
 				<span id="sucess1" ></span>
 			  </div>
@@ -42,7 +43,9 @@
 					This is a danger alert—check it out!
 				  </div> -->
 			  <div class="sbscribe-section">
-				<button class="sbt-btn" id="btn-d1" onclick="myFunction1()">Submit</button>
+				<button class="sbt-btn" id="btn-d1" onclick="myFunction1()">Submit 	 <div id ="load-image-of-modal-subscibe1" class="spinner-border text-danger" role="status">
+					<span class="sr-only">Loading...</span>
+				  </div></button>
 			  </div>
 		 
 		  </div>
@@ -70,8 +73,30 @@
 						<div class="sucess_mesg">
 							<p class=""></p> <!--Remove Sucessfull inside the paragraph tag and class named "bnr_sucess_mesg" in p class--> 
 						</div>
+						{% comment %} <div   class="spinner-grow text-light" role="status">
+							<span class="sr-only">Loading...</span>
+						  </div> {% endcomment %}
+						   
+						{% comment %} <section  id ="load-image">
+							<div class="loader" >
+							  <div class="upper ball"></div>
+							  <div class="right ball"></div>
+							  <div class="lower ball"></div>
+							  <div class="left ball"></div>
+							</div>
+						  </section>  {% endcomment %}
+						  {% comment %} <div id ="load-image" class="spinner-grow text-danger" role="status">
+							<span class="sr-only">Loading...</span>
+						  </div> {% endcomment %}
+						  {% comment %} <div>
+							<div class="db-spinner"></div>
+						  </div> {% endcomment %}
 						<button class="WNDR-btn-item1 mbl_sbscribe_btn uk-scrollspy-inview" id="btn-d2" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true" onclick="myFunction2()">
 							subscribe
+							<div id ="load-image" class="spinner-border text-danger" role="status">
+								<span class="sr-only">Loading...</span>
+							  </div> 
+
 						</button>
 						<div class="mbl-arrow">
 							<a class="arrow-wrap" href="#content" style="opacity: 1;">
@@ -225,12 +250,23 @@
 				</div>
 			</div>
 		</div>
+		
 	</div>
 	<!-- WNDRLAND-WNDR-end -->
-
-
+		<div class="no-dwonload_section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>NO DOWNLOADS</h2>
+				<p>SHARE AND CLICK with A SIMPLE WEB LINK</p>
+				<img src="{% static 'image/download_hr.png' %}" alt="bottom_line">
+			</div>
+		</div>
+	</div>
+</div>
 	<!-- game-play start -->
 	<!-- game-play start -->
+	<div class="wndr_land_colosiusm">
 	<div class="video-home-content">
 		<i class="fa fa-volume-off" id="audio-home-control" aria-hidden="true"></i>
 		<div class="circle" style="animation-delay: 0s"></div>
@@ -298,8 +334,19 @@
 		</div>
 	</div>
 </div>
+</div>
 	<!-- game-play end -->
-
+	<div class="no-dwonload_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>DEVICE AGNOSTIC</h2>
+					<p>MOBILE . PC . TABLET . SMART TV</p>
+					<img src="{% static 'image/download_hr.png' %}" alt="bottom_line">
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- WNDR COINS Start -->
 	<section class="wndr-coins">
 		<div class="coin-lines">
@@ -353,9 +400,13 @@
 								<!-- <div class="alert alert-danger danger-msg" role="alert">
 								  This is a danger alert—check it out!
 								</div>-->
-								
+							   
 							<div class="sbscribe-section" id="submit_5">
-								<button class="sbt-btn" id="btn-d3" onclick="myFunction3()">Submit</button>
+								<button class="sbt-btn" id="btn-d3" onclick="myFunction3()">Submit
+									<div id ="load-image-of-arrival2" class="spinner-border text-danger" role="status">
+										<span class="sr-only">Loading...</span>
+									  </div> 
+								</button>
 							</div>
 						
 					</div>

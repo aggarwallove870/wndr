@@ -359,6 +359,7 @@
 			/*-----End vision poster image----*/
 
 			$(document).ready(function () {
+			
 				// $('.playpause').css("display","none");
 				var x = $('#myVideo');
 				x.controls = true;
@@ -389,13 +390,15 @@
 					}
 				});
 			});
-
+			
+			$("#load-image-of-modal-subscibe1").hide()
 			function myFunction1() {
 				email = $('#myInput1').val();
 				console.log("Arrivals-----0")
 				console.log(email)
 				$("#btn-d1").attr("disabled", true);
 				if (email != '') {
+					$("#load-image-of-modal-subscibe1").show()
 					console.log("abc")
 					$.ajax({
 						type: "POST",
@@ -405,6 +408,7 @@
 						},
 
 						success: function (data) {
+							$("#load-image-of-modal-subscibe1").hide()
 							document.getElementById("sucess_div1").hidden = false;
 							document.getElementById("sucess1").innerHTML = "Thank you for subscribing"
 							$('#myInput1').val('');
@@ -416,22 +420,28 @@
 					});
 				}
 			}
-
+			$("#load-image").hide()
 			function myFunction2() {
+				
 				email = $('#myInput2').val();
 				console.log("Arrivals-----1")
 				console.log(email)
 				$("#btn-d2").attr("disabled", true);
+			
 				if (email != '') {
 					console.log("abc")
+					$("#load-image").show()
 					$.ajax({
 						type: "POST",
+						
 						data: {
 							"email": email,
 							'csrfmiddlewaretoken': '{{csrf_token}}'
 						},
-
+						
+						
 						success: function (data) {
+							$("#load-image").hide()
 							document.getElementById("sucess_div2").hidden = false;
 							document.getElementById("sucess2").innerHTML = "Thank you for subscribing"
 							$('#myInput2').val('');
@@ -447,13 +457,14 @@
 
 
 
-
+			$("#load-image-of-arrival2").hide()
 			function myFunction3() {
 				email = $('#myInput3').val();
 				console.log("Arrivals-----2")
 				console.log(email)
 				$("#btn-d3").attr("disabled", true);
 				if (email != '') {
+					$("#load-image-of-arrival2").show()
 					console.log("abc")
 					$.ajax({
 						type: "POST",
@@ -463,6 +474,7 @@
 						},
 
 						success: function (data) {
+							$("#load-image-of-arrival2").hide()
 							document.getElementById("sucess_div3").hidden = false;
 							document.getElementById("sucess3").innerHTML = "Thank you for subscribing"
 							$('#myInput3').val('');
