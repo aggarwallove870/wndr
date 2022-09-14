@@ -91,13 +91,18 @@
 						  {% comment %} <div>
 							<div class="db-spinner"></div>
 						  </div> {% endcomment %}
-						<button class="WNDR-btn-item1 mbl_sbscribe_btn uk-scrollspy-inview" id="btn-d2" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true" onclick="myFunction2()">
-							subscribe
-							<div id ="load-image" class="spinner-border text-danger" role="status">
-								<span class="sr-only">Loading...</span>
-							  </div> 
 
-						</button>
+						 <button class="WNDR-btn-item1 mbl_sbscribe_btn uk-scrollspy-inview" id="btn-d2" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true" onclick="myFunction2()">
+							subscribe <div id ="load-image" class="spinner-border text-danger" role="status"><span class="sr-only">Loading...</span>  </div> 
+							
+
+						</button>  
+						{% comment %} <button class="shadow-button-3" id="btn-d2" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true" onclick="myFunction2()">Subscribe <div id ="load-image" class="spinner-border text-danger" role="status">
+							<span class="sr-only">Loading...</span>
+						  </div> </button> {% endcomment %}
+						
+						{% comment %} <button class="glow-on-hover" type="button">Subscribe</button> {% endcomment %}
+	
 						<div class="mbl-arrow">
 							<a class="arrow-wrap" href="#content" style="opacity: 1;">
 							<span class="arrow"></span>
@@ -257,8 +262,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>SHARE A SIMPLE WEB LINK AND CLICK</h2>
-				<p>SHARE AND CLICK with A SIMPLE WEB LINK</p>
+				<h2>NO DOWNLOAD</h2>
+				<p>SHARE A SIMPLE WEB LINK AND CLICK</p>
 				<img src="{% static 'image/download_hr.png' %}" alt="bottom_line">
 			</div>
 		</div>
@@ -276,10 +281,10 @@
 	</div>
 	<div class="gamePlayer">			
 				<video id="myVideo" class="video video_desktop_home" width="100%" height="100%" preload='auto' poster="{% static 'image/game-player.jpg' %}"controlslist="nodownload noplaybackrate">
-					<source src="https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4" type="video/mp4">
-				</video>
+				<source src="{% if video_obj %}{{video_obj.desktop_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4"></video>
 				<video id="myVideo2" class="video video_mbl_home" width="100%" height="100%" preload='auto' poster="{% static 'image/game-player_mbl.png' %}" controlslist="nodownload noplaybackrate" style="object-fit:cover;background-position: bottom center;" webkit-playsinline="true" playsinline="true">
-					<source src="https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4" type="video/mp4">
+			
+					<source src="{% if video_obj %}{{video_obj.mobile_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4"></video>
 				</video>	
 	<div class="container">
 		<div class="row">

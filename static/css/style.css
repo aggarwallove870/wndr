@@ -1,4 +1,49 @@
 /*-----Start no download section----*/
+.video-content_mobile {
+    display: none;
+}
+.shadow-button-3 {
+    margin: 14px 0;
+    font-size: 20px;
+    font-weight: 600;
+    height: 56px;
+    width: 240px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #470f19;
+    opacity: 0.9;
+    color: #ffff;
+    border: 2px solid #cdb5bd;
+}
+
+.shadow-button-2 {
+    box-shadow:
+      10px -10px 0 -3px white,
+      10px -10px,
+      20px -20px 0 -3px white,
+      20px -20px;
+    transition: box-shadow 1s, top 1s, left 1s;
+  }
+  
+  .shadow-button-2:hover {
+    box-shadow:
+      0 0 0 -3px white,
+      0 0,
+      0 0 0 -3px white,
+      0 0;
+  }
+  .shadow-button-3 {
+    box-shadow: 4px 4px;
+  }
+  
+  .shadow-button-3:hover {
+    box-shadow:  none;
+    transform: translate(0.25rem,0.25rem);
+  }
+  
 
 
 .borris_bazelais {
@@ -105,6 +150,7 @@ div#load-image {
     animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
     z-index: -14;
     right: 1px;
+    top: 0;
   }
   .video-vision i{
     z-index: 99;
@@ -147,7 +193,7 @@ font-size: 21px;
 
 i#audio-control {
 color: #ffffff;
-font-size: 21px;
+font-size: 30px;
 }
 .video-home-content {
 color: #ffffff;
@@ -436,7 +482,7 @@ span#sucess2 {
     margin-bottom: 15px !IMPORTANT;
   }
   .banner_mobile_video{
-      display:none;
+      display:none !important;
   }
   .splash_mobile_view{
     display:none; 
@@ -8119,6 +8165,38 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 1024px) {
+    .video-content_mobile {
+        display: block;
+        position: absolute;
+        top: 154px;
+        color: #ffffff;
+        position: absolute;
+        float: right;
+        right: 64px;
+        display: flex;
+        align-items: center;
+        border-radius: 90px;
+        padding: 7px 13px;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        z-index: 9;
+    }
+    .banner_video_section .video-content {
+        display: none;
+    }
+    .banner_video_section .content_volumnBtn {
+        float: right;
+        right: 48px;
+        display: flex;
+        align-items: center;
+        border-radius: 90px;
+        padding: 7px 13px;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        z-index: 9;
+    }
     /*---no download---*/
     .no-dwonload_section{
         padding: 40px 0px 40px 0px;
@@ -8240,6 +8318,9 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 992px) {
+    /* .wndr_land_colosiusm {
+        display: none !important;
+    } */
     .banner_video_section .video-content{
         top: 184px;
         right: 147px; 
@@ -11652,8 +11733,8 @@ img.blog-section-img-tabs {
         padding-bottom: 30px;
         padding-top: 30px;
     }
-    .banner_video_section .video-content{
-        right:25px;
+    .banner_video_section .video-content {
+        right: 75px;
     }
     .borris_bazelais{
         font-size: 20px !IMPORTANT;
@@ -11961,6 +12042,7 @@ img.blog-section-img-tabs {
         margin-top: 20px;
         font-size: 12px;
     }
+    
     #sucess_div3 {
         top: 109px;
     }
@@ -13584,7 +13666,7 @@ img.blog-section-img-tabs {
         display: none;
     }
     .banner_mobile_video{
-        display:block;
+        display:block !important;
     }
     .banner_desktop_video{
         display: none;

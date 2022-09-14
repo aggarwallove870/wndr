@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Subscriber_newsletter,contact_us
+from .models import Subscriber_newsletter,contact_us,DesktopMobileVideo
 from django.conf import settings
 from django.core.mail import send_mail
 from django.template.loader import render_to_string, get_template
@@ -14,6 +14,7 @@ def teams(request):
 #     return render(request,'splash.html')
 
 def home(request):
+    video_obj=DesktopMobileVideo.objects.last()
     if request.method == 'POST':
         email = request.POST.get('email')
         print(email,"----->")
@@ -27,7 +28,7 @@ def home(request):
         recipients = ["rishi@snakescript.com"]
         message1 = str(email) +" New user subscribed"
         send_mail(subject1, message1, from_email, recipients)
-    return render(request, 'home.html')
+    return render(request, 'home.html',{"video_obj":video_obj})
     
 
     
@@ -75,3 +76,7 @@ def video_demo(request):
     file = FileWrapper(open('video/wndr_Tech demo (1080p).mp4', 'rb'))
     response = HttpResponse(file, content_type='video/mp4')
     return response
+
+def video_url(request):
+    videoobj=desktopVideo.objects.last()
+    return render(request,"base.html",{"videoobj":videoobj})

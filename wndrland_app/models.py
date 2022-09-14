@@ -18,3 +18,14 @@ class contact_us(models.Model):
 
     class Meta:
         verbose_name = "Contact u"
+
+class DesktopMobileVideo(models.Model):
+    desktop_top_video= models.CharField(max_length=200)
+    mobile_top_video=models.CharField(max_length=200)
+    desktop_bottom_video=models.CharField(max_length=300)
+    mobile_bottom_video=models.CharField(max_length=200)
+
+
+
+
+

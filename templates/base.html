@@ -42,32 +42,27 @@
 		</div>
 		
 		<div class="banner_video_section">
-			<!-- <div class="banner_overlay"></div>
-			<div class="valume_banner_home">
-				<div class="sound_on" >
-					<button id="g"><i class="fa fa-volume-off"  aria-hidden="true"></i></button>
-					
-				</div>
-				<div class="sound_off">
-					<i class="fa fa-volume-up" aria-hidden="true"></i>
-				</div>	
-
-
-			</div> -->
-
 			<video class="banner_desktop_video" id="video2" width="100%" height="100%" preload='none'
 				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
-				<source src="https://wndr.nyc3.digitaloceanspaces.com/PC_version_10mbps.mp4" type="video/mp4">
+				<source src="{% if video_obj %}{{video_obj.desktop_top_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/PC_version_10mbps.mp4 {%endif%}" type="video/mp4">
 				<!-- "{% static 'video/PC_version_10mbps_VP8.webm' %}" -->
 			</video>
 			<video class="banner_mobile_video" id="video21" width="100%" height="100%" preload='none'
 				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
-				<source src="https://wndr.nyc3.digitaloceanspaces.com/Mobile_10mbps.mp4" type="video/mp4">
+				<source src="{% if video_obj %}{{video_obj.mobile_top_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/Mobile_10mbps.mp4{%endif%}" type="video/mp4">
 				<!-- "{% static 'video/Mobile_10mbps_VP8_003.webm' %}" -->
 			</video>
 			<div class="video-content">
 
 				<i class="fa fa-volume-off" id="audio-control" aria-hidden="true"></i>
+				<div class="circle" style="animation-delay: 0s"></div>
+				<div class="circle" style="animation-delay: 1s"></div>
+				<div class="circle" style="animation-delay: 2s"></div>
+				<div class="circle" style="animation-delay: 3s"></div>
+			</div>
+			<div class="video-content_mobile">
+
+				<i class="fa fa-volume-off" id="audio-mobile-control" aria-hidden="true"></i>
 				<div class="circle" style="animation-delay: 0s"></div>
 				<div class="circle" style="animation-delay: 1s"></div>
 				<div class="circle" style="animation-delay: 2s"></div>
@@ -510,23 +505,7 @@
 
 		</script>
 
-		<!-- <script>
 
-			$(document).ready(function(){
-				$(body).load(function(){
-					alert("bfngg")
-				var vi=document.getElementById("video2")
-				vi.muted=false;
-
-				})
-			//	$("#video2").removeAttr('muted')
-				
-				
-			})
-	
-
-				
-		</script> -->
 
 		<script>
 			$(document).ready(function () {
@@ -534,36 +513,36 @@
 					if ($("#video2").prop('muted')) {
 						$("#video2").prop('muted', false);
 						// $(this).text('off');
-						// $(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up") ;
+						$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up") ;
 						
 						// or toggle class, style it with a volume icon sprite, change background-position
 					} else {
 						$("#video2").prop('muted', true);
 						// $(this).children("i").attr("class", "fa fa-volume-up ") ;
 						// alert('mute');
-						// $(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
+					   $(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
 					}
 				});
 
 
 
 				// -------------------
-				$('#audio-control').click(function () {
-					if ($("#video21").prop('muted')) {
-						$("#video21").prop('muted', false);
-						// $(this).text('off');
-						$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up") ;
+			 	$('#audio-mobile-control').click(function () {
+			 		if ($("#video21").prop('muted')) {
+			 			$("#video21").prop('muted', false);
+			// 			// $(this).text('off');
+			 			$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up") ;
 						
-						// or toggle class, style it with a volume icon sprite, change background-position
-					} else {
-						$("#video21").prop('muted', true);
-						// $(this).children("i").attr("class", "fa fa-volume-up ") ;
+			// 			// or toggle class, style it with a volume icon sprite, change background-position
+			 		} else {
+			 			$("#video21").prop('muted', true);
+			// 			// $(this).children("i").attr("class", "fa fa-volume-up ") ;
 						$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off") ;
-					}
-				});
+			 		}
+			 	});
 
 
-			})
+			 })
 
 			
 
@@ -612,107 +591,42 @@
 		});
 	})
 
-	//newly changes
-	$(document).ready(function(){
+
             $(window).scroll(function(){
                 var scroll = $(window).scrollTop();
-                    if(scroll > 700){ 
+				var get_video_section_height=$(".banner_desktop_video").height()-116
+                    if(scroll > get_video_section_height){ 
 						
-						$(".video-content").children("i").attr("class", "fa fa-volume-up ") ; 
+				    $(".video-content").children("i").attr("class", "fa fa-volume-off ") ; 
                     $('#video2').get(0).pause()
-					$("#video2").prop("muted",false);
+					$("#video2").prop("muted",true);
+				
+					
 					
 					
                     }
                 else{
-					$("#video2").prop("muted",true)
-					// alert('h');
+					// $("#video2").prop("muted",false)
                     $('#video2').get(0).play();
-					$(".video-content").children("i").attr("class", "fa fa-volume-off ") ; 
+					//$(".video-content").children("i").attr("class", "fa fa-volume-up ") ; 
 					// $("#video2").removeClass("fa fa-volume-up").addClass("fa fa-volume-up")
 
                 }
 			})  
-            })
+            
 
 			
 	</script>
 
 <script>
 	$(document).ready(function() {
-		// $(window).on('scroll', function() {
-        //     if ($(window).scrollTop() >= $(
-        //       '.gamePlayer-outer').offset().top+ $('.gamePlayer-outer').
-        //         outerHeight() - window.innerHeight) {
-        
-        //         alert('You reached the end of the DIV');
-		// 		}
-        //     })
-
-		// $(window).scroll(function(){
-	
-        //         var scroll = $(window).scrollTop();
-        //             if(scroll - 2700){ 
-		// 				alert("kfljfkff")
-						
-			
-        //             $('#myVideo').get(0).pause()
-		// 			$("#myVideo").prop("muted",false)   ; 
-        //             }
-        //         else{
-        //             $('#video2').get(0).play();
-
-        //         }
-		// 	})  
-        //     })
-
-  
-//     $('.banner_video_section').bind('scroll', function()
-//                               {
-// 								alert("----======---")
-//                                 if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight)
-//                                 {
-//                                   alert('bottom reached');
-//                                 }
-//                                 if($(this).scrollTop()  == 0 ){
-//                                 alert('Top');
-//                                 }
-                                
-//                               })
-//   });
-
-
-// $(window).scroll(function() {
-// 	var x = $(document).height()
-	
-// 	var s = $(window).height()
-
-// 	var d = $(".gamePlayer-outer").innerHeight()
-	
-// 	var f = $(window).scrollTop()
-	
-
-//   if ($(window).scrollTop() >= (($(document).height() - $(window).height()) - $('.gamePlayer-outer').innerHeight())) {
-//     alert('div reached');
-//   }
-// });
-// 	})
-
-
-
-
-
-
-
-
 
 var div_height = $(".WNDRLAND-WNDR").height()+ $(".slct-pvc-crypto").height()+$(".slect-outer").height()+$(".about-WNDR").height()+$(".banner_video_section").height();
 
                                 
                                 
-								$(window).scroll(function() {
+$(window).scroll(function() {
    if($(window).scrollTop() < div_height) {
-    //    alert($(window).scrollTop() + $(window).height());
 	$("#myVideo").get(0).pause();
 	$("#myVideo2").get(0).pause();
 	
@@ -721,27 +635,11 @@ var div_height = $(".WNDRLAND-WNDR").height()+ $(".slct-pvc-crypto").height()+$(
 					$(".playpause p").css("display", "block");
 					$(".gamePlayer-outer").css('height', '100%');
    }
-//    else{
-// 	if($("#myVideo").get(0).pause()){
-// 		$("#myVideo").get(0).pause();
-// 	}else{
-// 	$("#myVideo").get(0).play();
-// 	$("#myVideo2").get(0).pause();
-// 	}
-//    }
+
 
    var vid_dwn_pause = div_height + $(".gamePlayer").height(); 
-//    alert(vid_dwn_pause);
-//    if($(window).scrollTop() >= vid_dwn_pause) {
-//     //    alert($(window).scrollTop() + $(window).height());
-// 	$("#myVideo").get(0).pause();
-// 	$("#myVideo2").get(0).pause();
-// 	console.log('paused');
-//    }
 });
-                                
-                             
-							})
+})
 
 
 </script>
@@ -753,25 +651,47 @@ var div_height = $(".WNDRLAND-WNDR").height()+ $(".slct-pvc-crypto").height()+$(
 	
 	})
 
-	// $("#play_button").click( function(){
-	// 	$("#video21").get(0).play();
-	// })
-
 	
  </script>
- <script>
+ <!-- <script>
 	$(document).ready(function(){
 		window.onload=function(){
-     $(body).css("background", "yellow"); 
+     $("body").css("background", "yellow"); 
 
 	}
 })
 		
 ();
-	
+ </script> -->
 
 
- </script>
+<script>
+	$(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+				var get_video_section_height=$(".banner_mobile_video").height()-116
+                    if(scroll > get_video_section_height){ 
+						
+					$(".video-content_mobile").children("i").attr("class", "fa fa-volume-off ") ;  
+                    $('#video21').get(0).pause()
+					$("#video21").removeClass("fa fa-volume-off").addClass("fa fa-volume-up")
+					$("#video21").prop("muted",false);
+					
+					
+                    }
+                else{
+					$("#video21").prop("muted",true)
+					// alert('h');
+                    $('#video21').get(0).play();
+					//$(".video-content").children("i").attr("class", "fa fa-volume-off ") ; 
+					// $("#video2").removeClass("fa fa-volume-up").addClass("fa fa-volume-up")
+
+                }
+			})  
+            })
+
+</script>
+
 </body>
 
 </html>
