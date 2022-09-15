@@ -11,7 +11,9 @@
 	<link rel="stylesheet" href="{% static 'css/slick.css' %}">
 	<!--<link rel="stylesheet" href="{% static 'css/uikit.min.css' %}">-->
 	<link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+	
 
+	
 	<!-- bootstrap-css start -->
 	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,6 +24,8 @@
 
 	<!-- font awsome -->
 	<script src="https://use.fontawesome.com/b197abb434.js"></script>
+
+	<script src="https://kit.fontawesome.com/1086841b1d.js" crossorigin="anonymous"></script>
 
 	<!-- fav icon -->
 	<link rel="icon" type="image/x-icon" href="{% static 'image/fab-ic.png' %}">
@@ -326,29 +330,58 @@
 
 
 
-			$('.video').parent().find("#play_button").css("display", "block");
-			$('.video').parent().find(".playpause").css("display", "block");
+			$('#myVideo').parent().find("#play_button").css("display", "block");
+			$('#myVideo').parent().find(".playpause").css("display", "block");
+			$('#myVideo').parent().click(function () {
+                if ($(this).children("#myVideo").get(0).paused) {
+                   
+                    $(this).children("#myVideo").get(0).play();
+                    $(".gamePlayer-outer").css('height', '87%');
+                    $(this).find("#play_button").css("display", "none");
+                    //$("#myVideo2").get(0).play();
+                    $(this).find(".playpause").css("display", "none");
+                }
+                else {
+                    console.log('absolute');
+                    $(this).children("#myVideo").get(0).pause();
+                    //$("#myVideo2").get(0).play();
+				
+					//$("#myVideo").get(0).play();
+                    $(".gamePlayer-outer").css('height', '100%');
+                    $(this).find("#play_button").css("display", "block");
+                    $(this).find(".playpause").css("display", "block");
+                    $(this).find(".playpause p").css("display", "block");
 
-			$('.video').parent().click(function () {
-				if ($(this).children(".video").get(0).paused) {
-					$(this).children(".video").get(0).play();
-					$(".gamePlayer-outer").css('height', '87%');
-					$(this).find("#play_button").css("display", "none");
-					$("#myVideo2").get(0).play();
-					$(this).find(".playpause").css("display", "none");
-				}
-				else {
-					console.log('absolute');
-					$(this).children(".video").get(0).pause();
-					$("#myVideo2").get(0).pause();
-					$(".gamePlayer-outer").css('height', '100%');
-					$(this).find("#play_button").css("display", "block");
-					$(this).find(".playpause").css("display", "block");
-					$(this).find(".playpause p").css("display", "block");
+                }
+            });
 
-				}
-			});
 
+
+
+			$('#myVideo2').parent().find("#play_button").css("display", "block");
+			$('#myVideo2').parent().find(".playpause").css("display", "block");
+			$('#myVideo2').parent().click(function () {
+                if ($(this).children("#myVideo2").get(0).paused) {
+                   
+                    $(this).children("#myVideo2").get(0).play();
+                    $(".gamePlayer-outer").css('height', '87%');
+                    $(this).find("#play_button").css("display", "none");
+                    //$("#myVideo2").get(0).play();
+                    $(this).find(".playpause").css("display", "none");
+                }
+                else {
+                    console.log('absolute');
+                    $(this).children("#myVideo2").get(0).pause();
+                    //$("#myVideo2").get(0).play();
+				
+					//$("#myVideo").get(0).play();
+                    $(".gamePlayer-outer").css('height', '100%');
+                    $(this).find("#play_button").css("display", "block");
+                    $(this).find(".playpause").css("display", "block");
+                    $(this).find(".playpause p").css("display", "block");
+
+                }
+            });
 
 
 			/*-----End vision poster image----*/
@@ -691,6 +724,53 @@ $(window).scroll(function() {
             })
 
 </script>
+
+
+<script>
+	function openFullscreen() {  
+
+  var video = document.getElementById('myVideo');
+
+
+  video.webkitRequestFullscreen();
+
+ 
+  
+  $("#myVideo").attr('disablePictureInPicture', 'true');
+
+	}
+	openFullscreen();
+
+</script>
+  <script>
+	$(".fullscr").click(function() {
+    var video = $(".fullscr").get(0);
+	if (video.paused) {
+          video.play();
+        
+       } else {
+          video.pause();
+        
+       }
+    
+})
+	</script>
+
+<script>
+	$(".fullscr-mobile").click(function() {
+    var video = $(".fullscr-mobile").get(0);
+	if (video.paused) {
+          video.play();
+        
+       } else {
+          video.pause();
+        
+       }
+    
+})
+	</script>
+
+
 
 </body>
 

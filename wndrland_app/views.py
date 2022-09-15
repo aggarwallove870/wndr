@@ -80,3 +80,7 @@ def video_demo(request):
 def video_url(request):
     videoobj=desktopVideo.objects.last()
     return render(request,"base.html",{"videoobj":videoobj})
+
+
+def test(request):
+    return render(request,"fetch.html")
