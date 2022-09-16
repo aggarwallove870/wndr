@@ -52,757 +52,774 @@
 		Please switch to portrait mode for better experience
 	</div>
 	<div class="mobileportraitview">
-	<div class="banner-WNDR">
-		<div class="home_page_banner">
-			<img src="{% static 'image/banner_img.jpg' %}" class="banner-img-bg" alt="banner-img">
-			<img src="{% static 'image/banner_img-tabs.jpg' %}" class="banner-img-bg-tabs" alt="banner-img1">
-			<img src="{% static 'image/banner_img-mobile.jpg' %}" class="banner-img-bg-mobile" alt="banner-img2">
-		</div>
-
-		<div class="banner_video_section">
-			<video class="banner_desktop_video" id="video2" width="100%" height="100%" preload='none'
-				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
-				<source id="vid2_source"
-					src="{% if video_obj %}{{video_obj.desktop_top_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/PC_version_10mbps.mp4 {%endif%}"
-					type="video/mp4">
-				<!-- "{% static 'video/PC_version_10mbps_VP8.webm' %}" -->
-			</video>
-			<video class="banner_mobile_video" id="video21" width="100%" height="100%" preload='none'
-				poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
-				<source id="vid21_source"
-					src="{% if video_obj %}{{video_obj.mobile_top_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/Mobile_10mbps.mp4{%endif%}"
-					type="video/mp4">
-				<!-- "{% static 'video/Mobile_10mbps_VP8_003.webm' %}" -->
-			</video>
-			<div class="video-content">
-
-				<i class="fa fa-volume-off" id="audio-control" aria-hidden="true"></i>
-				<div class="circle" style="animation-delay: 0s"></div>
-				<div class="circle" style="animation-delay: 1s"></div>
-				<div class="circle" style="animation-delay: 2s"></div>
-				<div class="circle" style="animation-delay: 3s"></div>
-			</div>
-			<div class="video-content_mobile">
-
-				<i class="fa fa-volume-off" id="audio-mobile-control" aria-hidden="true"></i>
-				<div class="circle" style="animation-delay: 0s"></div>
-				<div class="circle" style="animation-delay: 1s"></div>
-				<div class="circle" style="animation-delay: 2s"></div>
-				<div class="circle" style="animation-delay: 3s"></div>
+		<div class="banner-WNDR">
+			<div class="home_page_banner">
+				<img src="{% static 'image/banner_img.jpg' %}" class="banner-img-bg" alt="banner-img">
+				<img src="{% static 'image/banner_img-tabs.jpg' %}" class="banner-img-bg-tabs" alt="banner-img1">
+				<img src="{% static 'image/banner_img-mobile.jpg' %}" class="banner-img-bg-mobile" alt="banner-img2">
 			</div>
 
-		</div>
-		<!-- header start here -->
-		<header class="header-tag-WNDR">
-			<div class="header_WNDR">
-				<div class="header-line header-line-shadow1">
-					<img src="{% static 'image/header-line-top.png' %}" class="header-line-pc" alt="header-linee">
-					<img src="{% static 'image/header-line-top-tabs.png' %}" class="header-line-tabs"
-						alt="header-linee1">
-					<img src="{% static 'image/header-line-top-mobile.png' %}" class="header-line-mobile"
-						alt="header-linee2">
-				</div>
-				<div class="container">
-					<nav class="navbar navbar-expand-lg navbar-light">
-						<a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'image/header-logo.png' %}"
-								alt="logo1"></a>
-						<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false"
-							aria-label="Toggle navigation">
-							<svg xmlns="http://www.w3.org/2000/svg" class="bi" fill="currentColor" viewBox="0 0 16 16">
-								<path fill-rule="evenodd"
-									d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
-								</path>
-							</svg>
+			<div class="banner_video_section">
+				<video class="banner_desktop_video" id="video2" width="100%" height="100%" preload='none'
+					poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
+					<source id="vid2_source"
+						src="{% if video_obj %}{{video_obj.desktop_top_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/PC_version_10mbps.mp4 {%endif%}"
+						type="video/mp4">
+					<!-- "{% static 'video/PC_version_10mbps_VP8.webm' %}" -->
+				</video>
+				<video class="banner_mobile_video" id="video21" width="100%" height="100%" preload='none'
+					poster="{% static 'image/banner_img.jpg' %}" autoplay muted loop playsinline onclick="return false">
+					<source id="vid21_source"
+						src="{% if video_obj %}{{video_obj.mobile_top_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/Mobile_10mbps.mp4{%endif%}"
+						type="video/mp4">
+					<!-- "{% static 'video/Mobile_10mbps_VP8_003.webm' %}" -->
+				</video>
+				<div class="video-content">
 
-						</button>
-
-						<div class="navbar-collapse collapse" id="bdNavbar" style="">
-							<ul class="navbar-nav m-auto mt-lg-0">
-								<li class="nav-item active">
-									<a class="nav-link" href="{% url 'home' %}">HOME</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="{% url 'about' %}">ABOUT</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="{% url 'vision' %}">OUR VISION</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="{% url 'teams' %}">TEAM</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
-								</li>
-
-								<div class="btn-header-subscribe">
-									<a href="#" class="" data-bs-toggle="modal"
-										data-bs-target="#exampleModal">SUBSCRIBE</a>
-								</div>
-							</ul>
-						</div>
-					</nav>
+					<i class="fa fa-volume-off" id="audio-control" aria-hidden="true"></i>
+					<div class="circle" style="animation-delay: 0s"></div>
+					<div class="circle" style="animation-delay: 1s"></div>
+					<div class="circle" style="animation-delay: 2s"></div>
+					<div class="circle" style="animation-delay: 3s"></div>
 				</div>
-				<div class="header-line header-line-shadow">
-					<img src="{% static 'image/header-line-down.png' %}" class="header-line-down-pc"
-						alt="header-line-center">
-					<img src="{% static 'image/header-line-down-tabs.png' %}" class="header-line-down-tabs"
-						alt="header-line-center1">
-					<img src="{% static 'image/header-line-down-mobile.png' %}" class="header-line-down-mobile"
-						alt="header-line-center2">
+				<div class="video-content_mobile">
+
+					<i class="fa fa-volume-off" id="audio-mobile-control" aria-hidden="true"></i>
+					<div class="circle" style="animation-delay: 0s"></div>
+					<div class="circle" style="animation-delay: 1s"></div>
+					<div class="circle" style="animation-delay: 2s"></div>
+					<div class="circle" style="animation-delay: 3s"></div>
 				</div>
+
 			</div>
-		</header>
+			<!-- header start here -->
+			<header class="header-tag-WNDR">
+				<div class="header_WNDR">
+					<div class="header-line header-line-shadow1">
+						<img src="{% static 'image/header-line-top.png' %}" class="header-line-pc" alt="header-linee">
+						<img src="{% static 'image/header-line-top-tabs.png' %}" class="header-line-tabs"
+							alt="header-linee1">
+						<img src="{% static 'image/header-line-top-mobile.png' %}" class="header-line-mobile"
+							alt="header-linee2">
+					</div>
+					<div class="container">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<a class="navbar-brand" href="{% url 'home' %}"><img
+									src="{% static 'image/header-logo.png' %}" alt="logo1"></a>
+							<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false"
+								aria-label="Toggle navigation">
+								<svg xmlns="http://www.w3.org/2000/svg" class="bi" fill="currentColor"
+									viewBox="0 0 16 16">
+									<path fill-rule="evenodd"
+										d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+									</path>
+								</svg>
 
-		{% block content %}
-		{% endblock %}
-		<!-- footer start here -->
-		<footer>
-			<div class="footer_WNDR">
-				<div class="footer-overlap">
-					<img src="{% static 'image/footer-line-top.png' %}" class="top-line" alt="footer1">
-					<img src="{% static 'image/footer-line-top-mobile.png' %}" class="top-line-m0bile" alt="footer2">
-					<img src="{% static 'image/footer-line-down.png' %}" class="bottom-line" alt="footer3">
-					<img src="{% static 'image/footer-line-down-mobile.png' %}" class="bottom-line-mobile"
-						alt="footer4">
-				</div>
-				<div class="footer-shapes">
-					<img src="{% static 'image/footer-img.png' %}" class="footer-left-ic" alt="footer5">
-					<img src="{% static 'image/footer-img2.png' %}" class="footer-right-ic" alt="footer6">
-				</div>
-				<div class="container">
-					<div class="footer-outer">
-						<div class="row footer-align">
-							<div class="col-md-3 col-lg-4 mbl-footer-img">
-								<div class="footer-logo">
-									<img src="{% static 'image/header-logo.png' %}" alt="footer7">
-								</div>
+							</button>
+
+							<div class="navbar-collapse collapse" id="bdNavbar" style="">
+								<ul class="navbar-nav m-auto mt-lg-0">
+									<li class="nav-item active">
+										<a class="nav-link" href="{% url 'home' %}">HOME</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="{% url 'about' %}">ABOUT</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="{% url 'vision' %}">OUR VISION</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="{% url 'teams' %}">TEAM</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+									</li>
+
+									<div class="btn-header-subscribe">
+										<a href="#" class="" data-bs-toggle="modal"
+											data-bs-target="#exampleModal">SUBSCRIBE</a>
+									</div>
+								</ul>
 							</div>
-							<div class="col-md-5 col-lg-5 copyright-footer">
-								<div class="middle-sec-footer uk-scrollspy-inview"
-									uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
-									<p>WNDR, ALL RIGHTS RESERVED @ 2022</p>
+						</nav>
+					</div>
+					<div class="header-line header-line-shadow">
+						<img src="{% static 'image/header-line-down.png' %}" class="header-line-down-pc"
+							alt="header-line-center">
+						<img src="{% static 'image/header-line-down-tabs.png' %}" class="header-line-down-tabs"
+							alt="header-line-center1">
+						<img src="{% static 'image/header-line-down-mobile.png' %}" class="header-line-down-mobile"
+							alt="header-line-center2">
+					</div>
+				</div>
+			</header>
+
+			{% block content %}
+			{% endblock %}
+			<!-- footer start here -->
+			<footer>
+				<div class="footer_WNDR">
+					<div class="footer-overlap">
+						<img src="{% static 'image/footer-line-top.png' %}" class="top-line" alt="footer1">
+						<img src="{% static 'image/footer-line-top-mobile.png' %}" class="top-line-m0bile"
+							alt="footer2">
+						<img src="{% static 'image/footer-line-down.png' %}" class="bottom-line" alt="footer3">
+						<img src="{% static 'image/footer-line-down-mobile.png' %}" class="bottom-line-mobile"
+							alt="footer4">
+					</div>
+					<div class="footer-shapes">
+						<img src="{% static 'image/footer-img.png' %}" class="footer-left-ic" alt="footer5">
+						<img src="{% static 'image/footer-img2.png' %}" class="footer-right-ic" alt="footer6">
+					</div>
+					<div class="container">
+						<div class="footer-outer">
+							<div class="row footer-align">
+								<div class="col-md-3 col-lg-4 mbl-footer-img">
+									<div class="footer-logo">
+										<img src="{% static 'image/header-logo.png' %}" alt="footer7">
+									</div>
 								</div>
-							</div>
-							<div class="col-md-4 col-lg-3 mbl-footer-social">
-								<div class="right-sec-footer-social">
+								<div class="col-md-5 col-lg-5 copyright-footer">
+									<div class="middle-sec-footer uk-scrollspy-inview"
+										uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
+										<p>WNDR, ALL RIGHTS RESERVED @ 2022</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-3 mbl-footer-social">
+									<div class="right-sec-footer-social">
 
 
-									<ul>
+										<ul>
 
-										<li class="uk-scrollspy-inview"
-											uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">
-											<a href="#">
-												<i class="fa fa-facebook" aria-hidden="true"></i></a>
-										</li>
+											<li class="uk-scrollspy-inview"
+												uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">
+												<a href="#">
+													<i class="fa fa-facebook" aria-hidden="true"></i></a>
+											</li>
 
-										<li class="uk-scrollspy-inview"
-											uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">
-											<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-										</li>
+											<li class="uk-scrollspy-inview"
+												uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">
+												<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+											</li>
 
-										<li class="uk-scrollspy-inview"
-											uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
-											<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-										</li>
+											<li class="uk-scrollspy-inview"
+												uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
+												<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+											</li>
 
-										<li class="uk-scrollspy-inview"
-											uk-scrollspy="cls: uk-animation-slide-top; delay: 500; repeat: true">
-											<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-										</li>
+											<li class="uk-scrollspy-inview"
+												uk-scrollspy="cls: uk-animation-slide-top; delay: 500; repeat: true">
+												<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+											</li>
 
-										<li class="uk-scrollspy-inview"
-											uk-scrollspy="cls: uk-animation-slide-top; delay: 600; repeat: true">
-											<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-										</li>
+											<li class="uk-scrollspy-inview"
+												uk-scrollspy="cls: uk-animation-slide-top; delay: 600; repeat: true">
+												<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+											</li>
 
-									</ul>
+										</ul>
 
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
-		<!-- footer close here-->
+			</footer>
+			<!-- footer close here-->
 
 
-		<!-- jquery -->
-		<script src="{% static 'js/jquery.js' %}"></script>
-		<!-- jquery -->
+			<!-- jquery -->
+			<script src="{% static 'js/jquery.js' %}"></script>
+			<!-- jquery -->
 
-		<!-- slick js -->
-		<script src="{% static 'js/slick.js' %}"></script>
-		<script src="{% static 'js/slick.min.js' %}"></script>
-		<script>
-
-
-
-			// 	document.getElementById('myVideo12').parentElement.addEventListener("click", play_pouse_set_image);
+			<!-- slick js -->
+			<script src="{% static 'js/slick.js' %}"></script>
+			<script src="{% static 'js/slick.min.js' %}"></script>
+			<script>
 
 
-			// function play_pouse_set_image(){
 
-			// 	let video = document.querySelector("video");
-			// 		var vision_poster_bnr =  document.getElementsByClassName('vision_poster_bnr')[0];
-			// 	if (video.paused)
-			// 	video.play(); 
-			// 	video.play(); 
-
-			// 	else 
-			// 	video.pause();
-			// 	video.pause();
+				// 	document.getElementById('myVideo12').parentElement.addEventListener("click", play_pouse_set_image);
 
 
-			// 	if (video.paused)
+				// function play_pouse_set_image(){
 
-			// 		vision_poster_bnr.style.display = "none";
-			// 	else 
+				// 	let video = document.querySelector("video");
+				// 		var vision_poster_bnr =  document.getElementsByClassName('vision_poster_bnr')[0];
+				// 	if (video.paused)
+				// 	video.play(); 
+				// 	video.play(); 
 
-			// 		vision_poster_bnr.style.display = "block";
-
-			// }
-
-
-			// setTimeout(() => {
-			// 	play_pouse_set_image();
-			// }, 100);
+				// 	else 
+				// 	video.pause();
+				// 	video.pause();
 
 
+				// 	if (video.paused)
+
+				// 		vision_poster_bnr.style.display = "none";
+				// 	else 
+
+				// 		vision_poster_bnr.style.display = "block";
+
+				// }
+
+
+				// setTimeout(() => {
+				// 	play_pouse_set_image();
+				// }, 100);
 
 
 
 
 
 
-			$('.gallery-slider-outer').slick({
-				dots: true,
-				infinite: false,
-				speed: 300,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				responsive: [
-					{
-						breakpoint: 1023,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1,
-							infinite: true,
-							dots: true
+
+
+				$('.gallery-slider-outer').slick({
+					dots: true,
+					infinite: false,
+					speed: 300,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					responsive: [
+						{
+							breakpoint: 1023,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1,
+								infinite: true,
+								dots: true
+							}
+						},
+						{
+							breakpoint: 600,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						},
+						{
+							breakpoint: 480,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
 						}
-					},
-					{
-						breakpoint: 600,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-					}
-					// You can unslick at a given breakpoint now by adding:
-					// settings: "unslick"
-					// instead of a settings object
-				]
-			});
-		</script>
+						// You can unslick at a given breakpoint now by adding:
+						// settings: "unslick"
+						// instead of a settings object
+					]
+				});
+			</script>
 
-		<!-- bootstrap js -->
+			<!-- bootstrap js -->
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"></script>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+				integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+				crossorigin="anonymous"></script>
 
-		<!-- bootstrap js -->
-		<script type="text/javascript"></script>
-		<!--<script src="{% static 'js/uikit.min.js' %}"></script>--->
-		<script>
+			<!-- bootstrap js -->
+			<script type="text/javascript"></script>
+			<!--<script src="{% static 'js/uikit.min.js' %}"></script>--->
+			<script>
 
-			// $(document).ready(function () {
-			// 	var vid = document.getElementById("myVideo");
-			// 	vid.autoplay = true;
-			// 	vid.load();
+				// $(document).ready(function () {
+				// 	var vid = document.getElementById("myVideo");
+				// 	vid.autoplay = true;
+				// 	vid.load();
 
-			// 	var vid = document.getElementById("video2");
-			// 	vid.autoplay = true;
-			// 	// if ($("#video2").prop('muted')) {
-			// 	// 	$("#video2").prop('muted', false);
-			// 	// }
+				// 	var vid = document.getElementById("video2");
+				// 	vid.autoplay = true;
+				// 	// if ($("#video2").prop('muted')) {
+				// 	// 	$("#video2").prop('muted', false);
+				// 	// }
 
-			// 	vid.load();
+				// 	vid.load();
 
 
 
 
-			// });
-
-
-
-
-			$('#myVideo').parent().find("#play_button").css("display", "block");
-			$('#myVideo').parent().find(".playpause").css("display", "block");
-			$('#myVideo').parent().click(function () {
-				if ($(this).children("#myVideo").get(0).paused) {
-
-					$(this).children("#myVideo").get(0).play();
-					$(".gamePlayer-outer").css('height', '87%');
-					$(this).find("#play_button").css("display", "none");
-					//$("#myVideo2").get(0).play();
-					$(this).find(".playpause").css("display", "none");
-				}
-				else {
-					console.log('absolute');
-					$(this).children("#myVideo").get(0).pause();
-					//$("#myVideo2").get(0).play();
-
-					//$("#myVideo").get(0).play();
-					$(".gamePlayer-outer").css('height', '100%');
-					$(this).find("#play_button").css("display", "block");
-					$(this).find(".playpause").css("display", "block");
-					$(this).find(".playpause p").css("display", "block");
-
-				}
-			});
-
-
-
-
-			$('#myVideo2').parent().find("#play_button").css("display", "block");
-			$('#myVideo2').parent().find(".playpause").css("display", "block");
-			$('#myVideo2').parent().click(function () {
-				if ($(this).children("#myVideo2").get(0).paused) {
-
-					$(this).children("#myVideo2").get(0).play();
-					$(".gamePlayer-outer").css('height', '87%');
-					$(this).find("#play_button").css("display", "none");
-					//$("#myVideo2").get(0).play();
-					$(this).find(".playpause").css("display", "none");
-				}
-				else {
-					console.log('absolute');
-					$(this).children("#myVideo2").get(0).pause();
-					//$("#myVideo2").get(0).play();
-
-					//$("#myVideo").get(0).play();
-					$(".gamePlayer-outer").css('height', '100%');
-					$(this).find("#play_button").css("display", "block");
-					$(this).find(".playpause").css("display", "block");
-					$(this).find(".playpause p").css("display", "block");
-
-				}
-			});
-
-
-			/*-----End vision poster image----*/
-
-			$(document).ready(function () {
-
-				// $('.playpause').css("display","none");
-				var x = $('#myVideo');
-				x.controls = true;
-				x.load();
-
-				//   x.addEventListener('pause', () => {
-				// 		x.play();
 				// });
 
-			});
 
 
 
+				$('#myVideo').parent().find("#play_button").css("display", "block");
+				$('#myVideo').parent().find(".playpause").css("display", "block");
+				$('#myVideo').parent().click(function () {
+					if ($(this).children("#myVideo").get(0).paused) {
 
-
-
-			$(function () {
-				$('a[href*=#]:not([href=#])').click(function () {
-					if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-						var target = $(this.hash);
-						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-						if (target.length) {
-							$('html,body').animate({
-								scrollTop: target.offset().top
-							}, 1000);
-							return false;
-						}
+						$(this).children("#myVideo").get(0).play();
+						$(".gamePlayer-outer").css('height', '87%');
+						$(this).find("#play_button").css("display", "none");
+						//$("#myVideo2").get(0).play();
+						$(this).find(".playpause").css("display", "none");
 					}
-				});
-			});
-
-			$("#load-image-of-modal-subscibe1").hide()
-			function myFunction1() {
-				email = $('#myInput1').val();
-				console.log("Arrivals-----0")
-				console.log(email)
-				$("#btn-d1").attr("disabled", true);
-				if (email != '') {
-					$("#load-image-of-modal-subscibe1").show()
-					console.log("abc")
-					$.ajax({
-						type: "POST",
-						data: {
-							"email": email,
-							'csrfmiddlewaretoken': '{{csrf_token}}'
-						},
-
-						success: function (data) {
-							$("#load-image-of-modal-subscibe1").hide()
-							document.getElementById("sucess_div1").hidden = false;
-							document.getElementById("sucess1").innerHTML = "Thank you for subscribing"
-							$('#myInput1').val('');
-							// $("#sucess_div1").delay(3000).fadeOut();
-							$("#sucess_div1").show().delay(3000).fadeOut();
-							$("#btn-d1").attr("disabled", false);
-
-						},
-					});
-				}
-			}
-			$("#load-image").hide()
-			function myFunction2() {
-
-				email = $('#myInput2').val();
-				console.log("Arrivals-----1")
-				console.log(email)
-				$("#btn-d2").attr("disabled", true);
-
-				if (email != '') {
-					console.log("abc")
-					$("#load-image").show()
-					$.ajax({
-						type: "POST",
-
-						data: {
-							"email": email,
-							'csrfmiddlewaretoken': '{{csrf_token}}'
-						},
-
-
-						success: function (data) {
-							$("#load-image").hide()
-							document.getElementById("sucess_div2").hidden = false;
-							document.getElementById("sucess2").innerHTML = "Thank you for subscribing"
-							$('#myInput2').val('');
-							// $("#sucess_div2").delay(3000).fadeOut();
-							$("#sucess_div2").show().delay(3000).fadeOut();
-							$("#btn-d2").attr("disabled", false);
-
-
-						},
-					});
-				}
-			}
-
-
-
-			$("#load-image-of-arrival2").hide()
-			function myFunction3() {
-				email = $('#myInput3').val();
-				console.log("Arrivals-----2")
-				console.log(email)
-				$("#btn-d3").attr("disabled", true);
-				if (email != '') {
-					$("#load-image-of-arrival2").show()
-					console.log("abc")
-					$.ajax({
-						type: "POST",
-						data: {
-							"email": email,
-							'csrfmiddlewaretoken': '{{csrf_token}}'
-						},
-
-						success: function (data) {
-							$("#load-image-of-arrival2").hide()
-							document.getElementById("sucess_div3").hidden = false;
-							document.getElementById("sucess3").innerHTML = "Thank you for subscribing"
-							$('#myInput3').val('');
-							// $("#sucess_div3").delay(3000).fadeOut();
-							$("#sucess_div3").show().delay(3000).fadeOut();
-							$("#btn-d3").attr("disabled", false);
-
-						},
-					});
-				}
-			}
-
-
-			//Get the button
-			var mybutton = document.getElementById("myBtntop");
-
-			// When the user scrolls down 20px from the top of the document, show the button
-			window.onscroll = function () { scrollFunction() };
-
-			function scrollFunction() {
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					mybutton.style.display = "block";
-				} else {
-					mybutton.style.display = "none";
-				}
-			}
-
-			// When the user clicks on the button, scroll to the top of the document
-			function topFunction() {
-				document.body.scrollTop = 0;
-				document.documentElement.scrollTop = 0;
-			}
-
-		</script>
-
-
-
-		<script>
-			$(document).ready(function () {
-				$('#audio-control').click(function () {
-					if ($("#video2").prop('muted')) {
-						$("#video2").prop('muted', false);
-						// $(this).text('off');
-						$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up");
-
-						// or toggle class, style it with a volume icon sprite, change background-position
-					} else {
-						$("#video2").prop('muted', true);
-						// $(this).children("i").attr("class", "fa fa-volume-up ") ;
-						// alert('mute');
-						$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off");
-					}
-				});
-
-
-
-				// -------------------
-				$('#audio-mobile-control').click(function () {
-					if ($("#video21").prop('muted')) {
-						$("#video21").prop('muted', false);
-						// 			// $(this).text('off');
-						$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up");
-
-						// 			// or toggle class, style it with a volume icon sprite, change background-position
-					} else {
-						$("#video21").prop('muted', true);
-						// 			// $(this).children("i").attr("class", "fa fa-volume-up ") ;
-						$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off");
-					}
-				});
-
-
-			})
-
-
-
-
-		</script>
-
-		<script>
-			// home video mute volume and allow volume code 
-
-			// it is for destop video
-
-			$(document).ready(function () {
-				$('#audio-home-control').click(function () {
-					if ($("#myVideo").prop('muted')) {
-						$("#myVideo").prop('muted', false);
-						// $(this).text('off');
-
-						$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up");
-
-
-						// or toggle class, style it with a volume icon sprite, change background-position
-					} else {
-						$("#myVideo").prop('muted', true);
-						$(this).children("i").attr("class", "fa fa-volume-up ");
-						$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off");
-					}
-				});
-
-
-				// it is for mobile 
-
-				$('#audio-home-control').click(function () {
-					if ($("#myVideo2").prop('muted')) {
-						$("#myVideo2").prop('muted', false);
-						// $(this).text('off');
-
-						$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up");
-
-
-						// or toggle class, style it with a volume icon sprite, change background-position
-					} else {
-						$("#myVideo2").prop('muted', true);
-						$(this).children("i").attr("class", "fa fa-volume-up ");
-
-					}
-				});
-			})
-
-
-			$(window).scroll(function () {
-				var scroll = $(window).scrollTop();
-				var get_video_section_height = $(".banner_desktop_video").height() - 116
-				if (scroll > get_video_section_height) {
-
-					$(".video-content").children("i").attr("class", "fa fa-volume-off ");
-					$('#video2').get(0).pause()
-					$("#video2").prop("muted", true);
-
-
-
-
-				}
-				else {
-					// $("#video2").prop("muted",false)
-					$('#video2').get(0).play();
-					//$(".video-content").children("i").attr("class", "fa fa-volume-up ") ; 
-					// $("#video2").removeClass("fa fa-volume-up").addClass("fa fa-volume-up")
-
-				}
-			})
-
-
-
-		</script>
-
-		<script>
-			$(document).ready(function () {
-
-				var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
-
-
-
-				$(window).scroll(function () {
-					if ($(window).scrollTop() < div_height) {
-						$("#myVideo").get(0).pause();
-						$("#myVideo2").get(0).pause();
-
-						$("#play_button").css("display", "block");
-						$(".playpause").css("display", "block");
-						$(".playpause p").css("display", "block");
+					else {
+						console.log('absolute');
+						$(this).children("#myVideo").get(0).pause();
+						//$("#myVideo2").get(0).play();
+
+						//$("#myVideo").get(0).play();
 						$(".gamePlayer-outer").css('height', '100%');
+						$(this).find("#play_button").css("display", "block");
+						$(this).find(".playpause").css("display", "block");
+						$(this).find(".playpause p").css("display", "block");
+
 					}
-
-
-					var vid_dwn_pause = div_height + $(".gamePlayer").height();
 				});
-			})
 
 
-		</script>
-		<script>
-
-			$(document).ready(function () {
-				$("#myVideo")[0].autoplay = false;
 
 
-			})
+				$('#myVideo2').parent().find("#play_button").css("display", "block");
+				$('#myVideo2').parent().find(".playpause").css("display", "block");
+				$('#myVideo2').parent().click(function () {
+					function openFullscreen() {
+
+						var video = document.getElementById('myVideo');
 
 
-		</script>
+						video.webkitRequestFullscreen();
 
 
-		<script>
-			$(document).ready(function () {
+
+						$("#myVideo").attr('disablePictureInPicture', 'true');
+
+					}
+					openFullscreen();
+
+					if ($(this).children("#myVideo2").get(0).paused) {
+
+						$(this).children("#myVideo2").get(0).play();
+						$(".gamePlayer-outer").css('height', '87%');
+						$(this).find("#play_button").css("display", "none");
+						//$("#myVideo2").get(0).play();
+						$(this).find(".playpause").css("display", "none");
+					}
+					else {
+						console.log('absolute');
+						$(this).children("#myVideo2").get(0).pause();
+						//$("#myVideo2").get(0).play();
+
+						//$("#myVideo").get(0).play();
+						$(".gamePlayer-outer").css('height', '100%');
+						$(this).find("#play_button").css("display", "block");
+						$(this).find(".playpause").css("display", "block");
+						$(this).find(".playpause p").css("display", "block");
+
+					}
+				});
+
+
+				/*-----End vision poster image----*/
+
+				$(document).ready(function () {
+
+					// $('.playpause').css("display","none");
+					var x = $('#myVideo');
+					x.controls = true;
+					x.load();
+
+					//   x.addEventListener('pause', () => {
+					// 		x.play();
+					// });
+
+				});
+
+
+
+
+
+
+				$(function () {
+					$('a[href*=#]:not([href=#])').click(function () {
+						if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+							if (target.length) {
+								$('html,body').animate({
+									scrollTop: target.offset().top
+								}, 1000);
+								return false;
+							}
+						}
+					});
+				});
+
+				$("#load-image-of-modal-subscibe1").hide()
+				function myFunction1() {
+					email = $('#myInput1').val();
+					console.log("Arrivals-----0")
+					console.log(email)
+					$("#btn-d1").attr("disabled", true);
+					if (email != '') {
+						$("#load-image-of-modal-subscibe1").show()
+						console.log("abc")
+						$.ajax({
+							type: "POST",
+							data: {
+								"email": email,
+								'csrfmiddlewaretoken': '{{csrf_token}}'
+							},
+
+							success: function (data) {
+								$("#load-image-of-modal-subscibe1").hide()
+								document.getElementById("sucess_div1").hidden = false;
+								document.getElementById("sucess1").innerHTML = "Thank you for subscribing"
+								$('#myInput1').val('');
+								// $("#sucess_div1").delay(3000).fadeOut();
+								$("#sucess_div1").show().delay(3000).fadeOut();
+								$("#btn-d1").attr("disabled", false);
+
+							},
+						});
+					}
+				}
+				$("#load-image").hide()
+				function myFunction2() {
+
+					email = $('#myInput2').val();
+					console.log("Arrivals-----1")
+					console.log(email)
+					$("#btn-d2").attr("disabled", true);
+
+					if (email != '') {
+						console.log("abc")
+						$("#load-image").show()
+						$.ajax({
+							type: "POST",
+
+							data: {
+								"email": email,
+								'csrfmiddlewaretoken': '{{csrf_token}}'
+							},
+
+
+							success: function (data) {
+								$("#load-image").hide()
+								document.getElementById("sucess_div2").hidden = false;
+								document.getElementById("sucess2").innerHTML = "Thank you for subscribing"
+								$('#myInput2').val('');
+								// $("#sucess_div2").delay(3000).fadeOut();
+								$("#sucess_div2").show().delay(3000).fadeOut();
+								$("#btn-d2").attr("disabled", false);
+
+
+							},
+						});
+					}
+				}
+
+
+
+				$("#load-image-of-arrival2").hide()
+				function myFunction3() {
+					email = $('#myInput3').val();
+					console.log("Arrivals-----2")
+					console.log(email)
+					$("#btn-d3").attr("disabled", true);
+					if (email != '') {
+						$("#load-image-of-arrival2").show()
+						console.log("abc")
+						$.ajax({
+							type: "POST",
+							data: {
+								"email": email,
+								'csrfmiddlewaretoken': '{{csrf_token}}'
+							},
+
+							success: function (data) {
+								$("#load-image-of-arrival2").hide()
+								document.getElementById("sucess_div3").hidden = false;
+								document.getElementById("sucess3").innerHTML = "Thank you for subscribing"
+								$('#myInput3').val('');
+								// $("#sucess_div3").delay(3000).fadeOut();
+								$("#sucess_div3").show().delay(3000).fadeOut();
+								$("#btn-d3").attr("disabled", false);
+
+							},
+						});
+					}
+				}
+
+
+				//Get the button
+				var mybutton = document.getElementById("myBtntop");
+
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function () { scrollFunction() };
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						mybutton.style.display = "block";
+					} else {
+						mybutton.style.display = "none";
+					}
+				}
+
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				}
+
+			</script>
+
+
+
+			<script>
+				$(document).ready(function () {
+					$('#audio-control').click(function () {
+						if ($("#video2").prop('muted')) {
+							$("#video2").prop('muted', false);
+							// $(this).text('off');
+							$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up");
+
+							// or toggle class, style it with a volume icon sprite, change background-position
+						} else {
+							$("#video2").prop('muted', true);
+							// $(this).children("i").attr("class", "fa fa-volume-up ") ;
+							// alert('mute');
+							$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off");
+						}
+					});
+
+
+
+					// -------------------
+					$('#audio-mobile-control').click(function () {
+						if ($("#video21").prop('muted')) {
+							$("#video21").prop('muted', false);
+							// 			// $(this).text('off');
+							$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up");
+
+							// 			// or toggle class, style it with a volume icon sprite, change background-position
+						} else {
+							$("#video21").prop('muted', true);
+							// 			// $(this).children("i").attr("class", "fa fa-volume-up ") ;
+							$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off");
+						}
+					});
+
+
+				})
+
+
+
+
+			</script>
+
+			<script>
+				// home video mute volume and allow volume code 
+
+				// it is for destop video
+
+				$(document).ready(function () {
+					$('#audio-home-control').click(function () {
+						if ($("#myVideo").prop('muted')) {
+							$("#myVideo").prop('muted', false);
+							// $(this).text('off');
+
+							$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up");
+
+
+							// or toggle class, style it with a volume icon sprite, change background-position
+						} else {
+							$("#myVideo").prop('muted', true);
+							$(this).children("i").attr("class", "fa fa-volume-up ");
+							$(this).removeClass("fa fa-volume-up ").addClass("fa fa-volume-off");
+						}
+					});
+
+
+					// it is for mobile 
+
+					$('#audio-home-control').click(function () {
+						if ($("#myVideo2").prop('muted')) {
+							$("#myVideo2").prop('muted', false);
+							// $(this).text('off');
+
+							$(this).removeClass("fa fa-volume-off ").addClass("fa fa-volume-up");
+
+
+							// or toggle class, style it with a volume icon sprite, change background-position
+						} else {
+							$("#myVideo2").prop('muted', true);
+							$(this).children("i").attr("class", "fa fa-volume-up ");
+
+						}
+					});
+				})
+
+
 				$(window).scroll(function () {
 					var scroll = $(window).scrollTop();
-					var get_video_section_height = $(".banner_mobile_video").height() - 116
+					var get_video_section_height = $(".banner_desktop_video").height() - 116
 					if (scroll > get_video_section_height) {
 
-						$(".video-content_mobile").children("i").attr("class", "fa fa-volume-off ");
-						$('#video21').get(0).pause()
-						$("#video21").removeClass("fa fa-volume-off").addClass("fa fa-volume-up")
-						$("#video21").prop("muted", false);
+						$(".video-content").children("i").attr("class", "fa fa-volume-off ");
+						$('#video2').get(0).pause()
+						$("#video2").prop("muted", true);
+
+
 
 
 					}
 					else {
-						$("#video21").prop("muted", true)
-						// alert('h');
-						$('#video21').get(0).play();
-						//$(".video-content").children("i").attr("class", "fa fa-volume-off ") ; 
+						// $("#video2").prop("muted",false)
+						$('#video2').get(0).play();
+						//$(".video-content").children("i").attr("class", "fa fa-volume-up ") ; 
 						// $("#video2").removeClass("fa fa-volume-up").addClass("fa fa-volume-up")
 
 					}
 				})
-			})
-
-		</script>
-
-
-		<script>
-			function openFullscreen() {
-
-				var video = document.getElementById('myVideo');
-
-
-				video.webkitRequestFullscreen();
 
 
 
-				$("#myVideo").attr('disablePictureInPicture', 'true');
+			</script>
 
-			}
-			openFullscreen();
+			<script>
+				$(document).ready(function () {
 
-		</script>
-		<script>
-			$(".fullscr").click(function () {
-				var video = $(".fullscr").get(0);
-				if (video.paused) {
-					video.play();
+					var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
 
-				} else {
-					video.pause();
+
+
+					$(window).scroll(function () {
+						if ($(window).scrollTop() < div_height) {
+							$("#myVideo").get(0).pause();
+							$("#myVideo2").get(0).pause();
+
+							$("#play_button").css("display", "block");
+							$(".playpause").css("display", "block");
+							$(".playpause p").css("display", "block");
+							$(".gamePlayer-outer").css('height', '100%');
+						}
+
+
+						var vid_dwn_pause = div_height + $(".gamePlayer").height();
+					});
+				})
+
+
+			</script>
+			<script>
+
+				$(document).ready(function () {
+					$("#myVideo")[0].autoplay = false;
+
+
+				})
+
+
+			</script>
+
+
+			<script>
+				$(document).ready(function () {
+					$(window).scroll(function () {
+						var scroll = $(window).scrollTop();
+						var get_video_section_height = $(".banner_mobile_video").height() - 116
+						if (scroll > get_video_section_height) {
+
+							$(".video-content_mobile").children("i").attr("class", "fa fa-volume-off ");
+							$('#video21').get(0).pause()
+							$("#video21").removeClass("fa fa-volume-off").addClass("fa fa-volume-up")
+							$("#video21").prop("muted", false);
+
+
+						}
+						else {
+							$("#video21").prop("muted", true)
+							// alert('h');
+							$('#video21').get(0).play();
+							//$(".video-content").children("i").attr("class", "fa fa-volume-off ") ; 
+							// $("#video2").removeClass("fa fa-volume-up").addClass("fa fa-volume-up")
+
+						}
+					})
+				})
+
+			</script>
+
+
+			<script>
+				function openFullscreen() {
+
+					var video = document.getElementById('myVideo');
+
+
+					video.webkitRequestFullscreen();
+
+
+
+					$("#myVideo").attr('disablePictureInPicture', 'true');
 
 				}
+				openFullscreen();
 
-			})
-		</script>
+			</script>
+			<script>
+				$(".fullscr").click(function () {
+					var video = $(".fullscr").get(0);
+					if (video.paused) {
+						video.play();
 
-		<script>
-			$(".fullscr-mobile").click(function () {
-				var video = $(".fullscr-mobile").get(0);
-				if (video.paused) {
-					video.play();
+					} else {
+						video.pause();
 
-				} else {
-					video.pause();
+					}
 
-				}
+				})
+			</script>
 
-			})
-		</script>
+			<script>
+				$(".fullscr-mobile").click(function () {
+					var video = $(".fullscr-mobile").get(0);
+					if (video.paused) {
+						video.play();
 
+					} else {
+						video.pause();
 
-		<script>
-			$(document).ready(function () {
-				if ($(window).width() < 767) {
-					var video = document.getElementById('video2');
-					var source = document.getElementById('vid2_source');
-					source.setAttribute('src', '');
-					// screen.lockOrientation("landscape");
-				}
-				if ($(window).width() > 768) {
-					var video = document.getElementById("video21");
-					var source = document.getElementById('vid21_source');
-					source.setAttribute('src', '');
-				}
-			})
+					}
 
-		</script>
-
-		<script>
+				})
+			</script>
 
 
-		</script>
+			<script>
+				$(document).ready(function () {
+					if ($(window).width() < 767) {
+						var video = document.getElementById('video2');
+						var source = document.getElementById('vid2_source');
+						source.setAttribute('src', '');
+						// screen.lockOrientation("landscape");
+					}
+					if ($(window).width() > 768) {
+						var video = document.getElementById("video21");
+						var source = document.getElementById('vid21_source');
+						source.setAttribute('src', '');
+					}
+				})
 
+			</script>
+
+			<script>
+
+
+
+			</script>
+
+		</div>
 	</div>
-</div>
 
 
 </body>

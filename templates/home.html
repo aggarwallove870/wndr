@@ -283,12 +283,12 @@
 
 	<div class="gamePlayer">			
 				<video id="myVideo" class="video video_desktop_home fullscr" width="100%" height="100%" preload='auto'  poster="{% static 'image/game-player.jpg' %}" controlslist="nodownload noplaybackrate">
-				<source src="{% if video_obj %}{{video_obj.desktop_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4"> </video> 				
+				<source src="{% if video_obj %}{{video_obj.desktop_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4"> 	<i class="fa-solid fa-expand "onclick="openFullscreen();"></i></video> 				
 			 <video id="myVideo2" class="video_mbl_home fullscr-mobile " width="100%" height="100%" preload='auto' poster="{% static 'image/game-player_mbl.png' %}" controlslist="nodownload noplaybackrate" style="object-fit:cover;background-position: bottom center;" webkit-playsinline="true" playsinline="true">
 			
 					<source src="{% if video_obj %}{{video_obj.mobile_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4"></video>
 				</video>
-				<i class="fa-solid fa-expand "onclick="openFullscreen();"></i>
+			
 
 				
 {% comment %} 		
@@ -328,7 +328,7 @@
 								</div> 
 								<div class="bnnr_img mbl_cover_bnr">
 									<div class="wndr_colosium_overlay"></div>
-									<img src="{% static 'image/game-player_mbl.png' %}" alt="gamePlayer-icon-1" id="play_button" style="object-fit:cover;">
+									<img src="{% static 'image/game-player_mbl.png' %}" alt="gamePlayer-icon-1" id="play_button" onclick="openFullscreen()" style="object-fit:cover;">
 								</div>
 								<!--<div class="ply_img">
 								<img src="{% static 'image/button.png' %}" alt="gamePlayer-icon-1" id="pause_button" style="display:none">
