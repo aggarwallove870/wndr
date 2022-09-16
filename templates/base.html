@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 {% load static %}
 <html>
-
-<head>
 	<meta charset="utf-8">
+	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	
 	
 	
 	<title>Wndr.Land</title>
@@ -44,6 +45,16 @@
 		@media only screen and (orientation:landscape){
 			#warning-message { display:none; }
 		}
+
+		@media only screen and (orientation:landscape){
+  body {  
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     transform: rotate(0deg);
+  }
+}
 	</style>
 </head>
 <style>
@@ -798,23 +809,14 @@ if ($(window).width() > 768) {
 
 
 <script>
-// 		$(window).bind("orientationchange", function(){
-//     var orientation = window.orientation;
-//     var new_orientation = (orientation) ? 0 : 180 + orientation;
-//     $('body').css({
-//         "-webkit-transform": "rotate(" + new_orientation + "deg)"
-//     });
-// });
 
-// screen.lockOrientation("portrait");
-
-let de = document.documentElement;
-  if (de.requestFullscreen) { de.requestFullscreen(); }
-  else if (de.mozRequestFullScreen) { de.mozRequestFullScreen(); }
-  else if (de.webkitRequestFullscreen) { de.webkitRequestFullscreen(); }
-  else if (de.msRequestFullscreen) { de.msRequestFullscreen(); }
-  screen.orientation.lock('landscape');
-  console.log("screen locked")
+// let de = document.documentElement;
+//   if (de.requestFullscreen) { de.requestFullscreen(); }
+//   else if (de.mozRequestFullScreen) { de.mozRequestFullScreen(); }
+//   else if (de.webkitRequestFullscreen) { de.webkitRequestFullscreen(); }
+//   else if (de.msRequestFullscreen) { de.msRequestFullscreen(); }
+//   screen.orientation.lock('landscape');
+//   console.log("screen locked")
 </script>
 	
 
