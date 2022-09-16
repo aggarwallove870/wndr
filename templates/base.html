@@ -8,8 +8,9 @@
 	
 	<title>Wndr.Land</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
 	<!-- <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
 	<!-- slick css -->
 	<link rel="stylesheet" href="{% static 'css/slick.css' %}">
@@ -789,37 +790,6 @@ if ($(window).width() > 768) {
 
 
 
-<script>
-$(window).bind('orientationchange resize', function(event){
-  if (event.orientation) {
-    if (event.orientation == 'landscape') {
-      if (window.rotation == 90) {
-        rotate(this, -90);
-      } else {
-        rotate(this, 90);
-      }
-    }
-  }
-});
-
-function rotate(el, degs) {
-  iedegs = degs/90;
-  if (iedegs < 0) iedegs += 4;
-  transform = 'rotate('+degs+'deg)';
-  iefilter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation='+iedegs+')';
-  styles = {
-    transform: transform,
-    '-webkit-transform': transform,
-    '-moz-transform': transform,
-    '-o-transform': transform,
-    filter: iefilter,
-    '-ms-filter': iefilter
-  };
-  $(el).css(styles);
-}
-
-
-</script>
 	
 
 
