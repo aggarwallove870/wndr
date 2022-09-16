@@ -15535,8 +15535,20 @@ img.blog-section-img-tabs {
         top: 45px;
     }
 }
+/* 
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }  */
 
-/* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
     html {
       transform: rotate(-90deg);
       transform-origin: left top;
@@ -15546,7 +15558,7 @@ img.blog-section-img-tabs {
       top: 100%;
       left: 0;
     }
-  }  */
+  }
 @media only screen and (min-width: 576px) and (max-width: 577px)  {
     .team_member_section {
         height: 86%!important;
