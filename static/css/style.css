@@ -15593,6 +15593,24 @@ img.blog-section-img-tabs {
             display:block !important;
         }
         }
+@media only screen and (device-width: 20em)and (orientation: landscape) {
+    .mobileportraitview {
+        display:none !important;
+    }
+    .mobilelandscapeview {
+        display:block !important;
+    }
+
+}
+@media only screen and (device-width: 20em)and (orientation: portrait) {
+    .mobileportraitview {
+        display:block !important;
+    }
+    .mobilelandscapeview {
+        display:none !important;
+    }
+
+}
 @media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
 
     .mobileportraitview {
