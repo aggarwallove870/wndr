@@ -7742,13 +7742,13 @@ img.blog-section-img-tabs {
 
     /*about start*/
     .about-WNDR {
-        background: url(../image/about-bg-tabs.png);
+      
         width: 100%;
         background-size: cover;
     }
 
     .WNDRLAND-WNDR {
-        background: url(../image/about-bg-tabs.png);
+        /* background: url(../image/about-bg-tabs.png); */
         width: 100%;
         background-size: cover;
     }
@@ -10315,9 +10315,9 @@ img.blog-section-img-tabs {
 
 
     /*About WNDR start*/
-    .about-WNDR {
+    /* .about-WNDR {
         background: url(../image/about-bg-tabs.png);
-    }
+    } */
 
     .about-WNDR_btn:before {
         top: 0px;
@@ -10459,10 +10459,10 @@ img.blog-section-img-tabs {
         line-height: 30px;
         padding: 0 36px;
     }
-
+/* 
     .WNDRLAND-WNDR {
         background: url(../image/about-bg-tabs.png);
-    }
+    } */
 
     .about-wndr-link {
         display: flex;
@@ -11131,9 +11131,9 @@ img.blog-section-img-tabs {
 
 
     /*About WNDR start*/
-    .about-WNDR {
+    /* .about-WNDR {
         background: url(../image/about-bg-tabs.png);
-    }
+    } */
 
     .about-WNDR_btn:before {
         top: 0px;
@@ -11271,9 +11271,9 @@ img.blog-section-img-tabs {
         margin-bottom: 0;
     }
 
-    .WNDRLAND-WNDR {
+    /* .WNDRLAND-WNDR {
         background: url(../image/about-bg-tabs.png);
-    }
+    } */
 
     .about-wndr-link {
         display: flex;
@@ -13525,10 +13525,10 @@ img.blog-section-img-tabs {
     /*header end*/
 
     /*about start*/
-    .about-WNDR {
+    /* .about-WNDR {
         background: url(../image/about-bg-mobile.png);
         background-size: cover;
-    }
+    } */
 
     .about-WNDR-outer h1 {
         font-size: 24px;
@@ -14496,10 +14496,10 @@ img.blog-section-img-tabs {
         padding: 0px 0px;
     }
 
-    .about-WNDR {
+    /* .about-WNDR {
         /* background: url(../image/about-bg-mobile.png); */
-        background-color: #ffffff;
-    }
+        /* background-color: #ffffff; */
+    } */
 
     .about-WNDR-outer p {
         font-size: 14px;
