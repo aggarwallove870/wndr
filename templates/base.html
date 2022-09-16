@@ -35,6 +35,16 @@
 
 	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 
+	<style type="text/css">
+		#warning-message { display: none; }
+		@media only screen and (orientation:portrait){
+			#wrapper { display:none; }
+			#warning-message { display:block; }
+		}
+		@media only screen and (orientation:landscape){
+			#warning-message { display:none; }
+		}
+	</style>
 </head>
 <style>
 
@@ -776,35 +786,40 @@ var source = document.getElementById('vid2_source');
 source.setAttribute('src', '');
 // screen.lockOrientation("landscape");
 }
-})
-
-</script>
-
-
-<script>
-	$(document).ready(function(){
-	if ($(window).width() > 768) {
+if ($(window).width() > 768) {
 	var video = document.getElementById("video21");
 	var source = document.getElementById('vid21_source');
 	source.setAttribute('src', '');
 	}
 	})
 	
-	</script>
+</script>
 
-	<!-- <script>
-		$(window).bind("orientationchange", function(){
-    var orientation = window.orientation;
-    var new_orientation = (orientation) ? 0 : 180 + orientation;
-    $('body').css({
-        "-webkit-transform": "rotate(" + new_orientation + "deg)"
-    });
-});
-	</script> -->
+
 
 <script>
+// 		$(window).bind("orientationchange", function(){
+//     var orientation = window.orientation;
+//     var new_orientation = (orientation) ? 0 : 180 + orientation;
+//     $('body').css({
+//         "-webkit-transform": "rotate(" + new_orientation + "deg)"
+//     });
+// });
 
+// screen.lockOrientation("portrait");
+
+let de = document.documentElement;
+  if (de.requestFullscreen) { de.requestFullscreen(); }
+  else if (de.mozRequestFullScreen) { de.mozRequestFullScreen(); }
+  else if (de.webkitRequestFullscreen) { de.webkitRequestFullscreen(); }
+  else if (de.msRequestFullscreen) { de.msRequestFullscreen(); }
+  screen.orientation.lock('landscape');
+  console.log("screen locked")
 </script>
+	
+
+
+
 </body>
 
 </html>
