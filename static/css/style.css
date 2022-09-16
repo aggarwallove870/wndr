@@ -14148,7 +14148,8 @@ img.blog-section-img-tabs {
 
     /*wndrland start*/
     .WNDRLAND-WNDR {
-        background: url(../image/about-bg-mobile.png);
+        /* background: url(../image/about-bg-mobile.png); */
+        background-color: #ffffff;
     }
 
     .wndr-coins .about-WNDR_btn {
