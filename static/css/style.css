@@ -2,6 +2,20 @@
 .video-content_mobile {
     display: none;
 }
+.mobileportraitview
+{
+    background-color: #ffffff;
+}
+   
+.mobilelandscapeview {
+    color: white;
+    text-align: center;
+    display: flex;
+    font-size: 26px;
+    margin: 20% 5%;
+    letter-spacing: 3px;
+}
+
 
 .shadow-button-3 {
     margin: 14px 0;
@@ -64,7 +78,7 @@ i.fa-solid.fa-expand {
     width: 100%;
     text-align: center;
     /* background-image: url(../image/About-wndr-bg.jpg); */
-    background-image: url(../image/nodownloads_image.png);
+    background-image: url(../image/no_downloads_bg.png);
 } 
 div#load-image-of-modal-subscibe {
     position: relative;
@@ -8209,7 +8223,7 @@ img.blog-section-img-tabs {
     /*---no download---*/
     .no-dwonload_section{
         padding: 40px 0px 40px 0px;
-        background: url(../image/no_downloads.png) !important;
+        background: url(../image/no_downloads_bg.png) !important;
     }
     .no-dwonload_section h2 {
         font-size: 32px;
@@ -15568,16 +15582,16 @@ img.blog-section-img-tabs {
 body {
     background-color: #000 !important;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
+/* @media screen and (min-width: 375px) and (max-width: 768px) and (orientation: landscape) { */
+    @media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
 
-    .mobileportraitview {
-        display:none !important;
-    }
-    .mobilelandscapeview {
-        display:block !important;
-    }
-    }
-
+        .mobileportraitview {
+            display:none !important;
+        }
+        .mobilelandscapeview {
+            display:block !important;
+        }
+        }
 @media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
 
     .mobileportraitview {
@@ -15587,6 +15601,35 @@ body {
         display:none !important;
     }
     }
+
+    @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+    .mobileportraitview {
+        display:block !important;
+    }
+    .mobilelandscapeview {
+        display:none !important;
+    }
+
+}
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 900px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) { 
+
+    .mobileportraitview {
+        display:none !important;
+    }
+    .mobilelandscapeview {
+        display:block !important;
+    }
+
+}
 @media only screen and (min-width: 576px) and (max-width: 577px)  {
     .team_member_section {
         height: 86%!important;
