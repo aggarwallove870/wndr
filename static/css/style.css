@@ -15616,6 +15616,19 @@ body {
     }
 
 }
+ /* -------- For iphone 11 ------ media query */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2)
+    and (orientation:portrait) { 
+        .mobileportraitview {
+            display:block !important;
+        }
+        .mobilelandscapeview {
+            display:none !important;
+        }
+    }
 @media only screen 
 and (min-device-width: 375px) 
 and (max-device-width: 900px) 
@@ -15630,6 +15643,20 @@ and (orientation: landscape) {
     }
 
 }
+
+ /* -------- For iphone 11 ------ media query */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2)
+    and (orientation:landscape) { 
+        .mobileportraitview {
+            display:none !important;
+        }
+        .mobilelandscapeview {
+            display:block !important;
+        }
+    }
 @media only screen and (min-width: 576px) and (max-width: 577px)  {
     .team_member_section {
         height: 86%!important;
