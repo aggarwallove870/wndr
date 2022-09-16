@@ -770,10 +770,11 @@ $(window).scroll(function() {
 
 <script>
 $(document).ready(function(){
-if ($(window).width() < 768) {
+if ($(window).width() < 767) {
 var video = document.getElementById('video2');
 var source = document.getElementById('vid2_source');
 source.setAttribute('src', '');
+screen.lockOrientation("landscape");
 }
 })
 
@@ -801,7 +802,9 @@ source.setAttribute('src', '');
 });
 	</script> -->
 
+<script>
 
+</script>
 </body>
 
 </html>
