@@ -13525,10 +13525,10 @@ img.blog-section-img-tabs {
     /*header end*/
 
     /*about start*/
-    /* .about-WNDR {
-        background: url(../image/about-bg-mobile.png);
+    .about-WNDR {
+        /* background: url(../image/about-bg-mobile.png); */
         background-size: cover;
-    } */
+    }
 
     .about-WNDR-outer h1 {
         font-size: 24px;
@@ -14496,10 +14496,10 @@ img.blog-section-img-tabs {
         padding: 0px 0px;
     }
 
-    /* .about-WNDR {
-        /* background: url(../image/about-bg-mobile.png); */
-        /* background-color: #ffffff; */
-    } */
+    .about-WNDR {
+        background: url(../image/about-bg-mobile.png); 
+        background-color: #ffffff;
+    }
 
     .about-WNDR-outer p {
         font-size: 14px;
