@@ -8,7 +8,7 @@
 	
 	<title>Wndr.Land</title>
 	<meta charset="utf-8">
-	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+	<!-- <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- slick css -->
@@ -810,21 +810,35 @@ if ($(window).width() > 768) {
 
 
 <script>
-
-// let de = document.documentElement;
-//   if (de.requestFullscreen) { de.requestFullscreen(); }
-//   else if (de.mozRequestFullScreen) { de.mozRequestFullScreen(); }
-//   else if (de.webkitRequestFullscreen) { de.webkitRequestFullscreen(); }
-//   else if (de.msRequestFullscreen) { de.msRequestFullscreen(); }
-//   screen.orientation.lock('landscape');
-//   console.log("screen locked")
-$(window).bind("orientationchange", function(){
-    var orientation = window.orientation;
-    var new_orientation = (orientation) ? 0 : 180 + orientation;
-    $('body').css({
-        "-webkit-transform": "rotate(" + new_orientation + "deg)"
-    });
+$(window).bind('orientationchange resize', function(event){
+  if (event.orientation) {
+    if (event.orientation == 'landscape') {
+      if (window.rotation == 90) {
+        rotate(this, -90);
+      } else {
+        rotate(this, 90);
+      }
+    }
+  }
 });
+
+function rotate(el, degs) {
+  iedegs = degs/90;
+  if (iedegs < 0) iedegs += 4;
+  transform = 'rotate('+degs+'deg)';
+  iefilter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation='+iedegs+')';
+  styles = {
+    transform: transform,
+    '-webkit-transform': transform,
+    '-moz-transform': transform,
+    '-o-transform': transform,
+    filter: iefilter,
+    '-ms-filter': iefilter
+  };
+  $(el).css(styles);
+}
+
+
 </script>
 	
 
