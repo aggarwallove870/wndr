@@ -16,7 +16,7 @@
 		  <h2>Subscribe to Our Newsletter</h2>
 		  <img src="{% static 'image/nesltr-line.png' %}" class="subscribe-line-pc" alt="newsletter-line">
 		  <img src="{% static 'image/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="newsletter-line1">
-		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus enim ac aliquet facilisis. </p>
+		  <p>Subscribe here to get the latest news on WNDR events, launch dates, SDK release, WNDR coin and NFT drops. </p>
   
 			<form method="post" onsubmit="return false;">
 			  <!--<span class="nesltr-btn">
@@ -280,14 +280,15 @@
 		<div class="circle" style="animation-delay: 2s"></div>
 		<div class="circle" style="animation-delay: 3s"></div>
 	</div>
-
+	{% comment %} poster="{% static 'image/game-player.jpg' %}" {% endcomment %}
 	<div class="gamePlayer">			
-				<video id="myVideo" class="video video_desktop_home fullscr" width="100%" height="100%" preload='auto'  poster="{% static 'image/game-player.jpg' %}" controlslist="nodownload noplaybackrate">
-				<source src="{% if video_obj %}{{video_obj.desktop_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4"> 	<i class="fa-solid fa-expand "onclick="openFullscreen();"></i></video> 				
+				<video id="myVideo" class="video video_desktop_home fullscr" width="100%" height="100%" preload='auto'  poster="" controlslist="nodownload noplaybackrate">
+				<source src="{% if video_obj %}{{video_obj.desktop_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4"></video>
 			 <video id="myVideo2" class="video_mbl_home fullscr-mobile " width="100%" height="100%" preload='auto' poster="{% static 'image/game-player_mbl.png' %}" controlslist="nodownload noplaybackrate" style="object-fit:cover;background-position: bottom center;" webkit-playsinline="true" playsinline="true">
 			
 					<source src="{% if video_obj %}{{video_obj.mobile_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4"></video>
 				</video>
+				<i class="fa-solid fa-expand " id="fullscreenhide_in_mobile" onclick="openFulldesktop();"></i>				
 			
 
 				
@@ -320,15 +321,16 @@
 						<div class="play-btn-item uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 700; repeat: true">
 							<div class="playpause">
 								<div class="frst_img">
-								<img src="{% static 'image/play_ic.png' %}" alt="gamePlayer-icon-1" id="play_button">
+								<img src="{% static 'image/play_ic.png' %}" id="play_button"  onclick="openFullscreen()">
 								</div>
 								 <div class="bnnr_img desktop_cover_bnr">
 									<div class="wndr_colosium_overlay"></div>
-									<img src="{% static 'image/game-player.jpg' %}" alt="gamePlayer-icon-1" id="play_button">
+									{% comment %} src="{% static 'image/game-player.jpg' %}" {% endcomment %}
+									 <img src="{% static 'image/game-player.jpg' %}" id="play_button" class="desk_poster"/> 
 								</div> 
 								<div class="bnnr_img mbl_cover_bnr">
 									<div class="wndr_colosium_overlay"></div>
-									<img src="{% static 'image/game-player_mbl.png' %}" alt="gamePlayer-icon-1" id="play_button" onclick="openFullscreen()" style="object-fit:cover;">
+									 <img src="{% static 'image/game-player_mbl.png' %}"  id="play_button"  style="object-fit:cover;"> 
 								</div>
 								<!--<div class="ply_img">
 								<img src="{% static 'image/button.png' %}" alt="gamePlayer-icon-1" id="pause_button" style="display:none">
@@ -337,9 +339,7 @@
 							</div>
 						</div>
 						<div class="game-contact uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
-							 <div class="playpause">
-							<p>GAMEPLAY TRAILER</p>
-							</div>
+							 
 						</div>
 					</div>
 				</div>
@@ -394,7 +394,7 @@
 						<h2 class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 500; repeat: true">Subscribe to Our Newsletter</h2>
 						<img src="{% static 'image/nesltr-line.png' %}" class="subscribe-line-pc uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 700; repeat: true" alt="newsletter-line">
 						<img src="{% static 'image/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="newsletter-line1">
-						<p class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 900; repeat: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus enim ac aliquet facilisis. </p>
+						<p class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 900; repeat: true">Subscribe here to get the latest news on WNDR events, launch dates, SDK release, WNDR coin and NFT drops. </p>
 							<!--<span class="nesltr-btn">
 								<img src="{% static 'image/sucribe-input-img-center.png' %}" class="sucribe-center-pc" alt="subscribe-1">
 								<img src="{% static 'image/sucribe-input-img-tabs.png' %}" class="sucribe-center-tabs" alt="subscribe-2">

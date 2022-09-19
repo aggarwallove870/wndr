@@ -3,7 +3,14 @@
     display: none;
 }
 
-
+.back_to_mode {
+    height: 50px !important;
+    width: 50px !important;
+    position: absolute !important;
+    top: -55px !important;
+    left: 361px !important;
+   
+}
 
 body {
     background-color: #000 !important;
@@ -75,7 +82,8 @@ i.fa-solid.fa-expand {
     text-align: right;
     font-weight: 600;
     color: #f3012d !important;
-    font-size: 26px !IMPORTANT;
+    font-size: 24px !important;
+    font-family: 'neuropolregular';
 }
 
 .no-dwonload_section {
@@ -83,7 +91,10 @@ i.fa-solid.fa-expand {
     width: 100%;
     text-align: center;
     /* background-image: url(../image/About-wndr-bg.jpg); */
-    background-image: url(../image/no_downloads_bg.png);
+    background-image: url(../image/desktoop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 div#load-image-of-modal-subscibe {
@@ -154,7 +165,8 @@ div#load-image {
     text-align: right;
     font-weight: 600;
     color: #f3012d !important;
-    font-size: 26px !IMPORTANT;
+    font-size: 24px !important;
+    font-family: 'neuropolregular';
 }
 
 /*---8-sep-2022---*/
@@ -8463,8 +8475,11 @@ img.blog-section-img-tabs {
 
     /*---no download---*/
     .no-dwonload_section {
-        padding: 40px 0px 40px 0px;
-        background: url(../image/no_downloads_bg.png) !important;
+        background-image: url(../image/mobile\ 2.png);
+        background-position: center;
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     }
 
     .no-dwonload_section h2 {
@@ -10833,7 +10848,7 @@ img.blog-section-img-tabs {
     .sbscribe-section button.sbt-btn {
         top: 10px;
     }
-
+    
     .sbscribe-bg {
         padding-bottom: 70px !important;
     }
@@ -12039,7 +12054,7 @@ img.blog-section-img-tabs {
         right: 140px;
     }
 
-    video#myVideo {
+    video#g {
         height: 400px;
         object-fit: cover;
     }
@@ -12082,19 +12097,20 @@ img.blog-section-img-tabs {
     }
 
     .borris_bazelais {
-        font-size: 20px !IMPORTANT;
+        font-size: 20px !important;
+        font-family: 'neuropolregular';
     }
 
     .video-vision {
         top: 10px;
         right: 10px;
-        background: rgba(221, 66, 63, 0.5) !IMPORTANT;
-        width: 40px !IMPORTANT;
-        height: 40px !IMPORTANT;
+        background: rgba(221, 66, 63, 0.5) !important;
+        width: 40px !important;
+        height: 40px  !important;
     }
 
     .circle {
-        background-color: rgba(221, 66, 63, 0.5) !IMPORTANT;
+        background-color: rgba(221, 66, 63, 0.5) !important;
     }
 
     .video-content {
@@ -13973,6 +13989,7 @@ img.blog-section-img-tabs {
 
     .borris_bazelais {
         font-size: 18px !IMPORTANT;
+        font-family: 'neuropolregular';
     }
 
     /*---8-sep-2022---*/

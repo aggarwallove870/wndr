@@ -3,6 +3,7 @@
     bottom: 40px;
     width:100%;
 }
+
 .vision-lineas.vision_top_lineas img {
     width: 100%;
 }
@@ -11612,10 +11613,20 @@ img.blog-section-img-tabs {
    }
 }
 
+
 @media only screen and (max-width: 767px) {
     /*----------*/
     /* .banner-WNDR-outer {
       top: 1114px !Important;
+    } */
+    img.back_to_mode {
+        height: 50px !important;
+        width: 50px !important;
+        /* margin-bottom: 39px; */
+        position: absolute !important;
+        top: -55px !important;
+        left: 361px !important;
+        /* margin-bottom: 31px;
     } */
     .banner-WNDR-outer {
         top: 264px !Important;

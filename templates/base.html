@@ -31,6 +31,7 @@
 	<script src="https://use.fontawesome.com/b197abb434.js"></script>
 
 	<script src="https://kit.fontawesome.com/1086841b1d.js" crossorigin="anonymous"></script>
+	
 
 	<!-- fav icon -->
 	<link rel="icon" type="image/x-icon" href="{% static 'image/fab-ic.png' %}">
@@ -40,17 +41,18 @@
 
 	</style>
 </head>
-<style>
 
-</style>
 
 
 <body>
 
 	<!-- banner -->
-	<div class="mobilelandscapeview">
-		Please switch to portrait mode for better experience
+	<div class="mobilelandscapeview" style="position:relative;">
+		Back to Viewing Mode
+		<img class="back_to_mode" src="{% static 'image/kindpng_2203548.png' %}">
+
 	</div>
+	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
 	<div class="mobileportraitview">
 		<div class="banner-WNDR">
 			<div class="home_page_banner">
@@ -74,6 +76,7 @@
 						type="video/mp4">
 					<!-- "{% static 'video/Mobile_10mbps_VP8_003.webm' %}" -->
 				</video>
+
 				<div class="video-content">
 
 					<i class="fa fa-volume-off" id="audio-control" aria-hidden="true"></i>
@@ -138,7 +141,7 @@
 
 									<div class="btn-header-subscribe">
 										<a href="#" class="" data-bs-toggle="modal"
-											data-bs-target="#exampleModal">SUBSCRIBE</a>
+											data-bs-target="#exampleModal">SUBSCRIBE </a>
 									</div>
 								</ul>
 							</div>
@@ -237,6 +240,7 @@
 			<!-- slick js -->
 			<script src="{% static 'js/slick.js' %}"></script>
 			<script src="{% static 'js/slick.min.js' %}"></script>
+
 			<script>
 
 
@@ -329,93 +333,126 @@
 			<!--<script src="{% static 'js/uikit.min.js' %}"></script>--->
 			<script>
 
-				// $(document).ready(function () {
-				// 	var vid = document.getElementById("myVideo");
-				// 	vid.autoplay = true;
-				// 	vid.load();
-
-				// 	var vid = document.getElementById("video2");
-				// 	vid.autoplay = true;
-				// 	// if ($("#video2").prop('muted')) {
-				// 	// 	$("#video2").prop('muted', false);
-				// 	// }
-
-				// 	vid.load();
 
 
 
 
 				// });
 
+				//coded by kapil for handling
+				try {
+					if ($(window).width() < 768) {
+						console.log("less")
+						// $("#fullscreenhide_in_mobile").attr("style", "display: none !important");
 
 
+						obj = document.getElementById("myVideo")
+						obj.remove()
 
-				$('#myVideo').parent().find("#play_button").css("display", "block");
-				$('#myVideo').parent().find(".playpause").css("display", "block");
-				$('#myVideo').parent().click(function () {
-					if ($(this).children("#myVideo").get(0).paused) {
-
-						$(this).children("#myVideo").get(0).play();
-						$(".gamePlayer-outer").css('height', '87%');
-						$(this).find("#play_button").css("display", "none");
-						//$("#myVideo2").get(0).play();
-						$(this).find(".playpause").css("display", "none");
-					}
-					else {
-						console.log('absolute');
-						$(this).children("#myVideo").get(0).pause();
-						//$("#myVideo2").get(0).play();
-
-						//$("#myVideo").get(0).play();
-						$(".gamePlayer-outer").css('height', '100%');
-						$(this).find("#play_button").css("display", "block");
-						$(this).find(".playpause").css("display", "block");
-						$(this).find(".playpause p").css("display", "block");
+						on_chl = document.getElementById("fullscreenhide_in_mobile")
+						on_chl.hidden = true
 
 					}
-				});
+				}
+				catch { }
+
+				try {
+					if ($(window).width() > 768) {
+
+						obj = document.getElementById("myVideo2")
+						obj.remove()
+
+
+
+
+					}
+				}
+				catch { }
+
+				//end of kapil code for handling of video
+
+
+
+
+
+				try {
+					$('#myVideo').parent().find("#play_button").css("display", "block");
+					$('#myVideo').parent().find(".playpause").css("display", "block");
+					// var a = $(".playpause > :nth-child(2n)").children().next()
+					// a.attr('src', 'static/image/game-player.jpg')
+				}
+				catch { console.log("catch") }
+				console.log($("#myVideo").length)
+
+
+				if ($("#myVideo").length == 1) {
+
+					$('#myVideo').parent().click(function () {
+
+
+						if ($(this).children("#myVideo").get(0).paused) {
+
+							$(this).children("#myVideo").get(0).play();
+							var a = $(".playpause > :nth-child(2n)").children().next()
+							a.attr('src', '')
+							a.css('display','none')
+							$(".gamePlayer-outer").css('height', '87%');
+
+							$(this).find("#play_button").css("display", "none");
+							//$("#myVideo2").get(0).play();
+							$(this).find(".playpause").css("display", "none");
+						}
+						else {
+							console.log('absoe');
+							$(this).children("#myVideo").get(0).pause();
+							//$("#myVideo2").get(0).play();
+
+
+							//$("#myVideo").get(0).pause();
+							$(".gamePlayer-outer").css('height', '100%');
+							$(this).find("#play_button").css("display", "none");
+							//$(this).find("#play_button").css("display", "block");
+							$(this).find(".playpause").css("display", "block");
+							$(this).find(".playpause p").css("display", "block");
+
+						}
+					});
+				}
+
+
 
 
 
 
 				$('#myVideo2').parent().find("#play_button").css("display", "block");
 				$('#myVideo2').parent().find(".playpause").css("display", "block");
-				$('#myVideo2').parent().click(function () {
-					function openFullscreen() {
-
-						var video = document.getElementById('myVideo');
-
-
-						video.webkitRequestFullscreen();
+				console.log($("#myVideo2").length, "here new")
+				if ($("#myVideo2").length == 1) {
+					$('#myVideo2').parent().click(function () {
 
 
+						if ($(this).children("#myVideo2").get(0).paused) {
 
-						$("#myVideo").attr('disablePictureInPicture', 'true');
+							$(this).children("#myVideo2").get(0).play();
+							$(".gamePlayer-outer").css('height', '87%');
+							$(this).find("#play_button").css("display", "none");
+							//$("#myVideo2").get(0).play();
+							$(this).find(".playpause").css("display", "none");
+						}
+						else {
+							console.log('absolute');
+							$(this).children("#myVideo2").get(0).pause();
+							//$("#myVideo2").get(0).play();
 
-					}
-					openFullscreen();
+							//$("#myVideo").get(0).play();
+							$(".gamePlayer-outer").css('height', '100%');
+							$(this).find("#play_button").css("display", "block");
+							$(this).find(".playpause").css("display", "block");
+							$(this).find(".playpause p").css("display", "block");
 
-					if ($(this).children("#myVideo2").get(0).paused) {
-
-						$(this).children("#myVideo2").get(0).play();
-						$(".gamePlayer-outer").css('height', '87%');
-						$(this).find("#play_button").css("display", "none");
-						//$("#myVideo2").get(0).play();
-						$(this).find(".playpause").css("display", "none");
-					}
-					else {
-						console.log('absolute');
-						$(this).children("#myVideo2").get(0).pause();
-						//$("#myVideo2").get(0).play();
-
-						//$("#myVideo").get(0).play();
-						$(".gamePlayer-outer").css('height', '100%');
-						$(this).find("#play_button").css("display", "block");
-						$(this).find(".playpause").css("display", "block");
-						$(this).find(".playpause p").css("display", "block");
-
-					}
-				});
+						}
+					});
+				}
 
 
 				/*-----End vision poster image----*/
@@ -751,7 +788,7 @@
 
 
 			<script>
-				function openFullscreen() {
+				function openFulldesktop() {
 
 					var video = document.getElementById('myVideo');
 
@@ -763,7 +800,25 @@
 					$("#myVideo").attr('disablePictureInPicture', 'true');
 
 				}
-				openFullscreen();
+
+
+			</script>
+			
+			<script>
+
+				function openFullscreen() {
+					try {
+						var video = document.getElementById('myVideo2');
+						console.log("VIDEO", video)
+						video.webkitRequestFullscreen();
+						$("#myVideo2").attr('disablePictureInPicture', 'true');
+					}
+					catch { }
+				}
+
+
+
+
 
 			</script>
 			<script>
@@ -801,6 +856,7 @@
 						var video = document.getElementById('video2');
 						var source = document.getElementById('vid2_source');
 						source.setAttribute('src', '');
+
 						// screen.lockOrientation("landscape");
 					}
 					if ($(window).width() > 768) {
@@ -812,11 +868,29 @@
 
 			</script>
 
-			<script>
+			<!-- <script>
+
+$("#myVideo").click(function () {
+					
+					var video = $("#myVideo").get(0);
+					if (video.paused) {
+						console.log("PAUSED")
+						
+					} else {
+						console.log("ELSe")
+						
+						var  a = $(".playpause > :nth-child(3n)").children().next()
+ 						a.attr('src',' ')
+						
+
+					}
+
+				})
 
 
 
-			</script>
+			</script> -->
+
 
 		</div>
 	</div>
