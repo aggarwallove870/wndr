@@ -10249,12 +10249,6 @@ img.blog-section-img-tabs {
     }
 }
 
-@media screen and (max-width: 820px) and (min-width: 819px) {
-.mobilelandscapeview {
-    display: none !important;
-}
-}
-
 @media screen and (max-width: 814px) {
     .newsletter-bg .alert.alert-danger {
         font-size: 14px;
@@ -13406,27 +13400,6 @@ img.blog-section-img-tabs {
     }
 }
 
-@media screen and (max-width: 740px) and (min-width: 739px) {
-    .mobilelandscapeview {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .landscape_view1 {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .mobileportraitview {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 738px) {
     .cmpny-bg::after {
         left: 78%;
@@ -13642,27 +13615,6 @@ img.blog-section-img-tabs {
     }
 }
 
-@media screen and (max-width: 720px) and (min-width: 718px) {
-    .mobilelandscapeview {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .landscape_view1 {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .mobileportraitview {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 712px) and (min-width: 710px) {
 .mobilelandscapeview {
     display: none !important;
@@ -13767,48 +13719,6 @@ img.blog-section-img-tabs {
 
     /*footer end*/
     /*headerpage css close*/
-}
-
-@media screen and (max-width: 667px) and (min-width: 660px) {
-.mobilelandscapeview {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.landscape_view1 {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.mobileportraitview {
-    display: none;
-}
-}
-
-@media screen and (max-width: 653px) and (min-width: 650px) {
-    .mobilelandscapeview {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .landscape_view1 {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .mobileportraitview {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 642px) {
