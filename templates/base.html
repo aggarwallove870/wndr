@@ -923,6 +923,36 @@ function exitHandler() {
 </script>
 
 
+<script>
+			
+	// var newImage = "static/image/game-player.jpg";
+	var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
+
+
+
+	$(window).scroll(function () {
+		if ($(window).scrollTop() < div_height) {
+			$("#myVideo2").get(0).pause();
+			//$("#myVideo2").get(0).pause();
+
+			
+		// $(".desk_poster").attr("src", newImage);
+			$("#play_button").css("display", "block");
+			$(".playpause").css("display", "block");
+			$(".playpause p").css("display", "block");
+			$(".gamePlayer-outer").css('height', '100%');
+		}
+
+
+		var vid_dwn_pause = div_height + $(".gamePlayer").height();
+	});
+
+
+
+</script>
+
+
+
 		</div>
 	</div>
 
