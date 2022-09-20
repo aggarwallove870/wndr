@@ -26,12 +26,13 @@
 	<!-- link css -->
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/test.css' %}">
 
 	<!-- font awsome -->
 	<script src="https://use.fontawesome.com/b197abb434.js"></script>
 
 	<script src="https://kit.fontawesome.com/1086841b1d.js" crossorigin="anonymous"></script>
-	
+
 
 	<!-- fav icon -->
 	<link rel="icon" type="image/x-icon" href="{% static 'image/fab-ic.png' %}">
@@ -48,11 +49,12 @@
 
 	<!-- banner -->
 	<div class="mobilelandscapeview" style="position:relative;">
+		<div class="landscape_view1">
 		Back to Viewing Mode
-		<img class="back_to_mode" src="{% static 'image/kindpng_2203548.png' %}">
-
+		<img class="back_to_mode" src="{% static 'image/phone_rotate_black.png' %}">
 	</div>
-	
+	</div>
+
 	<div class="mobileportraitview">
 		<div class="banner-WNDR">
 			<div class="home_page_banner">
@@ -393,9 +395,10 @@
 						if ($(this).children("#myVideo").get(0).paused) {
 
 							$(this).children("#myVideo").get(0).play();
-							var a = $(".playpause > :nth-child(2n)").children().next()
-							a.attr('src', '')
-							a.css('display','none')
+							// var a = $(".playpause > :nth-child(2n)").children().next()
+							// a.attr('src', '')
+
+							// a.css('display', 'none')
 							$(".gamePlayer-outer").css('height', '87%');
 
 							$(this).find("#play_button").css("display", "none");
@@ -410,10 +413,13 @@
 
 							//$("#myVideo").get(0).pause();
 							$(".gamePlayer-outer").css('height', '100%');
-							$(this).find("#play_button").css("display", "none");
+							$(this).find("#play_button").css("display", "block");
 							//$(this).find("#play_button").css("display", "block");
 							$(this).find(".playpause").css("display", "block");
-							$(this).find(".playpause p").css("display", "block");
+							
+							var a = $(".playpause > :nth-child(2n)").children().next()
+					a.attr('src', 'static/image/game-player.jpg')
+						
 
 						}
 					});
@@ -427,6 +433,10 @@
 				$('#myVideo2').parent().find("#play_button").css("display", "block");
 				$('#myVideo2').parent().find(".playpause").css("display", "block");
 				console.log($("#myVideo2").length, "here new")
+
+
+
+
 				if ($("#myVideo2").length == 1) {
 					$('#myVideo2').parent().click(function () {
 
@@ -448,7 +458,9 @@
 							$(".gamePlayer-outer").css('height', '100%');
 							$(this).find("#play_button").css("display", "block");
 							$(this).find(".playpause").css("display", "block");
-							$(this).find(".playpause p").css("display", "block");
+							var b = $(".playpause > :nth-child(3n)").children().next()
+					         b.attr('src', 'static/image/game-player_mbl.png')
+							
 
 						}
 					});
@@ -723,8 +735,8 @@
 			</script>
 
 			<script>
-				$(document).ready(function () {
-
+			
+					// var newImage = "static/image/game-player.jpg";
 					var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
 
 
@@ -732,8 +744,10 @@
 					$(window).scroll(function () {
 						if ($(window).scrollTop() < div_height) {
 							$("#myVideo").get(0).pause();
-							$("#myVideo2").get(0).pause();
+							//$("#myVideo2").get(0).pause();
 
+							
+						// $(".desk_poster").attr("src", newImage);
 							$("#play_button").css("display", "block");
 							$(".playpause").css("display", "block");
 							$(".playpause p").css("display", "block");
@@ -743,7 +757,7 @@
 
 						var vid_dwn_pause = div_height + $(".gamePlayer").height();
 					});
-				})
+			
 
 
 			</script>
@@ -760,7 +774,7 @@
 
 
 			<script>
-				$(document).ready(function () {
+			
 					$(window).scroll(function () {
 						var scroll = $(window).scrollTop();
 						var get_video_section_height = $(".banner_mobile_video").height() - 116
@@ -782,7 +796,7 @@
 
 						}
 					})
-				})
+				
 
 			</script>
 
@@ -804,6 +818,11 @@
 
 			</script>
 			
+
+
+
+
+
 			<script>
 
 				function openFullscreen() {
@@ -867,29 +886,41 @@
 				})
 
 			</script>
+<script>
+	document.addEventListener('fullscreenchange', exitHandler);
+document.addEventListener('webkitfullscreenchange', exitHandler);
+document.addEventListener('mozfullscreenchange', exitHandler);
+document.addEventListener('MSFullscreenChange', exitHandler);
 
-			<!-- <script>
+function exitHandler() {
+   console.log("++++++++")
+   if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+	   $("#myVideo").get(0).play();	
+	   	var a = $(".playpause > :nth-child(2n)").children().next()
+							a.attr('src', '')
+		$(this).find(".playpause").css("display", "none");
+	   
+   }
+} 
+</script>
 
-$("#myVideo").click(function () {
-					
-					var video = $("#myVideo").get(0);
-					if (video.paused) {
-						console.log("PAUSED")
-						
-					} else {
-						console.log("ELSe")
-						
-						var  a = $(".playpause > :nth-child(3n)").children().next()
- 						a.attr('src',' ')
-						
+<script>
+	document.addEventListener('fullscreenchange', exitHandler);
+document.addEventListener('webkitfullscreenchange', exitHandler);
+document.addEventListener('mozfullscreenchange', exitHandler);
+document.addEventListener('MSFullscreenChange', exitHandler);
 
-					}
-
-				})
-
-
-
-			</script> -->
+function exitHandler() {
+   console.log("++++++++")
+   if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+	   $("#myVideo2").get(0).play();	
+	   	var a = $(".playpause > :nth-child(3n)").children().next()
+							a.attr('src', '')
+		$(this).find(".playpause").css("display", "none");
+	   
+   }
+} 
+</script>
 
 
 		</div>

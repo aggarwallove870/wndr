@@ -4,12 +4,12 @@
 }
 
 .back_to_mode {
-    height: 50px !important;
-    width: 50px !important;
+    height: 100px !important;
+    width: 100px !important;
     position: absolute !important;
-    top: -55px !important;
-    left: 361px !important;
-   
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 body {
@@ -21,7 +21,6 @@ body {
     text-align: center;
     display: flex;
     font-size: 26px;
-    margin: 20% 5%;
     letter-spacing: 3px;
 }
 
@@ -165,7 +164,7 @@ div#load-image {
     text-align: right;
     font-weight: 600;
     color: #f3012d !important;
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-family: 'neuropolregular';
 }
 
@@ -1726,6 +1725,7 @@ img.banner-img-bg-mobile {
     background-repeat: no-repeat;
     position: relative;
     background-position: center;
+    top: -6px;
 }
 
 .about-WNDR-outer p {
@@ -3170,6 +3170,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    background-position: center;
 }
 
 .WNDRLAND-WNDR:before {
@@ -3815,7 +3816,7 @@ img.top-line-m0bile {
 .WNDR-btn-item1 {
     background: url(../image/banner_btn_center.png);
     border: 0;
-    color: white;
+    color: #c5b4b8;
     border-right: 0;
     border-left: 0;
     font-family: 'neuropolregular';
@@ -6075,7 +6076,6 @@ img.blog-section-img-tabs {
     .gamePlayer-outer {
         height: 100%;
     }
-
     .roadmap_company_section:after {
         right: -26px;
     }
@@ -6407,7 +6407,7 @@ img.blog-section-img-tabs {
     }
 
     .gamePlayer-outer {
-        top: 60px;
+        top: 0px;
     }
 
     .gamePlayer-logo-item img {
@@ -6804,7 +6804,7 @@ img.blog-section-img-tabs {
     }
 
     .cloud-expand p {
-        font-size: 16px !IMPORTANT;
+        font-size: 16px !important;
         left: 25px;
         top: 30px;
     }
@@ -8475,13 +8475,14 @@ img.blog-section-img-tabs {
 
     /*---no download---*/
     .no-dwonload_section {
-        background-image: url(../image/mobile\ 2.png);
+        background-image: url(../image/tablet_bg.png);
         background-position: center;
         background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     }
-
+    
+    
     .no-dwonload_section h2 {
         font-size: 32px;
         margin-bottom: 11px;
@@ -9235,6 +9236,7 @@ img.blog-section-img-tabs {
     #exampleModal .sbscribe_btn_input {
         min-height: 100px;
     }
+
 }
 
 @media only screen and (max-width: 945px) {
@@ -9247,6 +9249,12 @@ img.blog-section-img-tabs {
     .container {
         max-width: 910px;
     }
+
+    /* css 20/9/2022 */
+.mobilelandscapeview {
+    display: block!important;
+}
+/* css 20/9/2022 */
 
     /*homepage-css-start*/
     /*modal start here*/
@@ -9756,6 +9764,27 @@ img.blog-section-img-tabs {
     }
 }
 
+@media screen and (max-width: 915px) and (min-width: 910px) {
+    .mobilelandscapeview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .landscape_view1 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileportraitview {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 914px) {
     .banner-logo-div {
         top: 224px;
@@ -9925,6 +9954,24 @@ img.blog-section-img-tabs {
     }
 }
 
+@media screen and (max-width: 897px) and (min-width: 890px) {
+.mobilelandscapeview {
+    display: block;
+}
+.mobileportraitview {
+    display: none;
+}
+.remove-contact-on-landscape{
+    display: none;
+}
+.landscape_view1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
 @media only screen and (max-width: 874px) {
     .footer-roadmap {
         margin-top: -20px;
@@ -10003,6 +10050,27 @@ img.blog-section-img-tabs {
     }
 }
 
+@media screen and (max-width: 851px) and (min-width: 846px) {
+    .mobilelandscapeview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .landscape_view1 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileportraitview {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 845px) {
     .phase-stcn-gaming {
         position: absolute;
@@ -10032,6 +10100,27 @@ img.blog-section-img-tabs {
     }
 }
 
+@media screen and (max-width: 844px) and (min-width: 842px) {
+    .mobilelandscapeview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .landscape_view1 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileportraitview {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 840px) {
     .arrow-wrap {
         position: absolute;
@@ -10046,6 +10135,14 @@ img.blog-section-img-tabs {
         top: 184px;
         right: 110px;
     }
+    /* css 20/09/22 */
+    .banner-WNDR-outer {
+        top: 270px !Important;
+    }
+    .WNDR_btn_home input { 
+        padding: 20px 50px; 
+    }
+    /* css 20/09/22 */
 
     .slect-pvc-live h2 {
         font-size: 26px;
@@ -10092,7 +10189,7 @@ img.blog-section-img-tabs {
     }
 
     .banner-logo-div {
-        top: 210px;
+        top: 160px;
         z-index: 0;
     }
 
@@ -10111,6 +10208,33 @@ img.blog-section-img-tabs {
         left: -81px;
         top: 30px;
     }
+}
+
+@media screen and (max-width: 812px) and (min-width: 810px) {
+    .mobilelandscapeview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .landscape_view1 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileportraitview {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 820px) and (min-width: 819px) {
+.mobilelandscapeview {
+    display: none !important;
+}
 }
 
 @media screen and (max-width: 814px) {
@@ -12060,6 +12184,12 @@ img.blog-section-img-tabs {
     }
 }
 
+@media screen and (max-width: 768px) and (min-width: 767px) {
+    .mobilelandscapeview {
+        display: none !important;
+    }
+}
+
 /*---media query--*/
 @media only screen and (max-width: 882px) {
     .cross_icon {
@@ -12433,7 +12563,10 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 767px) {
-
+    /* css 20-09-22 */
+    .no-dwonload_section {
+        background-image: url(../image/mobile\ 2.png); 
+    }
     /*----------*/
     /* .banner-WNDR-outer {
       top: 1114px !Important;
@@ -13259,6 +13392,27 @@ img.blog-section-img-tabs {
     }
 }
 
+@media screen and (max-width: 740px) and (min-width: 739px) {
+    .mobilelandscapeview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .landscape_view1 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileportraitview {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 738px) {
     .cmpny-bg::after {
         left: 78%;
@@ -13474,6 +13628,33 @@ img.blog-section-img-tabs {
     }
 }
 
+@media screen and (max-width: 720px) and (min-width: 718px) {
+    .mobilelandscapeview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .landscape_view1 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileportraitview {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 712px) and (min-width: 710px) {
+.mobilelandscapeview {
+    display: none !important;
+}
+}
+
 @media only screen and (max-width: 670px) {
     .form-wndr-outer.company_section_about p {
         font-size: 17px;
@@ -13572,6 +13753,48 @@ img.blog-section-img-tabs {
 
     /*footer end*/
     /*headerpage css close*/
+}
+
+@media screen and (max-width: 667px) and (min-width: 660px) {
+.mobilelandscapeview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landscape_view1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobileportraitview {
+    display: none;
+}
+}
+
+@media screen and (max-width: 653px) and (min-width: 650px) {
+    .mobilelandscapeview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .landscape_view1 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileportraitview {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 642px) {
@@ -13988,7 +14211,7 @@ img.blog-section-img-tabs {
     }
 
     .borris_bazelais {
-        font-size: 18px !IMPORTANT;
+        font-size: 15px !important;
         font-family: 'neuropolregular';
     }
 
@@ -16171,28 +16394,28 @@ img.blog-section-img-tabs {
     }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 
     .mobileportraitview {
         display: none !important;
     }
 
-    .mobilelandscapeview {
+    /* .mobilelandscapeview {
         display: block !important;
-    }
+    } */
 
-}
+/* }
 
 /* -------- For iphone 11 ------ media query */
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
+/* @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
     .mobileportraitview {
         display: none !important;
     }
 
     .mobilelandscapeview {
         display: block !important;
-    }
-}
+    } */
+/* } */ 
 
 @media only screen and (min-width: 576px) and (max-width: 577px) {
     .team_member_section {
