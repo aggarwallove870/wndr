@@ -9254,6 +9254,24 @@ img.blog-section-img-tabs {
 .mobilelandscapeview {
     display: block!important;
 }
+.mobilelandscapeview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landscape_view1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobileportraitview {
+    display: none;
+}
 /* css 20/9/2022 */
 
     /*homepage-css-start*/
@@ -12184,11 +12202,7 @@ img.blog-section-img-tabs {
     }
 }
 
-@media screen and (max-width: 768px) and (min-width: 767px) {
-    .mobilelandscapeview {
-        display: none !important;
-    }
-}
+
 
 /*---media query--*/
 @media only screen and (max-width: 882px) {
