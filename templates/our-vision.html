@@ -377,14 +377,14 @@
 
 					
 						<video id="myVideo12" class="video1" width="100%" height="100%" preload='auto'
-							poster="{% static 'image/slide-15-STREAM.jpg' %}" autoplay muted
+							poster="{% static 'image/slide-15-STREAM.jpg' %}" autoplay muted loop
 							controlslist="nodownload noplaybackrate" webkit-playsinline="true" playsinline="true">
 							<source src="{% static 'video/wndr_Tech demo (1080p).mp4' %}" type="video/mp4">
 						</video>
 						{% comment %} src="{% static 'image/slide-15-STREAM.jpg' %}" {% endcomment %}
 						{% comment %} <img class="vision_poster_bnr" id="vision_poster_bnr_img"
 							src=""> {% endcomment %}
-							<i class="fa-solid fa-expand " id="" onclick="onvisionfullscreen();"></i>	
+							<i class="fa-solid fa-expand " id="remove-vision-fullscreen-on-mobile" onclick="onvisionfullscreen();"></i>	
 
 					<div class="video-vision">
 
@@ -906,5 +906,8 @@
 
 		}
 	</script>
+	
+
+	
 
 </html>

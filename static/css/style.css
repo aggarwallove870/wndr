@@ -14044,7 +14044,9 @@ img.blog-section-img-tabs {
     img.game-player-tabs {
         display: none;
     }
-
+    i.fa-solid.fa-expand {
+        display: none;
+    }
     #exampleModal .sbscribe-bg h2 {
         padding-top: 0px;
         font-size: 26px;
