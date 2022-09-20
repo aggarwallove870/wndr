@@ -743,11 +743,10 @@
 
 					$(window).scroll(function () {
 						if ($(window).scrollTop() < div_height) {
-							$("#myVideo").get(0).pause();
-							//$("#myVideo2").get(0).pause();
+							// $("#myVideo").get(0).pause();
+						
 
-							
-						// $(".desk_poster").attr("src", newImage);
+					
 							$("#play_button").css("display", "block");
 							$(".playpause").css("display", "block");
 							$(".playpause p").css("display", "block");
@@ -932,6 +931,7 @@ function exitHandler() {
 
 	$(window).scroll(function () {
 		if ($(window).scrollTop() < div_height) {
+			console.log("scoll")
 			$("#myVideo2").get(0).pause();
 			//$("#myVideo2").get(0).pause();
 
@@ -944,7 +944,7 @@ function exitHandler() {
 		}
 
 
-		var vid_dwn_pause = div_height + $(".gamePlayer").height();
+		// var vid_dwn_pause = div_height + $(".gamePlayer").height();
 	});
 
 
