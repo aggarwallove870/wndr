@@ -50,9 +50,9 @@
 	<!-- banner -->
 	<div class="mobilelandscapeview" style="position:relative;">
 		<div class="landscape_view1">
-		Back to Viewing Mode
-		<img class="back_to_mode" src="{% static 'image/phone_rotate_black.png' %}">
-	</div>
+			<p>Back to Viewing Mode</p>
+			<img class="back_to_mode" src="{% static 'image/phone_rotate_black.png' %}">
+		</div>
 	</div>
 
 	<div class="mobileportraitview">
@@ -416,10 +416,10 @@
 							$(this).find("#play_button").css("display", "block");
 							//$(this).find("#play_button").css("display", "block");
 							$(this).find(".playpause").css("display", "block");
-							
+
 							var a = $(".playpause > :nth-child(2n)").children().next()
-					a.attr('src', 'static/image/game-player.jpg')
-						
+							a.attr('src', 'static/image/game-player.jpg')
+
 
 						}
 					});
@@ -459,8 +459,8 @@
 							$(this).find("#play_button").css("display", "block");
 							$(this).find(".playpause").css("display", "block");
 							var b = $(".playpause > :nth-child(3n)").children().next()
-					         b.attr('src', 'static/image/game-player_mbl.png')
-							
+							b.attr('src', 'static/image/game-player_mbl.png')
+
 
 						}
 					});
@@ -733,32 +733,32 @@
 
 
 			</script>
-
+<!-- 
 			<script>
-			
-					// var newImage = "static/image/game-player.jpg";
-					var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
+
+				// var newImage = "static/image/game-player.jpg";
+				var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
 
 
 
-					$(window).scroll(function () {
-						if ($(window).scrollTop() < div_height) {
-							// $("#myVideo").get(0).pause();
-						
-
-					
-							$("#play_button").css("display", "block");
-							$(".playpause").css("display", "block");
-							$(".playpause p").css("display", "block");
-							$(".gamePlayer-outer").css('height', '100%');
-						}
+				$(window).scroll(function () {
+					if ($(window).scrollTop() < div_height) {
+						$("#myVideo").get(0).pause();
 
 
-						var vid_dwn_pause = div_height + $(".gamePlayer").height();
-					});
-			
+
+						$("#play_button").css("display", "block");
+						$(".playpause").css("display", "block");
+						$(".playpause p").css("display", "block");
+						$(".gamePlayer-outer").css('height', '100%');
+					}
 
 
+					var vid_dwn_pause = div_height + $(".gamePlayer").height();
+				});
+
+
+ -->
 			</script>
 			<script>
 
@@ -773,29 +773,29 @@
 
 
 			<script>
-			
-					$(window).scroll(function () {
-						var scroll = $(window).scrollTop();
-						var get_video_section_height = $(".banner_mobile_video").height() - 116
-						if (scroll > get_video_section_height) {
 
-							$(".video-content_mobile").children("i").attr("class", "fa fa-volume-off ");
-							$('#video21').get(0).pause()
-							$("#video21").removeClass("fa fa-volume-off").addClass("fa fa-volume-up")
-							$("#video21").prop("muted", false);
+				$(window).scroll(function () {
+					var scroll = $(window).scrollTop();
+					var get_video_section_height = $(".banner_mobile_video").height() - 116
+					if (scroll > get_video_section_height) {
+
+						$(".video-content_mobile").children("i").attr("class", "fa fa-volume-off ");
+						$('#video21').get(0).pause()
+						$("#video21").removeClass("fa fa-volume-off").addClass("fa fa-volume-up")
+						$("#video21").prop("muted", false);
 
 
-						}
-						else {
-							$("#video21").prop("muted", true)
-							// alert('h');
-							$('#video21').get(0).play();
-							//$(".video-content").children("i").attr("class", "fa fa-volume-off ") ; 
-							// $("#video2").removeClass("fa fa-volume-up").addClass("fa fa-volume-up")
+					}
+					else {
+						$("#video21").prop("muted", true)
+						// alert('h');
+						$('#video21').get(0).play();
+						//$(".video-content").children("i").attr("class", "fa fa-volume-off ") ; 
+						// $("#video2").removeClass("fa fa-volume-up").addClass("fa fa-volume-up")
 
-						}
-					})
-				
+					}
+				})
+
 
 			</script>
 
@@ -816,7 +816,7 @@
 
 
 			</script>
-			
+
 
 
 
@@ -874,6 +874,34 @@
 						var video = document.getElementById('video2');
 						var source = document.getElementById('vid2_source');
 						source.setAttribute('src', '');
+						var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
+
+
+
+
+
+
+						$(window).scroll(function () {
+							if ($(window).scrollTop() < div_height) {
+								console.log("scoll")
+								
+								$("#myVideo2").get(0).pause();
+								//$("#myVideo2").get(0).pause();
+
+
+								// $(".desk_poster").attr("src", newImage);
+								$("#play_button").css("display", "block");
+								$(".playpause").css("display", "block");
+								$(".playpause p").css("display", "block");
+								$(".gamePlayer-outer").css('height', '100%');
+							}
+
+
+							// var vid_dwn_pause = div_height + $(".gamePlayer").height();
+						});
+
+
+
 
 						// screen.lockOrientation("landscape");
 					}
@@ -881,75 +909,95 @@
 						var video = document.getElementById("video21");
 						var source = document.getElementById('vid21_source');
 						source.setAttribute('src', '');
+						
+						$(window).scroll(function () {
+							if ($(window).scrollTop() < div_height) {
+								$("#myVideo").get(0).pause();
+								
+
+
+
+								$("#play_button").css("display", "block");
+								$(".playpause").css("display", "block");
+								$(".playpause p").css("display", "block");
+								$(".gamePlayer-outer").css('height', '100%');
+							}
+
+
+							var vid_dwn_pause = div_height + $(".gamePlayer").height();
+						});
+
+						var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
+
 					}
 				})
 
 			</script>
-<script>
-	document.addEventListener('fullscreenchange', exitHandler);
-document.addEventListener('webkitfullscreenchange', exitHandler);
-document.addEventListener('mozfullscreenchange', exitHandler);
-document.addEventListener('MSFullscreenChange', exitHandler);
+			<script>
+				document.addEventListener('fullscreenchange', exitHandler);
+				document.addEventListener('webkitfullscreenchange', exitHandler);
+				document.addEventListener('mozfullscreenchange', exitHandler);
+				document.addEventListener('MSFullscreenChange', exitHandler);
 
-function exitHandler() {
-   console.log("++++++++")
-   if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
-	   $("#myVideo").get(0).play();	
-	   	var a = $(".playpause > :nth-child(2n)").children().next()
-							a.attr('src', '')
-		$(this).find(".playpause").css("display", "none");
-	   
-   }
-} 
-</script>
+				function exitHandler() {
+					console.log("++++++++")
+					if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+						$("#myVideo").get(0).play();
+						var a = $(".playpause > :nth-child(2n)").children().next()
+						a.attr('src', '')
+						$(this).find(".playpause").css("display", "none");
 
-<script>
-	document.addEventListener('fullscreenchange', exitHandler);
-document.addEventListener('webkitfullscreenchange', exitHandler);
-document.addEventListener('mozfullscreenchange', exitHandler);
-document.addEventListener('MSFullscreenChange', exitHandler);
+					}
+				} 
+			</script>
 
-function exitHandler() {
-   console.log("++++++++")
-   if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
-	   $("#myVideo2").get(0).play();	
-	   	var a = $(".playpause > :nth-child(3n)").children().next()
-							a.attr('src', '')
-		$(this).find(".playpause").css("display", "none");
-	   
-   }
-} 
-</script>
+			<script>
+				document.addEventListener('fullscreenchange', exitHandler);
+				document.addEventListener('webkitfullscreenchange', exitHandler);
+				document.addEventListener('mozfullscreenchange', exitHandler);
+				document.addEventListener('MSFullscreenChange', exitHandler);
 
+				function exitHandler() {
+					console.log("++++++++")
+					if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+						$("#myVideo2").get(0).play();
+						var a = $(".playpause > :nth-child(3n)").children().next()
+						a.attr('src', '')
+						$(this).find(".playpause").css("display", "none");
 
-<script>
-			
-	// var newImage = "static/image/game-player.jpg";
-	var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
+					}
+				} 
+			</script>
 
 
+			<!-- <script>
 
-	$(window).scroll(function () {
-		if ($(window).scrollTop() < div_height) {
-			console.log("scoll")
-			$("#myVideo2").get(0).pause();
-			//$("#myVideo2").get(0).pause();
-
-			
-		// $(".desk_poster").attr("src", newImage);
-			$("#play_button").css("display", "block");
-			$(".playpause").css("display", "block");
-			$(".playpause p").css("display", "block");
-			$(".gamePlayer-outer").css('height', '100%');
-		}
-
-
-		// var vid_dwn_pause = div_height + $(".gamePlayer").height();
-	});
+				// var newImage = "static/image/game-player.jpg";
+				var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
 
 
 
-</script>
+				$(window).scroll(function () {
+					if ($(window).scrollTop() < div_height) {
+						console.log("scoll")
+						$("#myVideo2").get(0).pause();
+						//$("#myVideo2").get(0).pause();
+
+
+						// $(".desk_poster").attr("src", newImage);
+						$("#play_button").css("display", "block");
+						$(".playpause").css("display", "block");
+						$(".playpause p").css("display", "block");
+						$(".gamePlayer-outer").css('height', '100%');
+					}
+
+
+					// var vid_dwn_pause = div_height + $(".gamePlayer").height();
+				});
+
+
+
+			</script> -->
 
 
 

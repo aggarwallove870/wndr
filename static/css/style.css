@@ -9784,13 +9784,7 @@ img.blog-section-img-tabs {
 
 @media screen and (max-width: 915px) and (min-width: 910px) {
     .mobilelandscapeview {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: none !important;
     }
     .landscape_view1 {
         height: 100%;
@@ -9799,7 +9793,7 @@ img.blog-section-img-tabs {
         justify-content: center;
     }
     .mobileportraitview {
-        display: none;
+        display: block;
     }
 }
 
@@ -10226,6 +10220,17 @@ img.blog-section-img-tabs {
         left: -81px;
         top: 30px;
     }
+}
+
+@media screen and (max-width: 820px) and (min-width: 819px) {
+/* 22 */
+.mobilelandscapeview {
+    display: none !important;
+}
+.mobileportraitview {
+    display: block;
+}
+/* 22 */
 }
 
 @media screen and (max-width: 812px) and (min-width: 810px) {
@@ -12196,8 +12201,6 @@ img.blog-section-img-tabs {
     }
 }
 
-
-
 /*---media query--*/
 @media only screen and (max-width: 882px) {
     .cross_icon {
@@ -12229,7 +12232,14 @@ img.blog-section-img-tabs {
         padding-bottom: 30px;
         padding-top: 30px;
     }
-
+    /* 22 */
+    .mobilelandscapeview {
+        display: none !important;
+    }
+    .mobileportraitview {
+        display: block;
+    }
+    /* 22 */
     .banner_video_section .video-content {
         right: 75px;
     }
@@ -12590,7 +12600,14 @@ img.blog-section-img-tabs {
         margin-top: 20px;
         font-size: 12px;
     }
-
+    /* 22 */
+    .mobilelandscapeview {
+        display: block !important;
+    }
+    .mobileportraitview {
+        display: none;
+    }
+    /* 22 */
     #sucess_div3 {
         top: 109px;
     }
@@ -13404,7 +13421,11 @@ img.blog-section-img-tabs {
     .cmpny-bg::after {
         left: 78%;
     }
-
+    /* 22 */
+    .mobileportraitview {
+        display: block;
+    }
+    /* 22 */
     .cmpny-bg::before {
         top: 76%;
     }
@@ -13533,6 +13554,11 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 722px) {
+    /* 22 */
+    .mobileportraitview {
+        display: none;
+    }
+    /* 22 */
     .header-line-shadow img {
         position: absolute;
         bottom: 0px;
@@ -13618,6 +13644,9 @@ img.blog-section-img-tabs {
 @media screen and (max-width: 712px) and (min-width: 710px) {
 .mobilelandscapeview {
     display: none !important;
+}
+.mobileportraitview {
+    display: block;
 }
 }
 
