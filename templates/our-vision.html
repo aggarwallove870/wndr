@@ -25,10 +25,15 @@
 	<script src="https://kit.fontawesome.com/1086841b1d.js" crossorigin="anonymous"></script>
 </head>
 
-<div class="mobileportraitview">
+<div class="mobilelandscapeview" style="position:relative;">
+	<div class="landscape_view1">
+		<p>Back to Viewing Mode</p>
+		<img class="back_to_mode" src="{% static 'image/phone_rotate_black.png' %}">
+	</div>
+</div>
 
 <body class="vision-sections">
-
+	<div class="mobileportraitview">
 	
 
 
@@ -633,7 +638,7 @@
 			</div>
 		</div>
 	</section>
-	<!---OUR VISION SECTION---->
+	<!---OUR VISION SECTION-->
 	<!-- footer start here -->
 	<footer>
 		<div class="footer_WNDR">
@@ -702,6 +707,7 @@
 			</div>
 		</div>
 	</footer>
+</div>
 {% comment %} </div> {% endcomment %}
 	<!-- footer close here-->
 	<!-- bootstrap js -->
