@@ -2,7 +2,10 @@
 .video-content_mobile {
     display: none;
 }
-
+/* 23-03-22 */
+.video-content_tablate {
+    display: none;
+}
 .back_to_mode {
     height: 100px !important;
     width: 100px !important;
@@ -8438,7 +8441,8 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 1024px) {
-    .video-content_mobile {
+    /* css 23-09-22 */
+    .video-content_tablate {
         display: block;
         position: absolute;
         top: 154px;
@@ -8455,7 +8459,7 @@ img.blog-section-img-tabs {
         height: 44px;
         z-index: 9;
     }
-
+    /* css 23-09-22 */
     .banner_video_section .video-content {
         display: none;
     }
@@ -12581,6 +12585,26 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 767px) {
+    /* css 23-09-22 */
+    .video-content_mobile {
+        display: block;
+        position: absolute;
+        top: 154px;
+        color: #ffffff;
+        position: absolute;
+        float: right;
+        right: 64px;
+        display: flex;
+        align-items: center;
+        border-radius: 90px;
+        padding: 7px 13px;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        z-index: 9;
+    }
+    /* css 23-09-22 */
+
     /* css 20-09-22 */
     .no-dwonload_section {
         background-image: url(../image/mobile\ 2.png); 
