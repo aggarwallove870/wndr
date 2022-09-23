@@ -898,31 +898,44 @@
                        var video = document.getElementById('video2');
                        var source = document.getElementById('vid2_source');
                        source.setAttribute('src', '');
-                       var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
+
+                       function isInView(el) {
+                    var rect = el.getBoundingClientRect();           // absolute position of video element
+                    return !(rect.top > $(window).height() || rect.bottom < 0);   // visible?
+                }
+
+                $(document).on("scroll", function () {
+                    $("#myVideo2").each(function () {
+                        if (isInView($(this)[0])) {                    // visible?
+                            if ($(this)[0].paused) $(this)[0].pause();
+                            console.log("---0-9-9-9")   // play if not playing
+                        }
+                        else {
+                            if (!$(this)[0].paused) $(this)[0].pause();  // pause if not paused
+                            $("#play_button").css("display", "block");
+                            $(".playpause").css("display", "block");
+                            $(".playpause p").css("display", "block");
+                            $(".gamePlayer-outer").css('height', '100%');
+                        }
+                    });
+                    });
+
+                    //    var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
  
+                    //    $(window).scroll(function () {
+                    //        if ($(window).scrollTop() < div_height) {
+                    //            console.log("scoll")
  
+                    //            $("#myVideo2").get(0).pause();
+
+                    //            $("#play_button").css("display", "block");
+                    //            $(".playpause").css("display", "block");
+                    //            $(".playpause p").css("display", "block");
+                    //            $(".gamePlayer-outer").css('height', '100%');
+                    //        }
  
- 
- 
- 
-                       $(window).scroll(function () {
-                           if ($(window).scrollTop() < div_height) {
-                               console.log("scoll")
- 
-                               $("#myVideo2").get(0).pause();
-                               //$("#myVideo2").get(0).pause();
- 
- 
-                               // $(".desk_poster").attr("src", newImage);
-                               $("#play_button").css("display", "block");
-                               $(".playpause").css("display", "block");
-                               $(".playpause p").css("display", "block");
-                               $(".gamePlayer-outer").css('height', '100%');
-                           }
- 
- 
-                           // var vid_dwn_pause = div_height + $(".gamePlayer").height();
-                       });
+
+                    //    });
  
  
  
@@ -933,25 +946,46 @@
                        var video = document.getElementById("video21");
                        var source = document.getElementById('vid21_source');
                        source.setAttribute('src', '');
+
+                       function isInView(el) {
+                    var rect = el.getBoundingClientRect();           // absolute position of video element
+                    return !(rect.top > $(window).height() || rect.bottom < 0);   // visible?
+                }
+
+                $(document).on("scroll", function () {
+                    $("#myVideo").each(function () {
+                        if (isInView($(this)[0])) {                    // visible?
+                            if ($(this)[0].paused) $(this)[0].pause();
+                            console.log("---0-9-9-9")   // play if not playing
+                        }
+                        else {
+                            if (!$(this)[0].paused) $(this)[0].pause();  // pause if not paused
+                            $("#play_button").css("display", "block");
+                            $(".playpause").css("display", "block");
+                            $(".playpause p").css("display", "block");
+                            $(".gamePlayer-outer").css('height', '100%');
+                        }
+                    });
+                });
  
-                       $(window).scroll(function () {
-                           if ($(window).scrollTop() < div_height) {
-                               $("#myVideo").get(0).pause();
+                //        $(window).scroll(function () {
+                //            if ($(window).scrollTop() < div_height) {
+                //                $("#myVideo").get(0).pause();
  
  
  
  
-                               $("#play_button").css("display", "block");
-                               $(".playpause").css("display", "block");
-                               $(".playpause p").css("display", "block");
-                               $(".gamePlayer-outer").css('height', '100%');
-                           }
+                //                $("#play_button").css("display", "block");
+                //                $(".playpause").css("display", "block");
+                //                $(".playpause p").css("display", "block");
+                //                $(".gamePlayer-outer").css('height', '100%');
+                //            }
  
  
-                           var vid_dwn_pause = div_height + $(".gamePlayer").height();
-                       });
+                //            var vid_dwn_pause = div_height + $(".gamePlayer").height();
+                //        });
  
-                       var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
+                //        var div_height = $(".WNDRLAND-WNDR").height() + $(".slct-pvc-crypto").height() + $(".slect-outer").height() + $(".about-WNDR").height() + $(".banner_video_section").height();
  
                    }
                })
