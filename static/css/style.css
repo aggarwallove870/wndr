@@ -606,10 +606,6 @@ video::-webkit-media-controls {
     display: none;
 }
 
-.video_mbl_home {
-    display: none;
-}
-
 .bnnr_img img {
     width: 100% !IMPORTANT;
     height: 100%;
@@ -4816,11 +4812,6 @@ img.blog-section-img-tabs {
 
     /*gallary end*/
 
-    /*video start*/
-    .gamePlayer-outer {
-        top: 40px;
-    }
-
     .play-btn-outer {
         margin-top: 210px;
     }
@@ -5121,7 +5112,7 @@ img.blog-section-img-tabs {
     /*video start*/
     .gamePlayer-outer {
         position: absolute;
-        top: 30px;
+        top: 0px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -5617,6 +5608,11 @@ img.blog-section-img-tabs {
     .gamePlayer-outer {
         height: 100%;
     }
+    /* css 24/09/22 */
+    .bnnr_img {
+        top: -30px;
+    }
+    /* css 24/09/22 */
 
     /*headerpage css start*/
     /*header start*/
@@ -6082,7 +6078,11 @@ img.blog-section-img-tabs {
     .roadmap_company_section:after {
         right: -26px;
     }
-
+    /* css 24/09/22 */
+    .bnnr_img {
+        top: 0px;
+    }
+    /* css 24/09/22 */
     /*------the company section-------*/
     .roadmap_company_section {
         width: 100% !Important;
@@ -8441,6 +8441,8 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 1024px) {
+    
+    
     /* css 23-09-22 */
     .video-content_tablate {
         display: block;
@@ -9253,7 +9255,11 @@ img.blog-section-img-tabs {
     .container {
         max-width: 910px;
     }
-
+    /* css 24/09/22 */
+    .desktop_cover_bnr .wndr_colosium_overlay {
+        display: none;
+    }
+     /* css 24/09/22 */
     /* css 20/9/2022 */
 .mobilelandscapeview {
     display: block!important;
@@ -9457,11 +9463,6 @@ img.blog-section-img-tabs {
     img.game-player-tabs {
         display: block;
     }
-
-    .gamePlayer-outer {
-        top: 30px;
-    }
-
     .play-btn-outer {
         margin-top: 180px;
     }
@@ -9897,10 +9898,6 @@ img.blog-section-img-tabs {
     .banner-WNDR-btn {
         margin-left: 0;
         margin-top: 40px;
-    }
-
-    .gamePlayer-outer {
-        top: 30px;
     }
 
     /*contact-page css start*/
@@ -12331,16 +12328,10 @@ img.blog-section-img-tabs {
 
     .video_mbl_home {
         display: block;
-        height: 450px;
-    }
-
-    .video_desktop_home {
-        display: none;
     }
 
     .mbl_cover_bnr {
         display: block !important;
-        height: 450px;
     }
 
     .desktop_cover_bnr {
@@ -12585,6 +12576,14 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 767px) {
+    /* css 24/09/2022 */
+    .gamePlayer {
+        height: 100%;
+    }
+    .wndr_land_colosiusm {
+        height: 420px;
+    }
+    /* css 24/09/2022 */
     /* css 23-09-22 */
     .video-content_mobile {
         display: block;
