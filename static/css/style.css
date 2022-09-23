@@ -12585,6 +12585,9 @@ img.blog-section-img-tabs {
     }
     /* css 24/09/2022 */
     /* css 23-09-22 */
+    .video-content_tablate {
+        display: none;
+    }
     .video-content_mobile {
         display: block;
         position: absolute;
@@ -12592,7 +12595,7 @@ img.blog-section-img-tabs {
         color: #ffffff;
         position: absolute;
         float: right;
-        right: 64px;
+        right: 18px;
         display: flex;
         align-items: center;
         border-radius: 90px;
