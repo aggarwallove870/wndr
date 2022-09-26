@@ -14536,6 +14536,19 @@ img.blog-section-img-tabs {
         bottom: -55px;
         z-index: 1 !important;
     }
+    .banner_video_section {
+        height: 100%;
+    }
+    .banner-logo-div {
+        top: 366px;
+    }
+    .banner-logo-div img {
+        width: 340px !Important;
+    }
+    .banner-WNDR-outer {
+        top: 634px !Important;
+    }
+    
 
     .form-wndr-outer.company_section_about p {
         font-size: 14px;
@@ -14593,6 +14606,11 @@ img.blog-section-img-tabs {
 @media only screen and (max-width: 480px) {
     .vision-lineas.vision_top_lineas img {
         display: block !important;
+    }
+    .banner_video_section {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     .gamePlayer-outer {
@@ -15746,6 +15764,12 @@ img.blog-section-img-tabs {
 @media only screen and (max-width: 425px) {
     .wndr_engine h2 {
         font-size: 21px;
+    }
+    .banner-WNDR-outer {
+        top: 524px !Important;
+    }
+    .banner-logo-div img {
+        width: 240px !important;
     }
 
     .wndr_engine p {
