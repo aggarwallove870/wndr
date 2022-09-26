@@ -16514,15 +16514,15 @@ img.blog-section-img-tabs {
 /* }
 
 /* -------- For iphone 11 ------ media query */
-/* @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
+ @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
     .mobileportraitview {
         display: none !important;
     }
 
     .mobilelandscapeview {
         display: block !important;
-    } */
-/* } */ 
+    } 
+ }  
 
 @media only screen and (min-width: 576px) and (max-width: 577px) {
     .team_member_section {
