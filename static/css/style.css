@@ -13962,7 +13962,7 @@ img.blog-section-img-tabs {
 @media only screen and (max-width: 640px) {
     
     .banner-logo-div img {
-        display: block;
+        display: none;
     }
     /*headerpage start css*/
     /*header start*/
