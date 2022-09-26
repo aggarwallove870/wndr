@@ -286,8 +286,8 @@
 				<source src="{% if video_obj %}{{video_obj.desktop_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4" ></video>
 			 <video id="myVideo2" class="video_mbl_home fullscr-mobile " width="100%" height="100%" preload='auto' poster="{% static 'image/game-player_mbl.png' %}" controlslist="nodownload noplaybackrate" style="object-fit:cover;background-position: bottom center;" webkit-playsinline="true" playsinline="true">
 				{% comment %} {%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}"  {% endcomment %}
-				{% comment %} <source src="{% if video_obj %}{{video_obj.mobile_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%} {% endcomment %}
-					<source src="{% static "video/Gameplay_trailer_mobile_version.mp4" %}" type="video/mp4"></video>
+				 <source src="{% if video_obj %}{{video_obj.mobile_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}
+					{% comment %} <source src="{% static "video/Gameplay_trailer_mobile_version.mp4" %}" type="video/mp4"></video> {% endcomment %}
 				</video>
 				<i class="fa-solid fa-expand " id="fullscreenhide_in_mobile" onclick="openFulldesktop();"></i>				
 			
