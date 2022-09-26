@@ -2,6 +2,21 @@
 .video-content_mobile {
     display: none;
 }
+
+/* srikant css */
+.srikant_div .member_teams {
+    width: 16%;
+    text-align: center;
+}
+.srikant_div .member_teams img {
+    width: 89%; 
+    height: auto;
+}
+.srikant_div .team_member_section {
+    width: 50%; 
+}
+/* srikant css */
+
 /* 23-03-22 */
 .video-content_tablate {
     display: none;
@@ -1073,13 +1088,12 @@ video::-webkit-media-controls {
     border-radius: 30px;
     padding: 80px 40px 40px 40px;
     position: relative;
-    top: -70px;
     z-index: 0 !important;
     border: 1px solid #666666;
     width: 90%;
     margin: 0 auto;
-    padding-bottom: 21px;
-    height: 77%;
+    top: -80px;
+    height: 720px;
 }
 
 .team_member_section p a {
@@ -1105,7 +1119,7 @@ video::-webkit-media-controls {
     border-bottom: 1px dashed #464646;
     padding-bottom: 30px;
     margin-bottom: 20px;
-    height: 77%;
+    height: 81%;
 }
 
 .link_txt_social {
@@ -6072,6 +6086,11 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 1200px) {
+    /* srikant css */
+    .team_member_section {
+        height: 540px;
+    }
+    /* srikant css */
     .gamePlayer-outer {
         height: 100%;
     }
@@ -8442,7 +8461,15 @@ img.blog-section-img-tabs {
 
 @media only screen and (max-width: 1024px) {
     
-    
+    /* srikant css */
+    .srikant_div .member_teams img {
+        width: 89%;
+        height: auto;
+    }
+    .team_member_section {
+        height: 540px;
+    }
+    /* srikant css */
     /* css 23-09-22 */
     .video-content_tablate {
         display: block;
@@ -8624,7 +8651,20 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 992px) {
-
+    /* srikant css */
+    .srikant_div .member_teams img {
+        height: auto;
+    }
+    .srikant_div {
+        margin-top: 50px;
+    }
+    .srikant_div .team_member_section {
+        width: 80%;
+    }
+    .srikant_div .member_teams {
+        width: 30%; 
+    }
+    /* srikant css */
     /* .wndr_land_colosiusm {
         display: none !important;
     } */
@@ -8813,7 +8853,7 @@ img.blog-section-img-tabs {
     .team_member_section {
         width: 100%;
         padding: 50px 10px 10px 10px;
-        top: -43px;
+        height: 580px;
     }
 
     .testimonial-pos h2 {
@@ -12369,10 +12409,6 @@ img.blog-section-img-tabs {
         margin-left: 0px !important;
     }
 
-    .team_member_section {
-        height: 87%;
-    }
-
     .teams_bois_section {
         padding: 50px 0px;
     }
@@ -12576,6 +12612,20 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 767px) {
+    /* srikant css */
+    .srikant_div .member_teams img {
+        height: auto;
+    }
+    .srikant_div .member_teams {
+        width: 45%;
+    }
+    .srikant_div .team_member_section {
+        width: 100%;
+    }
+    .srikant_div {
+        margin-top: 0px;
+    }
+    /* srikant css */
     /* css 24/09/2022 */
     .gamePlayer {
         height: 100%;
@@ -13580,6 +13630,12 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 722px) {
+    /* srikant css */
+    .team_member_section {
+        top: -50px;
+        height: 650px;
+    }
+    /* srikant css */
     /* 22 */
     .mobileportraitview {
         display: none;

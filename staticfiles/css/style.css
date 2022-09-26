@@ -11616,6 +11616,11 @@ img.blog-section-img-tabs {
 
 @media only screen and (max-width: 767px) {
     /*----------*/
+    /* 24 */
+    .video-content_tablate {
+        display: none;
+    }
+    /* 24 */
     /* .banner-WNDR-outer {
       top: 1114px !Important;
     } */
@@ -11626,6 +11631,7 @@ img.blog-section-img-tabs {
         position: absolute !important;
         top: -55px !important;
         left: 361px !important;
+    }
         /* margin-bottom: 31px;
     } */
     .banner-WNDR-outer {
@@ -11713,6 +11719,9 @@ img.blog-section-img-tabs {
         bottom: 0;
         left: 38%;
         transform: unset;
+    }
+    .video-content_mobile {
+        right: 18px;
     }
 
     .header_WNDR nav.navbar.navbar-expand-lg.navbar-light {
