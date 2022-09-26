@@ -9302,16 +9302,7 @@ img.blog-section-img-tabs {
      /* css 24/09/22 */
     /* css 20/9/2022 */
 .mobilelandscapeview {
-    display: block!important;
-}
-.mobilelandscapeview {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
 }
 .landscape_view1 {
     height: 100%;
@@ -9320,7 +9311,7 @@ img.blog-section-img-tabs {
     justify-content: center;
 }
 .mobileportraitview {
-    display: none;
+    display: block;
 }
 /* css 20/9/2022 */
 
@@ -9918,7 +9909,13 @@ img.blog-section-img-tabs {
     .WNDR-btn-item1 {
         margin-top: 0px;
     }
-
+    .mobilelandscapeview {
+        display: block !important;
+        height: 100vh;
+    }
+    .mobileportraitview {
+        display: none !important;
+    }
     .arrow-wrap {
         position: absolute;
         /* left: 40%;
@@ -10181,6 +10178,15 @@ img.blog-section-img-tabs {
         bottom: -25px; */
         transform: translate(-50%, 0%);
     }
+
+    /* 26/09/22 css */
+    .mobilelandscapeview {
+        display: none !important;
+    }
+    .mobileportraitview {
+        display: block !important;
+    }
+    /* 26/09/22 css */
 }
 
 @media screen and (max-width: 822px) {
@@ -12253,6 +12259,17 @@ img.blog-section-img-tabs {
     }
 }
 
+@media only screen and (max-width: 802px) {
+    /* 26/09/22 css */
+    .mobilelandscapeview {
+        display: none !important;
+    }
+    .mobileportraitview {
+        display: block !important;
+    }
+    /* 26/09/22 css */
+}
+
 @media only screen and (max-width: 769px) {
     #exampleModal .nesltr-btn:after {
         right: 24px;
@@ -12278,7 +12295,7 @@ img.blog-section-img-tabs {
         display: none !important;
     }
     .mobileportraitview {
-        display: block;
+        display: block !important;
     }
     /* 22 */
     .banner_video_section .video-content {
@@ -12678,7 +12695,7 @@ img.blog-section-img-tabs {
     }
     /* 22 */
     .mobilelandscapeview {
-        display: block !important;
+        /* display: block !important; */
     }
     .mobileportraitview {
         display: none;
@@ -13493,10 +13510,22 @@ img.blog-section-img-tabs {
     }
 }
 
+@media only screen and (max-width: 742px) {
+/* 26 */
+.mobilelandscapeview {
+    display: block !important;
+}
+.mobileportraitview {
+    display: none;
+}
+/* 26 */
+}
+
 @media only screen and (max-width: 738px) {
     .cmpny-bg::after {
         left: 78%;
     }
+    
     /* 22 */
     .mobileportraitview {
         display: block;
@@ -13730,6 +13759,17 @@ img.blog-section-img-tabs {
 .mobileportraitview {
     display: block;
 }
+}
+
+@media screen and (max-width: 696px) and (min-width: 690px) {
+/* 26 */
+.mobilelandscapeview {
+    display: none !important;
+}
+.mobileportraitview {
+    display: block !important;
+}
+/* 26 */
 }
 
 @media only screen and (max-width: 670px) {
