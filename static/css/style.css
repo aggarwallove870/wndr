@@ -8466,6 +8466,9 @@ img.blog-section-img-tabs {
         width: 89%;
         height: auto;
     }
+    .member_teams {
+        width: 20%;
+    }
     .team_member_section {
         height: 540px;
     }
