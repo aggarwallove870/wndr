@@ -1135,6 +1135,7 @@ video::-webkit-media-controls {
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    text-align: center;
 }
 
 .location-icon a {
