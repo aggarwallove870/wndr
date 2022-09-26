@@ -5,12 +5,7 @@
 
 /* srikant css */
 .srikant_div .member_teams {
-    width: 16%;
     text-align: center;
-}
-.srikant_div .member_teams img {
-    width: 89%; 
-    height: auto;
 }
 .srikant_div .team_member_section {
     width: 50%; 
@@ -1127,17 +1122,16 @@ video::-webkit-media-controls {
     margin-top: 7px;
 }
 
-.member_teams img {
-    width: 100%;
+.member_teams img { 
+    width: 150px;
+    height: 150px;
     border-radius: 100px;
     border-bottom: 2px solid #ed9088;
     border-left: 1px solid #ed9088;
-    border-right: 1px solid #ed9088;
-    height: 183px;
+    border-right: 1px solid #ed9088; 
 }
 
 .member_teams {
-    width: 30%;
     margin: 0 auto;
     position: relative;
     z-index: 2;
