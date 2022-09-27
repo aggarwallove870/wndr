@@ -243,6 +243,23 @@
 				</div>
 
 				<div class="detail-item1 uk-scrollspy-inview"
+				uk-scrollspy="cls: uk-animation-slide-left; delay: 700; repeat: true">
+				<div class="location-outer">
+					<div class="location-icon">
+						<img src="{% static 'img/email-ic-contact.png' %}" class="location-1-img" alt="3-image">
+					</div>
+					<div class="location-icon">
+						<img src="{% static 'img/location-ic-contact-line.png' %}" alt="location-1"
+							class="location-img">
+						<h2>EMAIL:</h2>
+						<p class="detail-sec-number"><a href="mailto:INFO@Wndr.com">INFO@Wndr.com</a></p>
+						<p class="detail-sec-number1"><a href="mailto:PRESS@wndr.com">PRESS@wndr.com</a></p>
+						<p class="detail-sec-number1"><a href="mailto:DEVS@wndr.com">DEVS@wndr.com</a></p>	
+					</div>
+				</div>
+			</div>
+
+				{% comment %} <div class="detail-item1 uk-scrollspy-inview remove-on-alldevices-phonediv"
 					uk-scrollspy="cls: uk-animation-slide-right; delay: 600; repeat: true">
 					<div class="location-outer">
 						<div class="location-icon">
@@ -256,24 +273,9 @@
 							<p class="detail-sec-number1"><a href="tel:(000) 000-0000">(000) 000-0000</a></p>
 						</div>
 					</div>
-				</div>
+				</div> {% endcomment %}
 
-				<div class="detail-item1 uk-scrollspy-inview"
-					uk-scrollspy="cls: uk-animation-slide-left; delay: 700; repeat: true">
-					<div class="location-outer">
-						<div class="location-icon">
-							<img src="{% static 'img/email-ic-contact.png' %}" class="location-1-img" alt="3-image">
-						</div>
-						<div class="location-icon">
-							<img src="{% static 'img/location-ic-contact-line.png' %}" alt="location-1"
-								class="location-img">
-							<h2>EMAIL:</h2>
-							<p class="detail-sec-number"><a href="mailto:INFO@Wndr.com">INFO@Wndr.com</a></p>
-                            <p class="detail-sec-number1"><a href="mailto:PRESS@wndr.com">PRESS@wndr.com</a></p>
-                            <p class="detail-sec-number1"><a href="mailto:DEVS@wndr.com">DEVS@wndr.com</a></p>	
-						</div>
-					</div>
-				</div>
+			
 
 			</div>
 		</div>
