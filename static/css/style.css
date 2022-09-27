@@ -6159,10 +6159,6 @@ img.blog-section-img-tabs {
         height: 2580px;
     }
 
-    .member_teams {
-        width: 40%;
-    }
-
     .team_member_section {
         padding: 80px 20px 40px 20px;
         width: 100%;
@@ -8457,13 +8453,6 @@ img.blog-section-img-tabs {
 @media only screen and (max-width: 1024px) {
     
     /* srikant css */
-    .srikant_div .member_teams img {
-        width: 89%;
-        height: auto;
-    }
-    .member_teams {
-        width: 20%;
-    }
     .team_member_section {
         height: 540px;
     }
@@ -8650,17 +8639,8 @@ img.blog-section-img-tabs {
 
 @media screen and (max-width: 992px) {
     /* srikant css */
-    .srikant_div .member_teams img {
-        height: auto;
-    }
     .srikant_div {
         margin-top: 50px;
-    }
-    .srikant_div .team_member_section {
-        width: 80%;
-    }
-    .srikant_div .member_teams {
-        width: 30%; 
     }
     /* srikant css */
     /* .wndr_land_colosiusm {
@@ -12251,10 +12231,6 @@ img.blog-section-img-tabs {
     .cross_icon {
         right: 10px;
     }
-
-    .member_teams img {
-        height: 155px;
-    }
 }
 
 @media only screen and (max-width: 802px) {
@@ -12430,10 +12406,6 @@ img.blog-section-img-tabs {
 
     .member_teams {
         width: 40%;
-    }
-
-    .member_teams img {
-        height: auto;
     }
 
     .cmpny-bg::before {
@@ -12624,11 +12596,9 @@ img.blog-section-img-tabs {
 
 @media only screen and (max-width: 767px) {
     /* srikant css */
-    .srikant_div .member_teams img {
-        height: auto;
-    }
-    .srikant_div .member_teams {
-        width: 45%;
+    .member_teams img {
+        width: 120px;
+        height: 120px;
     }
     .srikant_div .team_member_section {
         width: 100%;
