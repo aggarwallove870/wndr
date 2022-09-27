@@ -8832,6 +8832,7 @@ img.blog-section-img-tabs {
         width: 100%;
         padding: 50px 10px 10px 10px;
         height: 580px;
+        top: -40px;
     }
 
     .testimonial-pos h2 {
@@ -12404,10 +12405,6 @@ img.blog-section-img-tabs {
         padding: 50px 0px;
     }
 
-    .member_teams {
-        width: 40%;
-    }
-
     .cmpny-bg::before {
         left: 0px;
     }
@@ -13741,7 +13738,9 @@ img.blog-section-img-tabs {
         font-size: 17px;
         line-height: 29px;
     }
-
+    .back_to_mode {
+        top: 22%;
+    }
     .form-wndr-outer.company_section_about {
         width: 90% !important;
     }
@@ -14623,10 +14622,6 @@ img.blog-section-img-tabs {
 
     .cmpny-bg::after {
         top: 87%;
-    }
-
-    .member_teams {
-        width: 45%;
     }
 
     .cmpny-bg::before {
@@ -16521,6 +16516,10 @@ img.blog-section-img-tabs {
         left: 0%;
         position: unset;
         padding-top: 0px;
+    }
+    .member_teams img {
+        width: 130px;
+        height: 130px;
     }
 
     .header_WNDR .navbar-nav li.nav-item {
