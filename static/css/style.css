@@ -12005,7 +12005,7 @@ img.blog-section-img-tabs {
         display: flex;
         width: 100%;
         gap: 82px;
-        justify-content: space-between;
+        justify-content:center;
         margin-right: 0px !important;
         max-width: 100% !important;
     }
