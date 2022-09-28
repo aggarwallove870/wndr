@@ -9908,7 +9908,8 @@ img.blog-section-img-tabs {
     }
 
     .banner-logo-div {
-        top: 244px;
+        top: 194px;
+        left: 60px;
     }
 
     .banner-WNDR-btn {
@@ -10030,7 +10031,7 @@ img.blog-section-img-tabs {
     }
 
     .WNDR-btn-item1 {
-        margin-top: -30px;
+        margin-top: -10px;
     }
 
     div#bdNavbar {
@@ -10109,7 +10110,8 @@ img.blog-section-img-tabs {
 
     .banner-WNDR-outer {
         top: 424px;
-        left: 270px;
+        left: 100px;
+        top: 300px !important;
     }
 
     .expnd-ehance-sectn {
@@ -10173,12 +10175,26 @@ img.blog-section-img-tabs {
         top: 184px;
         right: 110px;
     }
+
+    /* 28/09/22 css */
+    .WNDR_btn_home {
+        width: 100%;
+    }
+    .banner-logo-div {
+        top: 160px;
+        z-index: 0;
+        left: 30px;
+    }
     /* css 20/09/22 */
     .banner-WNDR-outer {
         top: 270px !Important;
-    }
-    .WNDR_btn_home input { 
-        padding: 20px 50px; 
+        left: 90px;
+    }    
+    .WNDR_btn_home input {
+        padding: 20px 0;
+        padding-left: 0px;
+        position: absolute;
+        left: -14px;
     }
     /* css 20/09/22 */
 
@@ -10224,11 +10240,6 @@ img.blog-section-img-tabs {
 
     .banner-logo-div img {
         width: 300px;
-    }
-
-    .banner-logo-div {
-        top: 160px;
-        z-index: 0;
     }
 
     .phase-stcn-gaming {
@@ -10289,11 +10300,6 @@ img.blog-section-img-tabs {
     .right-sec-footer-social {
         position: relative;
         margin-right: 0;
-    }
-
-    .banner-WNDR-outer {
-        top: 394px;
-        left: 50%px;
     }
 
     .nesltr-btn:before {
@@ -10432,12 +10438,6 @@ img.blog-section-img-tabs {
     /*header end*/
 
     /*banner start*/
-    .banner-logo-div {
-        top: 186px;
-        left: 84px;
-        position: absolute;
-        z-index: 0;
-    }
 
     .banner-WNDR {
         display: flex;
@@ -10461,17 +10461,6 @@ img.blog-section-img-tabs {
 
     .banner-WNDR img.banner-img-bg {
         display: none;
-    }
-
-    .banner-WNDR-outer {
-        top: 421px;
-        left: 50%;
-        z-index: 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        transform: translate(-50%, -50%);
     }
 
     .banner-logo-div img {
@@ -11056,11 +11045,6 @@ img.blog-section-img-tabs {
         left: 0px;
     }
 
-    .banner-WNDR-outer {
-        top: 424px;
-        left: 50%;
-    }
-
     .expnd-ehance-sectn {
         left: -76px;
     }
@@ -11277,17 +11261,6 @@ img.blog-section-img-tabs {
 
     .banner-WNDR img.banner-img-bg {
         display: none;
-    }
-
-    .banner-WNDR-outer {
-        top: 410px;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        z-index: 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
     }
 
     .banner-logo-div img {
@@ -12585,10 +12558,6 @@ img.blog-section-img-tabs {
     .mobile_section_vision {
         padding-top: 20px;
     }
-
-    .banner-WNDR-outer {
-        top: 400px !Important;
-    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -12781,9 +12750,7 @@ img.blog-section-img-tabs {
 
     /*header end*/
     /*banner start*/
-    .banner-logo-div img {
-        display: none;
-    }
+    
 
     img.banner-img-bg-mobile {
         height: 100%;
@@ -13738,6 +13705,14 @@ img.blog-section-img-tabs {
         font-size: 17px;
         line-height: 29px;
     }
+    /* css/28/09/22 */
+    .banner-logo-div img {
+        display: none;
+    }
+    .WNDR_btn_home input {
+        position: unset;
+    }
+    /* css/28/09/22 */
     .back_to_mode {
         top: 22%;
     }
@@ -14277,7 +14252,7 @@ img.blog-section-img-tabs {
     }
 
     .arrow-wrap {
-        left: 100% !important;
+        left: 92% !important;
         bottom: 48px;
     }
 
@@ -14775,7 +14750,7 @@ img.blog-section-img-tabs {
 
     .banner-WNDR-outer {
         position: absolute;
-        left: 50%;
+        left: 56%;
         transform: translate(-50%, -0%);
     }
 
@@ -15730,9 +15705,6 @@ img.blog-section-img-tabs {
     .wndr_engine h2 {
         font-size: 21px;
     }
-    .banner-WNDR-outer {
-        top: 524px !Important;
-    }
     .banner-logo-div img {
         width: 240px !important;
     }
@@ -15943,7 +15915,7 @@ img.blog-section-img-tabs {
     /*banner start*/
     .banner-WNDR-outer {
         position: absolute;
-        left: 50%;
+        left: 56%;
         transform: translate(-50%, -0%);
         top: 260px;
         z-index: 0;
