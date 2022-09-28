@@ -387,7 +387,7 @@
 	}
 	
 	</script>
-	<script type="text/javascript">
+	{% comment %} <script type="text/javascript">
 
 		document.onselectstart=function(){
 		if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password") {
@@ -408,5 +408,5 @@
 		}
 		};
 		}
-		</script>
+		</script> {% endcomment %}
 </html>
