@@ -174,7 +174,7 @@
            {% endblock %}
            <!-- footer start here -->
            <footer>
-               <div class="footer_WNDR">
+               <div class="footer_WNDR remove_saveimage">
                    <div class="footer-overlap">
                        <img src="{% static 'image/footer-line-top.png' %}" class="top-line" alt="footer1">
                        <img src="{% static 'image/footer-line-top-mobile.png' %}" class="top-line-m0bile"
@@ -443,7 +443,7 @@
                            $(this).find(".playpause").css("display", "block");
  
                            var a = $(".playpause > :nth-child(2n)").children().next()
-                           a.attr('src', 'static/image/game-player.jpg')
+                           a.attr('src', 'static/image/game-player.jpeg')
  
  
                        }
@@ -485,7 +485,7 @@
                            $(this).find(".playpause").css("display", "block");
                            var b = $(".playpause > :nth-child(3n)").children().next()
                            b.attr('src', 'static/image/game-player_mbl.png')
- 
+                          
  
                        }
                    });
@@ -1049,7 +1049,6 @@
 <!-- //code by kapil regarding resizing -->
 <script>
    var onresize = function() {
-       console.log("hua")
        //your code here
        //this is just an example
        width = document.body.clientWidth;
@@ -1194,14 +1193,27 @@ return false;
 };
 }
 </script> 
-<script>
 
-$(function() {  
-    $('img').bind('contextmenu', function() {  
-        return false;
-    });
-});
+
+
+<script type="text/javascript" language="javascript">
+    $(document).ready(function() {
+        $('img').bind("contextmenu",function(e) {
+           return false;
+        });
+    }); 
 </script>
+
+<script>
+    $('.remove_saveimage').bind("contextmenu",function(e){
+        return false;
+    })
+</script>
+<!-- // $(function() {  
+    //     $('img').bind('contextmenu', function() {  
+    //         return false;
+    //     });
+    // }); -->
 
  </div>
    </div>

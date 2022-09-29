@@ -284,7 +284,7 @@
 
 	<!-- footer start here -->
 	<footer>
-		<div class="footer_WNDR footer-roadmap">
+		<div class="footer_WNDR footer-roadmap remove_saveimage">
 			<div class="footer-overlap">
 				<img src="{% static 'image/footer-line-top.png' %}" class="top-line" alt="footer1">
 				<img src="{% static 'image/footer-line-top-mobile.png' %}" class="top-line-m0bile" alt="footer2">
@@ -462,8 +462,11 @@
 				});
 			});
 			</script>
-
-			
+			<script>
+				$('.remove_saveimage').bind("contextmenu",function(e){
+					return false;
+				})
+			</script>
 
 </body>
 
