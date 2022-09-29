@@ -46,6 +46,8 @@
  
  
 <body>
+
+    <!-- oncontextmenu="return false" -->
  
    <!-- banner -->
    <div class="mobilelandscapeview" style="position:relative;">
@@ -1170,7 +1172,7 @@
  
            </script> -->
 
-    <!-- <script type="text/javascript">
+<script type="text/javascript">
 
 document.onselectstart=function(){
 if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password") {
@@ -1191,10 +1193,17 @@ return false;
 }
 };
 }
+</script> 
+<!-- <script>
+
+$(function() {  
+    $('img').bind('contextmenu', function() {  
+        return false;
+    });
+});
 </script> -->
 
- 
-       </div>
+ </div>
    </div>
  
  

@@ -14396,6 +14396,14 @@ img.blog-section-img-tabs {
     .wndr_engine h2 {
         font-size: 26px;
     }
+    /*--video---*/
+    .banner_mobile_video {
+        width: 100%;
+        object-fit: cover;
+    }
+    .banner_video_section{
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width: 574px) {
@@ -14490,7 +14498,7 @@ img.blog-section-img-tabs {
         width: 340px !Important;
     }
     .banner-WNDR-outer {
-        top: 634px !Important;
+        top: 804px !Important;
     }
     
 
@@ -14592,7 +14600,7 @@ img.blog-section-img-tabs {
     }
 
     .banner-WNDR-outer {
-        top: 354px !Important;
+        top: 534px !Important;
     }
 
     .cmpny-bg::after {
@@ -15934,11 +15942,11 @@ img.blog-section-img-tabs {
     }
 
     .banner-WNDR-btn .WNDR-btn-item1:after {
-        top: 0.5px;
+        top: -0.5px;
     }
 
     .banner-WNDR-btn .WNDR-btn-item1:before {
-        top: 0.5px;
+        top: -0.5px;
     }
 
     /*banner end*/
@@ -16261,7 +16269,7 @@ img.blog-section-img-tabs {
 
 @media screen and (max-width: 363px) {
     .banner-WNDR-outer {
-        top: 350px !Important;
+        top: 470px !Important;
     }
 
     .nesltr-btn input {
@@ -16342,6 +16350,9 @@ img.blog-section-img-tabs {
     .vision_lineas_mbl {
         top: 45px;
     }
+    .banner-WNDR-outer {
+        top: 440px !Important;
+    }    
 }
 
 /* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {

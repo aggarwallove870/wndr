@@ -564,7 +564,7 @@ function myFunction() {
         });}
     }
 </script>
-{% comment %} <script type="text/javascript">
+ <script type="text/javascript">
 
 	document.onselectstart=function(){
 	if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password") {
@@ -585,5 +585,13 @@ function myFunction() {
 	}
 	};
 	}
-	</script> {% endcomment %}
+	</script> 
+	<script>
+
+		$(function() {  
+			$('img').bind('contextmenu', function() {  
+				return false;
+			});
+		});
+		</script>
 </html>
