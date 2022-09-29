@@ -8401,7 +8401,7 @@ img.blog-section-img-tabs {
 
     .banner-WNDR-outer {
         top: 424px;
-        left: 135px;
+        left: 0px;
     }
 
     .sbscribe-section button.sbt-btn {
@@ -9819,9 +9819,9 @@ img.blog-section-img-tabs {
         position: absolute;
         z-index: 0;
     }
-
+   
     .banner-WNDR-btn {
-        margin-left: 0;
+        margin-left: 110px;
         margin-top: 10px;
     }
 

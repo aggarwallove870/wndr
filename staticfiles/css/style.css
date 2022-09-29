@@ -7065,7 +7065,6 @@ img.blog-section-img-tabs {
     .footer_WNDR ul li a {
         width: 30px;
         height: 30px;
-        ;
         font-size: 19px;
     }
 
@@ -9430,7 +9429,7 @@ img.blog-section-img-tabs {
 
     .banner-WNDR-outer {
         top: 394px;
-        left: 50%px;
+        left: 50%;
     }
 
     .nesltr-btn:before {
