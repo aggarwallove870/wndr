@@ -107,6 +107,7 @@ i.fa-solid.fa-expand {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 div#load-image-of-modal-subscibe {
@@ -1775,6 +1776,7 @@ img.banner-img-bg-mobile {
 
 .about-WNDR:after {
     content: url(../image/about-space-right-side.png);
+    pointer-events: none;
     position: absolute;
     top: 50%;
     right: 0;
@@ -9889,13 +9891,7 @@ img.blog-section-img-tabs {
     .WNDR-btn-item1 {
         margin-top: 0px;
     }
-    .mobilelandscapeview {
-        display: block !important;
-        height: 100vh;
-    }
-    .mobileportraitview {
-        display: none !important;
-    }
+    
     .arrow-wrap {
         position: absolute;
         /* left: 40%;
@@ -9903,19 +9899,9 @@ img.blog-section-img-tabs {
         transform: translate(-50%, 0%);
     }
 
-    .banner-WNDR-btn {
-        margin-left: 0;
-        margin-top: 90px;
-    }
-
     .banner-logo-div {
         top: 194px;
         left: 60px;
-    }
-
-    .banner-WNDR-btn {
-        margin-left: 0;
-        margin-top: 40px;
     }
 
     /*contact-page css start*/
@@ -9987,7 +9973,7 @@ img.blog-section-img-tabs {
 
 @media screen and (max-width: 897px) and (min-width: 890px) {
 .mobilelandscapeview {
-    display: block;
+    display: block !important;
 }
 .mobileportraitview {
     display: none;
@@ -10090,6 +10076,7 @@ img.blog-section-img-tabs {
         display: flex;
         align-items: center;
         justify-content: center;
+        display: block !important;
     }
     .landscape_view1 {
         height: 100%;
@@ -10141,6 +10128,7 @@ img.blog-section-img-tabs {
         display: flex;
         align-items: center;
         justify-content: center;
+        display: block !important;
     }
     .landscape_view1 {
         height: 100%;
@@ -13443,6 +13431,7 @@ img.blog-section-img-tabs {
 /* 26 */
 .mobilelandscapeview {
     display: block !important;
+    height: 100vh;
 }
 .mobileportraitview {
     display: none !important;
