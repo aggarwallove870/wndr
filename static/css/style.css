@@ -1080,7 +1080,7 @@ video::-webkit-media-controls {
 }
 
 .team_member_section {
-    background: #131418;
+    background: #131418; 
     border-radius: 30px;
     padding: 80px 40px 40px 40px;
     position: relative;
