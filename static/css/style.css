@@ -10184,6 +10184,8 @@ img.blog-section-img-tabs {
         padding-left: 0px;
         position: absolute;
         left: -14px;
+        background: transparent;
+        color: white;
     }
     /* css 20/09/22 */
 
@@ -13701,6 +13703,8 @@ img.blog-section-img-tabs {
     }
     .WNDR_btn_home input {
         position: unset;
+        background: transparent;
+        color: white;
     }
     /* css/28/09/22 */
     .back_to_mode {
@@ -14332,12 +14336,14 @@ img.blog-section-img-tabs {
 
     /*------the company section------*/
     .WNDR_btn_home {
-        width: 84% !Important;
+        width: 84% !important;
     }
 
     .WNDR_btn_home input {
         padding: 0px;
         width: 100%;
+        background: transparent;
+        color: white;
     }
 
     .team_member_section p {
@@ -14345,7 +14351,7 @@ img.blog-section-img-tabs {
     }
 
     .invision-bg {
-        background-image: url(../image/mobile_our_vision.png) !Important;
+        background-image: url(../image/mobile_our_vision.png) !important;
         background-size: unset;
         height: 520px;
     }
@@ -16204,6 +16210,8 @@ img.blog-section-img-tabs {
 
     .WNDR_btn_home input {
         padding: 0px;
+        background: transparent;
+        color: white;
     }
 
     .banner-WNDR-btn {
