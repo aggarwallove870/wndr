@@ -3,6 +3,36 @@
     display: none;
 }
 
+.moreless-button{
+    background: black;
+    border-radius: 2px;
+    color: #ffffff !IMPORTANT;
+    border: 1px solid #ff8900;
+    box-shadow: 1px 1px 3px #ff8900;
+    margin-top: 20px;
+}
+
+
+.moreless-button-of-srikant{
+    background: black;
+    border-radius: 2px;
+    color: #ffffff !IMPORTANT;
+    border: 1px solid #ff8900;
+    box-shadow: 1px 1px 3px #ff8900;
+    margin-top: 20px;
+}
+
+.moreless-button-of-josh{
+    background: black;
+    border-radius: 2px;
+    color: #ffffff !IMPORTANT;
+    border: 1px solid #ff8900;
+    box-shadow: 1px 1px 3px #ff8900;
+    margin-top: 20px;
+}
+#more {display: none;}
+#more_srikant{display:none;}
+#more_josh{display: none;}
 /* srikant css */
 .srikant_div .member_teams {
     text-align: center;
@@ -1089,7 +1119,7 @@ video::-webkit-media-controls {
     width: 90%;
     margin: 0 auto;
     top: -80px;
-    height: 820px;
+    height: 880px;
 }
 
 .team_member_section p a {

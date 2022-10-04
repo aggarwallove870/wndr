@@ -24,6 +24,7 @@
     <!-- fav icon -->
     <link rel="icon" type="image/x-icon" href="{% static 'image/fab-ic.png' %}">
 </head>
+
 <body>
 	<div class="mobilelandscapeview" style="position:relative;">
 		<div class="landscape_view1">
@@ -161,9 +162,11 @@
 							<div class="link-position d-flex justify-content-center">FOUNDER | CEO</div>
 						</div>
                         <div class="row teams_seprate_section">
-                            <div class="col-12 col-sm-12 col-md-12">
+                            <div class="col-12 col-sm-12 col-md-12" style="break-word">
                                 <p>A visionary whose entrepreneurial ventures lie at the intersection of technology, gaming, music, fashion and television. Creator of the WNDRVERSE and 3-D Web technology powering AAA gaming. In 2009 he produced the viral online web game “Wall Street Massacre: Murder Madoff.” The game became an instant success with 25 million game plays and fan clubs around the world. The success of this title spawned the vision behind WNDR.</p>
-                                <P>Borris’ detailed view of the big picture has led to engagements and activations with some of the world's leading brands, such as Time Warner Inc., Samsung, SONY Music, BMW Motorcycles, Nestle, and A&E Networks. With a history as an ignitor of pop culture moments and how to amplify them, Mr. Bazelais' plan for the future will be indelible, the delivery of the open metaverse.</P>
+		
+                                <p id="more">Borris’ detailed view of the big picture has led to engagements and activations with some of the world's leading brands, such as Time Warner Inc., Samsung, SONY Music, BMW Motorcycles, Nestle, and A&E Networks. With a history as an ignitor of pop culture moments and how to amplify them, Mr. Bazelais' plan for the future will be indelible, the delivery of the open metaverse.</p>
+								<button class="moreless-button" href="#">See more</button>
                             </div>
                         </div>
 						<div class="row">
@@ -187,8 +190,9 @@
 							<div class="col-12 col-sm-12 col-md-12">
 								<p>A multi-faceted entrepreneur in his own right, Srikant Dash has extensive technology experience across multiple market sectors. Companies co-founded by Dash have developed next-generation technology solutions in the automotive space, real estate and medical industries. Dash’s unusual ability to navigate both the technical and creative aspects of the development process makes him uniquely qualified to bring the WNDR vision to life.
 								</p>
-								<p>His impressive list of accomplishments includes the development of a real-time VR game for Disney as a complement to a popular television show, the real-time implementation of magnetomotive ultrasound, a novel imaging technology for early cancer detection, and the successful introduction of VR technologies to the Indian automotive industry for companies like Honda, Mahindra, and Mercedes Benz. In recognition of his work in developing the first cloud rendering solution for 3D automotive visualization, Dash received the IDMA Gold medal award for Best Branded Content in 2021 for Renault Virtual showroom, one of India’s most prestigious awards for achievement in digital marketing.
+								<p id="more_srikant">His impressive list of accomplishments includes the development of a real-time VR game for Disney as a complement to a popular television show, the real-time implementation of magnetomotive ultrasound, a novel imaging technology for early cancer detection, and the successful introduction of VR technologies to the Indian automotive industry for companies like Honda, Mahindra, and Mercedes Benz. In recognition of his work in developing the first cloud rendering solution for 3D automotive visualization, Dash received the IDMA Gold medal award for Best Branded Content in 2021 for Renault Virtual showroom, one of India’s most prestigious awards for achievement in digital marketing.
 								</p>
+								<button class="moreless-button-of-srikant">See more</button>
 							</div>
 						</div>
 						<div class="row">
@@ -212,7 +216,8 @@
 					<div class="row teams_seprate_section">
 						<div class="col-12 col-sm-12 col-md-12">
 							<p>A prolific entrepreneur and seed sage investor known for bringing innovative concepts to life, Josh has deep experience across multiple industry sectors, including media, publishing, entertainment, and educational technology, Josh served as the Lead Strategist for Pubbly, one of 5 finalists in the Global Learning XPrize. Led by Josh, the Pubbly team won $1M innovation prize from Elon Musk for its interactive design and distribution platform solution.</p>
-							<P>Josh also founded LinkIt! (www.linkit.com), a web-based testing and data analytics SaaS platform, and serves as Executive Chairman. The K12-focused Edtech firm enables customers to gain unprecedented predictive insight into student academic performance data and teacher efficacy and serves over 400 clients, generating over $15M in annual revenue. Josh graduated magna cum laude from Harvard University.</P>
+							<p id="more_josh">Josh also founded LinkIt! (www.linkit.com), a web-based testing and data analytics SaaS platform, and serves as Executive Chairman. The K12-focused Edtech firm enables customers to gain unprecedented predictive insight into student academic performance data and teacher efficacy and serves over 400 clients, generating over $15M in annual revenue. Josh graduated magna cum laude from Harvard University.</p>
+							<button class="moreless-button-of-josh">See more</button>
 						</div>
 					</div>
 					<div class="row">
@@ -420,7 +425,38 @@
 				});
 			});
 			</script>
-			
+
+			<script>
+				$('.moreless-button').click(function() {
+					$('#more').slideToggle();
+					if ($('.moreless-button').text() == "See more") {
+					  $(this).text("See less")
+					} else {
+					  $(this).text("See more")
+					}
+				  });
+			</script>
+			<script>
+				$('.moreless-button-of-srikant').click(function() {
+					$('#more_srikant').slideToggle();
+					if ($('.moreless-button-of-srikant').text() == "See more") {
+					  $(this).text("See less")
+					} else {
+					  $(this).text("See more")
+					}
+				  });
+			</script>
+			<script>
+				$('.moreless-button-of-josh').click(function() {
+					$('#more_josh').slideToggle();
+					if ($('.moreless-button-of-josh').text() == "See more") {
+					  $(this).text("See less")
+					} else {
+					  $(this).text("See more")
+					}
+				  });
+			</script>
+{% comment %} 			
 			<script>
 				$(document).ready(function(){
 				  $(document).mouseleave(function(){
@@ -428,4 +464,4 @@
 				  });
 			  });
 			  </script>
-</html>
+</html> {% endcomment %}

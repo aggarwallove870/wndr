@@ -9,6 +9,7 @@
    <title>WNDR.com</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+   <meta property="og:url" content="https://www.wndr.com" />
    <!-- <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"> -->
    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
  
@@ -1270,11 +1271,28 @@ return false;
 
 <script>
   $(document).ready(function(){
-    $(document).mouseleave(function(){
+    $(html).mouseleave(function(){
         $("#exampleModal").modal("show");
     });
 });
 </script>
+
+<script>
+//     window.addEventListener("beforeunload", function (e) {
+       
+  
+ 
+//   var confirmationMessage = $("#exampleModal").modal("show")
+
+//   (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+//   return confirmationMessage;   
+//   setTimeout(function() {
+//   3000 
+//     });
+//       });
+</script>
+
+
  </div>
    </div>
  
