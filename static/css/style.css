@@ -2,7 +2,9 @@
 .video-content_mobile {
     display: none;
 }
-
+.sbscribe-section {
+    margin-top: 20px;
+}
 .moreless-button{
     background: black;
     border-radius: 2px;
@@ -3401,6 +3403,10 @@ img.sucribe-center-tabs {
     font-family: 'Avenir LT Pro';
     color: white;
     padding: 7px 0;
+    position: absolute;
+    bottom: -55px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .contact-error {
@@ -3432,7 +3438,27 @@ img.sucribe-center-tabs {
     text-transform: capitalize;
     border-radius: 6px;
 }
-
+.error-msg{
+    background: rgb(237 56 51 / 34%);
+    color: #ccb4b8;
+    width: 500px !important;
+    height: 36px;
+    margin-top: 55px;
+    position: relative;
+    margin-left: -43px;
+    max-width: 294px !important;
+    position: absolute;
+    margin-top: 49px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #f4a8a2;
+    text-transform: capitalize;
+    border-radius: 6px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .newsletter-bg:before {
     background: url(../image/about-space-left-side.png);
     width: 100%;

@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.urls import path, include
 from wndrland_app.views import *
 
+
 urlpatterns = [
     # path('',start_page ,name = 'start-page'),
     path('', home, name='home'),
