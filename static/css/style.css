@@ -2678,7 +2678,7 @@ h2 {
     padding-top: 25px;
 }
 
-.roadmap-section h1 {
+.roadmap-section h2 {
     color: #fff;
     font-size: 60px;
     font-weight: 500;
@@ -6826,7 +6826,7 @@ img.blog-section-img-tabs {
         margin-right: 0;
     }
 
-    .roadmap-section h1 {
+    .roadmap-section h2 {
         font-size: 50px;
     }
 
