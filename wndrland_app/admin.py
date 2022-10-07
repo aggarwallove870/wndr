@@ -1,5 +1,20 @@
+import site
 from django.contrib import admin
 from .models import *
+from django.contrib.auth.models import Group
+from django.contrib import auth
+from django.contrib.sites.models import Site
+
+
+
+admin.autodiscover()
+admin.site.unregister(Site)
+
+#UnRegister models here
+admin.site.unregister(auth.models.User)
+admin.site.unregister(Group)
+
+
 # Register your models here.
 admin.site.register(Subscriber_newsletter)
 
