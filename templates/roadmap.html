@@ -5,22 +5,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>WNDR.com</title>
-
 	<!-- slick css -->
  <link rel="stylesheet" href="{% static 'css/slick.css' %}">
  <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
- <!--<link rel="stylesheet" href="{% static 'css/uikit.min.css' %}">-->
-
 	<!-- bootstrap-css start -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- link css -->
 	  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 	  <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
-
 	   <!-- font awsome -->
     <script src="https://use.fontawesome.com/b197abb434.js"></script>
-
     <!-- fav icon -->
     <link rel="icon" type="image/x-icon" href="{% static 'image/fab-ic.png' %}">
 </head>
@@ -31,7 +26,6 @@
 		<img class="back_to_mode" src="{% static 'image/phone_rotate_black.png' %}">
 	</div>
 	</div>
-
 	<div class="mobileportraitview">
 	<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -44,15 +38,6 @@
 		  <img src="{% static 'image/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="subscribe-line-tabs">
 		  <p>Subscribe here to get the latest news on WNDR events, launch dates, SDK release, WNDR coin and NFT drops.</p>
   			<form method="post" onsubmit="return false;">
-
-			  <!--<span class="nesltr-btn">
-				  <img src="{% static 'image/sucribe-input-img-center.png' %}" class="sucribe-center-pc" alt="subscribe-1">
-				  <img src="{% static 'image/sucribe-input-img-tabs.png' %}" class="sucribe-center-tabs" alt="subscribe-2">
-				  <img src="{% static 'image/sucribe-btn-center-img-mobile.png' %}" class="sucribe-center-pc-mobile" alt="subscribe-3">
-				  <input type="email" name="myInput" required id="myInput" value="" placeholder="Enter email">
-				  <div class="clearfix"></div>
-			  
-			  </span>-->
 			  <div class="sbscribe_btn_input">
 				<span>
 					<input type="email" name="myInput" required  id="myInput" value="" placeholder="Enter email">
@@ -61,16 +46,9 @@
 			  <div class="alert alert-danger sueccs-msg" id="sucess_div" role="alert" hidden>
 				<span id="sucess" ></span>
 			  </div>
-				  <!-- <div class="alert alert-danger danger-msg" role="alert">
-					This is a danger alert—check it out!
-				  </div>
-				  <div class="alert alert-danger sueccs-msg" role="alert">
-					This is a danger alert—check it out!
-				  </div> -->
 			  <div class="sbscribe-section" id="success_btn">
 				<button class="sbt-btn" id="btn-d"  onclick="myFunction()">Submit</button>
 			  </div>
-
 		  </div>
 		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
@@ -94,9 +72,7 @@
 				      <svg xmlns="http://www.w3.org/2000/svg" class="bi" fill="currentColor" viewBox="0 0 16 16">
 				  <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
 				</svg>
-
 				    </button>
-
 					  <div class="navbar-collapse collapse" id="bdNavbar" style="">
 				      <ul class="navbar-nav m-auto mt-lg-0">
 					      <li class="nav-item">
@@ -130,31 +106,15 @@
 		  </div>
 		</header>
     <!-- header close here -->
-
 <!----Start About Us---->
 <div class="container">
 		<div class="row abt-main-section">
-			<!-- <div class="col-lg-4 col-md-12 col-sm-4 col-xs-12"></div> -->
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 about-heading text-center">
 				<h1>About</h1>
 			</div>
-			<!---<div class="col-lg-3 col-md-12 col-sm-3 col-xs-12 wnddr-land d-none">
-				<img src="img/wndr-land.png">
-				<p>Powered By WNDR</p>
-			</div>-->
 		</div>
 		<div class="row company-spcng">
 			<div class="col-lg-4 col-md-12 cmpny-bg">
-				<!---Start Company Section-->
-				<!-- <div class="form-wndr-outer company_section_about">
-					<img src="/static/img/contact-space.png" class="space-contact" alt="space-1">
-					<img src="/static/img/contact-space-left.png" class="space-contact1" alt="space-2">
-					<h2>The Company</h2>
-					<img src="{% static 'img/Hr.png' %}" alt="Hr-line">
-					<p>WNDR powers browser-based premium multiplayer meta-games, virtual events and immersive open worlds distributed on any connected device with a simple web link. Our Streaming engine distributes with the “click-to-share” ease of a Youtube video. 
-					WNDR is the next evolution of scalable, blockchain-powered, social-focused gaming in the metaverse. The company’s first official game title, “The Colosseum,” is set in the futuristic world of WNDR.LAND, WNDRs streaming technology enables small teams to create high-end game experiences without a traditional publisher or game studio. WNDR represents the next evolution of scalable, blockchain-powered, social-focused gaming in the metaverse.</p>
-				</div> -->
-				<!---End Company Section-->
 				<!---Start the company section -->	
 				<div class="roadmap_company_section">
 					<span class="abt_top_btm_section">
@@ -225,7 +185,7 @@
 				</div>
 				<p class="rdmp-phtw"><span>Phase 02</span></p>
 				<h2><span>WNDR.com | ORIGINS</span> ADDITIONAL GAMING EXPERIENCES SHOWCASE THE EXPANSION OF THE WNDR.LAND DIGITAL WORLD </h2>
-				<h2>STATUS <span><<<</span>IN DEVELOPMENT<span>>>></span></h2>
+				<h2>STATUS <span></span>IN DEVELOPMENT<span>>>></span></h2>
 				<div class="key-objectv-phasetw">
 					<h4>Key Objectivess </h4>
 					<ul>
@@ -245,7 +205,7 @@
 				<h2><span>WNDR.com </span>OPEN WORLD</h2> 
 					<h2 class="bulid_out_txt">BUILD OUT & DEVELOPMENT OF VIRTUAL OPEN WORLD TECHNOLOGY THAT EXPANDS THE PLAYABLE UNIVERSE OF WNDR.
 					</h2>
-					<h2>STATUS<span><<<</span>PLANNING<span>>>></span></h2>
+					<h2>STATUS<span></span>PLANNING<span>>>></span></h2>
 				<div class="key-objectv-phasetw">
 					<h4>Key Objectivess </h4>
 					<ul>
@@ -462,7 +422,7 @@
 				<div class="row footer-align">
 					<div class="col-md-3 col-lg-4 mbl-footer-img">
 						<div class="footer-logo">
-							<img src="{% static 'image/header-logo.png' %}" alt="header-logo>
+							<img src="{% static 'image/header-logo.png' %}" alt="header-logo">
 						</div>
 					</div>
 					<div class="col-md-5 col-lg-5 copyright-footer">
@@ -506,32 +466,23 @@
 		</div>
 	</div>
 </footer>
-</div>
-
 <!-- footer close here-->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
     <!-- bootstrap js -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- bootstrap js -->
-<!--<script src="{% static 'js/uikit.min.js' %}"></script>-->
-<script>
-	//Get the button
-	var mybutton = document.getElementById("myBtn");
-	
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-	
+    <!-- bootstrap js --> 
+<script> 
+	var mybutton = document.getElementById("myBtn"); 
+	window.onscroll = function() {scrollFunction()}; 
 	function scrollFunction() {
 	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		mybutton.style.display = "block";
 	  } else {
 		mybutton.style.display = "none";
 	  }
-	}
-	
-	// When the user clicks on the button, scroll to the top of the document
+	} 
 	function topFunction() {
 	  document.body.scrollTop = 0;
 	  document.documentElement.scrollTop = 0;
@@ -551,21 +502,17 @@ function myFunction() {
                 "email": email,
                 'csrfmiddlewaretoken': '{{csrf_token}}'
             },
-
 		success: function (data) {
 			document.getElementById("sucess_div").hidden=false;
 			document.getElementById("sucess").innerHTML = "Thank you for subscribing"
 			$('#myInput').val('');
-			// $("#sucess_div").delay(3000).fadeOut()
 			$("#sucess_div").show().delay(3000).fadeOut();;
 			$("#btn-d").attr("disabled", false);
-
 		},
         });}
     }
 </script>
  <script type="text/javascript">
-
 	document.onselectstart=function(){
 	if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password") {
 	return false;
@@ -599,5 +546,4 @@ function myFunction() {
 				return false;
 			})
 		</script>
-		
 </html>
