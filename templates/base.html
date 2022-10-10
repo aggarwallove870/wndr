@@ -30,12 +30,15 @@
    <!-- fav icon -->
    <link rel="icon" type="image/x-icon" href="{% static 'image/fab-ic.png' %}">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   </style>
+
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5RCLP680E"></script>
    <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'AW-10997461539');
+  
+    gtag('config', 'G-W5RCLP680E');
   </script>
 <script>
     gtag('event', 'conversion', {'send_to': 'AW-10997461539/L2prCLTdkeMDEKPk__so'});
@@ -47,7 +50,7 @@
    <div class="mobilelandscapeview" style="position:relative;">
        <div class="landscape_view1">
            <p>Back to Viewing Mode</p>
-           <img class="back_to_mode" src="{% static 'image/phone_rotate_black.png' %}">
+           <img class="back_to_mode" alt="Viewing_mode" src="{% static 'image/phone_rotate_black.png' %}">
        </div>
    </div>
    <div class="mobileportraitview">
@@ -253,9 +256,7 @@
                    ]
                });
            </script>
- 
            <!-- bootstrap js -->
- 
            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
            <script src="https://code.jquery.com/jquery-3.6.0.min.js"
                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -357,26 +358,20 @@
                        }
                    });
                });
-
                var testEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
                $("#load-image-of-modal-subscibe1").hide()
                function myFunction1() {
                    email = $('#myInput1').val();
                    console.log("Arrivals-----0")
                    console.log(email)
-                
                    if(email.length == 0){
-                  
                     document.getElementById("error_div1").hidden = false;
                     document.getElementById("error1").innerHTML = "Please Enter Email"
-                    $("#error_div1").show().delay(3000).fadeOut();
-                    
-                                 
+                    $("#error_div1").show().delay(3000).fadeOut();        
                  }
                    else if (testEmail.test(email)) {
                        $("#load-image-of-modal-subscibe1").show()
                        $.getScript('https://www.googletagmanager.com/gtag/js?id=AW-10997461539');
-                    
                        console.log("abc")
                        $.ajax({
                            type: "POST",
@@ -384,7 +379,6 @@
                                "email": email,
                                'csrfmiddlewaretoken': '{{csrf_token}}'
                            },
- 
                            success: function (data) {
                                $("#load-image-of-modal-subscibe1").hide()
                                document.getElementById("sucess_div1").hidden = false;
@@ -407,14 +401,10 @@
                    email = $('#myInput2').val();
                    console.log("Arrivals-----1")
                    console.log(email)
-        
                    if (email.length == 0){
-                  
                     document.getElementById("error_div2").hidden = false;
                     document.getElementById("error2").innerHTML = "Please Enter Email"
-                    $("#error_div2").show().delay(3000).fadeOut();
-                   
-                                   
+                    $("#error_div2").show().delay(3000).fadeOut();                  
                    }
                    else if (testEmail.test(email)) {
                        $("#load-image").show()
@@ -491,9 +481,6 @@
                    document.documentElement.scrollTop = 0;
                }
            </script>
- 
- 
- 
            <script>
                $(document).ready(function () {
                    $('#audio-control').click(function () {
@@ -516,7 +503,6 @@
                    });
                })
            </script>
- 
            <script>
                $(document).ready(function () {
                    $('#audio-home-control').click(function () {
@@ -777,9 +763,8 @@ return false;
     return false;             
     })
     })
-  </script>
-  
-  <script>
+  </script> 
+ <script>
     $(document).ready(function(){
       $(document).mouseleave(function(){
           $("#exampleModal").modal("show");
@@ -788,8 +773,5 @@ return false;
   </script>
  </div>
    </div>
- 
- 
 </body>
- 
 </html>

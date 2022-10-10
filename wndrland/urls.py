@@ -5,7 +5,6 @@ from django.conf.urls.static import static
 from wndrland_app.sitemap import StaticViewSitemap
 from django.contrib.sitemaps.views import sitemap
 from django.views.generic.base import TemplateView
-
 sitemaps = {
     'static': StaticViewSitemap
 }
@@ -16,13 +15,7 @@ urlpatterns = [
      path('robots.txt', TemplateView.as_view(template_name="robots.txt" , content_type="text/plain")),
 
 ]
-
 admin.site.site_header = "www.wndr.com"
-
-#admin.site.site_title = "Admin Portal"
-
 admin.site.index_title = "Welcome to www.wndr.com"
-
-
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

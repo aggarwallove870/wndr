@@ -23,7 +23,7 @@
 <div class="mobilelandscapeview" style="position:relative;">
 	<div class="landscape_view1">
 	Back to Viewing Mode
-	<img class="back_to_mode" src="{% static 'image/phone_rotate_black.png' %}">
+	<img class="back_to_mode" alt="Viewing_mode" src="{% static 'image/phone_rotate_black.png' %}">
 </div>
 </div>
 <body>
@@ -84,9 +84,7 @@
 									d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
 								</path>
 							</svg>
-
 						</button>
-
 						<div class="navbar-collapse collapse" id="bdNavbar" style="">
 							<ul class="navbar-nav m-auto mt-lg-0">
 								<li class="nav-item">
@@ -123,17 +121,11 @@
 			</div>
 		</header>
 		<!-- header close here -->
-
 		<div class="contact-wndr">
 			<h1 class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Contact
 				us</h1>
-
 		</div>
-
 	</div>
-
-
-
 	<!-- form design start -->
 	<div class="form-wndr">
 		<div class="container contaier-contact-wndr">
@@ -144,10 +136,8 @@
 						<img src="{% static 'img/contact-space-left.png' %}" class="space-contact1" alt="contact-space-left">
 						<h1 class="uk-scrollspy-inview"
 							uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">GET IN TOUCH</h1>
-
 						<form method="post">
 							{% csrf_token %}
-
 							<div class="form-outer">
 								<div class="left-sec-form-item">
 									<input type="text" id="fname" name="fname" placeholder="Name" required>
@@ -156,8 +146,6 @@
 									<input type="email" id="Input" name="email" placeholder="Email" required>
 								</div>
 							</div>
-
-
 							<div class="form-outer1">
 								<div class="left-sec-form-item1">
 									<input type="number" id="phone" name="phone" placeholder="Phone" required>
@@ -166,17 +154,13 @@
 									<input type="text" id="address" name="address" placeholder="Address" required>
 								</div>
 							</div>
-
 							<div class="form-outer2">
 								<textarea id="review" name="review" required rows="4" cols="50"
 									placeholder="Write a Review Here..."></textarea>
 							</div>
-
 							<div class="alert alert-danger sueccs-msg" id="sucess_div57" role="alert" hidden>
 								<span id="sucess57"></span>
 							</div>
-
-
 							<div class="form-outer3">
 								<button type="button" id="btn-dd6" onclick=myFunction()>Submit</button>
 							</div>
@@ -184,15 +168,8 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
-
-
-
-
-
 		<div class="container contaier-contact-wndr">
-
 			<div class="detail-outer">
 				<div class="detail-item1 uk-scrollspy-inview"
 					uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">
@@ -208,7 +185,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="detail-item1 uk-scrollspy-inview"
 				uk-scrollspy="cls: uk-animation-slide-left; delay: 700; repeat: true">
 				<div class="location-outer">
@@ -225,30 +201,10 @@
 					</div>
 				</div>
 			</div>
-
-				{% comment %} <div class="detail-item1 uk-scrollspy-inview remove-on-alldevices-phonediv"
-					uk-scrollspy="cls: uk-animation-slide-right; delay: 600; repeat: true">
-					<div class="location-outer">
-						<div class="location-icon">
-							<img src="{% static 'img/phone-ic-contact.png' %}" class="location-1-img" alt="2-image">
-						</div>
-						<div class="location-icon">
-							<img src="{% static 'img/location-ic-contact-line.png' %}" alt="location-1"
-								class="location-img">
-							<h2>PHONE:</h2>
-							<p class="detail-sec-number"><a href="tel:(000) 000-0000">(000) 000-0000</a></p>
-							<p class="detail-sec-number1"><a href="tel:(000) 000-0000">(000) 000-0000</a></p>
-						</div>
-					</div>
-				</div> {% endcomment %}
-
-			
-
 			</div>
 		</div>
 	</div>
 	<!-- form design end -->
-
 	<!-- footer start here -->
 	<footer>
 		<div class="footer_WNDR footer-roadmap remove_saveimage">
@@ -278,38 +234,29 @@
 						</div>
 						<div class="col-md-4 col-lg-3 mbl-footer-social">
 							<div class="right-sec-footer-social">
-
-
 								<ul>
-
 									<li class="uk-scrollspy-inview"
 										uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">
 										<a href="#">
 											<i class="fa fa-facebook" aria-hidden="true"></i></a>
 									</li>
-
 									<li class="uk-scrollspy-inview"
 										uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">
 										<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 									</li>
-
 									<li class="uk-scrollspy-inview"
 										uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
 										<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 									</li>
-
 									<li class="uk-scrollspy-inview"
 										uk-scrollspy="cls: uk-animation-slide-top; delay: 500; repeat: true">
 										<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 									</li>
-
 									<li class="uk-scrollspy-inview"
 										uk-scrollspy="cls: uk-animation-slide-top; delay: 600; repeat: true">
 										<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
 									</li>
-
 								</ul>
-
 							</div>
 						</div>
 					</div>
@@ -319,7 +266,6 @@
 	</footer>
 	<!-- footer close here-->
 </div>
-
 	<!-- bootstrap js -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -327,12 +273,8 @@
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
 	<!-- bootstrap js -->
-
-
 	<script>
-
 	</script>
-	<!--<script src="{% static 'js/uikit.min.js' %}"></script>-->
 	<script>
 		function subscribe() {
 			console.log("Arrival-2")
@@ -347,15 +289,12 @@
 						"email": email,
 						'csrfmiddlewaretoken': '{{csrf_token}}'
 					},
-
 					success: function (data) {
 						document.getElementById("sucess_div").hidden = false;
 						document.getElementById("sucess").innerHTML = "Thank you for subscribing"
 						$('#myInput').val('');
-						// $("#sucess_div").delay(3000).fadeOut();
 						$("#sucess_div").show().delay(3000).fadeOut();
 						$("#btn-d").attr("disabled", false);
-
 					},
 				});
 			}
@@ -379,9 +318,7 @@
 						"review": review,
 						'csrfmiddlewaretoken': '{{csrf_token}}'
 					},
-
 					success: function (data) {
-
 						document.getElementById("sucess_div57").hidden = false;
 						document.getElementById("sucess57").innerHTML = "Thank you for contact us"
 						$('#Input').val('');
@@ -389,17 +326,14 @@
 						$('#phone').val('');
 						$('#address').val('');
 						$('#review').val('');
-						// $("#sucess_div57").delay(3000).fadeOut()
 						$("#sucess_div57").show().delay(3000).fadeOut();
 						$("#btn-dd6").attr("disabled", false);
-
 					},
 				});
 			}
 		}
 	</script>
  <script type="text/javascript">
-
 		document.onselectstart=function(){
 		if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password") {
 		return false;
@@ -420,9 +354,7 @@
 		};
 		}
 		</script> 
-
 		<script>
-
 			$(function() {  
 				$('img').bind('contextmenu', function() {  
 					return false;
@@ -434,7 +366,6 @@
 					return false;
 				})
 			</script>
-
 			<script>
 				$(document).ready(function(){
 				  $(document).mouseleave(function(){
@@ -442,7 +373,6 @@
 				  });
 			  });
 			  </script>
-
 </body>
 
 </html>

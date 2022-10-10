@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-#test
 
 from pathlib import Path
 import os
@@ -42,6 +41,7 @@ INSTALLED_APPS = [
     'storages',
     'django.contrib.sitemaps',
     'django.contrib.sites',
+   
 ]
 
 
@@ -55,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+  
 ]
 
 ROOT_URLCONF = 'wndrland.urls'

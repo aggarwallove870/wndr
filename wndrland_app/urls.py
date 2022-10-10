@@ -16,8 +16,7 @@ urlpatterns = [
 
     path('video_demo', video_demo, name='video_demo'),
     path('video_url',video_url,name="video_url"),
-
-
+   
      path('test',test,name="test")
 
 
