@@ -15,7 +15,11 @@
 	  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 	  <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
 	   <!-- font awsome -->
-    <script src="https://use.fontawesome.com/b197abb434.js"></script>
+	   <script src="https://use.fontawesome.com/b197abb434.js"></script>
+	   <script src="https://kit.fontawesome.com/1086841b1d.js" crossorigin="anonymous"></script>
+	   
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
     <!-- fav icon -->
     <link rel="icon" type="image/x-icon" href="{% static 'image/fab-ic.png' %}">
 </head>
@@ -67,7 +71,7 @@
 				  </div>
 				<div class="container">
 					<nav class="navbar navbar-expand-lg navbar-light">
-					  <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'image/header-logo.png' %}" alt="logo1"></a>
+					  <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'image/header-logo.png' %}" alt="WNDR.COM"></a>
 					  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
 				      <svg xmlns="http://www.w3.org/2000/svg" class="bi" fill="currentColor" viewBox="0 0 16 16">
 				  <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
@@ -121,7 +125,7 @@
 				<div class="row teams_bois_section">
 					<div class="col-md-6 col-sm-6">
 						<div class="member_teams">
-							<img class="tm-people" src="{% static 'img/Borris.jpeg' %}" alt="">
+							<img class="tm-people" src="{% static 'img/Borris.jpeg' %}" alt="Broosis Bazelais (CEO)">
 						</div>
 						<div class="team_member_section">
 						<div class="member_txt">
@@ -145,7 +149,7 @@
 					</div>
 					<div class="col-md-6 col-sm-6" >
 						<div class="member_teams">
-							<img class="tm-people" src="{% static 'img/srikant_img.jpg' %}" alt="">
+							<img class="tm-people" src="{% static 'img/srikant_img.jpg' %}" alt="Srikant Dash (Interim CTO)">
 						</div>
 						<div class="team_member_section">
 						<div class="member_txt">
@@ -170,7 +174,7 @@
 				</div>
 				<div class="col-md-12 col-sm-6 srikant_div">
 					<div class="member_teams">
-						<img class="tm-people" src="{% static 'img/joshpic.jpg' %}" alt="">
+						<img class="tm-people" src="{% static 'img/joshpic.jpg' %}" alt="Josh Pwo (Investor)">
 					</div>
 					<div class="team_member_section">
 					<div class="member_txt">
@@ -216,7 +220,7 @@
 				<div class="row footer-align">
 					<div class="col-md-3 col-lg-4 mbl-footer-img">
 						<div class="footer-logo">
-							<img src="{% static 'image/header-logo.png' %}" alt="footer7">
+							<img src="{% static 'image/header-logo.png' %}" alt="WNDR.com">
 						</div>
 					</div>
 					<div class="col-md-5 col-lg-5 copyright-footer">
@@ -227,22 +231,22 @@
 					<div class="col-md-4 col-lg-3 mbl-footer-social">
 						<div class="right-sec-footer-social">
 						<ul>
-						  <li class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">
-							<a href="#">
-							  <i class="fa fa-facebook" aria-hidden="true"></i></a>
-						  </li>
-						  <li class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">
-							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						  </li>
-						  <li class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
-							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-						  </li>
-						  <li class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 500; repeat: true">
-							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						  </li>
-						  <li class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 600; repeat: true">
-							<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-						  </li>
+							<li class="uk-scrollspy-inview"
+							uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">
+							<a href="https://twitter.com/WNDRVERSE"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</li>
+						<li class="uk-scrollspy-inview"
+							uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
+							<a href="https://gmail.com/"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						</li>
+						<li class="uk-scrollspy-inview"
+						uk-scrollspy="cls: uk-animation-slide-top; delay: 600; repeat: true">
+						<a href="https://www.youtube.com/channel/UCyccm9qtkFnj0-yGnE5fI5A"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+					</li>
+					<li class="uk-scrollspy-inview"
+						uk-scrollspy="cls: uk-animation-slide-top; delay: 600; repeat: true">
+						<a href="https://www.tiktok.com/@wndrverse?_t=8WJxBZA7IJ4&_r=1"><i class="fa fa-tiktok" aria-hidden="true"></i></a>
+					</li>
 						</ul>
 						</div>
 					</div>
