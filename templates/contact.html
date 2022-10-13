@@ -132,15 +132,15 @@
 		</div>
 	</div>
 	<!-- form design start -->
-	<div class="form-wndr">
+	<div class="form-wndr">s
 		<div class="container contaier-contact-wndr">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="form-wndr-outer">
 						<img src="{% static 'img/contact-space.png' %}" class="space-contact" alt="contact-space">
 						<img src="{% static 'img/contact-space-left.png' %}" class="space-contact1" alt="contact-space-left">
-						<h1 class="uk-scrollspy-inview"
-							uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">GET IN TOUCH</h1>
+						<h2 class="uk-scrollspy-inview"
+							uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">GET IN TOUCH</h2>
 						<form method="post">
 							{% csrf_token %}
 							<div class="form-outer">
@@ -366,13 +366,13 @@
 					return false;
 				})
 			</script>
-			<script>
+			{% comment %} <script>
 				$(document).ready(function(){
 				  $(document).mouseleave(function(){
 					  $("#exampleModal").modal("show");
 				});
 			  });
-			  </script>
+			  </script> {% endcomment %}
 </body>
 
 
