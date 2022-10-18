@@ -3,7 +3,7 @@
     display: none;
 }
 h2.uk-scrollspy-inview {
-    color: white;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     font-size: 60px;
@@ -15,9 +15,9 @@ h2.uk-scrollspy-inview {
     margin-top: 20px;
 }
 .moreless-button{
-    background: black;
+    background: #000000;
     border-radius: 2px;
-    color: #ffffff !IMPORTANT;
+    color: #ffffff !important;
     border: 1px solid #ff8900;
     box-shadow: 1px 1px 3px #ff8900;
     margin-top: 20px;
@@ -25,18 +25,18 @@ h2.uk-scrollspy-inview {
 
 
 .moreless-button-of-srikant{
-    background: black;
+    background: #000000;
     border-radius: 2px;
-    color: #ffffff !IMPORTANT;
+    color: #ffffff !important;
     border: 1px solid #ff8900;
     box-shadow: 1px 1px 3px #ff8900;
     margin-top: 20px;
 }
 
 .moreless-button-of-josh{
-    background: black;
+    background: #000000;
     border-radius: 2px;
-    color: #ffffff !IMPORTANT;
+    color: #ffffff !important;
     border: 1px solid #ff8900;
     box-shadow: 1px 1px 3px #ff8900;
     margin-top: 20px;
@@ -71,7 +71,7 @@ body {
 }
 
 .mobilelandscapeview {
-    color: white;
+    color: #ffffff;
     text-align: center;
     display: flex;
     font-size: 26px;
@@ -98,18 +98,18 @@ body {
 
 .shadow-button-2 {
     box-shadow:
-        10px -10px 0 -3px white,
+        10px -10px 0 -3px #ffffff,
         10px -10px,
-        20px -20px 0 -3px white,
+        20px -20px 0 -3px #ffffff,
         20px -20px;
     transition: box-shadow 1s, top 1s, left 1s;
 }
 
 .shadow-button-2:hover {
     box-shadow:
-        0 0 0 -3px white,
+        0 0 0 -3px #ffffff,
         0 0,
-        0 0 0 -3px white,
+        0 0 0 -3px #ffffff,
         0 0;
 }
 
@@ -823,7 +823,7 @@ video::-webkit-media-controls {
     border: none;
     outline: none;
     background-color: #f3012d;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     padding: 8px 16px;
     border-radius: 4px;
@@ -903,7 +903,7 @@ video::-webkit-media-controls {
     border: none;
     outline: none;
     background-color: #f3012d;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     padding: 8px 16px;
     border-radius: 4px;
@@ -919,7 +919,7 @@ video::-webkit-media-controls {
     border: none;
     outline: none;
     background-color: #f3012d;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     padding: 8px 16px;
     border-radius: 4px;
@@ -1405,7 +1405,7 @@ body {
     position: absolute;
     top: 17px;
     right: 30px;
-    color: white;
+    color: #ffffff;
     font-weight: 100;
 }
 
@@ -1500,7 +1500,7 @@ img.header-line-down-tabs {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 10px solid white;
+    border-top: 10px solid #ffffff;
     content: "";
     left: 50%;
     position: absolute;
@@ -1509,7 +1509,7 @@ img.header-line-down-tabs {
 }
 
 .header_WNDR .navbar-nav .nav-item a.nav-link {
-    color: white !important;
+    color: #ffffff !important;
     font-family: 'neuropolregular';
     padding: 0 !important;
     font-size: 18px;
@@ -1547,7 +1547,7 @@ img.header-line-down-tabs {
 .header_WNDR .navbar-expand-lg .navbar-brand img {
     position: absolute;
     top: -58px;
-    color: white;
+    color: #ffffff;
     width: 242px;
     z-index: 99;
     left: 150px;
@@ -1615,7 +1615,7 @@ header {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 11px solid white;
+    border-top: 11px solid #ffffff;
     content: "";
     left: 50%;
     position: absolute;
@@ -1624,7 +1624,7 @@ header {
 }
 
 .btn-header-subscribe a {
-    color: white !important;
+    color: #ffffff !important;
     font-family: 'neuropolregular';
     padding: 0 !important;
     font-size: 18px;
@@ -1674,7 +1674,7 @@ img.banner-img-bg-mobile {
 .WNDR-btn-item {
     background: url(../image/banner_btn_center.png);
     border: 0;
-    color: white;
+    color: #ffffff;
     border-right: 0;
     border-left: 0;
     font-family: 'neuropolregular';
@@ -1708,13 +1708,13 @@ img.banner-img-bg-mobile {
 }
 
 .banner-WNDR-btn a.WNDR-btn-item:hover {
-    color: white;
+    color: #ffffff;
 }
 
 .WNDR-btn-item1 {
     background: url(../image/banner_btn_center.png);
     border: 0;
-    color: white;
+    color: #ffffff;
     border-right: 0;
     border-left: 0;
     font-family: 'neuropolregular';
@@ -1793,7 +1793,7 @@ img.banner-img-bg-mobile {
 .about-WNDR_btn {
     background: url(../image/about-btn-space.png);
     border: 0;
-    color: white;
+    color: #ffffff;
     border-right: 0;
     border-left: 0;
     font-family: 'neuropolregular';
@@ -1896,7 +1896,7 @@ span.about-shape-span {
 .about-wndr-link a {
     position: relative;
     font-size: 22px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-family: 'neuropolregular';
     font-weight: 300;
@@ -1922,7 +1922,7 @@ span.about-shape-span {
 .about-WNDR_btn {
     background: url(../image/about-btn-space.png);
     border: 0;
-    color: white;
+    color: #ffffff;
     border-right: 0;
     border-left: 0;
     height: 111px;
@@ -2010,7 +2010,7 @@ img.gallary-line {
     margin: 0 5px;
     padding: 0;
     cursor: pointer;
-    background: white;
+    background: #ffffff;
     border-radius: 100px;
 }
 
@@ -2257,7 +2257,7 @@ img.widr-cions-mobile {
 
 .about-WNDR_btn:hover {
     text-decoration: none !important;
-    color: white !important;
+    color: #ffffff !important;
 }
 
 /*--about page start--*/
@@ -3304,7 +3304,7 @@ img.game-player-mobile {
     top: 4px;
     right: 20px;
     font-size: 48px;
-    color: white;
+    color: #ffffff;
     opacity: 0.9;
     font-weight: 400;
 }
@@ -3355,7 +3355,7 @@ iframe {
 }
 
 .game-contact p {
-    color: white;
+    color: #ffffff;
     margin: 0;
     font-size: 30px;
     font-family: 'neuropolregular';
@@ -3411,7 +3411,7 @@ img.sucribe-center-tabs {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Avenir LT Pro';
-    color: white;
+    color: #ffffff;
     padding: 7px 0;
     position: absolute;
     bottom: -55px;
@@ -3428,7 +3428,7 @@ img.sucribe-center-tabs {
 .danger-msg {
     background: rgb(254 28 74 / 71%);
     margin-bottom: 10px !important;
-    color: white;
+    color: #ffffff;
 }
 
 .sueccs-msg {
@@ -3596,7 +3596,7 @@ section.wndr-coins:before {
 .sbscribe-section button.sbt-btn {
     background: url(../image/sucribe-btn-center-img.png);
     border: 0;
-    color: white;
+    color: #ffffff;
     border-right: 0;
     border-left: 0;
     height: 111px;
@@ -3737,7 +3737,7 @@ img.top-line-m0bile {
 .middle-sec-footer p {
     font-size: 24px;
     margin: 0;
-    color: white;
+    color: #ffffff;
     font-family: 'Avenir LT Pro';
     text-align: center;
     margin-left: -48px;
@@ -3872,7 +3872,7 @@ img.top-line-m0bile {
 .WNDR-btn-item {
     background: url(../image/banner_btn_center.png);
     border: 0;
-    color: white;
+    color: #ffffff;
     border-right: 0;
     border-left: 0;
     font-family: 'neuropolregular';
@@ -3928,7 +3928,7 @@ img.box-shadow-about {
 .about-wndr-link a {
     position: relative;
     font-size: 22px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-family: 'neuropolregular';
     font-weight: 300;
@@ -4000,7 +4000,7 @@ img.box-shadow-about {
 }
 
 .contact-wndr h1 {
-    color: white;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     font-size: 60px;
@@ -4120,7 +4120,7 @@ img.box-shadow-about {
 }
 
 .form-wndr-outer h1 {
-    color: white;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     font-size: 60px;
@@ -4229,7 +4229,7 @@ img.space-contact1 {
     height: 110px;
     width: 211px;
     font-size: 24px;
-    color: white;
+    color: #ffffff;
     font-family: 'neuropolregular';
     border: 0;
 }
@@ -4269,7 +4269,7 @@ img.location-1-img {
 .location-icon p {
     margin-bottom: 0;
     font-size: 19px;
-    color: white;
+    color: #ffffff;
     font-family: 'neuropolregular';
     margin-top: 8px;
 }
@@ -4487,7 +4487,7 @@ img.blog-section-img-tabs {
 
 .blog-section-right-side p {
     font-size: 16px;
-    color: white;
+    color: #ffffff;
     font-weight: 400;
     font-family: 'Avenir LT Pro';
     line-height: 25px;
@@ -4523,7 +4523,7 @@ img.blog-section-img-tabs {
 }
 
 .blog-img-numbering h4 {
-    color: white;
+    color: #ffffff;
     text-align: center;
     margin: 0;
     font-size: 30px;
@@ -4553,7 +4553,7 @@ img.blog-section-img-tabs {
 
 .blog-section-right-side2 p {
     font-size: 16px;
-    color: white;
+    color: #ffffff;
     font-weight: 400;
     font-family: 'Avenir LT Pro';
     line-height: 25px;
@@ -4575,7 +4575,7 @@ img.blog-section-img-tabs {
 }
 
 .blog-img-numbering2 h4 {
-    color: white;
+    color: #ffffff;
     text-align: center;
     margin: 0;
     font-size: 30px;
@@ -4630,7 +4630,7 @@ img.blog-section-img-tabs {
 }
 
 .blog-img-numbering-3 h4 {
-    color: white;
+    color: #ffffff;
     text-align: center;
     margin: 0;
     font-size: 30px;
@@ -4646,7 +4646,7 @@ img.blog-section-img-tabs {
 
 .blog-section-right-side3 p {
     font-size: 16px;
-    color: white;
+    color: #ffffff;
     font-weight: 400;
     font-family: 'Avenir LT Pro';
     line-height: 25px;
@@ -4705,7 +4705,7 @@ img.blog-section-img-tabs {
 }
 
 .testimonial-pos h2 {
-    color: white;
+    color: #ffffff;
     font-size: 60px;
     font-weight: 500;
     padding-bottom: 60px;
@@ -4783,7 +4783,7 @@ img.blog-section-img-tabs {
 /*reponsive start*/
 @media screen and (max-width: 2562px) and (min-width: 1931px) {
     .btn-header-subscribe a {
-        color: white !important;
+        color: #ffffff !important;
         font-family: 'neuropolregular';
         padding: 0 !important;
         font-size: 22px;
@@ -5487,7 +5487,7 @@ img.blog-section-img-tabs {
         font-size: 16px;
         font-weight: 400;
         font-family: 'Avenir LT Pro';
-        color: white;
+        color: #ffffff;
         padding: 7px 0;
     }
 
@@ -6091,7 +6091,7 @@ img.blog-section-img-tabs {
 
     .blog-section-right-side3 p {
         font-size: 16px;
-        color: white;
+        color: #ffffff;
         line-height: 24px;
         padding-right: 16px;
     }
@@ -6150,6 +6150,12 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 1200px) {
+    /* 17 */
+    h2.uk-scrollspy-inview {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    /* 17 */
     /* srikant css */
     .team_member_section {
         height: 540px;
@@ -6264,7 +6270,7 @@ img.blog-section-img-tabs {
     /*homepage css start*/
     /*header start*/
     .btn-header-subscribe a {
-        color: white !important;
+        color: #ffffff !important;
         font-family: 'neuropolregular';
         padding: 0 !important;
         font-size: 13px;
@@ -7731,7 +7737,7 @@ img.blog-section-img-tabs {
     }
 
     .btn-header-subscribe a {
-        color: white !important;
+        color: #ffffff !important;
         font-family: 'neuropolregular';
         padding: 0 !important;
         font-size: 12px;
@@ -8331,7 +8337,7 @@ img.blog-section-img-tabs {
     .location-icon p {
         margin-bottom: 0;
         font-size: 11px;
-        color: white;
+        color: #ffffff;
         font-family: 'neuropolregular';
         padding: 0 0px;
         margin-top: 4px;
@@ -8618,14 +8624,6 @@ img.blog-section-img-tabs {
         z-index: 0;
     }
 
-    .form-wndr-outer:before {
-        left: -44px !important;
-    }
-
-    .form-wndr-outer:after {
-        right: -44px !important;
-    }
-
     .link_txt_social {
         margin-top: 0px;
     }
@@ -8707,6 +8705,13 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 992px) {
+    /* 17 */
+    h2.uk-scrollspy-inview {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    /* 17 */
+
     /* srikant css */
     .srikant_div {
         margin-top: 50px;
@@ -8953,7 +8958,7 @@ img.blog-section-img-tabs {
 
     .header_WNDR .navbar-nav li.nav-item {
         margin-left: 0px;
-        border-top: 1px solid white;
+        border-top: 1px solid #ffffff;
         padding: 22px 40px;
         margin-top: 0;
     }
@@ -8970,7 +8975,7 @@ img.blog-section-img-tabs {
         margin-top: 0;
         top: 0;
         left: 0;
-        border-top: 1px solid white;
+        border-top: 1px solid #ffffff;
         padding-top: 22px;
         padding-left: 40px;
     }
@@ -10251,7 +10256,7 @@ img.blog-section-img-tabs {
         position: absolute;
         left: -14px;
         background: transparent;
-        color: white;
+        color: #ffffff;
     }
     /* css 20/09/22 */
 
@@ -11626,7 +11631,7 @@ img.blog-section-img-tabs {
         font-size: 14px;
         font-weight: 400;
         font-family: 'Avenir LT Pro';
-        color: white;
+        color: #ffffff;
         padding: 7px 0;
     }
 
@@ -12116,7 +12121,7 @@ img.blog-section-img-tabs {
     .location-icon p {
         margin-bottom: 0;
         font-size: 12px;
-        color: white;
+        color: #ffffff;
         font-family: 'neuropolregular';
         padding: 0 0px;
         margin-top: 4px;
@@ -12618,6 +12623,13 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 767px) {
+    /* 17 */
+    h2.uk-scrollspy-inview {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    
+    /* 17 */
     /* srikant css */
     .member_teams img {
         width: 120px;
@@ -13770,7 +13782,7 @@ img.blog-section-img-tabs {
     .WNDR_btn_home input {
         position: unset;
         background: transparent;
-        color: white;
+        color: #ffffff;
     }
     /* css/28/09/22 */
     .back_to_mode {
@@ -14409,7 +14421,7 @@ img.blog-section-img-tabs {
         padding: 0px;
         width: 100%;
         background: transparent;
-        color: white;
+        color: #ffffff;
     }
 
     .team_member_section p {
@@ -15189,7 +15201,7 @@ img.blog-section-img-tabs {
         font-family: 'Avenir LT Pro';
         font-size: 20px;
         padding: 10px 8px;
-        margin-bott om: 0;
+        margin-bottom: 0;
         padding-bottom: 0;
     }
 
@@ -16277,7 +16289,7 @@ img.blog-section-img-tabs {
     .WNDR_btn_home input {
         padding: 0px;
         background: transparent;
-        color: white;
+        color: #ffffff;
     }
 
     .banner-WNDR-btn {
@@ -16418,46 +16430,9 @@ img.blog-section-img-tabs {
         top: 440px !Important;
     }    
 }
-
-/* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      height:100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
-  }  */
-
-
-/* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    html {
-      transform: rotate(90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    } */
 .mobilelandscapeview {
     display: none;
 }
-
-/* @media screen and (min-width: 375px) and (max-width: 768px) and (orientation: landscape) { */
-/* @media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
-
-    .mobileportraitview {
-        display: none !important;
-    }
-
-    .mobilelandscapeview {
-        display: block !important;
-    }
-} */
 
 @media only screen and (max-width: 600px) and (orientation:landscape) {
     .mobileportraitview {
@@ -16478,17 +16453,6 @@ img.blog-section-img-tabs {
         display: none !important;
     }
 }
-
-/* @media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
-
-    .mobileportraitview {
-        display: block !important;
-    }
-
-    .mobilelandscapeview {
-        display: none !important;
-    }
-} */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
 
@@ -16512,18 +16476,6 @@ img.blog-section-img-tabs {
         display: none !important;
     }
 }
-
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-
-    .mobileportraitview {
-        display: none !important;
-    }
-
-    /* .mobilelandscapeview {
-        display: block !important;
-    } */
-
-/* }
 
 /* -------- For iphone 11 ------ media query */
  @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
