@@ -6147,9 +6147,24 @@ img.blog-section-img-tabs {
         left: -218px;
         top: -52px;
     }
+    /* 18 */
+    .slick-dots li.slick-active button:before {
+        opacity: 0.9;
+        color: #f3012d;
+        font-size: 50px;
+        top: 0px;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        background: #f3012d;
+        border-radius: 100px;
+        content: "";
+    }    
+    /* 18 */
 }
 
 @media screen and (max-width: 1200px) {
+
     /* 17 */
     h2.uk-scrollspy-inview {
         font-size: 40px;
@@ -11171,11 +11186,6 @@ img.blog-section-img-tabs {
         margin-top: 30px !Important;
     }
 
-    .slick-dots li.slick-active button:before {
-        font-size: 51px;
-        top: -4px;
-    }
-
     #exampleModal .sbscribe-bg h4 {
         padding-top: 0px;
     }
@@ -12623,6 +12633,11 @@ img.blog-section-img-tabs {
 }
 
 @media only screen and (max-width: 767px) {
+    /* 18 */
+    .model-market p {
+        text-align: center;
+    }
+    /* 18 */
     /* 17 */
     h2.uk-scrollspy-inview {
         font-size: 26px;
