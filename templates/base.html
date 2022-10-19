@@ -429,12 +429,22 @@
                                'csrfmiddlewaretoken': '{{csrf_token}}'
                            },
                            success: function (data) {
+                            console.log(data);
                                $("#load-image").hide()
-                               document.getElementById("sucess_div2").hidden = false;
-                               document.getElementById("sucess2").innerHTML = "Thank you for subscribing"
-                               $('#myInput2').val('');
-                               $("#sucess_div2").show().delay(3000).fadeOut();
-                               $("#btn-d2").attr("disabled", false);
+                               if (data.is_taken == true) {
+                                console.log("email already taken");
+                                document.getElementById("invalid_div2").hidden = false;
+                                document.getElementById("invalid2").innerHTML = "Email Already Exists"
+                                $("#invalid_div2").show().delay(3000).fadeOut();
+                              }
+                              else{
+                                document.getElementById("sucess_div2").hidden = false;
+                                document.getElementById("sucess2").innerHTML = "Thank you for subscribing"
+                                $('#myInput2').val('');
+                                $("#sucess_div2").show().delay(3000).fadeOut();
+                                $("#btn-d2").attr("disabled", false);
+                              }
+                              
                            },
                        });
                    }else {
@@ -776,13 +786,13 @@ return false;
     })
     })
   </script> 
- <script>
+ {% comment %} <script>
     $(document).ready(function(){
       $(document).mouseleave(function(){
           $("#exampleModal").modal("show");
       });
   });
-  </script>
+  </script> {% endcomment %}
  </div>
    </div>
 </body>
