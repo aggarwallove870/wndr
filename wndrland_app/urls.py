@@ -18,7 +18,8 @@ urlpatterns = [
     path('video_url',video_url,name="video_url"),
 
 
-     path('test',test,name="test")
+    path('test',test,name="test"),
+    path("landingpage",landingpage,name="landingpage")
 
 
 ]
