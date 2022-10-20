@@ -383,7 +383,6 @@
                  }
                    else if (testEmail.test(email)) {
                        $("#load-image-of-modal-subscibe1").show()
-                       $.getScript('https://www.googletagmanager.com/gtag/js?id=AW-10997461539');
                        console.log("abc")
                        $.ajax({
                            type: "POST",
@@ -393,11 +392,22 @@
                            },
                            success: function (data) {
                                $("#load-image-of-modal-subscibe1").hide()
-                               document.getElementById("sucess_div1").hidden = false;
-                               document.getElementById("sucess1").innerHTML = "Thank you for subscribing"
-                               $('#myInput1').val('');
-                               $("#sucess_div1").show().delay(3000).fadeOut();
-                               $("#btn-d1").attr("disabled", false);
+                               if (data.is_taken == true) {
+                                console.log("email already taken");
+                                document.getElementById("invalid_div1").hidden = false;
+                                document.getElementById("invalid1").innerHTML = "Email Already Exists"
+                                $("#invalid_div1").show().delay(3000).fadeOut();
+                              }
+                              else{
+                                document.getElementById("sucess_div1").hidden = false;
+                                document.getElementById("sucess1").innerHTML = "Thank you for subscribing"
+                                $('#myInput1').val('');
+                                $("#sucess_div1").show().delay(3000).fadeOut();
+                                $("#btn-d1").attr("disabled", false);
+                                $.getScript('https://www.googletagmanager.com/gtag/js?id=AW-10997461539');
+                             
+                              }
+                              
                            },
                        });
                    }
@@ -420,7 +430,7 @@
                    }
                    else if (testEmail.test(email)) {
                        $("#load-image").show()
-                       $.getScript('https://www.googletagmanager.com/gtag/js?id=AW-10997461539');
+                      
                        console.log("----")
                        $.ajax({
                            type: "POST",
@@ -436,6 +446,7 @@
                                 document.getElementById("invalid_div2").hidden = false;
                                 document.getElementById("invalid2").innerHTML = "Email Already Exists"
                                 $("#invalid_div2").show().delay(3000).fadeOut();
+                                
                               }
                               else{
                                 document.getElementById("sucess_div2").hidden = false;
@@ -443,6 +454,8 @@
                                 $('#myInput2').val('');
                                 $("#sucess_div2").show().delay(3000).fadeOut();
                                 $("#btn-d2").attr("disabled", false);
+                                $.getScript('https://www.googletagmanager.com/gtag/js?id=AW-10997461539');
+                              
                               }
                               
                            },
@@ -465,7 +478,7 @@
                  }
                    else if (testEmail.test(email)) {
                        $("#load-image-of-arrival2").show()
-                       $.getScript('https://www.googletagmanager.com/gtag/js?id=AW-10997461539');
+                      
                        console.log("abc")
                        $.ajax({
                            type: "POST",
@@ -475,11 +488,22 @@
                            },
                            success: function (data) {
                                $("#load-image-of-arrival2").hide()
-                               document.getElementById("sucess_div3").hidden = false;
-                               document.getElementById("sucess3").innerHTML = "Thank you for subscribing"
-                               $('#myInput3').val('');
-                               $("#sucess_div3").show().delay(3000).fadeOut();
-                               $("#btn-d3").attr("disabled", false);
+                               if (data.is_taken == true) {
+                                console.log("email already taken","00---00");
+                                document.getElementById("invalid_div3").hidden = false;
+                                document.getElementById("invalid3").innerHTML = "Email Already Exists"
+                                $("#invalid_div3").show().delay(3000).fadeOut();
+                              }
+                              else{
+                                document.getElementById("sucess_div3").hidden = false;
+                                document.getElementById("sucess3").innerHTML = "Thank you for subscribing"
+                                $('#myInput3').val('');
+                                $("#sucess_div3").show().delay(3000).fadeOut();
+                                $("#btn-d3").attr("disabled", false);
+                                $.getScript('https://www.googletagmanager.com/gtag/js?id=AW-10997461539');
+                        
+                              }
+                              
                            },
                        });
                    }
@@ -786,13 +810,13 @@ return false;
     })
     })
   </script> 
- {% comment %} <script>
+  <script>
     $(document).ready(function(){
       $(document).mouseleave(function(){
           $("#exampleModal").modal("show");
       });
   });
-  </script> {% endcomment %}
+  </script> 
  </div>
    </div>
 </body>
