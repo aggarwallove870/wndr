@@ -62,6 +62,8 @@ def home(request):
 def about(request):
     return render(request, 'roadmap.html')
 
+
+
 def vision(request):
     return render(request, 'our-vision.html')
 
@@ -88,6 +90,7 @@ def contact(request):
             }
         message1 =get_template('mail.html').render(ctx)
         send_mail(subject1, message1, email, [from_email])
+      
 
     return render(request, 'contact.html')
 
@@ -110,3 +113,6 @@ def video_url(request):
 
 def test(request):
     return render(request,"fetch.html")
+
+def ld(request):
+    return render(request, 'land_page.html')
