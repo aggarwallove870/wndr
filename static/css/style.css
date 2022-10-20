@@ -16500,11 +16500,11 @@ img.blog-section-img-tabs {
         text-align: center !important;
     }
     ul.middle_unorderList {
-        position: absolute;
-        top: 0;
-        right: -150px;
-        display: inline-flex;
-    }
+    position: absolute;
+    top: 0;
+    right: -150px;
+    display: inline-flex;
+}
 
     .wndr_engine p {
         font-size: 13px !IMPORTANT;
