@@ -6,10 +6,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>index</title>
-
-
 	<!-- bootstrap-css start -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<!-- link css -->
 	<link rel="stylesheet" type="text/css" href="{% static 'landing_page/css/style.css' %}">
@@ -23,38 +21,38 @@
    <script src="https://kit.fontawesome.com/1086841b1d.js" crossorigin="anonymous"></script>
 
 	<!-- fav icon -->
-	<link rel="icon" type="image/x-icon" href="static/landing_page/images/fab-ic.png">
+	<link rel="icon" type="image/x-icon" href="{% static 'landing_page/images/fab-ic.png' %}">
 </head>
 
 <body> 
 
 	<!-- banner -->
     <div class="banner-WNDR">
-        <video class="banner_desktop_video" id="video2" width="100%" height="100%" preload="none" poster="/static/image/WOW_PC-min.png" autoplay="" muted="" loop="" playsinline="" onclick="return false">
+        <video class="banner_desktop_video" id="video2" width="100%" height="100%" preload="none" poster="{% static "image/WOW_PC-min.png" %}" autoplay="" muted="" loop="" playsinline="" onclick="return false">
 			<source id="vid2_source" src="https://wndr.nyc3.digitaloceanspaces.com/PC_version_10mbps.mp4 " type="video/mp4">
 		</video>
-		<video class="banner_mobile_video fa-volume-up fa" id="video21" width="100%" height="100%" preload="none" poster="/static/image/WOW_Mobile-min.png" autoplay="" muted="" loop="" playsinline="" onclick="return false" aria-hidden="true" style="">
+		<video class="banner_mobile_video fa-volume-up fa" id="video21" width="100%" height="100%" preload="none" poster="{% static "image/WOW_Mobile-min.png" %}" autoplay="" muted="" loop="" playsinline="" onclick="return false" aria-hidden="true" style="">
 			<source id="vid21_source" src="" type="video/mp4">
 		</video>
         <!-- header -->
         <div class="header_WNDR">
             <div class="header-line header-line-shadow1">
-                <img src="static/landing_page/images/header-line-top.png" class="header-line-pc" alt="header-linee">
-				<img src="static/landing_page/images/header-line-top-tabs.png" class="header-line-tabs" alt="header-linee1">
-				<img src="static/landing_page/images/header-line-top-mobile.png" class="header-line-mobile" alt="header-linee2">
+                <img src="{% static 'landing_page/images/header-line-top.png' %}" class="header-line-pc" alt="header-linee">
+				<img src="{% static 'landing_page/images/header-line-top-tabs.png' %}" class="header-line-tabs" alt="header-linee1">
+				<img src="{% static 'landing_page/images/header-line-top-mobile.png' %}" class="header-line-mobile" alt="header-linee2">
             </div>
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light main-naviagtionbar">
-                    <a class="navbar-brand" href="javascript:void(0)"><img src="static/landing_page/images/header-logo.png" alt="logo1"></a>
+                    <a class="navbar-brand" href="javascript:void(0)"><img src="{% static 'landing_page/images/header-logo.png' %}" alt="logo1"></a>
 
                     <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
                     </div>
                 </nav>
             </div>
             <div class="header-line header-line-shadow">
-                <img src="static/landing_page/images/header-line-down.png" class="header-line-down-pc" alt="header-line-center">
-				<img src="static/landing_page/images/header-line-down-tabs.png" class="header-line-down-tabs" alt="header-line-center1">
-				<img src="static/landing_page/images/header-line-down-mobile.png" class="header-line-down-mobile" alt="header-line-center2">
+                <img src="{% static 'landing_page/images/header-line-down.png' %}" class="header-line-down-pc" alt="header-line-center">
+				<img src="{% static 'landing_page/images/header-line-down-tabs.png' %}" class="header-line-down-tabs" alt="header-line-center1">
+				<img src="{% static 'landing_page/images/header-line-down-mobile.png' %}" class="header-line-down-mobile" alt="header-line-center2">
             </div>
         </div>
         <!-- header -->
@@ -101,8 +99,8 @@
 					“SIGN UP AND PLAY” button</h2>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
 					
-				<img src="static/landing_page/images/nesltr-line.png" class="subscribe-line-pc" alt="newsletter-line">
-				<img src="static/landing_page/images/subscribe-line-tabs.png" class="subscribe-line-tabs" alt="newsletter-line1">
+				<img src="{% static "landing_page/images/nesltr-line.png" class="subscribe-line-pc" alt="newsletter-line">
+				<img src="{% static "landing_page/images/subscribe-line-tabs.png" class="subscribe-line-tabs" alt="newsletter-line1">
 				<p>See you in the Metaverse! </p>
 				<form>
 					<span class="nesltr_Signup">
@@ -125,7 +123,7 @@
 						<div class="about-content">
 							<h2>THE WNDRS SAVE <span>THE METAVERSE</span></h2>
 							<div class="line-about">
-								<img src="static/landing_page/images/About-line2.png" alt="line-about-1">
+								<img src="{% static 'landing_page/images/About-line2.png' %}" alt="line-about-1">
 							</div>
 							<div class="shadow-outer-div">
 								<p>This is the coolest multiplayer Metaverse online game you’ll ever play. You’ll play
@@ -139,7 +137,7 @@
 									away.
 									Play in a far away dimension and enjoy 3 rounds of gameplay in the Colosseum.
 								</p>
-								<img src="static/landing_page/images/about-shadow.png" class="box-shadow-about" alt="shadow-about-1">
+								<img src="{% static 'landing_page/images/about-shadow.png' %}" class="box-shadow-about" alt="shadow-about-1">
 							</div>
 							<div class="about-wndr-link">
 								<a href="#" class="WNDR-btn-item">SIGN UP & PLAY</a>
@@ -173,7 +171,7 @@
 							</div>
 						</div>
 						<div class="downloadImg_middle">
-							<img src="static/landing_page/images/downloadDevice.png" alt="playDevice">
+							<img src="{% static "landing_page/images/downloadDevice.png" %}" alt="playDevice">
 						</div>
 						<p class="Download_paragraph">You’ll really enjoy our free to play no downloads Online AAA game.
 							You can
@@ -195,8 +193,8 @@
 					<div class="sbscribe-bg">
 						<h2>Get instant early access to play online by clicking the
 							“SIGN UP AND PLAY” button</h2>
-						<img src="static/landing_page/images/nesltr-line.png" class="subscribe-line-pc" alt="newsletter-line">
-						<img src="static/landing_page/images/subscribe-line-tabs.png" class="subscribe-line-tabs" alt="newsletter-line1">
+						<img src="{% static 'landing_page/images/nesltr-line.png' %}" class="subscribe-line-pc" alt="newsletter-line">
+						<img src="{% static 'landing_page/images/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="newsletter-line1">
 						<p>See you in the Metaverse! </p>
 						<form>
 							<span class="nesltr_Signup">
@@ -217,21 +215,21 @@
 	<!-- footer start -->
 	<div class="footer_WNDR">
 		<div class="footer-overlap">
-			<img src="static/landing_page/images/footer-line-top.png" class="top-line" alt="footer1">
-			<img src="static/landing_page/images/footer-line-top-mobile.png" class="top-line-m0bile" alt="footer2">
-			<img src="static/landing_page/images/footer-line-down.png" class="bottom-line" alt="footer3">
-			<img src="static/landing_page/images/footer-line-down-mobile.png" class="bottom-line-mobile" alt="footer4">
+			<img src="{% static "landing_page/images/footer-line-top.png" %} " class="top-line" alt="footer1">
+			<img src="{% static "landing_page/images/footer-line-top-mobile.png" %} " class="top-line-m0bile" alt="footer2">
+			<img src="{% static "landing_page/images/footer-line-down.png" %} " class="bottom-line" alt="footer3">
+			<img src="{% static "landing_page/images/footer-line-down-mobile.png" %} " class="bottom-line-mobile" alt="footer4">
 		</div>
 		<div class="footer-shapes">
-			<img src="static/landing_page/images/footer-img.png" class="footer-left-ic" alt="footer5">
-			<img src="static/landing_page/images/footer-img2.png" class="footer-right-ic" alt="footer6">
+			<img src="{% static "landing_page/images/footer-img.png" %} " class="footer-left-ic" alt="footer5">
+			<img src="{% static "landing_page/images/footer-img2.png" %} " class="footer-right-ic" alt="footer6">
 		</div>
 		<div class="container">
 			<div class="footer-outer">
 				<div class="row footer-align">
 					<div class="col-md-3 col-lg-4 mbl-footer-img">
 						<div class="footer-logo">
-							<img src="static/landing_page/images/header-logo.png" alt="footer7">
+							<img src="{% static "landing_page/images/header-logo.png" %} " alt="footer7">
 						</div>
 					</div>
 					<div class="col-md-5 col-lg-5 copyright-footer">
