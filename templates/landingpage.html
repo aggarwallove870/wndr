@@ -1,7 +1,7 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html>
-
+{% load static %}
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'landing_page/css/style.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'landing_page/css/bootstrap.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'landing_page/css/bootstrap.min.css' %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
 	<!-- font awsome -->
@@ -28,61 +29,95 @@
 	<link rel="icon" type="image/x-icon" href="static/landing_page/images/fab-ic.png">
 </head>
 
-<body>
-    <!-- Modal -->
-	<!-- The Modal -->
-<!-- Modal -->
+<body> 
 
 	<!-- banner -->
-	<div class="banner-WNDR">
-		<img src="static/landing_page/images/banner_img.jpg" class="banner-img-bg" alt="banner-img">
-		<img src="static/landing_page/images/banner_img-tabs.jpg" class="banner-img-bg-tabs" alt="banner-img1">
-		<img src="static/landing_page/images/banner_img-mobile.jpg" class="banner-img-bg-mobile" alt="banner-img2">
-		<!-- header -->
-		<div class="header_WNDR">
-			<div class="header-line header-line-shadow1">
-				<img src="static/landing_page/images/header-line-top.png" class="header-line-pc" alt="header-linee">
+    <div class="banner-WNDR">
+        <video class="banner_desktop_video" id="video2" width="100%" height="100%" preload="none" poster="/static/image/WOW_PC-min.png" autoplay="" muted="" loop="" playsinline="" onclick="return false">
+			<source id="vid2_source" src="https://wndr.nyc3.digitaloceanspaces.com/PC_version_10mbps.mp4 " type="video/mp4">
+		</video>
+		<video class="banner_mobile_video fa-volume-up fa" id="video21" width="100%" height="100%" preload="none" poster="/static/image/WOW_Mobile-min.png" autoplay="" muted="" loop="" playsinline="" onclick="return false" aria-hidden="true" style="">
+			<source id="vid21_source" src="" type="video/mp4">
+		</video>
+        <!-- header -->
+        <div class="header_WNDR">
+            <div class="header-line header-line-shadow1">
+                <img src="static/landing_page/images/header-line-top.png" class="header-line-pc" alt="header-linee">
 				<img src="static/landing_page/images/header-line-top-tabs.png" class="header-line-tabs" alt="header-linee1">
 				<img src="static/landing_page/images/header-line-top-mobile.png" class="header-line-mobile" alt="header-linee2">
-			</div>
-			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-light main-naviagtionbar">
-					<a class="navbar-brand" href="javascript:void(0)"><img src="static/landing_page/images/header-logo.png" alt="logo1"></a>
+            </div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light main-naviagtionbar">
+                    <a class="navbar-brand" href="javascript:void(0)"><img src="static/landing_page/images/header-logo.png" alt="logo1"></a>
 
-					<div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
-					</div>
-				</nav>
-			</div>
-			<div class="header-line header-line-shadow">
-				<img src="static/landing_page/images/header-line-down.png" class="header-line-down-pc" alt="header-line-center">
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+                    </div>
+                </nav>
+            </div>
+            <div class="header-line header-line-shadow">
+                <img src="static/landing_page/images/header-line-down.png" class="header-line-down-pc" alt="header-line-center">
 				<img src="static/landing_page/images/header-line-down-tabs.png" class="header-line-down-tabs" alt="header-line-center1">
 				<img src="static/landing_page/images/header-line-down-mobile.png" class="header-line-down-mobile" alt="header-line-center2">
-			</div>
-		</div>
-		<!-- header -->
-		<div class="container">
-			<div class="row wndrLand_Rowbanner">
-				<div class="col-md-12">
-					<div class="banner-WNDR-outer">
-						<div class="banner-WNDR-btn">
-							<a href="#" class="WNDR-btn-item">SIGN UP & PLAY</a><br>
-							
-							<a href="#" class="WNDR-btn-item1">PLAY NOW</a>
-							
-						</div>
-						
-						<div class="mbl-arrow">
-							<a class="arrow-wrap" href="#content" style="opacity: 1;">
-								<span class="arrow"></span>
-								<!--<span class="hint">scroll</span>-->
-							</a>
-						</div>
+            </div>
+        </div>
+        <!-- header -->
+        <div class="container">
+            <div class="row wndrLand_Rowbanner">
+                <div class="col-md-12">
+                    <div class="banner-WNDR-outer">
+                        <div class="banner-WNDR-btn"> 
+                            
+                        </div>
+                        <div class="mbl-arrow">
+                            <a class="arrow-wrap" href="#content" style="opacity: 1;">
+                                <span class="arrow"></span>
+                                <!--<span class="hint">scroll</span>-->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+	
+    <div class="signUp_outer">
+        <div class="outerShadow_1">
+        <div class="signU_outerShadow packages visible-lg visible-md waves-effect waves-light"></div>
+        </div>
+        <a href="#" class="signUp_item">SIGN UP & PLAY</a>
+    </div>
+    <div class="signUp_outer1">
+        <div class="outerShadow_11">
+            <div class="signU_outerShadow1 packages visible-lg visible-md waves-effect waves-light"></div>
+        </div> 
+        {% comment %} <button href="#" class="signUp_item1">PLAY NOW</button> {% endcomment %}
+		<button type="button" class=" signUp_item1 btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+			PLAY NOW
+		  </button>
+		
+    </div>
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="sbscribe-bg">
+				<h2>Get instant early access to play online by clicking the
+					“SIGN UP AND PLAY” button</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+					
+				<img src="static/landing_page/images/nesltr-line.png" class="subscribe-line-pc" alt="newsletter-line">
+				<img src="static/landing_page/images/subscribe-line-tabs.png" class="subscribe-line-tabs" alt="newsletter-line1">
+				<p>See you in the Metaverse! </p>
+				<form>
+					<span class="nesltr_Signup">
+						<button>SIGN UP &amp; PLAY</button>
+					</span>
+					<div class="snesltr_playNow">
+						<button class="playNow">PLAY NOW</button>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
-	</div>
-	<!-- banner -->
+	  </div>
 
 	<!-- About-WNDR-start -->
 	<div class="about-WNDR content" id="content">
@@ -111,6 +146,7 @@
 							</div>
 							<div class="about-wndr-link">
 								<a href="#" class="WNDR-btn-item">SIGN UP & PLAY</a>
+								<a href="#" class="WNDR-btnPlay">SUBSCRIBE & PLAY</a>
 								<a href="#" class="WNDR-btn-item1">PLAY NOW</a>
 							</div>
 						</div>
@@ -128,6 +164,17 @@
 				<div class="col-md-12">
 					<div class="downloadDevice_outer">
 						<h2>No Downloads <br><span>Play on any device</span></h2>
+
+
+						<div class="interentSpeed">
+							<div class="interentSpeed_leftside">
+								<i class="fa fa-wifi" aria-hidden="true"></i>
+							</div>
+							<div class="interentSpeed_rightside">
+								<p class="mobile_interentSpeed">MOB 50 MPBS</p>
+								<p class="pc_interentSpeed">PC 100 MPBS</p>
+							</div>
+						</div>
 						<div class="downloadImg_middle">
 							<img src="static/landing_page/images/downloadDevice.png" alt="playDevice">
 						</div>
@@ -193,6 +240,7 @@
 					<div class="col-md-5 col-lg-5 copyright-footer">
 						<div class="middle-sec-footer">
 							<p>WNDR, ALL RIGHTS RESERVED @ 2022</p>
+
 						</div>
 					</div>
 					<div class="col-md-4 col-lg-3 mbl-footer-social">
@@ -320,9 +368,24 @@
 			});
 		});
 	</script>
+	<script>
+		$(document).ready(function () {
+			$(".WNDR-btn-item").click(function () {
+				$("#exampleModal").modal("show");
 
+			})
 
- 
+		})
+	</script>
+	<script>
+		$(document).ready(function () {
+			$(".WNDR-btn-item1").click(function () {
+				$("#exampleModal").modal("show");
+
+			})
+
+		})
+	</script>
 
 </body>
 

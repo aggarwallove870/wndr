@@ -37,7 +37,7 @@
 	  <div class="modal-content sbscribe-bg">
 		<div class="modal-header">
 			<div class="modal-outer">
-		  <h2>Subscribe to Our Newsletter</h2>
+		  <h2 style="color:white;">Subscribe to Our Newsletter</h2>
 		  <img src="{% static 'image/nesltr-line.png' %}" class="subscribe-line-pc" alt="newsletter-line">
 		  <img src="{% static 'image/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="subscribe-line-tabs">
 		  <p>Subscribe here to get the latest news on WNDR events, launch dates, SDK release, WNDR coin and NFT drops.</p>
@@ -50,6 +50,9 @@
 			  <div class="alert alert-danger sueccs-msg" id="sucess_div" role="alert" hidden>
 				<span id="sucess" ></span>
 			  </div>
+			  <div class="alert alert-danger invalid-sueccs-msg" id="invalid_div" role="alert" hidden>
+				<span id="invalid" ></span>
+			</div>
 			  <div class="sbscribe-section" id="success_btn">
 				<button class="sbt-btn" id="btn-d"  onclick="myFunction()">Submit</button>
 			  </div>
@@ -498,11 +501,22 @@ function myFunction() {
                 'csrfmiddlewaretoken': '{{csrf_token}}'
             },
 		success: function (data) {
-			document.getElementById("sucess_div").hidden=false;
+			console.log(data)
+			if (data.is_taken == true) {
+				console.log("email already taken");
+				document.getElementById("invalid_div").hidden = false;
+				document.getElementById("invalid").innerHTML = "Email Already Exists"
+				$("#invalid_div").show().delay(3000).fadeOut();
+			  }
+			  else{
+				document.getElementById("sucess_div").hidden=false;
 			document.getElementById("sucess").innerHTML = "Thank you for subscribing"
 			$('#myInput').val('');
 			$("#sucess_div").show().delay(3000).fadeOut();;
 			$("#btn-d").attr("disabled", false);
+
+			  }
+			
 		},
         });}
     }
