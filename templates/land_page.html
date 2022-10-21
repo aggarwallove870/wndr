@@ -76,12 +76,11 @@
     </div>
     <!-- banner -->
 	
-    <div class="signUp_outer">
-        <div class="outerShadow_1">
-        <div class="signU_outerShadow packages visible-lg visible-md waves-effect waves-light"></div>
-        </div>
-        <a href="#" class="signUp_item">SIGN UP & PLAY</a>
-    </div>
+	<div class="lannding_pageEmail_Banner">
+		<span>
+			<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
+		</span>
+	</div>
     <div class="signUp_outer1">
         <div class="outerShadow_11">
             <div class="signU_outerShadow1 packages visible-lg visible-md waves-effect waves-light"></div>
@@ -89,9 +88,17 @@
         {% comment %} <button href="#" class="signUp_item1">PLAY NOW</button> {% endcomment %}
 		<button type="button" class=" signUp_item1 btn btn-primary" data-toggle="modal" data-target="#exampleModal">
 			PLAY NOW
-		  </button>
+		</button>
+		
 		
     </div>
+
+	<div class="text_signUp">
+		<h2>SIGN UP & PLAY</h2>
+	</div>
+	
+
+
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="sbscribe-bg">
@@ -99,10 +106,16 @@
 					“SIGN UP AND PLAY” button</h2>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
 					
-				<img src="{% static "landing_page/images/nesltr-line.png" class="subscribe-line-pc" alt="newsletter-line">
-				<img src="{% static "landing_page/images/subscribe-line-tabs.png" class="subscribe-line-tabs" alt="newsletter-line1">
+				<img src="{% static "landing_page/images/nesltr-line.png" class="subscribe-line-pc" %} " class="modalLine_first" alt="newsletter-line">
+				<img src="{% static "landing_page/images/subscribe-line-tabs.png" class="subscribe-line-tabs" %}" class="modalLine_last" alt="newsletter-line1">
 				<p>See you in the Metaverse! </p>
 				<form>
+					<div class="lannding_pageEmail">
+						<span>
+							<input type="text" name="myInput1" id="myInput1" value="" placeholder="Enter email">
+						</span>
+					</div>
+						
 					<span class="nesltr_Signup">
 						<button>SIGN UP &amp; PLAY</button>
 					</span>
@@ -126,7 +139,7 @@
 								<img src="{% static 'landing_page/images/About-line2.png' %}" alt="line-about-1">
 							</div>
 							<div class="shadow-outer-div">
-								<p>This is the coolest multiplayer Metaverse online game you’ll ever play. You’ll play
+								<p>This is the coolest multiplayer Metaverse online game you’ll ever play. Become a WNDR play
 									as a
 									WNDR in their breakout video game titled The Colosseum. Your goal is to train as a
 									WNDR
@@ -175,8 +188,7 @@
 						</div>
 						<p class="Download_paragraph">You’ll really enjoy our free to play no downloads Online AAA game.
 							You can
-							play on any device without the need of a clunky console. Play with your
-							Xbox, PlayStation 5 controllers, or use your mobile phone as a gamepad.</p>
+							play on any device without the need of a clunky console. Play with your mouse or keyboard, Xbox, PlayStation 5 controllers, or use your MobilePhone as a gamepad.</p>
 					</div>
 				</div>
 			</div>
@@ -191,11 +203,11 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<div class="sbscribe-bg">
-						<h2>Get instant early access to play online by clicking the
-							“SIGN UP AND PLAY” button</h2>
+						<h2>Get Instant Early Access To Play Online By Clicking The
+							“SIGN UP AND PLAY” Button</h2>
 						<img src="{% static 'landing_page/images/nesltr-line.png' %}" class="subscribe-line-pc" alt="newsletter-line">
 						<img src="{% static 'landing_page/images/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="newsletter-line1">
-						<p>See you in the Metaverse! </p>
+						<p>See You In The Metaverse! </p>
 						<form>
 							<span class="nesltr_Signup">
 								<button>SIGN UP & PLAY</button>

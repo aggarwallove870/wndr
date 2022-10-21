@@ -10,6 +10,7 @@ ul.middle_unorderList li a {
     color: #ffffff !important;
     border-radius: unset !important;
     text-decoration: none;
+    font-weight: 600;
 }
 ul.middle_unorderList {
     margin: 0;
@@ -17,7 +18,7 @@ ul.middle_unorderList {
     bottom: 0;
 }
 ul.middle_unorderList li {
-    width: 94px;
+    width: 96px;
 }
 ul.middle_unorderList li a:before {
     background: unset !important;
@@ -3796,6 +3797,7 @@ img.top-line-m0bile {
     text-align: center;
     margin-left: 0;
     padding-top: 30px;
+    font-weight: 500;
 }
 
 .footer-overlap img.bottom-line {
@@ -5569,7 +5571,7 @@ img.blog-section-img-tabs {
 
     /*footer start here*/
     .middle-sec-footer p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .footer-shapes img.footer-left-ic {

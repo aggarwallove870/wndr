@@ -25,6 +25,123 @@ body {
     max-width: 1280px;
 }
 
+/* new changes 21-09-22 css start */
+button.signUp_item1.btn.btn-primary:active {
+    background: url(../images/sucribe-btn-center-img.png);
+}
+button.signUp_item1.btn.btn-primary:focus {
+    background: url(../images/sucribe-btn-center-img.png);
+    box-shadow: none;
+}
+img.modalLine_last {
+    display: none;
+}
+.lannding_pageEmail input#myInput1 {
+    background-image: url(../images/shapees.png);
+    width: 449px;
+    background-repeat: no-repeat;
+    padding-left: 76px;
+    margin: 0 auto !IMPORTANT;
+    background-position: center;
+    background-size: contain;
+    padding-right: 76px;
+    height: 111px;
+    background-color: transparent;
+    border: 0;
+    font-family: 'neuropolregular';
+    position: relative;
+    font-size: 18px;
+}
+.lannding_pageEmail {
+    margin-bottom: -16px;
+}
+.lannding_pageEmail input#myInput1::placeholder {
+    color: #ffffff;
+}
+.lannding_pageEmail_Banner input#myInput1 {
+    background: url(../images/sucribe-btn-center-img.png);
+    height: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'neuropolregular';
+    position: relative;
+    text-decoration: none;
+    border: 0;
+}
+.lannding_pageEmail_Banner input#myInput:before {
+    content: "";
+    position: absolute;
+    background: url(../images/sucribe-input-img-left.png);
+    width: 98px;
+    height: 111px;
+    left: -98px;
+}
+.lannding_pageEmail_Banner input#myInput:after {
+    content: "";
+    position: absolute;
+    background: url(../images/sucribe-input-img-right.png);
+    width: 98px;
+    height: 111px;
+    right: -98px;
+}
+.lannding_pageEmail {
+    margin-bottom: -16px;
+}
+.lannding_pageEmail_Banner input#myInput1::placeholder {
+    color: #ffffff;
+}
+.lannding_pageEmail_Banner {
+    margin-left: 0px;
+    width: 200px;
+    position: absolute;
+    top: 474px;
+    left: 162px;
+    transform: translate(-0%, -50%);
+}
+.text_signUp h2 {
+    font-size: 38px;
+    color: #ffffff;
+    font-family: 'neuropolregular';
+    margin: 0;
+    text-shadow: yellow;
+    text-shadow: 2px 2px 3px #fef853;
+}
+.text_signUp {
+    position: absolute;
+    bottom: -172px;
+    left: 116px;
+}
+.lannding_pageEmail_Banner input#myInput1:focus-visible {
+    outline: none;
+}
+.lannding_pageEmail_Banner span {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.lannding_pageEmail_Banner span:before {
+    content: "";
+    position: absolute;
+    background: url(../images/sucribe-input-img-left.png);
+    width: 98px;
+    height: 111px;
+    left: -98px;
+}
+.lannding_pageEmail_Banner span:after {
+    content: "";
+    position: absolute;
+    background: url(../images/sucribe-input-img-right.png);
+    width: 98px;
+    height: 111px;
+    right: -158px;
+    top: 0;
+}
+/* new changes 21-09-22 css start */
 
  /* animation button start */
 a.signUp_item {
@@ -61,12 +178,12 @@ a.signUp_item:after {
 }
 .signUp_outer {
     position: relative;
-    margin-left: 120px;
+    margin-left: 0px;
     width: 200px;
     position: absolute;
     top: 477px;
-    left: 164px;
-    transform: translate(-0%, -51%);
+    left: 162px;
+    transform: translate(-0%, -50%);
 }
 .signUp_shadow {
     -webkit-border-radius: 60px;
@@ -216,12 +333,12 @@ a.signUp_item:after {
     right: -98px;
 }
 .signUp_outer1 {
-    margin-left: 120px;
+    margin-left: 0px;
     width: 200px;
     position: absolute;
     top: 578px;
-    left: 164px;
-    transform: translate(-0%, -51%);
+    left: 132px;
+    transform: translate(-0%, -50%);
 }
   /* animation button close */
 
@@ -677,7 +794,7 @@ a.WNDR-btnPlay {
     justify-content: center;
 }
 p.mobile_interentSpeed {
-    font-size: 18px;
+    font-size: 14px;
     margin: 0;
     color: #000000;
     font-family: 'Avenir LT Pro';
@@ -685,7 +802,7 @@ p.mobile_interentSpeed {
     margin-bottom: 0px;
 }
 p.pc_interentSpeed {
-    font-size: 18px;
+    font-size: 14px;
     margin: 0;
     color: #000000;
     font-family: 'Avenir LT Pro';
@@ -700,8 +817,8 @@ p.pc_interentSpeed {
     align-items: center;
 }
 .interentSpeed_leftside i.fa.fa-wifi {
-    font-size: 38px;
-    margin-right: 16px;
+    font-size: 30px;
+    margin-right: 12px;
 }
 .about-wndr-link a.WNDR-btnPlay:before {
     content: "";
@@ -807,7 +924,7 @@ p.pc_interentSpeed {
     transform: translate(0%, -50%);
 }
 .downloadImg_middle img {
-    width: 60%;
+    width: 80%;
 }
 .downloadDevice_outer {
     text-align: center;
@@ -834,7 +951,7 @@ p.Download_paragraph {
     color: #131418; 
     position: relative;
     font-family: 'Avenir LT Pro'; 
-    max-width: 842px;
+    max-width: 907px;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 40px;
@@ -1631,13 +1748,14 @@ img.box-shadow-about {
 
 @media screen and (max-width: 1500px) {
     /* new page css start */
+    
     .sbscribe-bg h2 {
-        font-size: 24px;
+        font-size: 20px;
         position: relative;
         font-family: 'neuropolregular';
         text-transform: uppercase;
         padding: 0 100px;
-        line-height: 42px;
+        line-height: 32px;
         padding-top: 18px;
     }
     /* new page css close */
@@ -1866,7 +1984,7 @@ img.box-shadow-about {
     .header_WNDR .navbar-nav .active a.nav-link:before {
         top: -21px;
     }
-
+    
     .header_WNDR .navbar-nav li.nav-item:nth-child(1) {
         margin-left: -60px;
     }
@@ -2167,7 +2285,15 @@ img.box-shadow-about {
     .header_WNDR .navbar-nav li.nav-item:nth-child(1) {
         margin-left: -50px;
     }
-
+    .text_signUp {
+        position: absolute;
+        bottom: -232px;
+        left: 116px;
+    }
+    video#video2 {
+        height: 740px;
+        object-fit: cover;
+    }
     .form-outer .left-sec-form-item input {
         width: 560px;
     }
@@ -2727,6 +2853,11 @@ img.box-shadow-about {
     h2.uk-scrollspy-inview {
         font-size: 40px;
         margin-bottom: 30px;
+    }
+    .text_signUp {
+        position: absolute;
+        bottom: -245px;
+        left: 116px;
     }
     /* 17 */
     /* srikant css */
@@ -4244,6 +4375,22 @@ img.box-shadow-about {
 
 
     /* new page css start */
+    video#video2 {
+        height: 580px;
+        object-fit: cover;
+    }
+    .text_signUp {
+        position: absolute;
+        bottom: -122px;
+        left: 136px;
+    }
+    .lannding_pageEmail_Banner {
+        margin-left: 0px;
+        top: auto;
+        left: 171px;
+        bottom: 20px;
+        transform: unset;
+    }
     .sbscribe-bg h2 {
         font-size: 22px;
         line-height: 36px;
@@ -4258,7 +4405,7 @@ img.box-shadow-about {
         top: auto;
         left: 174px;
         transform: unset;
-        bottom: 80px;
+        bottom: -80px;
     }
     .signUp_outer1 {
         margin-left: 0;
@@ -4267,7 +4414,7 @@ img.box-shadow-about {
         top: auto;
         left: 150px;
         transform: unset;
-        bottom: -30px;
+        bottom: -80px;
     }
     /* new page css close */
 
@@ -5241,24 +5388,41 @@ img.box-shadow-about {
 }
 
 @media screen and (max-width: 992px) {
+    /* new changes css start 21-10-22 */
+    .lannding_pageEmail_Banner {
+        top: auto;
+        left: 110px;
+        bottom: 32px;
+    }
+    img.modalLine_last {
+        display: block;
+    }
+    img.modalLine_first {
+        display: none;
+    }
+
     /* new page css start */
     .signUp_outer {
         margin-left: 0px;
         top: auto;
-        left: 100px;
+        left: 110px;
         transform: unset;
-        bottom: 130px;
+        bottom: -60px;
     }
     .signUp_outer1 {
         margin-left: 0px;
         width: 200px;
         position: absolute;
         top: auto;
-        left: 80px;
+        left: 82px;
         transform: unset;
-        bottom: 20px;
+        bottom: -68px;
     }
-
+    .text_signUp {
+        position: absolute;
+        bottom: -108px;
+        left: 67px;
+    }
 
 
 
@@ -5455,7 +5619,7 @@ img.box-shadow-about {
     }
 
     video#video2 {
-        height: 100%;
+        height: 540px;
         width: 100%;
         object-fit: cover;
     }
@@ -7016,14 +7180,9 @@ img.box-shadow-about {
 }
 
 @media screen and (max-width: 800px) {
-    video#video2 {
-        height: 100%;
-    }
-
     .play-btn-outer {
         margin-top: 50px !important;
     } 
-
     .container {
         max-width: 910px;
     }
@@ -7706,9 +7865,6 @@ img.box-shadow-about {
 }
 
 @media screen and (max-width: 770px) {
-    video#video2 {
-        height: 100%;
-    }
 
     div#sucess_div57 {
         margin: 0;
@@ -9094,6 +9250,67 @@ img.box-shadow-about {
 }
 
 @media only screen and (max-width: 767px) {
+    /* new changes 21-09-22 css start */
+    #exampleModal .sbscribe-bg h2 {
+        font-size: 13px;
+        line-height: 23px;
+        text-align: center;
+    }
+    video#video21 {
+        height: 680px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .text_signUp {
+        bottom: -202px;
+        left: 24px;
+    }
+    .text_signUp h2 {
+        font-size: 34px;
+    }
+    .lannding_pageEmail input#myInput1 {
+        width: 320px;
+        padding-left: 50px;
+        margin: 0 auto !important;
+        padding-right: 50px;
+        height: 90px;
+        font-size: 14px;
+    }
+    .signUp_outer {
+        margin-left: 0;
+        width: 200px;
+        top: auto;
+        left: 60px;
+        transform: unset;
+        bottom: -104px;
+    }
+    
+    
+    .lannding_pageEmail_Banner input#myInput1 {
+        width: 180px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 14px;
+    }
+    .lannding_pageEmail_Banner {
+        margin-left: 0;
+        left: 68px;
+        top: auto;
+        bottom: -40px;
+    }
+    .lannding_pageEmail_Banner span:after {
+        right: -48px;
+        width: 68px;
+    }
+    .signUp_outer {
+        bottom: -80px;
+    }
+    .signUp_outer1 button.signUp_item1.btn.btn-primary {
+        font-size: 14px;
+    }
+    
+    
+    /* new changes 21-09-22 css close */
     /* newpage css start */
     a.WNDR-btnPlay { 
         width: 190px; 
@@ -9103,14 +9320,6 @@ img.box-shadow-about {
         width: 160px; 
         font-size: 14px; 
     }
-    .signUp_outer {
-        margin-left: 0;
-        width: 200px;
-        top: auto;
-        left: 58px;
-        transform: unset;
-        bottom: -80px;
-    }
     ble-lg.visible-md.waves-effect.waves-light {
         right: -4px;
     }
@@ -9118,9 +9327,9 @@ img.box-shadow-about {
         margin-left: 0;
         width: 200px;
         top: auto;
-        left: 20px;
-        bottom: -230px;
-    }
+        left: 30px;
+        bottom: -130px;
+    }    
     .signUp_item1 {
         width: 120px; 
         font-size: 14px; 
@@ -12028,12 +12237,6 @@ video#video2 {
 }
 
 @media only screen and (max-width: 425px) {
-.signUp_outer {
-    bottom: -120px;
-}
-}
-
-@media only screen and (max-width: 425px) {
     .wndr_engine h2 {
         font-size: 21px;
     }
@@ -12491,9 +12694,6 @@ video#video2 {
     .WNDR_btn_home {
         width: 84%;
     }
-    .signUp_outer1 {
-        bottom: -180px;
-    }
 
     .WNDR_btn_home input {
         padding: 0px;
@@ -12584,13 +12784,6 @@ video#video2 {
 @media screen and (max-width: 322px) {
     .wndr_engine h2 {
         font-size: 18px;
-    }
-    .signUp_outer1 {
-        margin-left: 0;
-        width: 200px;
-        top: auto;
-        left: 20px;
-        bottom: -180px;
     }
 
     .wndr_engine p {
