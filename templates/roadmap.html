@@ -529,7 +529,23 @@ function myFunction() {
 			$('#myInput').val('');
 			$("#sucess_div").show().delay(3000).fadeOut();;
 			$("#btn-d").attr("disabled", false);
-			$.getScript('https://www.googletagmanager.com/gtag/js?id=AW-10997461539');
+			function gtag_report_conversion(url) {
+				console.log('after gtag conversion 123');
+				var callback = function () {
+				  if (typeof(url) != 'undefined') {
+					console.log('inside error');
+					window.location = url;
+					
+				  }
+				};
+				gtag('event', 'conversion', {
+					'send_to': 'AW-10997461539/L2prCLTdkeMDEKPk__so',
+					'event_callback': callback
+				});
+				return false;
+			  }
+			  gtag_report_conversion();
+			console.log('after script conversion');
 
 			  }
 			
