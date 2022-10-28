@@ -283,10 +283,12 @@
 						<img src="{% static 'landing_page/images/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="newsletter-line1">
 						<p>See You In The Metaverse! </p>
 						<form>
+							<span class="text-danger" id="email_err"></span>
 							<div class="lannding_pageEmail_Banner newslter_input_box_ftr">
 								<span>
-									<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
+									<input type="text" name="myInput1" class="email_chk" id="myInput1" value="" placeholder="ENTER EMAIL" autocomplete="off">
 								</span>
+								
 							</div>
 							{% comment %} <span class="nesltr_Signup btm_subscribe_ply">
 								<button>SUBSCRIBE & PLAY</button>
@@ -296,7 +298,7 @@
 								{% comment %} <button type="button" class=" signUp_item1 btn btn-primary" data-toggle="modal" data-target="#landingModal">
 									PLAY NOW {% endcomment %}
 								{% comment %} </button> {% endcomment %}
-								<button type="button" class="bottom_newsltr_btn signUp_item1 btn" data-toggle="modal" data-target="#landingModal2">
+								<button type="button" class="bottom_newsltr_btn signUp_item1 btn" data-toggle="modal" data-target="landingModal3">
 									PLAY NOW
 								</button>
 							</div>
@@ -461,28 +463,42 @@
 		});
 	</script>
 
-	   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PR4XX4G');</script>
-    <!-- End Google Tag Manager -->
-	{% comment %} <script>
-		$(document).ready(function () {
-			$(".WNDR-btn-item").click(function () {
-				$("#exampleModal").modal("show");
 
-			})
+	<script>
+		var testEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+		$('.bottom_newsltr_btn').click(function(){
+			email = $('.email_chk').val();
+			console.log(email)
 
-		})
-	</script> {% endcomment %}
-	{% comment %} <script>
-		$('#landingModal').modal({
-			backdrop: 'static',
-			keyboard: false
-		})
-	</script> {% endcomment %}
+			if(email == ''){
+				console.log('if');
+				$("#email_err").show('blind', {}, 500)
+				$('#email_err').html('Please Enter Email');
+				setTimeout(function() {
+					$("#email_err").hide('blind', {}, 500)
+				}, 5000);
+			   $("#email_err").addClass("innerErrorMesg");
+			
+			   
+			}
+			else if(testEmail.test(email)) {
+				console.log('err');
+				$("#email_err").html('');
+				$("#landingModal2").modal("show");
+			}
+			else if(!testEmail.test(email)){
+				$("#email_err").show('blind', {}, 500)
+				$('#email_err').html('Please Enter Correct Email');
+				setTimeout(function() {
+					$("#email_err").hide('blind', {}, 500)
+				}, 5000);
+			}
+			else {
+				console.log('else');
+			}
+		 });
+
+	</script>
 
 </body>
 
