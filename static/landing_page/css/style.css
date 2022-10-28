@@ -28,6 +28,23 @@ body {
 /* .lannding_pageEmail_Banner input#myInput1::placeholder{
     color: #dd4441 !important;
 } */
+.text-danger.innerErrorMesg{
+    background: rgb(237 56 51 / 34%);
+    color: #ccb4b8 !important;
+    width: 500px !important;
+    height: 36px;
+    margin-top: 55px;
+    position: relative;
+    max-width: 294px !important;
+    /* position: absolute; */
+    margin-top: 49px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #f4a8a2;
+    text-transform: capitalize;
+    border-radius: 6px;
+    padding: 9px 50px;
+}
 .newslter_input_box_ftr{
     position: relative !IMPORTANT;
     text-align: center;
@@ -5525,6 +5542,11 @@ img.box-shadow-about {
 }
 
 @media screen and (max-width: 992px) {
+    .text-danger.innerErrorMesg{
+        padding: 5px 30px;
+        position: relative;
+        top: 10px;   
+    }
     button.WNDR-btn-item.signUp_item1.btn.metaverse_btn_playnow{
         margin-top: 0px !important;
     }
