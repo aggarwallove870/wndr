@@ -11305,6 +11305,7 @@ video#video2 {
 }
 
 @media only screen and (max-width: 480px) {
+   
     .sbscribe_text_mdl h2{
         font-size: 20px !important;  
     }
@@ -12865,6 +12866,9 @@ video#video2 {
 }
 
 @media screen and (max-width: 380px) {
+    ul.middle_unorderList li a{
+        font-size: 13px !important;
+    }
     .btm_subscribe_ply button {
         width: auto !important;
     }
