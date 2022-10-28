@@ -24,7 +24,130 @@ body {
 .container {
     max-width: 1280px;
 }
+/*----Button Start Css----*/
+/* .lannding_pageEmail_Banner input#myInput1::placeholder{
+    color: #dd4441 !important;
+} */
+.newslter_input_box_ftr{
+    position: relative !IMPORTANT;
+    text-align: center;
+    width: 100% !IMPORTANT;
+    top: 0px !IMPORTANT;
+    left: -30px !IMPORTANT;
+    transform: translate(0px , 0px) !IMPORTANT;
+}
+.about-wndr-link .lannding_pageEmail_Banner {    
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 0px;
+    left: -30px;
+    transform: translate(0px , 0px);
+}
+.btm_subscribe_ply button {
+    width: 100% !important;
+}
+.bottom_newsltr_btn.signUp_item1.btn {
+    color: #fff;
+    width: 150px;
+}
+.subscribe_ply_btn:focus-visible{
+    outline: none;
+}
+.subscribe_ply_btn:focus{
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%) !important;
+}
+.bottom_newsltr_btn:focus-visible{
+    outline: none;
+}
+.bottom_newsltr_btn:focus{
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%) !important;
+}
+.metaverse_btn_playnow:focus{
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%) !important;
+}
+.metaverse_btn_playnow:focus-visible{
+    outline: none;
+}
+.mdl_sbscribe_btn button{
+    width:100% !important;
+}
 
+.sbscribe_text_mdl h2{
+    font-size: 24px !important;
+    padding-bottom: 20px !IMPORTANT;
+    padding-top: 0px !IMPORTANT;
+}
+.mdl_sbscribe_btn{
+    position:relative;
+}
+.mdl_sbscribe_btn .close{
+    left: 94%;
+    width: auto !IMPORTANT;
+}
+.lannding_pageEmail_Banner.popup_mdl_input_bx{
+    position:unset !Important;
+    transform:translate(0%, 0%);
+}
+.text_signUp.sbscribe_text_mdl {
+    width: 100% !IMPORTANT;
+    text-align: center;
+    position:unset;
+}
+.bottom_newsltr_btn.signUp_item1:before{
+    left: -99px;
+}
+.bottom_newsltr_btn.signUp_item1:after{
+    right: -99px;
+}
+.metaverse_btn_playnow:before{  
+    right: -63px !IMPORTANT;
+    top: 0px !IMPORTANT;
+    left: auto !IMPORTANT;
+    height: 92px !IMPORTANT;
+}
+.metaverse_btn_playnow:after{
+    height: 92px !IMPORTANT;
+    left: -63px !IMPORTANT;
+    top: 0 !IMPORTANT;
+}
+.subscribe_ply_btn {
+    width: auto !IMPORTANT;
+    white-space: nowrap;
+    padding: 0px 30px !important;
+}
+.subscribe_ply_btn:before{
+    height: 92px !important;
+    right: -63px !important;
+}
+.subscribe_ply_btn::after{
+    height: 92px !important;
+    left: -63px !important;
+}
+.Sign_up_play_txt{
+    color:#f3012d !IMPORTANT;
+    font-size: 38px !important;
+    font-family: 'neuropolregular';
+    text-shadow: 2px 2px 3px #fef853;
+}
+/*----Button End Css----*/
+/* .laddingPage_outer {
+    position: relative;
+} */
+.laddingPage_outer{
+    position: absolute;
+    bottom: 100px;
+    height: 100%;
+}
+.about-wndr-link .WNDR-btn-item:hover{
+    color:#fff;
+}
+.bottom_newsltr_btn.signUp_item1:before{
+    top: 0px;
+}
+.bottom_newsltr_btn.signUp_item1:after{
+    top: 0px;
+}
 /* new changes 21-09-22 css start */
 button.signUp_item1.btn.btn-primary:active {
     background: url(../images/sucribe-btn-center-img.png);
@@ -112,9 +235,12 @@ img.modalLine_last {
 }
 .text_signUp {
     position: absolute;
-    bottom: -172px;
+    bottom: 180px;
     left: 116px;
+    width: 500px;
 }
+
+
 .lannding_pageEmail_Banner input#myInput1:focus-visible {
     outline: none;
 }
@@ -761,7 +887,7 @@ img.box-shadow-about {
 .shadow-outer-div {
     position: relative;
 }
-.about-wndr-link a.WNDR-btn-item {
+.about-wndr-link .WNDR-btn-item {
     background: url(../images/about-btn-space.png);
     margin: 0 auto !important;
     background-size: contain;
@@ -840,7 +966,7 @@ p.pc_interentSpeed {
     background-size: cover;
     top: 0px;
 }
-.about-wndr-link a.WNDR-btn-item:before {
+.about-wndr-link .WNDR-btn-item:before {
     content: "";
     position: absolute;
     background: url(../images/about-btn-right-space.png);
@@ -850,7 +976,7 @@ p.pc_interentSpeed {
     background-size: cover;
     top: 0px;
 }
-.about-wndr-link a.WNDR-btn-item:after {
+.about-wndr-link .WNDR-btn-item:after {
     content: "";
     position: absolute;
     background: url(../images/about-btn-left-space.png);
@@ -861,7 +987,7 @@ p.pc_interentSpeed {
     background-size: cover;
 }
 
-.about-wndr-link a.WNDR-btn-item1 {
+.about-wndr-link .WNDR-btn-item1 {
     background: url(../images/about-btn-space.png);
     margin: 0 auto !important;
     background-size: contain;
@@ -877,7 +1003,7 @@ p.pc_interentSpeed {
     font-family: 'neuropolregular';
     justify-content: center;
 }
-.about-wndr-link a.WNDR-btn-item1:before {
+.about-wndr-link .WNDR-btn-item1:before {
     content: "";
     position: absolute;
     background: url(../images/about-btn-right-space.png);
@@ -887,7 +1013,7 @@ p.pc_interentSpeed {
     background-size: cover;
     top: 0px;
 }
-.about-wndr-link a.WNDR-btn-item1:after {
+.about-wndr-link .WNDR-btn-item1:after {
     content: "";
     position: absolute;
     background: url(../images/about-btn-left-space.png);
@@ -1999,7 +2125,12 @@ img.box-shadow-about {
         width: 89px;
         height: 107px;
     }
-
+    .text_signUp{
+    position: absolute;
+    bottom: 100px;
+    left: 116px;
+    width: 500px;
+    }
     .cmpny-bg::before {
         width: 86px;
         height: 113px;
@@ -2287,8 +2418,9 @@ img.box-shadow-about {
     }
     .text_signUp {
         position: absolute;
-        bottom: -232px;
+        bottom: 8px;
         left: 116px;
+        width: 500px;
     }
     video#video2 {
         height: 740px;
@@ -2856,7 +2988,7 @@ img.box-shadow-about {
     }
     .text_signUp {
         position: absolute;
-        bottom: -245px;
+        bottom: 0px;
         left: 116px;
     }
     /* 17 */
@@ -3278,7 +3410,7 @@ img.box-shadow-about {
 
     .sbscribe-bg {
         background-size: cover;
-        width: 920px;
+        /* width: 920px; */
         margin: 0 auto;
         border-radius: 30px;
         height: auto;
@@ -4372,7 +4504,9 @@ img.box-shadow-about {
 
 @media screen and (max-width: 1025px) {
 
-
+    .laddingPage_outer{
+        bottom: 180px;
+    }
 
     /* new page css start */
     video#video2 {
@@ -4381,8 +4515,11 @@ img.box-shadow-about {
     }
     .text_signUp {
         position: absolute;
-        bottom: -122px;
+        bottom: -132px;
         left: 136px;
+    }
+    .text_signUp h2 {
+        font-size: 26px;
     }
     .lannding_pageEmail_Banner {
         margin-left: 0px;
@@ -5388,6 +5525,9 @@ img.box-shadow-about {
 }
 
 @media screen and (max-width: 992px) {
+    button.WNDR-btn-item.signUp_item1.btn.metaverse_btn_playnow{
+        margin-top: 0px !important;
+    }
     /* new changes css start 21-10-22 */
     .lannding_pageEmail_Banner {
         top: auto;
@@ -6082,12 +6222,14 @@ img.box-shadow-about {
 }
 
 @media screen and (max-width: 991px) {
-
+    .mdl_sbscribe_btn .close span {
+        font-size: 32px;
+    }
     /* new page css start here */
     .sbscribe-bg h2 {
         font-size: 24px;
         line-height: 38px;
-        padding: 0 90px;
+        padding: 0 60px;
     }
     .sbscribe-bg p { 
         font-size: 18px; 
@@ -6155,13 +6297,13 @@ img.box-shadow-about {
         margin-bottom: 0px;
         margin-top: 12px;
     }
-    .about-wndr-link a.WNDR-btn-item { 
+    .about-wndr-link .WNDR-btn-item { 
         width: 180px; 
         height: 94px; 
         font-size: 16px;
         margin-top: 20px !important;
     }
-    .about-wndr-link a.WNDR-btn-item1 {
+    .about-wndr-link .WNDR-btn-item1 {
         width: 140px; 
     }
     p.Download_paragraph {
@@ -8923,6 +9065,26 @@ img.box-shadow-about {
 }
 
 @media only screen and (max-width: 768px) {
+    .about-wndr-link .lannding_pageEmail_Banner{
+        left: 0px;
+    }
+    .newslter_input_box_ftr{
+        left: 0px !IMPORTANT; 
+    }
+    .mdl_sbscribe_btn .close span{
+        font-size: 28px;
+    }
+    .Sign_up_play_txt{
+        font-size: 28px !important;
+    }
+    .metaverse_btn_playnow{
+        margin-top: 0px !important;
+        font-size: 14px;
+    }
+    .bottom_newsltr_btn.signUp_item1.btn{
+        width: 130px;
+        font-size: 14px;
+    }
     .new_dwnlod {
         padding-bottom: 30px;
         padding-top: 30px;
@@ -9262,11 +9424,14 @@ img.box-shadow-about {
         object-fit: cover;
     }
     .text_signUp {
-        bottom: -202px;
+        bottom: -162px;
         left: 24px;
     }
     .text_signUp h2 {
-        font-size: 34px;
+        font-size: 28px;
+    }
+    .laddingPage_outer {
+        bottom: 230px;
     }
     .lannding_pageEmail input#myInput1 {
         width: 320px;
@@ -9365,12 +9530,12 @@ video#video2 {
         line-height: 24px; 
         padding: 0; 
     }
-    .about-wndr-link a.WNDR-btn-item { 
+    .about-wndr-link .WNDR-btn-item { 
         width: 174px; 
         height: 94px; 
         font-size: 14px; 
     }
-    .about-wndr-link a.WNDR-btn-item1 { 
+    .about-wndr-link .WNDR-btn-item1 { 
         width: 130px; 
         font-size: 14px; 
     }
@@ -11140,6 +11305,15 @@ video#video2 {
 }
 
 @media only screen and (max-width: 480px) {
+    .sbscribe_text_mdl h2{
+        font-size: 20px !important;  
+    }
+    .Sign_up_play_txt{
+        font-size: 24px !important;
+    }
+    .WNDR-btn-item.WNDR-btnPlay.btn.subscribe_ply_btn{
+        margin-top:0px !important;
+    }
     .vision-lineas.vision_top_lineas img {
         display: block !important;
     }
@@ -12691,6 +12865,12 @@ video#video2 {
 }
 
 @media screen and (max-width: 380px) {
+    .btm_subscribe_ply button {
+        width: auto !important;
+    }
+    .text_signUp h2{
+        font-size: 24px;
+    }
     .WNDR_btn_home {
         width: 84%;
     }

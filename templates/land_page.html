@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>index</title>
 	<!-- bootstrap-css start -->
-	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	{% comment %} <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> {% endcomment %}
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<!-- link css -->
 	<link rel="stylesheet" type="text/css" href="{% static 'landing_page/css/style.css' %}">
@@ -72,35 +72,38 @@
                     </div>
                 </div>
             </div>
+			<div class="laddingPage_outer">
+				<div class="lannding_pageEmail_Banner">
+					<span>
+						<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
+					</span>
+				</div>
+				<div class="signUp_outer1">
+					<div class="outerShadow_11">
+						<div class="signU_outerShadow1 packages visible-lg visible-md waves-effect waves-light"></div>
+					</div> 
+					{% comment %} <button href="#" class="signUp_item1">PLAY NOW</button> {% endcomment %}
+					<button type="button" class=" signUp_item1 btn btn-primary" data-toggle="modal" data-target="#landingModal">
+						PLAY NOW
+					</button>
+					
+					
+				</div>
+			
+				<div class="text_signUp">
+					<h2>SIGN UP & PLAY</h2>
+				</div>
+				</div>
         </div>
+	
     </div>
     <!-- banner -->
 	
-	<div class="lannding_pageEmail_Banner">
-		<span>
-			<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
-		</span>
-	</div>
-    <div class="signUp_outer1">
-        <div class="outerShadow_11">
-            <div class="signU_outerShadow1 packages visible-lg visible-md waves-effect waves-light"></div>
-        </div> 
-        {% comment %} <button href="#" class="signUp_item1">PLAY NOW</button> {% endcomment %}
-		<button type="button" class=" signUp_item1 btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-			PLAY NOW
-		</button>
-		
-		
-    </div>
-
-	<div class="text_signUp">
-		<h2>SIGN UP & PLAY</h2>
-	</div>
 	
-
-
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
+	
+	 <div class="modal fade" id="landingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content" style='background:#111;border-radius:30px;'>
 			<div class="sbscribe-bg">
 				<h2>Get instant early access to play online by clicking the
 					“SIGN UP AND PLAY” button</h2>
@@ -109,25 +112,84 @@
 				<img src="{% static "landing_page/images/nesltr-line.png" class="subscribe-line-pc" %} " class="modalLine_first" alt="newsletter-line">
 				<img src="{% static "landing_page/images/subscribe-line-tabs.png" class="subscribe-line-tabs" %}" class="modalLine_last" alt="newsletter-line1">
 				<p>See you in the Metaverse! </p>
-				<form>
+				
 					<div class="lannding_pageEmail">
-						<span>
-							<input type="text" name="myInput1" id="myInput1" value="" placeholder="Enter email">
-						</span>
+					
 					</div>
 						
 					<span class="nesltr_Signup">
-						<button>SIGN UP &amp; PLAY</button>
+						<button  data-toggle="modal" data-dismiss="modal" data-target="#landingModal2">SIGN UP &amp; PLAY</button>
 					</span>
 					<div class="snesltr_playNow">
 						<button class="playNow">PLAY NOW</button>
 					</div>
-				</form>
+				
 			</div>
 		</div>
-	  </div>
+		</div>
+	   </div> 
 
-	<!-- About-WNDR-start -->
+
+	   <div class="modal fade" id="landingModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content" style='background:#111;border-radius:30px;'>
+			<div class="sbscribe-bg">
+				<h2>THE COLOSSIUM IS
+					FULL TRY AGAIN
+					
+					LATER</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+					
+				<img src="{% static "landing_page/images/nesltr-line.png" class="subscribe-line-pc" %} " class="modalLine_first" alt="newsletter-line">
+				<img src="{% static "landing_page/images/subscribe-line-tabs.png" class="subscribe-line-tabs" %}" class="modalLine_last" alt="newsletter-line1">
+				<p>See you in the Metaverse! </p>
+				
+			</div>
+		</div>
+		</div>
+	   </div>  
+
+
+	   <div class="modal fade" id="landingModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content" style='background:#111;border-radius:30px;'>
+			<div class="sbscribe-bg mdl_sbscribe_btn">
+				<h2>Get instant early access to play online by clicking the
+					“SIGN UP AND PLAY” button</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+					
+				<img src="{% static "landing_page/images/nesltr-line.png" class="subscribe-line-pc" %} " class="modalLine_first" alt="newsletter-line">
+				<img src="{% static "landing_page/images/subscribe-line-tabs.png" class="subscribe-line-tabs" %}" class="modalLine_last" alt="newsletter-line1">
+				<p>See you in the Metaverse! </p>
+				
+					<div class="lannding_pageEmail">
+					
+					</div>
+					<div class="lannding_pageEmail_Banner popup_mdl_input_bx">
+						<span>
+							<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
+						</span>
+					</div>
+					{% comment %} <span class="nesltr_Signup">
+						<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
+					</span>	 {% endcomment %}
+					
+					<div class="snesltr_playNow">
+						<button class="playNow">PLAY NOW</button>
+					</div>
+					<div class="text_signUp sbscribe_text_mdl">
+						<h2>SUBSCRIBE &amp; PLAY</h2>
+					</div>
+			</div>
+		</div>
+		</div>
+	   </div> 
+
+
+
+	<!-- About-modal-2nd end -->
+	
+	   <!-- About-WNDR-start -->
 	<div class="about-WNDR content" id="content">
 		<div class="container">
 			<div class="row">
@@ -153,9 +215,21 @@
 								<img src="{% static 'landing_page/images/about-shadow.png' %}" class="box-shadow-about" alt="shadow-about-1">
 							</div>
 							<div class="about-wndr-link">
-								<a href="#" class="WNDR-btn-item">SIGN UP & PLAY</a>
-								<a href="#" class="WNDR-btnPlay">SUBSCRIBE & PLAY</a>
-								<a href="#" class="WNDR-btn-item1">PLAY NOW</a>
+								<a href="#" class="Sign_up_play_txt">SIGN UP & PLAY</a>
+								<div class="lannding_pageEmail_Banner">
+									<span>
+										<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
+									</span>
+								</div>
+								{% comment %} <button type="button" class="WNDR-btn-item WNDR-btnPlay btn subscribe_ply_btn" data-toggle="modal" data-target="#landingModal3">
+									SUBSCRIBE & PLAY
+								</button> {% endcomment %}
+								{% comment %} <a href="#" class="WNDR-btnPlay">SUBSCRIBE & PLAY</a> {% endcomment %}
+								{% comment %} <a href="#" class="WNDR-btn-item1">PLAY NOW</a> {% endcomment %}
+								<button type="button" class="WNDR-btn-item signUp_item1 btn metaverse_btn_playnow" data-toggle="modal" data-target="#landingModal2">
+									PLAY NOW
+								</button>
+							
 							</div>
 						</div>
 					</div>
@@ -209,11 +283,22 @@
 						<img src="{% static 'landing_page/images/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="newsletter-line1">
 						<p>See You In The Metaverse! </p>
 						<form>
-							<span class="nesltr_Signup">
-								<button>SIGN UP & PLAY</button>
-							</span>
+							<div class="lannding_pageEmail_Banner newslter_input_box_ftr">
+								<span>
+									<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
+								</span>
+							</div>
+							{% comment %} <span class="nesltr_Signup btm_subscribe_ply">
+								<button>SUBSCRIBE & PLAY</button>
+							</span> {% endcomment %}
 							<div class="snesltr_playNow">
-								<button class="playNow">PLAY NOW</button>
+							  {% comment %} <button class="playNow">PLAY NOW</button>  {% endcomment %}
+								{% comment %} <button type="button" class=" signUp_item1 btn btn-primary" data-toggle="modal" data-target="#landingModal">
+									PLAY NOW {% endcomment %}
+								{% comment %} </button> {% endcomment %}
+								<button type="button" class="bottom_newsltr_btn signUp_item1 btn" data-toggle="modal" data-target="#landingModal2">
+									PLAY NOW
+								</button>
 							</div>
 						</form>
 					</div>
@@ -375,7 +460,15 @@
 			});
 		});
 	</script>
-	<script>
+
+	   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PR4XX4G');</script>
+    <!-- End Google Tag Manager -->
+	{% comment %} <script>
 		$(document).ready(function () {
 			$(".WNDR-btn-item").click(function () {
 				$("#exampleModal").modal("show");
@@ -383,16 +476,13 @@
 			})
 
 		})
-	</script>
-	<script>
-		$(document).ready(function () {
-			$(".WNDR-btn-item1").click(function () {
-				$("#exampleModal").modal("show");
-
-			})
-
+	</script> {% endcomment %}
+	{% comment %} <script>
+		$('#landingModal').modal({
+			backdrop: 'static',
+			keyboard: false
 		})
-	</script>
+	</script> {% endcomment %}
 
 </body>
 
