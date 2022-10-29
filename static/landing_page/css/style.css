@@ -28,22 +28,125 @@ body {
 /* .lannding_pageEmail_Banner input#myInput1::placeholder{
     color: #dd4441 !important;
 } */
+.mbl_internet_wifi {
+    color: #f3012d !important; 
+}
+.mbl_internet_wifi {
+    display:none;
+}
+.sign_up_play_main {
+    position: relative;
+    text-align: center;
+}
+/* .sign_up_play_main .outerShadow_11{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-86% , 0%);
+} */
+
+.ply_now_signplay {
+    width: 100%;
+    display: flex;
+}
+.sign_up_play_main .signU_outerShadow1.packages.visible-lg.visible-md.waves-effect.waves-light{   
+    height: 42px;
+    position: absolute;
+    width: 278px;
+    border-radius: 20px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+}
+.about-WNDR.content .text-danger.innerErrorMesg{
+    transform: translate(-50% , 145%);
+}
+.about-WNDR.content .custom-email-button{
+    margin-top: 10px !IMPORTANT;
+}
+.about-WNDR.content .about-wndr-link{
+    position:relative;
+}
+.newsletter-bg .snesltr_playNow{
+    margin-top: 0px;
+    position: relative;
+}
+.newsletter-bg .sbscribe-bg{
+    padding: 30px 0px;
+}
+.signUp_outer1 button.signUp_item1.btn.btn-primary:focus-visible{
+    outline: none;
+}
+.wifi_connected {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+.wifi_connected p{
+    margin-bottom:0px;
+    font-size: 17px;
+    color: #f3012d;
+    padding-top: 10px;
+}
+.subscribe_mdl_bottom .close span{
+    font-size: 34px;
+}
+.subscribe_mdl_bottom  .sbscribe-bg {
+    padding: 120px 0px;
+}
+.sbscribe-bg .text-danger.innerErrorMesg{
+    margin-top: 0px;
+    color: #fff !important;
+}
+.newsletter-bg form{
+    position: relative;
+}
 .text-danger.innerErrorMesg{
     background: rgb(237 56 51 / 34%);
-    color: #ccb4b8 !important;
+    color: #ad2f33 !important;
     width: 500px !important;
     height: 36px;
     margin-top: 55px;
-    position: relative;
+    position: absolute;
     max-width: 294px !important;
-    /* position: absolute; */
-    margin-top: 49px;
+    margin-top: 0px;
     text-align: center;
     font-size: 14px;
     border: 1px solid #f4a8a2;
     text-transform: capitalize;
     border-radius: 6px;
     padding: 9px 50px;
+    text-align: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50% , -41%);
+}
+.banner-WNDR .text-danger.innerErrorMesg{
+    background: rgb(237 56 51 / 34%);
+    color: #fff !important;
+    height: 33px;
+    margin-top: 55px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #f4a8a2;
+    text-transform: capitalize;
+    border-radius: 6px;
+    padding: 9px 50px;
+    text-align: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute !important;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    top: -17px;
+    margin-left: 33px;
 }
 .newslter_input_box_ftr{
     position: relative !IMPORTANT;
@@ -238,7 +341,7 @@ img.modalLine_last {
     margin-left: 0px;
     width: 200px;
     position: absolute;
-    top: 474px;
+    top: 464px;
     left: 162px;
     transform: translate(-0%, -50%);
 }
@@ -386,30 +489,30 @@ a.signUp_item:after {
     top: 30px;
     right: -43px;
 }
-  .packages{-webkit-animation: quick 2000ms infinite;
-    -moz-animation: quick 2000ms infinite; 
-    -o-animation: quick 2000ms infinite; 
-     animation: quick 2000ms infinite;
+  .packages{-webkit-animation: quick 1000ms infinite;
+    -moz-animation: quick 1000ms infinite; 
+    -o-animation: quick 1000ms infinite; 
+     animation: quick 1000ms infinite;
    }
   @-webkit-keyframes quick {
     0% { -webkit-box-shadow: 0 0 3px #bd4247; }
     50% {  -webkit-box-shadow: 0 0 40px #bd4247; }
-    100% { -webkit-box-shadow: 0 0 3px #bd4247; }
+    100% { -webkit-box-shadow: 0 0 90px #bd4247; }
   }
   @-moz-keyframes quick {
     0% {  -moz-box-shadow: 0 0 3px #bd4247; }
     50% {  -moz-box-shadow: 0 0 40px #bd4247; }
-    100% {  -moz-box-shadow: 0 0 3px #bd4247; }
+    100% {  -moz-box-shadow: 0 0 90px #bd4247; }
   }
   @-o-keyframes quick {
     0% {  box-shadow: 0 0 3px #bd4247; }
     50% { box-shadow: 0 0 40px #bd4247; }
-    100% {  box-shadow: 0 0 3px #bd4247; }
+    100% {  box-shadow: 0 0 90px #bd4247; }
   }
   @keyframes quick {
     0% {box-shadow: 0 0 3px #bd4247;}
     50% {box-shadow: 0 0 40px #bd4247;}
-    100% {box-shadow: 0 0 3px #bd4247;}
+    100% {box-shadow: 0 0 90px #bd4247;}
   }
   .signU_outerShadow1.packages.visible-lg.visible-md.waves-effect.waves-light {
     height: 58px;
@@ -2138,6 +2241,9 @@ img.box-shadow-about {
 }
 
 @media screen and (max-width: 1440px) {
+    .subscribe_mdl_bottom .sbscribe-bg{
+        width: 100%;
+    }
     .cmpny-bg::after {
         width: 89px;
         height: 107px;
@@ -4542,7 +4648,7 @@ img.box-shadow-about {
         margin-left: 0px;
         top: auto;
         left: 171px;
-        bottom: 20px;
+        bottom: 40px;
         transform: unset;
     }
     .sbscribe-bg h2 {
@@ -5363,7 +5469,9 @@ img.box-shadow-about {
 }
 
 @media only screen and (max-width: 1024px) {
-    
+    .wifi_connected p{
+        font-size: 21px;
+    }
     /* srikant css */
     .team_member_section {
         height: 540px;
@@ -5542,10 +5650,24 @@ img.box-shadow-about {
 }
 
 @media screen and (max-width: 992px) {
+    .mbl_internet_wifi {
+        display:block;
+        font-size: 18px;
+    }
+    .wifi_connected{
+        display:none !IMPORTANT;
+    }
+    .sign_up_play_main .signU_outerShadow1.packages.visible-lg.visible-md.waves-effect.waves-light{
+    transform: translate(-50%, -14%);
+    }
+    .wifi_connected p{
+        font-size: 21px;
+    }
+    .sbscribe-bg .text-danger.innerErrorMesg{
+        max-width: 234px !important;
+    }
     .text-danger.innerErrorMesg{
         padding: 5px 30px;
-        position: relative;
-        top: 10px;   
     }
     button.WNDR-btn-item.signUp_item1.btn.metaverse_btn_playnow{
         margin-top: 0px !important;
@@ -5554,7 +5676,7 @@ img.box-shadow-about {
     .lannding_pageEmail_Banner {
         top: auto;
         left: 110px;
-        bottom: 32px;
+        bottom: 42px;
     }
     img.modalLine_last {
         display: block;
@@ -6244,6 +6366,12 @@ img.box-shadow-about {
 }
 
 @media screen and (max-width: 991px) {
+    .sign_up_play_main .signU_outerShadow1.packages.visible-lg.visible-md.waves-effect.waves-light{
+    width: 218px;
+    }
+    .subscribe_mdl_bottom .sbscribe-bg{
+        height: 100%;
+    }
     .mdl_sbscribe_btn .close span {
         font-size: 32px;
     }
@@ -9087,6 +9215,36 @@ img.box-shadow-about {
 }
 
 @media only screen and (max-width: 768px) {
+   .banner-WNDR .signU_outerShadow1.packages.visible-lg.visible-md.waves-effect.waves-light{      
+    width: 204px;
+    right: 0px;
+    left: 0px;
+    }
+    .about-WNDR.content .text-danger.innerErrorMesg {
+        transform: translate(-50% , 122%);
+        max-width: 244px !important;
+    }
+    .wifi_connected p{
+        font-size: 18px;
+        padding-top: 0px;
+    }
+    .wifi_connected {
+        position: absolute;
+        right: 10px;
+        top: 7px;
+    }
+    .downloadDevice_outer{
+        margin-top: 10px;
+    }
+    .subscribe_mdl_bottom .sbscribe-bg {
+        padding: 70px 20px;
+    }
+    .subscribe_mdl_bottom .close span{
+        font-size: 28px;
+    }
+    .subscribe_mdl_bottom .close{
+        top: -7px !important;
+    }
     .about-wndr-link .lannding_pageEmail_Banner{
         left: 0px;
     }
@@ -9483,7 +9641,7 @@ img.box-shadow-about {
         margin-left: 0;
         left: 68px;
         top: auto;
-        bottom: -40px;
+        bottom: -30px;
     }
     .lannding_pageEmail_Banner span:after {
         right: -48px;
@@ -9754,7 +9912,7 @@ video#video2 {
 
     /*subscribe start*/
     .sbscribe-bg {
-        background-image: url(../image/subscribe-img-mobile.jpg);
+        background-image: url(../images/subscribe-img-mobile.jpg);
         border-radius: 30px;
         width: 100%;
     }
@@ -10861,7 +11019,7 @@ video#video2 {
 
     /*subscribe start*/
     .sbscribe-bg {
-        background-image: url(../image/subscribe-img-mobile.jpg);
+        background-image: url(../images/subscribe-img-mobile.jpg);
         border-radius: 30px;
         width: 100%;
     }
@@ -11007,6 +11165,21 @@ video#video2 {
 }
 
 @media only screen and (max-width: 575px) {
+    .about-wndr-link .lannding_pageEmail_Banner{
+        left: 10px;
+    }
+    .newslter_input_box_ftr {
+        left: 10px !IMPORTANT;
+    }
+    .text-danger.innerErrorMesg{
+        height: 34px;
+    }
+    .banner-WNDR .text-danger.innerErrorMesg{
+        height: 29px;
+        position: relative;
+        font-size: 13px;
+        top: -8px;
+    }
     .no-dwonload_section img {
         padding-top: 5px;
     }
@@ -11327,7 +11500,9 @@ video#video2 {
 }
 
 @media only screen and (max-width: 480px) {
-   
+    .subscribe_mdl_bottom .sbscribe-bg {
+        padding: 40px 20px;
+    }    
     .sbscribe_text_mdl h2{
         font-size: 20px !important;  
     }
@@ -11855,7 +12030,7 @@ video#video2 {
     }
 
     .sbscribe-bg {
-        background-image: url(../image/subscribe-img-mobile.jpg);
+        background-image: url(../images/subscribe-img-mobile.jpg);
         border-radius: 30px;
         width: 100%;
     }
@@ -12434,6 +12609,10 @@ video#video2 {
 }
 
 @media only screen and (max-width: 425px) {
+    .mbl_internet_wifi {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }    
     .wndr_engine h2 {
         font-size: 21px;
     }
@@ -12531,6 +12710,40 @@ video#video2 {
 }
 
 @media screen and (max-width: 380px) {
+    .newsletter-bg .signU_outerShadow1.packages.visible-lg.visible-md.waves-effect.waves-light{
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .wifi_connected p {
+        font-size: 15px;
+    }    
+    .about-WNDR.content .text-danger.innerErrorMesg {
+        transform: translate(-50% , 142%);
+        max-width: 244px !important;
+    }
+    .subscribe_mdl_bottom .sbscribe-bg h2{
+        font-size: 18px;
+    }
+    .sbscribe-bg .text-danger.innerErrorMesg{
+        max-width: 214px !important;
+    }
+    .banner-WNDR .text-danger.innerErrorMesg{
+        padding: 9px 10px;
+        font-size: 13px;
+        height: 26px;
+        margin-top: 0px;
+        max-width: 213px !important;
+    }
+    .text-danger.innerErrorMesg{
+        margin-top: 0px;
+        max-width: 244px !important;
+        font-size: 12px;
+        height: 29px;
+    }
+    .sbscribe-bg h2 {
+        font-size: 20px;
+    }
     .form-wndr-outer.company_section_about {
         padding-top: 35px;
     }

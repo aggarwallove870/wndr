@@ -75,15 +75,17 @@
 			<div class="laddingPage_outer">
 				<div class="lannding_pageEmail_Banner">
 					<span>
-						<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
+						<input type="text" class="email_chk_1" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL" autocomplete="off">
 					</span>
 				</div>
+			
 				<div class="signUp_outer1">
 					<div class="outerShadow_11">
 						<div class="signU_outerShadow1 packages visible-lg visible-md waves-effect waves-light"></div>
 					</div> 
+					<span class="text-danger" id="email_err_1"></span>
 					{% comment %} <button href="#" class="signUp_item1">PLAY NOW</button> {% endcomment %}
-					<button type="button" class=" signUp_item1 btn btn-primary" data-toggle="modal" data-target="#landingModal">
+					<button type="button" class="custom-email-button-1 signUp_item1 btn btn-primary">
 						PLAY NOW
 					</button>
 					
@@ -130,11 +132,11 @@
 	   </div> 
 
 
-	   <div class="modal fade" id="landingModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+	   <div class="modal fade subscribe_mdl_bottom "  id="landingModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
 		<div class="modal-dialog modal-lg modal-dialog-centered">
-			<div class="modal-content" style='background:#111;border-radius:30px;'>
-			<div class="sbscribe-bg">
-				<h2>THE COLOSSIUM IS
+			<div class="modal-content " style='background:#111;border-radius:30px;'>
+			<div class="sbscribe-bg ">
+				<h2 class="p-4 text-center">THE COLOSSIUM IS
 					FULL TRY AGAIN
 					
 					LATER</h2>
@@ -142,7 +144,7 @@
 					
 				<img src="{% static "landing_page/images/nesltr-line.png" class="subscribe-line-pc" %} " class="modalLine_first" alt="newsletter-line">
 				<img src="{% static "landing_page/images/subscribe-line-tabs.png" class="subscribe-line-tabs" %}" class="modalLine_last" alt="newsletter-line1">
-				<p>See you in the Metaverse! </p>
+				{% comment %} <p>See you in the Metaverse! </p> {% endcomment %}
 				
 			</div>
 		</div>
@@ -167,7 +169,7 @@
 					</div>
 					<div class="lannding_pageEmail_Banner popup_mdl_input_bx">
 						<span>
-							<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
+							<input type="text" name="myInput1" id="myInput1" value="" autocomplete="off" placeholder="ENTER EMAIL">
 						</span>
 					</div>
 					{% comment %} <span class="nesltr_Signup">
@@ -218,18 +220,24 @@
 								<a href="#" class="Sign_up_play_txt">SIGN UP & PLAY</a>
 								<div class="lannding_pageEmail_Banner">
 									<span>
-										<input type="text" name="myInput1" id="myInput1" value="" placeholder="ENTER EMAIL">
+										<input type="text" class="check_email_2" name="myInput1" id="myInput1" value="" autocomplete="off" placeholder="ENTER EMAIL">
 									</span>
 								</div>
+								<span class="text-danger" id="email_err_2"></span>
+							
 								{% comment %} <button type="button" class="WNDR-btn-item WNDR-btnPlay btn subscribe_ply_btn" data-toggle="modal" data-target="#landingModal3">
 									SUBSCRIBE & PLAY
 								</button> {% endcomment %}
 								{% comment %} <a href="#" class="WNDR-btnPlay">SUBSCRIBE & PLAY</a> {% endcomment %}
 								{% comment %} <a href="#" class="WNDR-btn-item1">PLAY NOW</a> {% endcomment %}
-								<button type="button" class="WNDR-btn-item signUp_item1 btn metaverse_btn_playnow" data-toggle="modal" data-target="#landingModal2">
+								<div class="sign_up_play_main">
+									<div class="outerShadow_11"> <div class="signU_outerShadow1 packages visible-lg visible-md waves-effect waves-light"></div> </div>
+								<div class="ply_now_signplay">
+									<button type="button" class="custom-email-button WNDR-btn-item signUp_item1 btn metaverse_btn_playnow">
 									PLAY NOW
 								</button>
-							
+								</div>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -242,19 +250,27 @@
 	<!-- download start here  -->
 	<div class="downloadDevice">
 		<div class="container">
-			<div class="row">
+			<div class="row wifi_connected">
+				<div class="col-md-12">
+					<p> Internet WiFi Requirements</p>
+				</div>
+			</div>
+			<div class="row">	
 				<div class="col-md-12">
 					<div class="downloadDevice_outer">
 						<h2>No Downloads <br><span>Play on any device</span></h2>
 
-
+						<p class="mbl_internet_wifi"> Internet Wifi Connection </p>
 						<div class="interentSpeed">
+							
 							<div class="interentSpeed_leftside">
 								<i class="fa fa-wifi" aria-hidden="true"></i>
 							</div>
+						
 							<div class="interentSpeed_rightside">
-								<p class="mobile_interentSpeed">MOB 50 MPBS</p>
-								<p class="pc_interentSpeed">PC 100 MPBS</p>
+							
+								<p class="mobile_interentSpeed">MOB 50 MBPS</p>
+								<p class="pc_interentSpeed">PC 100 MBPS</p>
 							</div>
 						</div>
 						<div class="downloadImg_middle">
@@ -283,13 +299,14 @@
 						<img src="{% static 'landing_page/images/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="newsletter-line1">
 						<p>See You In The Metaverse! </p>
 						<form>
-							<span class="text-danger" id="email_err"></span>
+							
 							<div class="lannding_pageEmail_Banner newslter_input_box_ftr">
 								<span>
 									<input type="text" name="myInput1" class="email_chk" id="myInput1" value="" placeholder="ENTER EMAIL" autocomplete="off">
 								</span>
 								
 							</div>
+							<span class="text-danger" id="email_err"></span>
 							{% comment %} <span class="nesltr_Signup btm_subscribe_ply">
 								<button>SUBSCRIBE & PLAY</button>
 							</span> {% endcomment %}
@@ -298,6 +315,9 @@
 								{% comment %} <button type="button" class=" signUp_item1 btn btn-primary" data-toggle="modal" data-target="#landingModal">
 									PLAY NOW {% endcomment %}
 								{% comment %} </button> {% endcomment %}
+								<div class="outerShadow_11">
+									<div class="signU_outerShadow1 packages visible-lg visible-md waves-effect waves-light"></div>
+								</div>
 								<button type="button" class="bottom_newsltr_btn signUp_item1 btn" data-toggle="modal" data-target="landingModal3">
 									PLAY NOW
 								</button>
@@ -371,53 +391,8 @@
 	<!-- footer end -->
 
 
-	<!-- jquery -->
-	<script src="js/jquery.js"></script>
-	<!-- jquery -->
-
-	<!-- slick js -->
-	<script src="js/slick.js"></script>
-	<script src="js/slick.min.js"></script>
-
-
-	<script>
-		$('.gallery-slider-outer').slick({
-			dots: true,
-			infinite: false,
-			speed: 300,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			responsive: [
-				{
-					breakpoint: 1023,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1,
-						infinite: true,
-						dots: true
-					}
-				},
-				{
-					breakpoint: 600,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 480,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				}
-				// You can unslick at a given breakpoint now by adding:
-				// settings: "unslick"
-				// instead of a settings object
-			]
-		});
-	</script>
-
+	 <!-- jquery -->
+	
 	<!-- bootstrap js -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
@@ -425,27 +400,7 @@
 	<!-- bootstrap js -->
 	<script type="text/javascript">
 		//this is where we apply opacity to the arrow
-		$(window).scroll(function () {
-
-			//get scroll position
-			var topWindow = $(window).scrollTop();
-			//multipl by 1.5 so the arrow will become transparent half-way up the page
-			var topWindow = topWindow * 1.5;
-
-			//get height of window
-			var windowHeight = $(window).height();
-
-			//set position as percentage of how far the user has scrolled 
-			var position = topWindow / windowHeight;
-			//invert the percentage
-			position = 1 - position;
-
-			//define arrow opacity as based on how far up the page the user has scrolled
-			//no scrolling = 1, half-way up the page = 0
-			$('.arrow-wrap').css('', position);
-
-		});
-
+	
 		//Code stolen from css-tricks for smooth scrolling:
 		$(function () {
 			$('a[href*=#]:not([href=#])').click(function () {
@@ -500,6 +455,82 @@
 
 	</script>
 
+
+
+
+
+	<script>
+		var testEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+		$('.custom-email-button').click(function(){
+			email = $('.check_email_2').val();
+			console.log(email)
+
+			if(email == ''){
+				console.log('if');
+				$("#email_err_2").show('blind', {}, 500)
+				$('#email_err_2').html('Please Enter Email');
+				setTimeout(function() {
+					$("#email_err_2").hide('blind', {}, 500)
+				}, 5000);
+			   $("#email_err_2").addClass("innerErrorMesg");
+			
+			   
+			}
+			else if(testEmail.test(email)) {
+				console.log('err');
+				$("#email_err_2").html('');
+				$("#landingModal2").modal("show");
+			}
+			else if(!testEmail.test(email)){
+				$("#email_err_2").show('blind', {}, 500)
+				$('#email_err_2').html('Please Enter Correct Email');
+				setTimeout(function() {
+					$("#email_err_2").hide('blind', {}, 500)
+				}, 5000);
+			}
+			else {
+				console.log('else');
+			}
+		 });
+
+	</script>
+
+
+	<script>
+		var testEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+		$('.custom-email-button-1').click(function(){
+			email = $('.email_chk_1').val();
+			console.log(email)
+
+			if(email == ''){
+				console.log('if');
+				$("#email_err_1").show('blind', {}, 500)
+				$('#email_err_1').html('Please Enter Email');
+				setTimeout(function() {
+					$("#email_err_1").hide('blind', {}, 500)
+				}, 5000);
+			   $("#email_err_1").addClass("innerErrorMesg");
+			
+			   
+			}
+			else if(testEmail.test(email)) {
+				console.log('err');
+				$("#email_err_1").html('');
+				$("#landingModal2").modal("show");
+			}
+			else if(!testEmail.test(email)){
+				$("#email_err_1").show('blind', {}, 500)
+				$('#email_err_1').html('Please Enter Correct Email');
+				setTimeout(function() {
+					$("#email_err_1").hide('blind', {}, 500)
+				}, 5000);
+			}
+			else {
+				console.log('else');
+			}
+		 });
+
+	</script>
 </body>
 
 </html>
