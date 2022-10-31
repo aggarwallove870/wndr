@@ -8,6 +8,8 @@ from django.core.mail import send_mail,EmailMessage
 from django.template.loader import render_to_string, get_template
 from django.http import HttpResponse
 from wsgiref.util import FileWrapper
+
+from django.template import RequestContext
 # Create your views here.
 
 def teams(request):
@@ -116,3 +118,14 @@ def test(request):
 
 def ld(request):
     return render(request, 'land_page.html')
+
+def handler404(request, *args, **argv):
+    response = render(request,'404_page.html')
+    response.status_code = 404
+    return response
+
+
+def handler500(request, *args, **argv):
+    response = render(request,'404_page.html')
+    response.status_code = 500
+    return response

@@ -6,14 +6,20 @@ from wndrland_app.sitemap import StaticViewSitemap
 from django.contrib.sitemaps.views import sitemap
 from django.views.generic.base import TemplateView
 
+from django.conf.urls import handler404,handler500
+
+handler404 = 'wndrland_app.views.handler404'
+handler500 = 'wndrland_app.views.handler500'
+
+
 sitemaps = {
     'static': StaticViewSitemap
 }
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('wndrland_app.urls')),
-     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
-     path('robots.txt', TemplateView.as_view(template_name="robots.txt" , content_type="text/plain")),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
+    path('robots.txt', TemplateView.as_view(template_name="robots.txt" , content_type="text/plain")),
 
 ]
 

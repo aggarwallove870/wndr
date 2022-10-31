@@ -20,6 +20,7 @@ urlpatterns = [
 
     path('test',test,name="test"),
     path("landing/",ld,name="ld")
+    
 
 
 ]
