@@ -20,8 +20,8 @@
    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
    <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
    <!-- bootstrap-css start -->
-   <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+   {% comment %} <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> {% endcomment %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <!-- link css -->
    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
@@ -68,13 +68,13 @@
            <div class="home_page_banner">
            </div>
            <div class="banner_video_section">
-               <video class="banner_desktop_video" id="video2" width="100%" height="100%" preload='none'
+               <video class="banner_desktop_video movie-area" id="video2" width="100%" height="100%" preload='auto'
                    poster="{% static 'image/WOW_PC-min.png' %}" autoplay muted loop playsinline onclick="return false">
                    <source id="vid2_source"
                        src="{% if video_obj %}{{video_obj.desktop_top_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/PC_version_10mbps.mp4 {%endif%}"
                        type="video/mp4">
                </video>
-               <video class="banner_mobile_video" id="video21" width="100%" height="100%" preload='none'
+               <video class="banner_mobile_video movie-area" id="video21" width="100%" height="100%" preload='auto'
                    poster="{% static 'image/WOW_Mobile-min.png' %}" autoplay muted loop playsinline onclick="return false">
                    <source id="vid21_source"
                        src="{% if video_obj %}{{video_obj.mobile_top_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/Mobile_10mbps.mp4{%endif%}"
@@ -359,14 +359,14 @@
                    });
                }
                /*-----End vision poster image----*/
-               $(document).ready(function () {
+               {% comment %} $(document).ready(function () {
                    var x = $('#myVideo');
                    x.controls = true;
                    x.load();
  
-               });
-               $(function () {
-                   $('a[href*=#]:not([href=#])').click(function () {
+               }); {% endcomment %}
+               {% comment %} $(function () {
+                   $('a[href=#]').click(function () {
                        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                            var target = $(this.hash);
                            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -378,7 +378,7 @@
                            }
                        }
                    });
-               });
+               }); {% endcomment %}
                var testEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
                $("#load-image-of-modal-subscibe1").hide()
                function myFunction1() {
@@ -627,11 +627,11 @@
                })
             </script>
            </script>
-           <script>
+           {% comment %} <script>
                $(document).ready(function () {
                    $("#myVideo")[0].autoplay = false;
                })
-           </script>
+           </script> {% endcomment %}
            <script>
                $(window).scroll(function () {
                    var scroll = $(window).scrollTop();
@@ -852,13 +852,53 @@ return false;
     })
     })
   </script> 
-  {% comment %} <script>
-    $(document).ready(function(){
-      $(document).mouseleave(function(){
-          $("#exampleModal").modal("show");
+
+  <script>
+        $(window).bind("load", function() {  
+        var load_video= $("#vid2_source").attr('src')
+        console.log(load_video)
+        $('.movie-area').load(load_video);
+        })
+ 
+</script>
+ <script>
+    $(window).bind("load", function() {  
+          var load_video= $("#vid21_source").attr('src')
+          $('.movie-area').load(load_video);
+          console.log("-----")
+
       });
-  });
-  </script>  {% endcomment %}
+ 
+</script> 
+
+<script>
+    $(window).bind("load", function() {  
+          var load_video= $("#cstm-video").attr('src')
+          $('.movie-area').load(load_video);
+          console.log("-----")
+
+      });
+ 
+</script> 
+ <script>
+    $(window).bind("load", function() {  
+          var load_video= $("#cstm-video1").attr('src')
+          $('.movie-area').load(load_video);
+          console.log("-----")
+
+      })
+ 
+</script> 
+<script>
+    $(function(){
+        $("img").each(function () {
+                var img = $(this);
+                img.attr("preload", 'none');
+                console.log("-----")
+        });
+        });
+</script>
+
  </div>
    </div>
 </body>

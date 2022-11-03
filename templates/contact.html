@@ -411,7 +411,15 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PR4XX4G');</script>
     <!-- End Google Tag Manager -->
-
+	<script>
+		$(function(){
+			$("img").each(function () {
+					var img = $(this);
+					img.attr("preload", 'none');
+					console.log("-----")
+			});
+			});
+	</script>
 
 </body>
 

@@ -235,10 +235,10 @@
 		<div class="circle" style="animation-delay: 3s"></div>
 	</div>
 	<div class="gamePlayer" id="appnd_div">			
-				<video id="myVideo" style="object-fit:cover;background-position: bottom center;" class="video video_desktop_home fullscr" width="100%" height="100%" preload='auto'  poster="" controlslist="nodownload noplaybackrate">
-				<source src="{% if video_obj %}{{video_obj.desktop_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4" ></video>
-			 <video id="myVideo2" class="video_mbl_home fullscr-mobile " width="100%" height="100%" preload='auto' poster="{% static 'image/game-player_mbl.png' %}" controlslist="nodownload noplaybackrate" style="object-fit:cover;background-position: bottom center;" webkit-playsinline="true" playsinline="true">
-				 <source src="{% if video_obj %}{{video_obj.mobile_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}"
+				<video id="myVideo" style="object-fit:cover;background-position: bottom center;" class="video video_desktop_home fullscr movie-area" width="100%" height="100%" preload='auto'  poster="" controlslist="nodownload noplaybackrate">
+				<source id="cstm-video1" src="{% if video_obj %}{{video_obj.desktop_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}" type="video/mp4" ></video>
+			 <video id="myVideo2" class="video_mbl_home fullscr-mobile movie-area" width="100%" height="100%" preload='auto' poster="{% static 'image/game-player_mbl.png' %}" controlslist="nodownload noplaybackrate" style="object-fit:cover;background-position: bottom center;" webkit-playsinline="true" playsinline="true">
+				 <source id ="cstm-video" src="{% if video_obj %}{{video_obj.mobile_bottom_video}}{%else%}https://wndr.nyc3.digitaloceanspaces.com/WNDR%20TRAILER.mp4{%endif%}"
 				 type="video/mp4">
 				</video>
 				<i class="fa-solid fa-expand " id="fullscreenhide_in_mobile" onclick="openFulldesktop();"></i>
