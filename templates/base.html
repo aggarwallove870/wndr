@@ -871,7 +871,7 @@ return false;
  
 </script> 
 
-<script>
+{% comment %} <script>
     $(window).bind("load", function() {  
           var load_video= $("#cstm-video").attr('src')
           $('.movie-area').load(load_video);
@@ -879,8 +879,8 @@ return false;
 
       });
  
-</script> 
- <script>
+</script>  {% endcomment %}
+ {% comment %} <script>
     $(window).bind("load", function() {  
           var load_video= $("#cstm-video1").attr('src')
           $('.movie-area').load(load_video);
@@ -888,7 +888,7 @@ return false;
 
       })
  
-</script> 
+</script>  {% endcomment %}
 <script>
     $(function(){
         $("img").each(function () {
