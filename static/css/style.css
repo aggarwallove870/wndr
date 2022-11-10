@@ -7810,7 +7810,6 @@ img.blog-section-img-tabs {
     .footer_WNDR ul li a {
         width: 30px;
         height: 30px;
-        ;
         font-size: 19px;
     }
 
@@ -9036,7 +9035,7 @@ img.blog-section-img-tabs {
 
     .footer_WNDR ul li {
         list-style: none;
-        margin-left: 8px;
+        margin-left: 15px;
     }
 
     /*footer-end-here*/
@@ -16377,7 +16376,7 @@ img.blog-section-img-tabs {
 
     .footer_WNDR ul li {
         list-style: none;
-        margin-left: 4px;
+        margin-left: 14px;
     }
 
     /*footer close here*/
@@ -16683,6 +16682,11 @@ img.blog-section-img-tabs {
 
     .header_WNDR .navbar-expand-lg .navbar-brand img {
         left: 34px;
+    }
+}
+@media screen and (max-width: 992px) and (min-width: 743px) {
+    .teams_seprate_section{
+        margin-bottom: 12px;   
     }
 }
 
