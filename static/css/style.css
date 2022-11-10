@@ -2,6 +2,12 @@
 ul.middle_unorderList li:nth-child(1) {
     margin-left: 0 !important;
 }
+div#custom-about-us-footer {
+    margin-top:-30px;
+}
+#remv-xtra-bckgrnd-of-footr{
+    margin-top:-30px;
+}
 
 ul.middle_unorderList li a {
     width: auto !important;
@@ -2311,7 +2317,7 @@ h2 {
 }
 
 .model-market ul {
-    padding-top: 20px;
+    padding-top: 10px;
     margin-bottom: 2px;
 }
 
@@ -2415,6 +2421,8 @@ h2 {
     color: #ff8900;
     font-family: 'Avenir LT Pro';
     font-weight: 600;
+    padding-top:0px;
+    margin-bottom:6px !important;
 }
 
 .model-market p {
@@ -2428,7 +2436,7 @@ h2 {
     font-size: 18px;
     line-height: 23px;
     color: #e8e8e8;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .model-market {
@@ -2733,6 +2741,7 @@ h2 {
     background-size: cover;
     margin-bottom: 0px;
     background-position: center;
+    padding-bottom: 30px;
 }
 
 .lft-rdmp-line {
@@ -4228,6 +4237,7 @@ img.box-shadow-about {
     background: url(../img/touch-img.jpg);
     padding-bottom: 20px;
     background-size: cover;
+    padding-bottom: 50px;
     background-repeat: no-repeat;
 }
 
@@ -6219,10 +6229,13 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 1200px) {
-
+    .model-market p{
+        font-size: 18px;
+        line-height: 30px;
+    }
     /* 17 */
     h2.uk-scrollspy-inview {
-        font-size: 40px;
+        font-size: 37px;
         margin-bottom: 30px;
     }
     /* 17 */
@@ -16459,6 +16472,9 @@ img.blog-section-img-tabs {
 }
 
 @media screen and (max-width: 363px) {
+    .cmpny-bg h2 {
+        padding-top: 40px;
+    }
     .banner-WNDR-outer {
         top: 470px !Important;
     }

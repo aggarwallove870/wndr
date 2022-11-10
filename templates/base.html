@@ -2,7 +2,7 @@
 {% load static %}
 <html>
 <head>
-   <title>Mutiplayer Games | Web3 |  Play Free Online Games- WNDR.com</title>
+   <title>Play Premium AAA MetaVerse games on any device - Mobile, PC & Smart TV’s -No Downloads.</title>
    <meta charset="utf-8">
    <meta name="description" content="At Wndr.com, you can get lots of online games such as NFT, Crypto, Multiplayer, and amazing PC games as well. This is the best browser to get free online games.">
    
@@ -13,9 +13,9 @@
    <meta property="og:title" content="Best Browser Games | Play Free Online Games  - WNDR.com" />
    <meta property="og:type" content="website" />
    <meta property="og:url" content="https://wndr.com" />
-   <meta property="og:image:url" content="https://wndr.nyc3.digitaloceanspaces.com/WOW_PC-min.png" />
+   <meta property="og:image:url" content="{% static 'image/share_link_img.jpeg' %}" />
    <meta property="og:description" content="At Wndr.com, you can get lots of online games such as NFT, Crypto, Multiplayer, and amazing PC games as well. This is the best browser to get free online games." />
-   <meta property="og:image" content="https://wndr.nyc3.digitaloceanspaces.com/WOW_PC-min.png" />
+   <meta property="og:image" content="{% static 'image/share_link_img.jpeg' %}" />
    <!-- slick css -->
    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
    <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
@@ -27,7 +27,7 @@
    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
    <link rel="stylesheet" type="text/css" href="{% static 'css/test.css' %}">
-   <!-- font awsome -->3
+   <!-- font awsome -->
    <script src="https://use.fontawesome.com/b197abb434.js"></script>
    <script src="https://kit.fontawesome.com/1086841b1d.js" crossorigin="anonymous"></script>
    
@@ -245,9 +245,9 @@
            <script src="{% static 'js/slick.js' %}"></script>
            <script src="{% static 'js/slick.min.js' %}"></script>
            <script>
-            $(document).ready(function(){
-
-                $('.gallery-slider-outer').slick({
+            var $jq = jQuery.noConflict();
+            $jq(document).ready(function(){
+                $jq('.gallery-slider-outer').slick({
                     dots: true,
                     infinite: false,
                     speed: 300,
@@ -281,11 +281,6 @@
                 });
  
             }) 
-           
-            
-       
-	  
-
         
              
            </script>
@@ -639,11 +634,7 @@
                })
             </script>
            </script>
-           {% comment %} <script>
-               $(document).ready(function () {
-                   $("#myVideo")[0].autoplay = false;
-               })
-           </script> {% endcomment %}
+   
            <script>
                $(window).scroll(function () {
                    var scroll = $(window).scrollTop();
