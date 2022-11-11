@@ -366,26 +366,8 @@
                    });
                }
                /*-----End vision poster image----*/
-                $(document).ready(function () {
-                   var x = $('#myVideo');
-                   x.controls = true;
-                   x.load();
- 
-               }); 
-             $(function () {
-                   $('a[href=#]').click(function () {
-                       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                           var target = $(this.hash);
-                           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                           if (target.length) {
-                               $('html,body').animate({
-                                   scrollTop: target.offset().top
-                               }, 1000);
-                               return false;
-                           }
-                       }
-                   });
-               }); 
+              
+              
                var testEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
                $("#load-image-of-modal-subscibe1").hide()
                function myFunction1() {
@@ -541,13 +523,13 @@
                                 console.log("email already taken","00---00");
                                 document.getElementById("invalid_div3").hidden = false;
                                 document.getElementById("invalid3").innerHTML = "Email Already Exists"
-                                $("#invalid_div3").show().delay(3000).fadeOut();
+                               
                               }
                               else{
                                 document.getElementById("sucess_div3").hidden = false;
                                 document.getElementById("sucess3").innerHTML = "Thank you for subscribing"
                                 $('#myInput3').val('');
-                                $("#sucess_div3").show().delay(3000).fadeOut();
+                              
                                 $("#btn-d3").attr("disabled", false);
                                 
                         
@@ -559,7 +541,7 @@
                    else {
                       document.getElementById("error_div3").hidden = false;
                       document.getElementById("error3").innerHTML = "Invalid Email"
-                      $("#error_div3").show().delay(3000).fadeOut();
+                     
                   }
                }
                var mybutton = document.getElementById("myBtntop");
