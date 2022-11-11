@@ -245,9 +245,9 @@
            <script src="{% static 'js/slick.js' %}"></script>
            <script src="{% static 'js/slick.min.js' %}"></script>
            <script>
-            {% comment %} var $jq = jQuery.noConflict(); {% endcomment %}
-            $(document).ready(function(){
-                $('.gallery-slider-outer').slick({
+            var $jq = jQuery.noConflict();
+            $jq(document).ready(function(){
+                $jq('.gallery-slider-outer').slick({
                     dots: true,
                     infinite: false,
                     speed: 300,
