@@ -46,7 +46,7 @@ def home(request):
             reply_to = ['info@wndr.com']
             from_email = "no-reply@wndr.website" #settings.EMAIL_HOST_USER
             subcriber_mail = EmailMessage(subject,message,"WNDR.com <do_not_reply@wndr.com>",[email],reply_to=reply_to)
-            subcriber_mail.send(fail_silently=True)
+            #subcriber_mail.send(fail_silently=True)
 
 
 
@@ -54,7 +54,7 @@ def home(request):
             recipients = ["info@wndr.com"]
             message1 = str(email) +" New user subscribed"
             adminmail = EmailMessage(subject1,message1,"WNDR.com <do_not_reply@wndr.com>",recipients,reply_to=reply_to)
-            adminmail.send(fail_silently=True)
+            #adminmail.send(fail_silently=True)
 
         return render(request, 'home.html',{"video_obj":video_obj})
 
