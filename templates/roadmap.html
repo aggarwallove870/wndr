@@ -21,6 +21,7 @@
     <!-- fav icon --> 
 	  <link rel="icon" type="image/x-icon" href="{% static 'image/fab-ic.png' %}">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
    <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -43,31 +44,37 @@
 		<img class="back_to_mode" src="{% static 'image/phone_rotate_black.png' %}">
 	</div>
 	</div>
-	<div class="mobileportraitview">
+<div class="mobileportraitview">
 	<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 	  <div class="modal-content sbscribe-bg">
 		<div class="modal-header">
 			<div class="modal-outer">
-		  <h2 style="color:white;">Subscribe to Our Newsletter</h2>
+		  <h4>Subscribe to Our Newsletter</h4>
 		  <img src="{% static 'image/nesltr-line.png' %}" class="subscribe-line-pc" alt="newsletter-line">
-		  <img src="{% static 'image/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="subscribe-line-tabs">
-		  <p>Subscribe here to get the latest news on WNDR events, launch dates, SDK release, WNDR coin and NFT drops.</p>
-  			<form method="post" onsubmit="return false;">
+		  <img src="{% static 'image/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="newsletter-line1">
+		  <p>Subscribe here to get the latest news on WNDR events, launch dates, SDK release, WNDR coin and NFT drops. </p>
+  
+			<form method="post" onsubmit="return false;">
 			  <div class="sbscribe_btn_input">
 				<span>
-					<input type="email" name="myInput" required  id="myInput" value="" placeholder="Enter email">
+					<input type="text" name="myInput1"  id="myInput1" value="" placeholder="Enter email">
 				</span>
 				</div>
-			  <div class="alert alert-danger sueccs-msg" id="sucess_div" role="alert" hidden>
-				<span id="sucess" ></span>
+			  <div class="alert alert-danger success-msg" id="sucess_div1" role="alert" hidden>
+				<span id="sucess1" ></span>
 			  </div>
-			  <div class="alert alert-danger invalid-sueccs-msg" id="invalid_div" role="alert" hidden>
-				<span id="invalid" ></span>
+			  <div class="alert alert-danger invalid-sueccs-msg" id="invalid_div1" role="alert" hidden>
+				<span id="invalid1" ></span>
 			</div>
-			  <div class="sbscribe-section" id="success_btn">
-				<button class="sbt-btn" id="btn-d"  onclick="myFunction()">Submit</button>
+			  <div class="alert alert-danger error-msg" id="error_div1" role="alert" hidden>
+				<span id="error1" ></span>
+			  </div>
+			  <div class="sbscribe-section">
+				<button class="sbt-btn" id="btn-d1" onclick="myFunction1()">Submit 	 <div id ="load-image-of-modal-subscibe1" class="spinner-border text-danger" role="status">
+					<span class="sr-only">Loading...</span>
+				  </div></button>
 			  </div>
 		  </div>
 		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -158,18 +165,15 @@
 					<li class="uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top; delay: 700; repeat: true">The ability to sell physical or virtual goods, including NFTs, directly from the immersive setting.</li>
 					<li class="uk-scrollspy-inview mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 800; repeat: true">Unlimited potential to create vast hyper-realistic open-worlds, games and experiences.</li>
 				</ul>
-				<h2 class="mdl-hdng uk-scrollspy-inview mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Model:</h2>
+				<h2 class="mdl-hdng uk-scrollspy-inview mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Model :</h2>
 				<p class="uk-scrollspy-invie mb-4"  uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">WNDR’s cloud streaming technology enables small teams to create and monetize high-end AAA-quality game experiencesin UnrealEngine without the need for a traditional publisher and game studio partner. Our technology democratizes distribution and powers premium Metaverse experiences creating new business models for brands, creators and virtual entrepreneurs.</p>
-				<h2 class="mdl-hdng uk-scrollspy-inview mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 100; repeat: true">Market:</h2>
+				<h2 class="mdl-hdng uk-scrollspy-inview mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 100; repeat: true">Market :</h2>
 				<p class="uk-scrollspy-inview mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">WNDR is poised to become a leader in the delivery of social 3D experiences online via a traditional web browser. We are reinventing online content delivery to bridge the gap between the 200M hardcore gamers and the 3B Internet users based upon our belief that everyone wants web-based content to be more engaging and entertaining...with WNDR, Everyone Plays.</p>
 			</div>
 		</div>
 	</div>
 <!----End About Us---->	
 </div>
-
-</div>
-<!-- footer start here -->
 <footer>
 	<div class="footer_WNDR remove_saveimage" id="custom-about-us-footer">
 		<div class="footer-overlap">
@@ -237,6 +241,8 @@
 		</div>
 	</div>
 </footer>
+</div>
+<!-- footer start here -->
 
 
 <!-- footer close here-->
@@ -262,57 +268,77 @@
 	}
 </script>
 <script>
-function myFunction() {
-	console.log("Arrival-4")
-        email = $('#myInput').val();
-		console.log(email)
-		$("#btn-d").attr("disabled", true);
-	if(email != ''){
-        $.ajax({
-			url:"{% url 'home' %}",
-            type: "POST",
-            data: {
-                "email": email,
-                'csrfmiddlewaretoken': '{{csrf_token}}'
-            },
-		success: function (data) {
-			console.log(data)
-			if (data.is_taken == true) {
-				console.log("email already taken");
-				document.getElementById("invalid_div").hidden = false;
-				document.getElementById("invalid").innerHTML = "Email Already Exists"
-				$("#invalid_div").show().delay(3000).fadeOut();
-			  }
-			  else{
-				document.getElementById("sucess_div").hidden=false;
-			document.getElementById("sucess").innerHTML = "Thank you for subscribing"
-			$('#myInput').val('');
-			$("#sucess_div").show().delay(3000).fadeOut();;
-			$("#btn-d").attr("disabled", false);
-			function gtag_report_conversion(url) {
-				console.log('after gtag conversion 123');
-				var callback = function () {
-				  if (typeof(url) != 'undefined') {
-					console.log('inside error');
-					window.location = url;
-					
-				  }
-				};
-				gtag('event', 'conversion', {
-					'send_to': 'AW-10997461539/L2prCLTdkeMDEKPk__so',
-					'event_callback': callback
-				});
-				return false;
-			  }
-			  gtag_report_conversion();
-			console.log('after script conversion');
 
-			  }
-			
-			
-		},
-        });}
-    }
+	var testEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
+               $("#load-image-of-modal-subscibe1").hide()
+               function myFunction1() {
+                   email = $('#myInput1').val();
+                   console.log("Arrivals-----0")
+                   console.log(email)
+                   if(email.length == 0){
+                    document.getElementById("error_div1").hidden = false;
+                    document.getElementById("error1").innerHTML = "Please Enter Email"
+                    {% comment %} $("#error_div1").show().delay(3000).fadeOut();         {% endcomment %}
+                    $("#error_div1").show();
+                    setTimeout( "$('#error_div1').hide();", 4000);
+
+                 }
+                   else if (testEmail.test(email)) {
+                       $("#load-image-of-modal-subscibe1").show()
+                       console.log("abc")
+                       $.ajax({
+                           type: "POST",
+                           data: {
+                               "email": email,
+                               'csrfmiddlewaretoken': '{{csrf_token}}'
+                           },
+                           success: function (data) {
+                               $("#load-image-of-modal-subscibe1").hide()
+                               if (data.is_taken == true) {
+                                console.log("email already taken");
+                                document.getElementById("invalid_div1").hidden = false;
+                                document.getElementById("invalid1").innerHTML = "Email Already Exists";
+                                $("#invalid_div1").show();
+                                setTimeout( "$('#invalid_div1').hide();", 4000);
+                                {% comment %} $("#invalid_div1").show().delay(3000).fadeOut(); {% endcomment %}
+                                
+                              }
+                              else{
+                                document.getElementById("sucess_div1").hidden = false;
+                                document.getElementById("sucess1").innerHTML = "Thank you for subscribing"
+                                $('#myInput1').val('');
+                                $("#sucess_div1").show();
+                                setTimeout( "$('#sucess_div1').hide();", 4000);
+                                $("#btn-d1").attr("disabled", false);
+                                
+                                function gtag_report_conversion(url) {
+                                    console.log('after gtag conversion');
+                                    var callback = function () {
+                                      if (typeof(url) != 'undefined') {
+                                        console.log('inside error');
+                                        window.location = url;
+                                        
+                                      }
+                                    };
+                                
+                
+                                  }
+                               
+                             
+                              }
+                              
+                           },
+                       });
+                   }
+                    else {
+                      document.getElementById("error_div1").hidden = false;
+                      document.getElementById("error1").innerHTML = "Invalid Email"
+                      $("#error_div1").show();
+                      setTimeout( "$('#error_div1').hide();", 4000);
+  
+                    
+                  };
+               };	
 </script>
  <script type="text/javascript">
 	document.onselectstart=function(){
@@ -374,4 +400,5 @@ function myFunction() {
 			});
 	</script>
     <!-- End Google Tag Manager -->
+	
 </html>
