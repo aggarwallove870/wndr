@@ -25,6 +25,13 @@
 	
     <!-- fav icon -->
     <link rel="icon" type="image/x-icon" href="{% static 'image/fab-ic.png' %}">
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date()); 
+	
+		gtag('config', 'AW-10997461539');
+		</script>
 
 	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -447,6 +454,7 @@
 						   $("#load-image-of-modal-subscibe1").show()
 						   console.log("abc")
 						   $.ajax({
+								url:"{% url 'home' %}",
 							   type: "POST",
 							   data: {
 								   "email": email,
@@ -480,9 +488,14 @@
 											
 										  }
 										};
-									
-					
+										gtag('event', 'conversion', {
+											'send_to': 'AW-10997461539/L2prCLTdkeMDEKPk__so',
+											'event_callback': callback
+										});
+										return false;
 									  }
+									  gtag_report_conversion();
+									console.log('after script conversion');
 								   
 								 
 								  }

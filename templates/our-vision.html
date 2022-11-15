@@ -21,6 +21,13 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date()); 
+	
+		gtag('config', 'AW-10997461539');
+		</script>
  
 	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -815,13 +822,13 @@
 			
 				})
 		</script>
-	  <script>
+	   <script>
 			$(document).ready(function(){
 			  $(document).mouseleave(function(){
 				  $("#exampleModal").modal("show");
 			  });
 		  });
-		  </script>
+		  </script> 
 	 <script>
 		$('body').on('mouseover', "i.mage", function(e)  { 
 			$('img').bind("contextmenu",function(e) {
@@ -851,6 +858,7 @@
 						   $("#load-image-of-modal-subscibe1").show()
 						   console.log("abc")
 						   $.ajax({
+								url:"{% url 'home' %}",
 							   type: "POST",
 							   data: {
 								   "email": email,
@@ -874,7 +882,6 @@
 									$("#sucess_div1").show();
 									setTimeout( "$('#sucess_div1').hide();", 4000);
 									$("#btn-d1").attr("disabled", false);
-									
 									function gtag_report_conversion(url) {
 										console.log('after gtag conversion');
 										var callback = function () {
@@ -884,8 +891,14 @@
 											
 										  }
 										};
-									
+										gtag('event', 'conversion', {
+											'send_to': 'AW-10997461539/L2prCLTdkeMDEKPk__so',
+											'event_callback': callback
+										});
+										return false;
 									  }
+									  gtag_report_conversion();
+									console.log('after script conversion');
 									
 								  }
 								  

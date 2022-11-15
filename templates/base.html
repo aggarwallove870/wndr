@@ -388,6 +388,7 @@
                        $("#load-image-of-modal-subscibe1").show()
                        console.log("abc")
                        $jq.ajax({
+                            url:"{% url 'home' %}",
                            type: "POST",
                            data: {
                                "email": email,
@@ -898,6 +899,13 @@ return false;
         });
         });
 </script>
+<script>
+    $(document).ready(function(){
+      $(document).mouseleave(function(){
+          $("#exampleModal").modal("show");
+    });
+  });
+  </script>
 
  </div>
    </div>
