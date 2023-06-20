@@ -77,10 +77,6 @@
 	#exampleModal .sbscribe-section button.sbt-btn {
 	    margin-top: -20px;
 	}
-	.banner-WNDR-outer {
-	    top: 340px;
-	    left: 50%;
-	}
 	img.sucribe-center-pc-mobile {
 	    display: block;
 	    width: 273px;
@@ -241,6 +237,11 @@ img.mobile-line-center {
     height: 4026px !important;
 }
 }
+@media only screen and (max-width:412px) {
+	img.mobile-line-center {
+	height: 4206px !important;
+	}
+}
 
 @media only screen and (max-width:322px) {
 	img.mobile-line-center {
@@ -286,8 +287,8 @@ img.mobile-line-center {
 	    padding: 20px 149px 20px 20px;
 	}
 	.right-sec-footer-social {
-	    justify-content: flex-end;
-	    margin-right: -50px;
+		justify-content: flex-end;
+		margin-right: 40px;
 	}
 }
 
