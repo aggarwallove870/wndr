@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Online Games - WNDR.com</title>
+	<meta name="description" content="WNDR offers browser-based multiplayer meta-games, virtual events, and much more on any device that is connected through a simple website link.">
+	<!-- slick css -->
+ <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+ <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+	<!-- bootstrap-css start -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- link css -->
+	  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	  <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+	   <!-- font awsome -->
+    <script src="https://use.fontawesome.com/b197abb434.js"></script>
+	<script src="https://kit.fontawesome.com/1086841b1d.js" crossorigin="anonymous"></script>
+    <!-- fav icon --> 
+	  <link rel="icon" type="image/x-icon" href="{% static 'image/fab-ic.png' %}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); 
+
+    gtag('config', 'AW-10997461539');
+    </script>
+
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	' https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f) ;
+	})(window,document,'script','dataLayer','GTM-PR4XX4G');</script>
+	<!-- End Google Tag Manager -->
+	
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src=" https://www.googletagmanager.com/ns.html?id=GTM-PR4XX4G "
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<div class="mobilelandscapeview" style="position:relative;">
+		<div class="landscape_view1">
+		Back to Viewing Mode
+		<img class="back_to_mode" src="{% static 'image/phone_rotate_black.png' %}">
+	</div>
+	</div>
+<div class="mobileportraitview">
+	<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content sbscribe-bg">
+		<div class="modal-header">
+			<div class="modal-outer">
+		  <h4>Subscribe to Our Newsletter</h4>
+		  <img src="{% static 'image/nesltr-line.png' %}" class="subscribe-line-pc" alt="newsletter-line">
+		  <img src="{% static 'image/subscribe-line-tabs.png' %}" class="subscribe-line-tabs" alt="newsletter-line1">
+		  <p>Subscribe here to get the latest news on WNDR events, launch dates, SDK release, WNDR coin and NFT drops. </p>
+  
+			<form method="post" onsubmit="return false;">
+			  <div class="sbscribe_btn_input">
+				<span>
+					<input type="text" name="myInput1"  id="myInput1" value="" placeholder="Enter email">
+				</span>
+				</div>
+			  <div class="alert alert-danger success-msg" id="sucess_div1" role="alert" hidden>
+				<span id="sucess1" ></span>
+			  </div>
+			  <div class="alert alert-danger invalid-sueccs-msg" id="invalid_div1" role="alert" hidden>
+				<span id="invalid1" ></span>
+			</div>
+			  <div class="alert alert-danger error-msg" id="error_div1" role="alert" hidden>
+				<span id="error1" ></span>
+			  </div>
+			  <div class="sbscribe-section">
+				<button class="sbt-btn" id="btn-d1" onclick="myFunction1()">Submit 	 <div id ="load-image-of-modal-subscibe1" class="spinner-border text-danger" role="status">
+					<span class="sr-only">Loading...</span>
+				  </div></button>
+			  </div>
+		  </div>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!--Modal ending here-->
+<div class="roadmap-section-bg">
+	<!-- header start here -->
+		<header class="header-tag-WNDR">
+	    <div class="header_WNDR">
+			    <div class="header-line header-line-shadow1">
+					<img src="{% static 'image/header-line-top.png' %}" class="header-line-pc" alt="header-line-top">
+					<img src="{% static 'image/header-line-top-tabs.png' %}" class="header-line-tabs" alt="header-line-top-tabs">
+					<img src="{% static 'image/header-line-top-mobile.png' %}" class="header-line-mobile" alt="header-line-top-mobile">
+				  </div>
+				<div class="container">
+					<nav class="navbar navbar-expand-lg navbar-light">
+					  <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'image/header-logo.png' %}" alt="WNDR.com"></a>
+					  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				      <svg xmlns="http://www.w3.org/2000/svg" class="bi" fill="currentColor" viewBox="0 0 16 16">
+				  <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+				</svg>
+				    </button>
+					  <div class="navbar-collapse collapse" id="bdNavbar" style="">
+				      <ul class="navbar-nav m-auto mt-lg-0">
+					      <li class="nav-item">
+					        <a class="nav-link" href="{% url 'home' %}">HOME</a>
+					      </li>
+					      <li class="nav-item active">
+					        <a class="nav-link" href="{% url 'about' %}">ABOUT</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="{% url 'vision' %}">OUR VISION</a>
+					      </li>
+						  <li class="nav-item">
+					        <a class="nav-link" href="{% url 'teams' %}">TEAM</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+					      </li>
+                         
+					      <div class="btn-header-subscribe">
+							<a href="#" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">SUBSCRIBE</a>
+						    </div>
+					    </ul>
+				    </div>
+					</nav>
+				</div>
+				<div class="header-line header-line-shadow">
+				    <img src="{% static 'image/header-line-down.png' %}" class="header-line-down-pc" alt="header-line-down">
+				    <img src="{% static 'image/header-line-down-tabs.png' %}" class="header-line-down-tabs" alt="header-line-down-tabs">
+				    <img src="{% static 'image/header-line-down-mobile.png' %}" class="header-line-down-mobile" alt="header-line-down-mobile"> 
+			    </div>
+		  </div>
+		</header>
+    <!-- header close here -->
+<!----Start About Us---->
+<div class="container">
+		<div class="row abt-main-section">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 about-heading  custom-rezize-text text-center">
+				<h3 class="privacy_heading">Privacy $ Policy</h3>
+
+				<div class="terms_conditions_page ">		
+
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae lorem auctor, sagittis diam eu, lacinia justo. Nullam et dictum arcu. Cras convallis feugiat quam. Phasellus sit amet turpis tincidunt, laoreet felis in, sollicitudin quam. Donec vitae dapibus mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi id felis tempor,
+						fringilla ligula vel, bibendum lectus. Sed enim lectus, accumsan at nisl nec, mattis hendrerit felis.</p>
+						<p>
+
+							Curabitur fringilla varius dolor nec venenatis. Cras a molestie lectus, sed sagittis nibh. Praesent feugiat diam at libero semper, a eleifend libero venenatis. Nulla finibus ut lectus vel feugiat. Etiam in metus a dui gravida accumsan id sed mi. Proin ut dui sollicitudin, hendrerit ipsum et, dignissim nibh. Etiam in suscipit odio. Cras congue massa ut porttitor blandit. Mauris hendrerit ultricies aliquam. Vestibulum nec elit id elit semper rutrum rutrum nec ipsum. Maecenas laoreet pulvinar tortor nec fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque dictum consequat dapibus. Pellentesque gravida, est vestibulum feugiat condimentum, nulla eros scelerisque sapien, vitae vestibulum lorem arcu id purus. 
+							Proin nisi sem, varius ut ullamcorper at, viverra eget augue. Aliquam condimentum ipsum in erat placerat cursus.
+						</p>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae lorem auctor, sagittis diam eu, lacinia justo. Nullam et dictum arcu. Cras convallis feugiat quam. Phasellus sit amet turpis tincidunt, laoreet felis in, sollicitudin quam. Donec vitae dapibus mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi id felis tempor,
+							fringilla ligula vel, bibendum lectus. Sed enim lectus, accumsan at nisl nec, mattis hendrerit felis.</p>
+							<p>
+		
+								Curabitur fringilla varius dolor nec venenatis. Cras a molestie lectus, sed sagittis nibh. Praesent feugiat diam at libero semper, a eleifend libero venenatis. Nulla finibus ut lectus vel feugiat. Etiam in metus a dui gravida accumsan id sed mi. Proin ut dui sollicitudin, hendrerit ipsum et, dignissim nibh. Etiam in suscipit odio. Cras congue massa ut porttitor blandit. Mauris hendrerit ultricies aliquam. Vestibulum nec elit id elit semper rutrum rutrum nec ipsum. Maecenas laoreet pulvinar tortor nec fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque dictum consequat dapibus. Pellentesque gravida, est vestibulum feugiat condimentum, nulla eros scelerisque sapien, vitae vestibulum lorem arcu id purus. 
+								Proin nisi sem, varius ut ullamcorper at, viverra eget augue. Aliquam condimentum ipsum in erat placerat cursus.
+							</p>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae lorem auctor, sagittis diam eu, lacinia justo. Nullam et dictum arcu. Cras convallis feugiat quam. Phasellus sit amet turpis tincidunt, laoreet felis in, sollicitudin quam. Donec vitae dapibus mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi id felis tempor,
+								fringilla ligula vel, bibendum lectus. Sed enim lectus, accumsan at nisl nec, mattis hendrerit felis.</p>
+								<p>
+			
+									Curabitur fringilla varius dolor nec venenatis. Cras a molestie lectus, sed sagittis nibh. Praesent feugiat diam at libero semper, a eleifend libero venenatis. Nulla finibus ut lectus vel feugiat. Etiam in metus a dui gravida accumsan id sed mi. Proin ut dui sollicitudin, hendrerit ipsum et, dignissim nibh. Etiam in suscipit odio. Cras congue massa ut porttitor blandit. Mauris hendrerit ultricies aliquam. Vestibulum nec elit id elit semper rutrum rutrum nec ipsum. Maecenas laoreet pulvinar tortor nec fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque dictum consequat dapibus. Pellentesque gravida, est vestibulum feugiat condimentum, nulla eros scelerisque sapien, vitae vestibulum lorem arcu id purus. 
+									Proin nisi sem, varius ut ullamcorper at, viverra eget augue. Aliquam condimentum ipsum in erat placerat cursus.
+								</p>
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae lorem auctor, sagittis diam eu, lacinia justo. Nullam et dictum arcu. Cras convallis feugiat quam. Phasellus sit amet turpis tincidunt, laoreet felis in, sollicitudin quam. Donec vitae dapibus mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi id felis tempor,
+										fringilla ligula vel, bibendum lectus. Sed enim lectus, accumsan at nisl nec, mattis hendrerit felis.</p>
+										<p>
+				
+										Curabitur fringilla varius dolor nec venenatis. Cras a molestie lectus, sed sagittis nibh. Praesent feugiat diam at libero semper, a eleifend libero venenatis. Nulla finibus ut lectus vel feugiat. Etiam in metus a dui gravida accumsan id sed mi. Proin ut dui sollicitudin, hendrerit ipsum et, dignissim nibh. Etiam in suscipit odio. Cras congue massa ut porttitor blandit. Mauris hendrerit ultricies aliquam. Vestibulum nec elit id elit semper rutrum rutrum nec ipsum. Maecenas laoreet pulvinar tortor nec fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque dictum consequat dapibus. Pellentesque gravida, est vestibulum feugiat condimentum, nulla eros scelerisque sapien, vitae vestibulum lorem arcu id purus. 
+										Proin nisi sem, varius ut ullamcorper at, viverra eget augue. Aliquam condimentum ipsum in erat placerat cursus.
+										</p>
+			</div>
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="footer_WNDR remove_saveimage" id="custom-about-us-footer">
+		<div class="footer-overlap">
+			<img src="{% static 'image/footer-line-top.png' %}" class="top-line" alt="footer1">
+			<img src="{% static 'image/footer-line-top-mobile.png' %}" class="top-line-m0bile"
+				alt="footer2">
+			<img src="{% static 'image/footer-line-down.png' %}" class="bottom-line" alt="footer3">
+			<img src="{% static 'image/footer-line-down-mobile.png' %}" class="bottom-line-mobile"
+				alt="footer4">
+		</div>
+		<div class="footer-shapes">
+			<img src="{% static 'image/footer-img.png' %}" class="footer-left-ic" alt="footerLeft_img">
+			<img src="{% static 'image/footer-img2.png' %}" class="footer-right-ic" alt="footerRight_img">
+		</div>
+		<div class="container">
+			<div class="footer-outer">
+				<div class="row footer-align">
+					<div class="col-md-3 col-lg-3 mbl-footer-img">
+						<div class="footer-logo">
+							<img src="{% static 'image/header-logo.png' %}" alt="WNDR.com">
+						</div>
+					</div>
+					<div class="col-md-7 col-lg-7 copyright-footer">
+						<div class="middle-sec-footer uk-scrollspy-inview"
+							uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
+							<div class="footerManu_middle">
+                <ul class="middle_unorderList">
+
+									<li><a href="/">Home</a></li>
+									<li><a href="/about">About </a></li>
+									<li><a href="/vision">Our Vision</a></li>
+									<li><a href="/teams">Team</a></li>
+									<li><a href="/contact">Contact</a></li>
+									<li><a href="/terms">Terms $ Conditions </a></li>
+									<li><a href="/privacy">Privacy $ Policy</a></li>
+									
+								 </ul>
+								 </div>
+								 
+							 <div class="footerManu_paragraph">
+							<p>WNDR, ALL RIGHTS RESERVED @ 2022</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-lg-2 mbl-footer-social">
+						<div class="right-sec-footer-social">
+							<ul>
+							   
+								<li class="uk-scrollspy-inview"
+									uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">
+									<a href="https://twitter.com/WNDRVERSE"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								</li>
+							 
+								<li class="uk-scrollspy-inview"
+								uk-scrollspy="cls: uk-animation-slide-top; delay: 600; repeat: true">
+								<a href="https://www.youtube.com/channel/UCyccm9qtkFnj0-yGnE5fI5A"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+							</li>
+							<li class="uk-scrollspy-inview"
+								uk-scrollspy="cls: uk-animation-slide-top; delay: 600; repeat: true">
+								<a href="https://www.tiktok.com/@wndrverse?_t=8WJxBZA7IJ4&_r=1"><i class="fa fa-tiktok" aria-hidden="true"></i></a>
+							</li>
+						
+						
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+<!-- footer start here -->
+
+
+<!-- footer close here-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+    <!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- bootstrap js --> 
+
+</html>

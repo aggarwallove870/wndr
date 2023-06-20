@@ -20,7 +20,7 @@ ul.middle_unorderList li a {
     width: auto !important;
     height: auto !important;
     background: none !important;
-    font-size: 20px !important;
+    font-size: 16px !important;
     color: #ffffff !important;
     border-radius: unset !important;
     text-decoration: none;
@@ -2362,6 +2362,14 @@ h2 {
     font-weight: 500;
 }
 
+.about-heading h3{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'neuropolregular';
+    text-transform: uppercase;
+    color: #e8e8e8;
+    font-weight: 500;
+}
 .about-heading {
     padding-top: 100px;
 }
@@ -3268,7 +3276,8 @@ h2 {
     }
     .abt_top_btm_section:before {
     width: 367px;
-    }    
+    } 
+ 
     }
 /* @media (max-width: 1023px) and (min-width: 1005px) {
     .abt_top_btm_section:after{
@@ -9510,6 +9519,12 @@ img.blog-section-img-tabs {
     #exampleModal .sbscribe_btn_input {
         min-height: 100px;
     }
+    .footer_WNDR ul {
+        display: flex;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
 
 }
 
@@ -14531,6 +14546,14 @@ img.blog-section-img-tabs {
     .no-dwonload_section h3 {
         font-size: 22px;
     }
+    ul.middle_unorderList {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-logo {
+        margin-top: 30px;
+    }
 
     .borris_bazelais {
         font-size: 15px !important;
@@ -16884,3 +16907,17 @@ img.blog-section-img-tabs {
         width: 497px;
     }
 }
+/* terms abd condition page css start here */
+.terms_conditions_page {
+    text-align: left;
+    color: #fff;
+    padding-top: 21px;
+}
+.terms_conditions_page h4{
+    font-family: 'Avenir LT Pro';
+    font-size: 24px;
+    color:#ff8900;
+    font-weight: bold;
+}
+
+/* terms abd condition page css close here */

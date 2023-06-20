@@ -11,6 +11,8 @@ urlpatterns = [
     path('vision', vision, name='vision'),
     path('contact', contact, name='contact'),
     path('teams', teams,name='teams'),
+    path('privacy', privacy,name='privacy'),
+    path('terms', terms,name='terms'),
 
     path('video_trailer', video_trailer, name='video_trailer'),
 

@@ -64,6 +64,12 @@ def home(request):
 def about(request):
     return render(request, 'roadmap.html')
 
+def terms(request):
+    return render(request, 'termsandconditons.html')
+
+def privacy(request):
+    return render(request, 'policy.html')
+
 
 
 def vision(request):
